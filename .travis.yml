@@ -10,4 +10,4 @@ install:
   - pip install --upgrade pip
   - pip install flake8 flake8-import-order pytest
 script:
-  - pytest
+  - pytest test.py

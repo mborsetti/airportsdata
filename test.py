@@ -37,7 +37,7 @@ def test_data():
         assert len(airport['iata']) in (0, 3)
         assert isinstance(airport['name'], str)
         assert isinstance(airport['city'], str)
-        assert isinstance(airport['state'], str)
+        assert isinstance(airport['subd'], str)
         assert isinstance(airport['country'], str)
         assert airport['country'] in iso_3166_1
         assert len(airport['country']) == 2
