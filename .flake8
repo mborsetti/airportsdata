@@ -1,0 +1,9 @@
+[flake8]
+ignore = A,W503
+max-line-length = 120
+exclude =
+    .git
+    __pycache__
+    old
+    build
+    dist
