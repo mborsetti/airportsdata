@@ -14,6 +14,8 @@ if sys.version_info < project.__min_python_version__:
              f'{".".join(str(v) for v in project.__min_python_version__)} or newer.\n'
              f'You are running {sys.version}')
 
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
 with open('README.rst') as f:
     README_rst = f.read()
 SETUP = {
@@ -44,7 +46,7 @@ SETUP = {
     'package_dir': {'': '.'},
     'package_data': {'': ['*.csv']},
     # 'exclude_package_data': {},
-    # 'install_requires': requirements,
+    'install_requires': requirements,
     # 'entry_points': {},
     'extras_require': {'testing': ['pytest', 'flake8']},
     'python_requires': f'>={".".join(str(v) for v in project.__min_python_version__)}',
