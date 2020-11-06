@@ -21,15 +21,15 @@ Initial release of `airportdata` as a reworked fork of https://github.com/mwgg/A
 
 Changed
 -------
-* Renamed key 'state' to 'subdivision' (could be state, province, region, etc.)
+* Renamed key ``state`` to ``subdivision`` (could be state, province, region, etc.)
 * Converted to CSV format (roughly halving the file size)
 * Built tests for data integrity checking
 * Created Python package for easy inclusion
 * Published in PyPi
-* Fixed 'iata' key so it is always of string type (converted existing '0' and Nulls to '')
-* Removed duplicate IATA codes 'GOI', 'PDG', 'VNS' (now only in VOGO, WIEE and VEBN respectively)
-* Changed tz from 'Maldives' to 'Indian/Maldives' per IANA standard
-* Changed non-standard "country code" from KS to XK per https://en.wikipedia.org/wiki/ISO_3166-2:RS
+* Fixed ``iata`` key so it is always of string type (converted existing ``'0'`` and ``Null`` to ``''``)
+* Removed duplicate IATA codes ``GOI``, ``PDG``, ``VNS`` (now only in VOGO, WIEE and VEBN respectively)
+* Changed tz from ``'Maldives'`` to ``'Indian/Maldives'`` per IANA standard
+* Changed non-standard "country code" from ``KS`` to ``XK`` per https://en.wikipedia.org/wiki/ISO_3166-2:RS
 * Added 679 IATA codes for US airports in the Kxxx range missing them https://github.com/mwgg/Airports/pull/39
 * Added 16 IATA codes for Canadian airports in the Cxxx range missing them https://github.com/mwgg/Airports/pull/40
 * Added ZBAD. Source: ACARS via https://skyvector.com/airport/ZBAD/Beijing-Daxing-Airport. Matches official CAAC data
