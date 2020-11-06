@@ -55,8 +55,10 @@ def test_iata_integrity():
     iata = [airport['iata'] for airport in airports.values() if airport['iata']]
     assert len(iata) == len(set(iata))
     assert list(airportsdata.load(code_type='IATA').keys()) == iata
-    print(f'{len(airports)=:,}')
-    print(f'{len(iata)=:,}')
+    import sys
+    if sys.version_info >= (3, 8):
+        print(f'{len(airports)=:,}')
+        print(f'{len(iata)=:,}')
 
 
 def test_flake8():
