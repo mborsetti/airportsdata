@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Loads global airport data
+Global airport data
 """
 
 import csv
@@ -11,7 +11,7 @@ from typing import TypedDict
 
 __project_name__ = __package__
 # Release numbering follows the release data
-__version__ = '20201106'
+__version__ = '20201106.2'
 __min_python_version__ = (3, 6)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
@@ -51,7 +51,7 @@ def load(code_type: str = 'ICAO') -> Airports:
     #
     dir, _ = os.path.split(__file__)
     key = 'icao' if code_type.lower() == 'icao' else 'iata'
-    airports: Airports = {}
+    airports = {}
     with open(os.path.join(dir, 'airports.csv'), encoding='utf8') as f:
         fieldnames = f.readline().replace('"', '').rstrip().split(',')
         reader = csv.DictReader(f, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC)
