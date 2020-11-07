@@ -21,7 +21,7 @@ with open('README.rst') as f:
 SETUP = {
     'name': project.__project_name__,
     'version': project.__version__,
-    'description': project.__doc__.split('\n\n', 1)[0],
+    'description': project.__doc__.split('\n\n', 1)[0].strip(),
     'long_description': README_rst,
     'long_description_content_type': 'text/x-rst',
     'author': re.match(r'(.*) <(.*)>', project.__author__).groups()[0],
