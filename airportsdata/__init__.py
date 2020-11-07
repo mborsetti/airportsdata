@@ -8,15 +8,16 @@ import csv
 import os
 import sys
 
+from typing import Dict
 if sys.version_info >= (3, 8):
-    from typing import Dict, TypedDict
+    from typing import TypedDict
 else:
-    from typing_extensions import Dict, TypedDict
+    from typing_extensions import TypedDict
 
 
 __project_name__ = __package__
 # Release numbering follows the release data
-__version__ = '20201107.2'
+__version__ = '20201107a'
 __min_python_version__ = (3, 6)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
