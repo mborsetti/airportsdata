@@ -9,14 +9,14 @@ import os
 import sys
 
 if sys.version_info >= (3, 8):
-    from typing import TypedDict
+    from typing import Dict, TypedDict
 else:
-    from typing_extensions import TypedDict
+    from typing_extensions import Dict, TypedDict
 
 
 __project_name__ = __package__
 # Release numbering follows the release data
-__version__ = '20201107'
+__version__ = '20201107.2'
 __min_python_version__ = (3, 6)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
@@ -27,7 +27,7 @@ Airports = TypedDict('Airports', {'icao': str, 'iata': str, 'name': str, 'city':
                                   'country': str, 'elevation': float, 'lat': float, 'lon': float, 'tz': str})
 
 
-def load(code_type: str = 'ICAO') -> dict[str, Airports]:
+def load(code_type: str = 'ICAO') -> Dict[str, Airports]:
     """Loads airport data into a dict
 
     :param code_type: optional argument defining the key in the dictionary: 'ICAO' (default if omitted) or 'IATA'
