@@ -27,7 +27,7 @@ Airports = TypedDict('Airports', {'icao': str, 'iata': str, 'name': str, 'city':
                                   'country': str, 'elevation': float, 'lat': float, 'lon': float, 'tz': str})
 
 
-def load(code_type: str = 'ICAO') -> Airports:
+def load(code_type: str = 'ICAO') -> dict[str, Airports]:
     """Loads airport data into a dict
 
     :param code_type: optional argument defining the key in the dictionary: 'ICAO' (default if omitted) or 'IATA'
@@ -54,10 +54,10 @@ def load(code_type: str = 'ICAO') -> Airports:
     #     return {airport['iata']: airport for airport in dict(airports).values() if airport['iata']}
     #
     #
-    dir, _ = os.path.split(__file__)
+    this_dir, _ = os.path.split(__file__)
     key = 'icao' if code_type.lower() == 'icao' else 'iata'
     airports = {}
-    with open(os.path.join(dir, 'airports.csv'), encoding='utf8') as f:
+    with open(os.path.join(this_dir, 'airports.csv'), encoding='utf8') as f:
         fieldnames = f.readline().replace('"', '').rstrip().split(',')
         reader = csv.DictReader(f, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC)
         for row in reader:

@@ -7,7 +7,8 @@ python:
   - "3.7"
   - "3.6"
 install:
-  - pip install --upgrade pip setuptools
-  - pip install flake8 flake8-import-order pytest typing_extensions
+  - pip install --upgrade pip setuptools wheel
+  - pip install -r requirements.txt
+  - pip install flake8 flake8-import-order pytest
 script:
   - pytest test.py

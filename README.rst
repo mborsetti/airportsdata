@@ -18,12 +18,12 @@ airportsdata |version|
     :target: https://github.com/mborsetti/airportsdata/issues
     :alt: issues
 
-.. |travis| image:: https://img.shields.io/travis/mborsetti/airportsdata/master.svg?label=Travis%20CI
-    :target: https://travis-ci.org/mborsetti/airportsdata
+.. |travis| image:: https://img.shields.io/travis/com/mborsetti/airportsdata?label=Travis%20CI
+    :target: https://travis-ci.com/mborsetti/airportsdata
     :alt: Travis CI build status
 
-A UTF-8 CSV database (with Python code to access it) of 28,865 entries with basic information about nearly every
-airport and landing strip in the world.  Also includes IATA codes for 6,575 aerodromes.
+A UTF-8 CSV database (with Python code to access it) of 28,867 entries with basic information about nearly every
+airport and landing strip in the world.  Also includes IATA codes for 6,577 aerodromes.
 
 Each entry consists of:
 

@@ -5,11 +5,12 @@ Changelog
 This changelog mostly follows `keep a changelog <https://keepachangelog.com/en/1.0.0/>`__. Release numbering is based
 on the UTC date of the release.
 
-Unreleased
-==========
-* None
-
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
+
+
+Version 20201107
+================
+* Release fix (some of the changes below did not get published inadvertently)
 
 Version 20201106
 ================
@@ -36,7 +37,7 @@ Changed
   (obtained by third-parties). https://github.com/mwgg/Airports/pull/40
 * CZBF Province fix: The province for CZBF does not contain a dash (New Brunswick). Removal of dash to match the same
   text as all other NB airports. https://github.com/mwgg/Airports/pull/46
-* Added WAHI/YIA Yogyakarta International Airport t https://en.wikipedia.org/wiki/Yogyakarta_International_Airport
+* Added WAHI/YIA Yogyakarta International Airport https://en.wikipedia.org/wiki/Yogyakarta_International_Airport
   https://github.com/mwgg/Airports/pull/48
 * Updated UACC's IATA code from TSE to NQZ (Astana International). On 8 June 2020, the airport officially changed its
   three-character IATA airport code from TSE to NQZ.
