@@ -1,13 +1,12 @@
 """Tests"""
 
 import os
+import sys
 import warnings
 from glob import glob
 
-try:
+if sys.version_info >= (3, 8):
     from zoneinfo import ZoneInfo
-except ImportError:
-    from backports.zoneinfo import ZoneInfo
 
 from flake8.api import legacy as flake8
 
@@ -76,7 +75,8 @@ def test_data():
         assert isinstance(airport['elevation'], float)
         assert isinstance(airport['lat'], float)
         assert isinstance(airport['lon'], float)
-        assert ZoneInfo(airport['tz'])
+        if sys.version_info >= (3, 8):
+            assert ZoneInfo(airport['tz'])
         if airport['tz'] in tz_deprecated:
             warnings.warn(DeprecationWarning(f'"{key}": tz "{airport["tz"]}" is deprecated; replace with correct one\n'
                                              f'(see https://github.com/eggert/tz/blob/master/backward)'))

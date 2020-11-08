@@ -10,6 +10,5 @@ install:
   - pip install --upgrade pip setuptools wheel
   - pip install -r requirements.txt
   - pip install flake8 flake8-import-order pytest
-  - pip install backports; python_version < "3.8.0"
 script:
   - pytest test.py
