@@ -5,7 +5,7 @@ import sys
 import warnings
 from glob import glob
 
-if sys.version_info >= (3, 8):
+if sys.version_info >= (3, 9):
     from zoneinfo import ZoneInfo
 
 from flake8.api import legacy as flake8
