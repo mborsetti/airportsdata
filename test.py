@@ -75,7 +75,7 @@ def test_data():
         assert isinstance(airport['elevation'], float)
         assert isinstance(airport['lat'], float)
         assert isinstance(airport['lon'], float)
-        if sys.version_info >= (3, 8):
+        if sys.version_info >= (3, 9):
             assert ZoneInfo(airport['tz'])
         if airport['tz'] in tz_deprecated:
             warnings.warn(DeprecationWarning(f'"{key}": tz "{airport["tz"]}" is deprecated; replace with correct one\n'
