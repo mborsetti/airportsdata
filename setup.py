@@ -7,7 +7,8 @@ import sys
 
 from setuptools import setup
 
-import airportsdata as project
+import airportsdata
+project = airportsdata
 
 if sys.version_info < project.__min_python_version__:
     sys.exit(f'{project.__project_name__} requires Python version '
@@ -18,6 +19,18 @@ with open('requirements.txt') as f:
     requirements = f.read().splitlines()
 with open('README.rst') as f:
     README_rst = f.read()
+
+print('Updating counts in README.rst')
+README_rst = README_rst.splitlines(keepends=True)
+for line in README_rst:
+    if line.startswith('.. |ICAO| replace::'):
+        line = f'.. |ICAO| replace:: {len(airportsdata.load("ICAO")):6}'
+    elif line.startswith('.. |ICAO| replace::'):
+        line = f'.. |ICAO| replace:: {len(airportsdata.load("IATA")):6}'
+README_rst = ''.join(README_rst)
+with open('README.rst', 'w') as f:
+    f.write(README_rst)
+
 SETUP = {
     'name': project.__project_name__,
     'version': project.__version__,
@@ -29,7 +42,6 @@ SETUP = {
     'url': project.__url__,
     'packages': [project.__project_name__],
     'classifiers': [
-        'Environment :: Console',
         'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
@@ -38,7 +50,7 @@ SETUP = {
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Operating System :: OS Independent',
-        'Natural Language :: English',
+        'Topic :: Database',
         'Intended Audience :: Developers'
     ],
     'license': project.__license__,

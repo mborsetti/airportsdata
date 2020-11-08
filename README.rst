@@ -1,6 +1,10 @@
-======================
-airportsdata |version|
-======================
+============
+airportsdata
+============
+
+.. |ICAO| replace:: 28,862
+
+.. |IATA| replace:: 6,548
 
 .. |version| image:: https://img.shields.io/pypi/v/airportsdata.svg?label=
     :target: https://pypi.org/project/airportsdata/
@@ -22,35 +26,46 @@ airportsdata |version|
     :target: https://travis-ci.com/mborsetti/airportsdata
     :alt: Travis CI build status
 
-A UTF-8 CSV database (with Python code to access it) of 28,867 entries with basic information about nearly every
-airport and landing strip in the world.  Also includes IATA codes for 6,577 aerodromes.
+Extensive database of current data for nearly every airport and landing strip in the world, |ICAO| of them.
 
-Each entry consists of:
+Each entry consists of the following data:
 
-* ``icao``: ICAO 4-character code or FAA 3-character code
-* ``iata``: IATA 3-letter code or an empty string
+* ``icao``: ICAO (or FAA/TD LID) 4-alphanumeric code
+* ``iata``: IATA 3-letter code (for |IATA| entries) or an empty string; these will be validated, going forward, against `IATA
+  data <https://www.iata.org/en/publications/directories/code-search/>`__
 * ``name``: official name (latin script)
 * ``city``: city
 * ``subd``: subdivision (e.g. state, province, region, etc.)
-* ``country``: ISO 3166-1 alpha 2-code + ``XK`` for Kosovo
+* ``country``: `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes>`__ alpha-2 country code
+  (plus ``XK`` for Kosovo)
 * ``elevation``: MSL elevation (the highest point of the landing area) in feet
 * ``lat``: latitude (decimal)
 * ``lon``: longitude (decimal)
-* ``tz``: timezone expressed in tz database name (IANA-compliant) string (empty string for ``AQ`` Antarctica). Originally sourced from `TimeZoneDB <https://timezonedb.com>`__
+* ``tz``: timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
+  (IANA-compliant). Originally sourced from `TimeZoneDB <https://timezonedb.com>`__
 
-Best efforts are placed to review all contributions for accuracy but accuracy cannot be guaranteed or expeted.
+Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed or should be
+expected by users.  Please report any issues you may find `here
+<https://github.com/mborsetti/airportsdata/blob/main/CONTRIBUTING.rst>`__.
+
+Known issues:
+
+* 219 aerodromes have IATA codes that are not in the `IATA database
+  <https://www.iata.org/en/publications/directories/code-search/>`__ and may be incorrect
+* A small, but unknown, number of aerodromes whose IATA code is missing (none in the major airports)
+* No historical data
 
 This project is a fork of https://github.com/mwgg/Airports
 
 Python
 ======
-|support| |travis| |issues|
+|version| |support| |travis| |issues|
 
 Install using pip
 
 .. code-block:: bash
 
-  pip install airportsdata
+  pip install -U airportsdata
 
 To load the data into a dict:
 
@@ -66,16 +81,17 @@ or
   import airportsdata
   airports = airportsdata.load('IATA')  # key is IATA code
 
-Download
+Raw data
 ========
 
-Download the file ``airports.csv`` from https://github.com/mborsetti/airportsdata/raw/main/airportsdata/airports.csv
-or use git software
+CSV file with headers (UTF-8 encoding) downloadable from
+`https://github.com/mborsetti/airportsdata/raw/main/airportsdata/airports.csv
+<https://github.com/mborsetti/airportsdata/raw/main/airportsdata/airports.csv>`__
 
 License
 =======
 
 |license|
 
-Released under the `MIT License <https://opensource.org/licenses/MIT>`__. See the license `here
-<https://github.com/mborsetti/airportsdata/blob/main/LICENSE>`__.
+Released under the `MIT License <https://opensource.org/licenses/MIT>`__ (see license `here
+<https://github.com/mborsetti/airportsdata/blob/main/LICENSE>`__).
