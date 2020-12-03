@@ -8,6 +8,13 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
+Unreleased
+==========
+
+Version 20201203
+================
+* Added WICA/Kertajati International Airport
+
 Version 20201108
 ================
 

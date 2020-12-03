@@ -9,6 +9,7 @@ python:
 install:
   - pip install --upgrade pip setuptools wheel
   - pip install -r requirements.txt
-  - pip install flake8 flake8-import-order pytest
+  - pip install flake8 pytest
+  - pip install backports.zoneinfo;python_version<"3.9"
 script:
   - pytest test.py

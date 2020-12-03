@@ -2,11 +2,11 @@
 airportsdata
 ============
 
-.. |ICAO| replace:: 28,862
+.. |ICAO| replace:: 28,863
 
-.. |IATA| replace:: 6,548
+.. |IATA| replace:: 6,549
 
-.. |version| image:: https://img.shields.io/pypi/v/airportsdata.svg?label=
+.. |version| image:: https://img.shields.io/pypi/v/airportsdata.svg
     :target: https://pypi.org/project/airportsdata/
     :alt: pypi version
 
@@ -26,7 +26,7 @@ airportsdata
     :target: https://travis-ci.com/mborsetti/airportsdata
     :alt: Travis CI build status
 
-Extensive database of current data for nearly every airport and landing strip in the world, |ICAO| of them.
+Extensive database of current data for nearly every airport and landing strip in the world, with |ICAO| entries.
 
 Each entry consists of the following data:
 
@@ -61,13 +61,13 @@ Python
 ======
 |version| |support| |travis| |issues|
 
-Install using pip
+Install from `PyPi <https://pypi.org/project/airportsdata/>`__  using pip:
 
 .. code-block:: bash
 
   pip install -U airportsdata
 
-To load the data into a dict:
+Once installed, to load the data into a dict:
 
 .. code-block:: python
 

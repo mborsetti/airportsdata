@@ -1,16 +1,17 @@
 """Tests"""
 
 import os
-import sys
 import warnings
 from glob import glob
 
-if sys.version_info >= (3, 9):
-    from zoneinfo import ZoneInfo
+import airportsdata
 
 from flake8.api import legacy as flake8
 
-import airportsdata
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:
+    from backports.zoneinfo import ZoneInfo
 
 airports = airportsdata.load()
 airports_iata = airportsdata.load('IATA')
@@ -75,8 +76,7 @@ def test_data():
         assert isinstance(airport['elevation'], float)
         assert isinstance(airport['lat'], float)
         assert isinstance(airport['lon'], float)
-        if sys.version_info >= (3, 9):
-            assert ZoneInfo(airport['tz'])
+        assert ZoneInfo(airport['tz'])
         if airport['tz'] in tz_deprecated:
             warnings.warn(DeprecationWarning(f'"{key}": tz "{airport["tz"]}" is deprecated; replace with correct one\n'
                                              f'(see https://github.com/eggert/tz/blob/master/backward)'))
@@ -90,7 +90,7 @@ def test_iata_integrity():
 
 
 def test_flake8():
-    """Test that we conform to PEP-8."""
+    """Test that we conform to PEP-8"""
     style_guide = flake8.get_style_guide(ignore=['A', 'W503'])
     py_files = [y for x in os.walk(os.path.abspath('airportsdata')) for y in glob(os.path.join(x[0], '*.py'))]
     report = style_guide.check_files(py_files)
