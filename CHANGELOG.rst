@@ -11,6 +11,50 @@ on the UTC date of the release.
 Unreleased
 ==========
 
+Version 20201205
+================
+* Replaced hyphens with spaces when required  in ``subd`` for USA, Canada, Mexico, Australia, New Zealand and Italy and
+  globally for some major english names (such as North xxx etc.)
+* Fixed "Westrn-Australia" typo in ``subd`` (now "Western Australia")
+* Fixed the ``subd`` for the following US airports as per `here <https://github.com/mwgg/Airports/pull/51>`__:
+  K2H0: old "Alabama"; new "Illinois" (Shelbyville)
+  KBLF: old "Illinois"; new "West Virginia" (Bluefield)
+  KBMG: old "Alabama"; new "Indiana" (Bloomington)
+  KBUU: old "Iowa"; new "Wisconsin" (Burlington)
+  KCDN: old "New York"; new "South Carolina" (Camden)
+  KCWI: old "Arkansas"; new "Iowa" (Clinton)
+  KCZG: old "Alabama"; new "New York" (Endicott)
+  KDAW: old "Missouri"; new "New Hampshire" (Rochester)
+  KDQH: old "Arizona"; new "Georgia" (Douglas)
+  KEFD: old "Connecticut"; new "Texas" (Houston)
+  KF22: old "Iowa"; new "Oklahoma" (Perry)
+  KFDW: old "Ohio"; new "South Carolina" (Winnsboro)
+  KFFZ: old "Alabama"; new "Arizona" (Mesa)
+  KGKY: old "Oregon"; new "Texas" (Arlington)
+  KGVT: old "California"; new "Texas" (Greenville)
+  KHOT: old "Iowa"; new "Arkansas" (Hot Springs)
+  KLKV: old "Colorado"; new "Oregon" (Lakeview)
+  KLNK: old "Montana"; new "Nebraska" (Lincoln)
+  KLOM: old "Florida"; new "Pennsylvania" (Philadelphia)
+  KMIC: old "California"; new "Minnesota" (Minneapolis)
+  KMKO: old "Florida"; new "Oklahoma" (Muskogee)
+  KMNZ: old "New York"; new "Texas" (Hamilton)
+  KMQY: old "Delaware"; new "Tennessee" (Smyrna)
+  KOCW: old "Georgia"; new "North Carolina" (Washington)
+  KONP: old "Arkansas"; new "Oregon" (Newport)
+  KPNM: old "Maine"; new "Minnesota" (Princeton)
+  KPOC: old "Minnesota"; new "California" (La Verne)
+  KPYM: old "Indiana"; new "Massachusetts" (Plymouth)
+  KRDM: old "Indiana"; new "Oregon" (Redmond)
+  KRMY: old "Colorado"; new "Michigan" (Marshall)
+  KSFF: old "Oregon"; new "Washington" (Spokane)
+  KSMD: old "Arkansas"; new "Indiana" (Fort Wayne)
+  KSQL: old "Arizona"; new "California" (San Carlos)
+  KUOS: old "Georgia"; new "Tennessee" (Sewanee)
+  KUVA: old "Florida"; new "Texas" (Uvalde)
+  PAMR: old "Iowa"; new "Alaska" (Anchorage)
+  PAPB: old "South Carolina"; new "Alaska" (St George)
+
 Version 20201203
 ================
 * Added WICA/Kertajati International Airport

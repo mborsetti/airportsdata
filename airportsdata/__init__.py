@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Extensive database of current data for nearly every airport and landing strip in the world
+Extensive database of location data for nearly every airport and landing strip in the world
 """
 
 import csv
@@ -17,7 +17,7 @@ else:
 
 __project_name__ = __package__
 # Release numbering follows the release data
-__version__ = '20201203'
+__version__ = '20201205'
 __min_python_version__ = (3, 6)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'

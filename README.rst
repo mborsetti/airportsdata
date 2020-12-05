@@ -26,13 +26,13 @@ airportsdata
     :target: https://travis-ci.com/mborsetti/airportsdata
     :alt: Travis CI build status
 
-Extensive database of current data for nearly every airport and landing strip in the world, with |ICAO| entries.
+Extensive database of location data for nearly every airport and landing strip in the world, with |ICAO| entries.
 
 Each entry consists of the following data:
 
 * ``icao``: ICAO (or FAA/TD LID) 4-alphanumeric code
-* ``iata``: IATA 3-letter code (for |IATA| entries) or an empty string; these will be validated, going forward, against `IATA
-  data <https://www.iata.org/en/publications/directories/code-search/>`__
+* ``iata``: IATA 3-letter code (for |IATA| entries) or an empty string; these will be validated, going forward, against
+  `IATA data <https://www.iata.org/en/publications/directories/code-search/>`__
 * ``name``: official name (latin script)
 * ``city``: city
 * ``subd``: subdivision (e.g. state, province, region, etc.)
@@ -42,17 +42,17 @@ Each entry consists of the following data:
 * ``lat``: latitude (decimal)
 * ``lon``: longitude (decimal)
 * ``tz``: timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
-  (IANA-compliant). Originally sourced from `TimeZoneDB <https://timezonedb.com>`__
+  (IANA-compliant) (originally sourced from `TimeZoneDB <https://timezonedb.com>`__)
 
 Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed or should be
-expected by users.  Please report any issues you may find `here
+expected by users. Please report any issues you may find `here
 <https://github.com/mborsetti/airportsdata/blob/main/CONTRIBUTING.rst>`__.
 
 Known issues:
 
 * 219 aerodromes have IATA codes that are not in the `IATA database
   <https://www.iata.org/en/publications/directories/code-search/>`__ and may be incorrect
-* A small, but unknown, number of aerodromes whose IATA code is missing (none in the major airports)
+* A small, but unknown, number of aerodromes are missing their IATA code (none are major airports)
 * No historical data
 
 This project is a fork of https://github.com/mwgg/Airports
@@ -84,8 +84,7 @@ or
 Raw data
 ========
 
-CSV file with headers (UTF-8 encoding) downloadable from
-`https://github.com/mborsetti/airportsdata/raw/main/airportsdata/airports.csv
+A CSV (comma separated values) file with headers (UTF-8 encoding) is downloadable from GitHub `here
 <https://github.com/mborsetti/airportsdata/raw/main/airportsdata/airports.csv>`__
 
 License

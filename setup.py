@@ -60,7 +60,7 @@ SETUP = {
     # 'exclude_package_data': {},
     'install_requires': requirements,
     # 'entry_points': {},
-    'extras_require': {'testing': ['pytest', 'flake8']},
+    'extras_require': {'testing': ['pytest', 'flake8', 'backports.zoneinfo']},
     'python_requires': f'>={".".join(str(v) for v in project.__min_python_version__)}',
     'project_urls': {'Bug Tracker': f'{project.__url__.rstrip("//")}/issues',
                      'Source Code': project.__url__,
