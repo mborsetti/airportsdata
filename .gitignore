@@ -1,0 +1,10 @@
+/*.egg-info/
+/.idea/
+/.pytest_cache/
+/.tox/
+/__pycache__/
+/dist/
+/htmlcov/
+/venv/
+/.coverage
+/coverage.xml

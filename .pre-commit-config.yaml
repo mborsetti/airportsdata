@@ -1,0 +1,168 @@
+# Configuration for pre-commit (see https://pre-commit.com/)
+# A framework for managing and maintaining multi-language pre-commit hooks.
+
+# List of hooks at https://pre-commit.com/hooks.html
+
+# Requires the pre-commit package manager to be installed: pip install pre-commit
+# To install pre-commit into your git hooks (i.e. at .git/hooks/pre-commit), run 'pre-commit install'.
+# To update hooks to the latest version automatically, run 'pre-commit autoupdate'. By default, this will bring the
+# hooks to the latest tag on the default branch.
+
+# NOTE: in this package implementation, tox runs 'pre-commit run -a'
+
+# A list of repository mappings.
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      # see https://github.com/pre-commit/pre-commit-hooks
+#      - id: check-added-large-files
+#        description: Prevent giant files from being committed
+      - id: check-ast
+        description: Simply check whether files parse as valid python
+      - id: check-builtin-literals
+        description: Require literal syntax when initializing empty or zero Python builtin types
+      - id: check-case-conflict
+        description: Check for files with names that would conflict on a case-insensitive filesystem
+      - id: check-docstring-first
+        description: Checks for a common error of placing code before the docstring
+      - id: check-executables-have-shebangs
+        description: Checks that non-binary executables have a proper shebang
+#      - id: check-json
+#        description: Attempts to load all json files to verify syntax
+      - id: check-merge-conflict
+        description: Check for files that contain merge conflict strings
+#      - id: check-symlinks
+#        description: Checks for symlinks which do not point to anything
+#      - id: check-toml
+#        description: Attempts to load all TOML files to verify syntax.
+      - id: check-vcs-permalinks
+        description: Ensures that links to vcs websites are permalinks
+#      - id: check-xml
+#        description: Attempts to load all xml files to verify syntax
+#      - id: check-yaml
+#        args: [--allow-multiple-documents]
+#        description: Attempts to load all yaml files to verify syntax
+      - id: debug-statements
+        description: Check for debugger imports and py37+ breakpoint() calls in python source.
+      - id: destroyed-symlinks
+        description: >-
+          Detects symlinks which are changed to regular files with a content of a path which that symlink was
+          pointing to
+#      - id: detect-aws-credentials
+#        description: Checks for the existence of AWS secrets that you have set up with the AWS CLI
+#      - id: detect-private-key
+#        description: Checks for the existence of private keys
+      - id: double-quote-string-fixer
+        description: This hook replaces double quoted strings with single quoted strings.
+      - id: end-of-file-fixer
+        description: Makes sure files end in a newline and only a newline
+      - id: fix-byte-order-marker
+        description: removes UTF-8 byte order marker
+      - id: fix-encoding-pragma
+        args: ['--remove']
+        description: "Remove # -*- coding: utf-8 -*- from the top of python files"
+#      - id: file-contents-sorter
+#        description: Sort the lines in specified files (defaults to alphabetical)
+#      - id: forbid-new-submodules
+#        description: Prevent addition of new git submodules
+#      - id: mixed-line-ending
+#        args: ['--fix=lf']
+#        description: Forces replacing of line ending by the UNIX 'lf' character
+#        note: switched to using gitattributes https://git-scm.com/docs/gitattributes
+#      - id: name-tests-test
+#        description: Assert that Python files in tests/ end in _test.py
+#      - id: no-commit-to-branch
+#        description: Protect specific branches from direct checkins.
+#      - id: pretty-format-json
+#        description: Checks that all your JSON files are pretty.
+      - id: requirements-txt-fixer
+        description: Sorts entries in requirements.txt and removes incorrect entry for pkg-resources==0.0.0
+#      - id: sort-simple-yaml
+#        description: Sorts simple YAML files which consist only of top-level keys, preserving comments and blocks.
+#      - id: trailing-whitespace  # removes trailing whitespace from test files too!
+#        description: Trims trailing whitespace
+
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.8.0
+    hooks:
+      - id: python-check-blanket-noqa
+        description: >-
+          "Enforce that noqa annotations always occur with specific codes. Sample annotations: # noqa: F401, # noqa:
+          F401,W203"
+      - id: python-check-mock-methods
+        description: >-
+          Prevent common mistakes of assert mck.not_called(), assert mck.called_once_with(...) and mck
+          .assert_called
+      - id: python-no-eval
+        description: A quick check for the eval() built-in function
+      - id: python-no-log-warn
+        description: A quick check for the deprecated .warn() method of python loggers
+      - id: python-use-type-annotations
+        description: Enforce that python3.6+ type annotations are used instead of type comments
+#      - id: rst-backticks
+#        description: Detect common mistake of using single backticks when writing rst
+#      - id: rst-directive-colons
+#        description: Detect mistake of rst directive not ending with double colon
+#      - id: rst-inline-touching-normal
+#        description: Detect mistake of inline code touching normal text in rst
+      - id: text-unicode-replacement-char
+        description: Forbid files which have a UTF-8 Unicode replacement character
+
+#  NOT using black because it does not support single-quote
+#  - repo: https://github.com/python/black
+#    rev: 20.8b1
+#    hooks:
+#      - id: black
+#        language_version: python3
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 3.9.1
+    hooks:
+      - id: flake8
+        name: Check for errors, style, and over-complexity (flake8)
+        description: Code linter
+#        additional_dependencies: [flake8-import-order]  # conflicts with PyCharm's Optimize imports
+
+#  - repo: https://github.com/pycqa/doc8
+#    rev: 0.9.0a1
+#    hooks:
+#      - id: doc8
+#        args: [--max-line-length, '120']
+#        name: Check for style in rst documentation (doc8)
+#        description: Documentation linter
+
+#  - repo: local
+#    hooks:
+#      - id: python -m sphinx.apidoc
+#        name: Build autodoc API subdirectory (sphinx-apidoc)
+#        entry: sphinx-apidoc
+#        args: [-f, -e, -T, -o, docs\_api, webchanges]
+#        language: system
+
+#  - repo: local
+#    hooks:
+#      - id: sphinx-build
+#        name: Check documentation build (sphinx-build)
+#        entry: python -m sphinx.cmd.build
+#        args: [-a, -E, -W, docs, docs/_build]
+#        language: system
+#        files: ^docs
+#        types: [file]
+#        pass_filenames: false
+#      # https://www.sphinx-doc.org/en/master/usage/extensions/doctest.html#module-sphinx.ext.doctest
+#      - id: sphinx-doctest
+#        name: sphinx doctest
+#        entry: python -m sphinx-build
+#        args: [-a, -E, -b, doctest, docs, docs/_build]
+#        language: system
+#        files: ^docs
+#        types: [file]
+#        pass_filenames: false
+
+  - repo: local
+    hooks:
+      - id: update_counts
+        name: Update database counts in README.rst
+        entry: python update_readme_counts.py
+        language: system

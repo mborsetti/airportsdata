@@ -9,10 +9,14 @@ import os
 import sys
 
 from typing import Dict
+
 if sys.version_info >= (3, 8):
     from typing import TypedDict
 else:
-    from typing_extensions import TypedDict
+    try:
+        from typing_extensions import TypedDict
+    except ModuleNotFoundError:
+        pass
 
 
 __project_name__ = __package__
@@ -24,11 +28,12 @@ __copyright__ = 'Copyright 2020- Mike Borsetti'
 __license__ = 'MIT'
 __url__ = f'https://github.com/mborsetti/{__project_name__}'
 
-Airports = TypedDict('Airports', {'icao': str, 'iata': str, 'name': str, 'city': str, 'subd': str,
-                                  'country': str, 'elevation': float, 'lat': float, 'lon': float, 'tz': str})
+if 'TypedDict' in globals():
+    Airports = TypedDict('Airports', {'icao': str, 'iata': str, 'name': str, 'city': str, 'subd': str, 'country': str,
+                                      'elevation': float, 'lat': float, 'lon': float, 'tz': str})
 
 
-def load(code_type: str = 'ICAO') -> Dict[str, Airports]:
+def load(code_type: str = 'ICAO') -> Dict[str, 'Airports']:
     """Loads airport data into a dict
 
     :param code_type: optional argument defining the key in the dictionary: 'ICAO' (default if omitted) or 'IATA'

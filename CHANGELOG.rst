@@ -75,7 +75,6 @@ Version 20201203
 
 Version 20201108
 ================
-
 * Added airport OPIS/Islamabad International Airport and moved IATA code IST from OPRN/Benazir Bhutto International
   Airport https://github.com/mwgg/Airports/issues/47
 * Improved testing, including validation of ``tz`` entries

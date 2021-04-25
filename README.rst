@@ -22,9 +22,14 @@ airportsdata
     :target: https://github.com/mborsetti/airportsdata/issues
     :alt: issues
 
-.. |travis| image:: https://img.shields.io/travis/com/mborsetti/airportsdata?label=Travis%20CI
-    :target: https://travis-ci.com/mborsetti/airportsdata
-    :alt: Travis CI build status
+.. |CI| image:: https://github.com/mborsetti/webchanges/workflows/Tests/badge.svg?branch=main
+    :target: https://github.com/mborsetti/airportsdata/actions
+    :alt: CI testing status
+
+.. |coveralls| image:: https://coveralls.io/repos/github/mborsetti/webchanges/badge.svg?branch=main
+    :target: https://coveralls.io/github/mborsetti/airportsdata?branch=main
+    :alt: code coverage by Coveralls
+
 
 Extensive database of location data for nearly every airport and landing strip in the world, with |ICAO| entries.
 
@@ -59,7 +64,7 @@ This project is a fork of https://github.com/mwgg/Airports
 
 Python
 ======
-|version| |support| |travis| |issues|
+|version| |support| |CI| |issues| |coveralls|
 
 Install from `PyPi <https://pypi.org/project/airportsdata/>`__  using pip:
 

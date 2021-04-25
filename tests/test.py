@@ -1,12 +1,8 @@
 """Tests"""
 
-import os
 import warnings
-from glob import glob
 
 import airportsdata
-
-from flake8.api import legacy as flake8
 
 try:
     from zoneinfo import ZoneInfo
@@ -29,8 +25,9 @@ iso_3166_1 = [
     'PM', 'VC', 'WS', 'SM', 'ST', 'SA', 'SN', 'RS', 'SC', 'SL', 'SG', 'SX', 'SK', 'SI', 'SB', 'SO', 'ZA', 'GS', 'SS',
     'ES', 'LK', 'SD', 'SR', 'SJ', 'SE', 'CH', 'SY', 'TW', 'TJ', 'TZ', 'TH', 'TL', 'TG', 'TK', 'TO', 'TT', 'TN', 'TR',
     'TM', 'TC', 'TV', 'UG', 'UA', 'AE', 'GB', 'US', 'UM', 'UY', 'UZ', 'VU', 'VE', 'VN', 'VG', 'VI', 'WF', 'EH', 'YE',
-    'ZM', 'ZW', 'XK']  # As of 2020-11-06
+    'ZM', 'ZW']  # As of 2020-11-06
 # There is no ISO 3166-1 country code for Kosovo, however "XK" is a self assigned code is used by many
+iso_3166_1.append('XK')
 # international organisations per https://en.wikipedia.org/wiki/ISO_3166-2:RS and is the list above
 tz_deprecated = [
     'Africa/Asmera', 'Africa/Timbuktu', 'America/Argentina/ComodRivadavia', 'America/Atka', 'America/Buenos_Aires',
@@ -56,7 +53,7 @@ tz_deprecated = [
     'Pacific/Yap', 'Poland', 'Portugal', 'PRC', 'PST8PDT', 'ROC', 'ROK', 'Singapore', 'Turkey', 'UCT', 'Universal',
     'US/Alaska', 'US/Aleutian', 'US/Arizona', 'US/Central', 'US/East-Indiana', 'US/Eastern', 'US/Hawaii',
     'US/Indiana-Starke', 'US/Michigan', 'US/Mountain', 'US/Pacific', 'US/Samoa', 'UTC', 'W-SU', 'WET',
-    'Zulu']  # from https://www.php.net/timezones.others 2020-11-08
+    'Zulu']  # from https://www.php.net/timezones.others 2020-11-08; UTC kept in the list as it's non-geographical
 
 
 def test_data():
@@ -67,7 +64,7 @@ def test_data():
         assert airport['icao'].isalnum()
         assert isinstance(airport['name'], str)
         if airport['iata']:
-           assert airport['iata'].isalpha() and airport['iata'].isupper() and len(airport['iata']) == 3
+            assert airport['iata'].isalpha() and airport['iata'].isupper() and len(airport['iata']) == 3
         assert isinstance(airport['name'], str)
         assert isinstance(airport['city'], str)
         assert isinstance(airport['subd'], str)
@@ -89,12 +86,13 @@ def test_iata_integrity():
     assert list(airports_iata.keys()) == iata  # items returned is identical to those we just built
 
 
-def test_flake8():
-    """Test that we conform to PEP-8"""
-    style_guide = flake8.get_style_guide(ignore=['A', 'W503'])
-    py_files = [y for x in os.walk(os.path.abspath('airportsdata')) for y in glob(os.path.join(x[0], '*.py'))]
-    report = style_guide.check_files(py_files)
-    assert report.get_statistics('E') == [], 'Flake8 found violations'
+# the below test has migrated to pre-commit
+# def test_flake8():
+#     """Test that we conform to PEP-8"""
+#     style_guide = flake8.get_style_guide(ignore=['A', 'W503'])
+#     py_files = [y for x in os.walk(os.path.abspath('airportsdata')) for y in glob(os.path.join(x[0], '*.py'))]
+#     report = style_guide.check_files(py_files)
+#     assert report.get_statistics('E') == [], 'Flake8 found violations'
 
 
 def test_print_database_size():

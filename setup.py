@@ -7,29 +7,15 @@ import sys
 
 from setuptools import setup
 
-import airportsdata
-project = airportsdata
+import airportsdata as project
 
 if sys.version_info < project.__min_python_version__:
     sys.exit(f'{project.__project_name__} requires Python version '
              f'{".".join(str(v) for v in project.__min_python_version__)} or newer.\n'
              f'You are running {sys.version}')
 
-with open('requirements.txt') as f:
-    requirements = f.read().splitlines()
-with open('README.rst') as f:
-    README_rst = f.read()
-
-print('Updating counts in README.rst')
-README_rst = README_rst.splitlines(keepends=True)
-for line in README_rst:
-    if line.startswith('.. |ICAO| replace::'):
-        line = f'.. |ICAO| replace:: {len(airportsdata.load("ICAO")):6}'
-    elif line.startswith('.. |ICAO| replace::'):
-        line = f'.. |ICAO| replace:: {len(airportsdata.load("IATA")):6}'
-README_rst = ''.join(README_rst)
-with open('README.rst', 'w') as f:
-    f.write(README_rst)
+requirements = ['typing_extensions; python_version < "3.8"']
+README_rst = open('README.rst').read()
 
 SETUP = {
     'name': project.__project_name__,
@@ -60,10 +46,9 @@ SETUP = {
     # 'exclude_package_data': {},
     'install_requires': requirements,
     # 'entry_points': {},
-    'extras_require': {'testing': ['pytest', 'flake8', 'backports.zoneinfo']},
     'python_requires': f'>={".".join(str(v) for v in project.__min_python_version__)}',
     'project_urls': {'Bug Tracker': f'{project.__url__.rstrip("//")}/issues',
                      'Source Code': project.__url__,
-                     'Documentation': f'{project.__url__.rstrip("//")}/README.rst'}}
+                     'Documentation': f'{project.__url__.rstrip("//")}/README.rst'}
+}
 setup(**SETUP)
-
