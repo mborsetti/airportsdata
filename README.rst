@@ -22,11 +22,11 @@ airportsdata
     :target: https://github.com/mborsetti/airportsdata/issues
     :alt: issues
 
-.. |CI| image:: https://github.com/mborsetti/webchanges/workflows/Tests/badge.svg?branch=main
+.. |CI| image:: https://github.com/mborsetti/airportsdata/workflows/Tests/badge.svg?branch=main
     :target: https://github.com/mborsetti/airportsdata/actions
     :alt: CI testing status
 
-.. |coveralls| image:: https://coveralls.io/repos/github/mborsetti/webchanges/badge.svg?branch=main
+.. |coveralls| image:: https://coveralls.io/repos/github/mborsetti/airportsdata/badge.svg?branch=main
     :target: https://coveralls.io/github/mborsetti/airportsdata?branch=main
     :alt: code coverage by Coveralls
 
