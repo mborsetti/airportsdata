@@ -5,9 +5,10 @@ branch = True
 source = webchanges
 omit =
     .tox/*
-    tests/*
     docs/*
+    tests/*
     setup.py
+    update_readme_counts.py
 relative_files = True
 command_line = -m pytest -v
 
