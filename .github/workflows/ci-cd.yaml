@@ -37,7 +37,7 @@ jobs:
 
       # Run pre-commit cache per https://github.com/pre-commit/action
       - name: Run pre-commit
-        uses: pre-commit/action@v2.0.2
+        uses: pre-commit/action@v2.0.3
 
   test:
     name: "Test (${{ matrix.python-version }}, ${{ matrix.os }})"
