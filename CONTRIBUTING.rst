@@ -16,14 +16,14 @@ If you can provide a change as a pull request, please do so. If not, please open
 Please provide as many links to primary sources (e.g. ICAO, national aviation authority, IATA, etc.) as you can to
 help out in the verification process.
 
-P.S. Python contributors can test changes locally with
+P.S. Python contributors can test changes locally with ``tox`` or:
 
 .. code-block:: bash
 
   pip install -U airportsdata[testing]
-  pytest test.py
+  pytest tests/ -v
 
 
-Thanks for already contributing to:
+Thanks to the following for already contributing:
 
-* `Edward Weymouth <https://github.com/ed42311>`
+* `Edward Weymouth <https://github.com/ed42311>`__

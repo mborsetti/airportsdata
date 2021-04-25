@@ -1,6 +1,8 @@
 """Tests"""
-
+import sys
 import warnings
+
+import pytest
 
 import airportsdata
 
@@ -8,6 +10,9 @@ try:
     from zoneinfo import ZoneInfo
 except ImportError:
     from backports.zoneinfo import ZoneInfo
+
+py39_only = pytest.mark.skipif(sys.version_info < (3, 7), reason='Only checking data integrity once with latest Python')
+
 
 airports = airportsdata.load()
 airports_iata = airportsdata.load('IATA')
@@ -56,8 +61,13 @@ tz_deprecated = [
     'Zulu']  # from https://www.php.net/timezones.others 2020-11-08; UTC kept in the list as it's non-geographical
 
 
-def test_data():
-    """Test integrity of the data"""
+def test_loading():
+    assert airportsdata.load()
+
+
+@py39_only
+def test_data_quality():
+    """Test quality of the data"""
     for key, airport in airports.items():
         assert key == airport['icao']
         assert airport['icao'].isupper() and len(airport['icao']) in (4, 3)
@@ -79,8 +89,9 @@ def test_data():
                                              f'(see https://github.com/eggert/tz/blob/master/backward)'))
 
 
+@py39_only
 def test_iata_integrity():
-    """Test that there are no IATA code duplicates and that the function works correctly"""
+    """Test that there are no IATA code duplicates and that the function works correctly."""
     iata = [airport['iata'] for airport in airports.values() if airport['iata']]
     assert len(iata) == len(set(iata))  # no duplicate
     assert list(airports_iata.keys()) == iata  # items returned is identical to those we just built
@@ -95,8 +106,8 @@ def test_iata_integrity():
 #     assert report.get_statistics('E') == [], 'Flake8 found violations'
 
 
-def test_print_database_size():
-    """Print database size"""
-    print()
-    print(f'Number of airports  : {len(airports):6,}')
-    print(f'Number of IATA codes: {len(airports_iata):6,}')
+@py39_only
+def test_is_sorted():
+    """Test that database is sorted alphabetically."""
+    airports = airportsdata.load()
+    assert list(airports.keys()) == sorted(airports.keys())

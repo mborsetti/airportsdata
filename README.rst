@@ -64,7 +64,7 @@ This project is a fork of https://github.com/mwgg/Airports
 
 Python
 ======
-|version| |support| |CI| |issues| |coveralls|
+|version| |support| |CI| |coveralls| |issues|
 
 Install from `PyPi <https://pypi.org/project/airportsdata/>`__  using pip:
 
@@ -90,7 +90,7 @@ Raw data
 ========
 
 A CSV (comma separated values) file with headers (UTF-8 encoding) is downloadable from GitHub `here
-<https://github.com/mborsetti/airportsdata/raw/main/airportsdata/airports.csv>`__
+<https://github.com/mborsetti/airportsdata/raw/main/airportsdata/airports.csv>`__.
 
 License
 =======
