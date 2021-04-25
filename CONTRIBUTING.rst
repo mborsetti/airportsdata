@@ -14,7 +14,7 @@ If you can provide a change as a pull request, please do so. If not, please open
 <https://github.com/mborsetti/airportdata/issues>`__ and someone will look into it.
 
 Please provide as many links to primary sources (e.g. ICAO, national aviation authority, IATA, etc.) as you can to
-help out.
+help out in the verification process.
 
 P.S. Python contributors can test changes locally with
 
@@ -22,3 +22,8 @@ P.S. Python contributors can test changes locally with
 
   pip install -U airportsdata[testing]
   pytest test.py
+
+
+Thanks for already contributing to:
+
+* `Edward Weymouth <https://github.com/ed42311>`

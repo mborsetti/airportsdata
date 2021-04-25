@@ -8,8 +8,21 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
-Unreleased
-==========
+Version 20210425
+================
+* Multiple additions and fixes contributed by `Edward Weymouth <https://github.com/ed42311>`__ in `#1
+  <https://github.com/mborsetti/airportsdata/pull/1>`__:
+
+  * Added airport SDWQ/Alenquer Airport, BR
+  * Fixed spelling for RJAN/Niijima Airport
+  * Added ``iata`` entry for KOSA/Mount Pleasant Regional Airport
+  * Added ``iata`` entry for YLIM/Limbunya Station Airport
+  * Added ``iata`` entry for KFFO/Wright Patterson
+  * Added ``iata`` entry for RJAN/Niijima Airport
+  * Added ``iata`` entry for KCIN/Arthur N Neu Airport
+  * Added ``iata`` entry for KTOR/Torrington Municipal Airport
+  * Added ``iata`` entry for KSAC/Sacramento Executive Airport
+  * Added ``iata`` entry for PADM/Marshall Don Hunter Sr Airport
 
 Version 20201205
 ================
@@ -17,43 +30,44 @@ Version 20201205
   globally for some major english names (such as North xxx etc.)
 * Fixed "Westrn-Australia" typo in ``subd`` (now "Western Australia")
 * Fixed the ``subd`` for the following US airports as per `here <https://github.com/mwgg/Airports/pull/51>`__:
-  K2H0: old "Alabama"; new "Illinois" (Shelbyville)
-  KBLF: old "Illinois"; new "West Virginia" (Bluefield)
-  KBMG: old "Alabama"; new "Indiana" (Bloomington)
-  KBUU: old "Iowa"; new "Wisconsin" (Burlington)
-  KCDN: old "New York"; new "South Carolina" (Camden)
-  KCWI: old "Arkansas"; new "Iowa" (Clinton)
-  KCZG: old "Alabama"; new "New York" (Endicott)
-  KDAW: old "Missouri"; new "New Hampshire" (Rochester)
-  KDQH: old "Arizona"; new "Georgia" (Douglas)
-  KEFD: old "Connecticut"; new "Texas" (Houston)
-  KF22: old "Iowa"; new "Oklahoma" (Perry)
-  KFDW: old "Ohio"; new "South Carolina" (Winnsboro)
-  KFFZ: old "Alabama"; new "Arizona" (Mesa)
-  KGKY: old "Oregon"; new "Texas" (Arlington)
-  KGVT: old "California"; new "Texas" (Greenville)
-  KHOT: old "Iowa"; new "Arkansas" (Hot Springs)
-  KLKV: old "Colorado"; new "Oregon" (Lakeview)
-  KLNK: old "Montana"; new "Nebraska" (Lincoln)
-  KLOM: old "Florida"; new "Pennsylvania" (Philadelphia)
-  KMIC: old "California"; new "Minnesota" (Minneapolis)
-  KMKO: old "Florida"; new "Oklahoma" (Muskogee)
-  KMNZ: old "New York"; new "Texas" (Hamilton)
-  KMQY: old "Delaware"; new "Tennessee" (Smyrna)
-  KOCW: old "Georgia"; new "North Carolina" (Washington)
-  KONP: old "Arkansas"; new "Oregon" (Newport)
-  KPNM: old "Maine"; new "Minnesota" (Princeton)
-  KPOC: old "Minnesota"; new "California" (La Verne)
-  KPYM: old "Indiana"; new "Massachusetts" (Plymouth)
-  KRDM: old "Indiana"; new "Oregon" (Redmond)
-  KRMY: old "Colorado"; new "Michigan" (Marshall)
-  KSFF: old "Oregon"; new "Washington" (Spokane)
-  KSMD: old "Arkansas"; new "Indiana" (Fort Wayne)
-  KSQL: old "Arizona"; new "California" (San Carlos)
-  KUOS: old "Georgia"; new "Tennessee" (Sewanee)
-  KUVA: old "Florida"; new "Texas" (Uvalde)
-  PAMR: old "Iowa"; new "Alaska" (Anchorage)
-  PAPB: old "South Carolina"; new "Alaska" (St George)
+
+  * K2H0: old "Alabama"; new "Illinois" (Shelbyville)
+  * KBLF: old "Illinois"; new "West Virginia" (Bluefield)
+  * KBMG: old "Alabama"; new "Indiana" (Bloomington)
+  * KBUU: old "Iowa"; new "Wisconsin" (Burlington)
+  * KCDN: old "New York"; new "South Carolina" (Camden)
+  * KCWI: old "Arkansas"; new "Iowa" (Clinton)
+  * KCZG: old "Alabama"; new "New York" (Endicott)
+  * KDAW: old "Missouri"; new "New Hampshire" (Rochester)
+  * KDQH: old "Arizona"; new "Georgia" (Douglas)
+  * KEFD: old "Connecticut"; new "Texas" (Houston)
+  * KF22: old "Iowa"; new "Oklahoma" (Perry)
+  * KFDW: old "Ohio"; new "South Carolina" (Winnsboro)
+  * KFFZ: old "Alabama"; new "Arizona" (Mesa)
+  * KGKY: old "Oregon"; new "Texas" (Arlington)
+  * KGVT: old "California"; new "Texas" (Greenville)
+  * KHOT: old "Iowa"; new "Arkansas" (Hot Springs)
+  * KLKV: old "Colorado"; new "Oregon" (Lakeview)
+  * KLNK: old "Montana"; new "Nebraska" (Lincoln)
+  * KLOM: old "Florida"; new "Pennsylvania" (Philadelphia)
+  * KMIC: old "California"; new "Minnesota" (Minneapolis)
+  * KMKO: old "Florida"; new "Oklahoma" (Muskogee)
+  * KMNZ: old "New York"; new "Texas" (Hamilton)
+  * KMQY: old "Delaware"; new "Tennessee" (Smyrna)
+  * KOCW: old "Georgia"; new "North Carolina" (Washington)
+  * KONP: old "Arkansas"; new "Oregon" (Newport)
+  * KPNM: old "Maine"; new "Minnesota" (Princeton)
+  * KPOC: old "Minnesota"; new "California" (La Verne)
+  * KPYM: old "Indiana"; new "Massachusetts" (Plymouth)
+  * KRDM: old "Indiana"; new "Oregon" (Redmond)
+  * KRMY: old "Colorado"; new "Michigan" (Marshall)
+  * KSFF: old "Oregon"; new "Washington" (Spokane)
+  * KSMD: old "Arkansas"; new "Indiana" (Fort Wayne)
+  * KSQL: old "Arizona"; new "California" (San Carlos)
+  * KUOS: old "Georgia"; new "Tennessee" (Sewanee)
+  * KUVA: old "Florida"; new "Texas" (Uvalde)
+  * PAMR: old "Iowa"; new "Alaska" (Anchorage)
+  * PAPB: old "South Carolina"; new "Alaska" (St George)
 
 Version 20201203
 ================
@@ -111,10 +125,10 @@ Changed
 * Changed non-standard ``country`` ``'KS'`` to ``'XK'`` as per https://en.wikipedia.org/wiki/ISO_3166-2:RS
 * Added 679 IATA codes for US airports in the Kxxx range missing them https://github.com/mwgg/Airports/pull/39
 * Added 16 IATA codes for Canadian airports in the Cxxx range missing them https://github.com/mwgg/Airports/pull/40
-* Added ZBAD/PKX. Source: ARINC via https://skyvector.com/airport/ZBAD/Beijing-Daxing-Airport. Matches official CAAC data
-  (obtained by third-parties). https://github.com/mwgg/Airports/pull/40
-* CZBF/ZBF province fix: The province for CZBF does not contain a dash (New Brunswick). Removal of dash to match the same
-  text as all other NB airports. https://github.com/mwgg/Airports/pull/46
+* Added ZBAD/PKX. Source: ARINC via https://skyvector.com/airport/ZBAD/Beijing-Daxing-Airport. Matches official CAAC
+  data (obtained by third-parties). https://github.com/mwgg/Airports/pull/40
+* CZBF/ZBF province fix: The province for CZBF does not contain a dash (New Brunswick). Removal of dash to match the
+  same text as all other NB airports. https://github.com/mwgg/Airports/pull/46
 * Added WAHI/YIA Yogyakarta International Airport https://en.wikipedia.org/wiki/Yogyakarta_International_Airport
   https://github.com/mwgg/Airports/pull/48
 * Updated UACC's IATA code from TSE to NQZ (Astana International). On 8 June 2020, the airport officially changed its
