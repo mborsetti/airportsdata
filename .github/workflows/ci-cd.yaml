@@ -93,7 +93,7 @@ jobs:
       - name: Run tests (Linux/MacOS)
         if: runner.os == 'Linux' || runner.os == 'macOS'
         run:
-          python -m pytest -v
+          python -m pytest tests/ -v
         env:
           PYTHONUTF8: 1
 
@@ -101,7 +101,7 @@ jobs:
         if: runner.os == 'Windows'
         run:
           # workaround for Windows fatal exception: access violation
-          python -m pytest -v -p no:faulthandler
+          python -m pytest tests/ -v -p no:faulthandler
         env:
           PYTHONUTF8: 1
 
