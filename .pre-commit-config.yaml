@@ -13,7 +13,7 @@
 # A list of repository mappings.
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.4.0
+    rev: v4.0.1
     hooks:
       # see https://github.com/pre-commit/pre-commit-hooks
 #      - id: check-added-large-files
@@ -117,7 +117,7 @@ repos:
 #        language_version: python3
 
   - repo: https://github.com/pycqa/flake8
-    rev: 3.9.1
+    rev: 3.9.2
     hooks:
       - id: flake8
         name: Check for errors, style, and over-complexity (flake8)

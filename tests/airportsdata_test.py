@@ -1,4 +1,4 @@
-"""Tests"""
+"""Tests."""
 import sys
 import warnings
 
@@ -11,7 +11,7 @@ try:
 except ImportError:
     from backports.zoneinfo import ZoneInfo
 
-py39_only = pytest.mark.skipif(sys.version_info < (3, 7), reason='Only checking data integrity once with latest Python')
+py39_only = pytest.mark.skipif(sys.version_info < (3, 9), reason='Only checking data integrity once with latest Python')
 
 
 airports = airportsdata.load()
@@ -31,9 +31,9 @@ iso_3166_1 = [
     'ES', 'LK', 'SD', 'SR', 'SJ', 'SE', 'CH', 'SY', 'TW', 'TJ', 'TZ', 'TH', 'TL', 'TG', 'TK', 'TO', 'TT', 'TN', 'TR',
     'TM', 'TC', 'TV', 'UG', 'UA', 'AE', 'GB', 'US', 'UM', 'UY', 'UZ', 'VU', 'VE', 'VN', 'VG', 'VI', 'WF', 'EH', 'YE',
     'ZM', 'ZW']  # As of 2020-11-06
-# There is no ISO 3166-1 country code for Kosovo, however "XK" is a self assigned code is used by many
+# There is no ISO 3166-1 country code for the Republic of Kosovo, however "XK" is a self assigned code that is used by
+# many international organisations per https://en.wikipedia.org/wiki/ISO_3166-2:RS#Note
 iso_3166_1.append('XK')
-# international organisations per https://en.wikipedia.org/wiki/ISO_3166-2:RS and is the list above
 tz_deprecated = [
     'Africa/Asmera', 'Africa/Timbuktu', 'America/Argentina/ComodRivadavia', 'America/Atka', 'America/Buenos_Aires',
     'America/Catamarca', 'America/Coral_Harbour', 'America/Cordoba', 'America/Ensenada', 'America/Fort_Wayne',
@@ -62,7 +62,7 @@ tz_deprecated = [
 
 
 def test_loading():
-    assert airportsdata.load()
+    assert airports
 
 
 @py39_only
@@ -109,5 +109,4 @@ def test_iata_integrity():
 @py39_only
 def test_is_sorted():
     """Test that database is sorted alphabetically."""
-    airports = airportsdata.load()
     assert list(airports.keys()) == sorted(airports.keys())

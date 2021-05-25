@@ -8,6 +8,10 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
+Version 20210525
+================
+* Added ``iata`` entry for PGUA/Andersen Air Force Base
+
 Version 20210425
 ================
 * Multiple additions and fixes contributed by `Edward Weymouth <https://github.com/ed42311>`__ in `#1
