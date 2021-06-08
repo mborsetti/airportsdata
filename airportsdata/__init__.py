@@ -5,7 +5,7 @@ Extensive database of location data for nearly every airport and landing strip i
 """
 
 import csv
-import os
+from pathlib import Path
 import sys
 
 from typing import Dict
@@ -21,7 +21,7 @@ else:
 
 __project_name__ = __package__
 # Release numbering follows the release data
-__version__ = '20210608.1'
+__version__ = '20210608.2'
 __min_python_version__ = (3, 6)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
@@ -60,10 +60,10 @@ def load(code_type: str = 'ICAO') -> Dict[str, 'Airports']:
     #     return {airport['iata']: airport for airport in dict(airports).values() if airport['iata']}
     #
     #
-    this_dir, _ = os.path.split(__file__)
+    this_dir = Path(__file__).parent
     key = 'icao' if code_type.lower() == 'icao' else 'iata'
     airports = {}
-    with open(os.path.join(this_dir, 'airports.csv'), encoding='utf8') as f:
+    with this_dir.joinpath('airports.csv').open(encoding='utf8') as f:
         fieldnames = f.readline().replace('"', '').rstrip().split(',')
         reader = csv.DictReader(f, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC)
         for row in reader:
