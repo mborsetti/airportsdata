@@ -21,7 +21,7 @@ else:
 
 __project_name__ = __package__
 # Release numbering follows the release data
-__version__ = '20210608'
+__version__ = '20210608.1'
 __min_python_version__ = (3, 6)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
@@ -73,7 +73,7 @@ def load(code_type: str = 'ICAO') -> Dict[str, 'Airports']:
 
 
 # Python 3.9 code used to save the dict to CSV:
-# with open('airports.csv', 'w', encoding='utf8', newline='') as f:
+# with open('airports.csv', 'w', newline='') as f:
 #     fieldnames = airports[list(airports.keys())[0]].keys()
 #     writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC)
 #     writer.writeheader()
