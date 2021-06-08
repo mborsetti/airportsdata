@@ -1,4 +1,4 @@
-Version 20210608.2
+Version 20210608.3
 ==================
 * Added VVVD/Van Don International Airport
 * Fixed elevation being saved as float (with '.0' decimal) instead of integer; file is smaller as a result, with no
