@@ -7,6 +7,9 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20210608
+================
+* Added VVVD/Van Don International Airport
 
 Version 20210525
 ================
