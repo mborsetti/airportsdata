@@ -21,19 +21,32 @@ else:
 
 __project_name__ = __package__
 # Release numbering follows the release data
-__version__ = '20210608.3'
+__version__ = "20210608.3"
 __min_python_version__ = (3, 6)
-__author__ = 'Mike Borsetti <mike@borsetti.com>'
-__copyright__ = 'Copyright 2020- Mike Borsetti'
-__license__ = 'MIT'
-__url__ = f'https://github.com/mborsetti/{__project_name__}'
+__author__ = "Mike Borsetti <mike@borsetti.com>"
+__copyright__ = "Copyright 2020- Mike Borsetti"
+__license__ = "MIT"
+__url__ = f"https://github.com/mborsetti/{__project_name__}"
 
-if 'TypedDict' in globals():
-    Airports = TypedDict('Airports', {'icao': str, 'iata': str, 'name': str, 'city': str, 'subd': str, 'country': str,
-                                      'elevation': float, 'lat': float, 'lon': float, 'tz': str})
+if "TypedDict" in globals():
+    Airports = TypedDict(
+        "Airports",
+        {
+            "icao": str,
+            "iata": str,
+            "name": str,
+            "city": str,
+            "subd": str,
+            "country": str,
+            "elevation": float,
+            "lat": float,
+            "lon": float,
+            "tz": str,
+        },
+    )
 
 
-def load(code_type: str = 'ICAO') -> Dict[str, 'Airports']:
+def load(code_type: str = "ICAO") -> Dict[str, "Airports"]:
     """Loads airport data into a dict
 
     :param code_type: optional argument defining the key in the dictionary: 'ICAO' (default if omitted) or 'IATA'
@@ -61,14 +74,14 @@ def load(code_type: str = 'ICAO') -> Dict[str, 'Airports']:
     #
     #
     this_dir = Path(__file__).parent
-    key = 'icao' if code_type.lower() == 'icao' else 'iata'
+    key = "icao" if code_type.lower() == "icao" else "iata"
     airports = {}
-    with this_dir.joinpath('airports.csv').open(encoding='utf8') as f:
-        fieldnames = f.readline().replace('"', '').rstrip().split(',')
+    with this_dir.joinpath("airports.csv").open(encoding="utf8") as f:
+        fieldnames = f.readline().replace('"', "").rstrip().split(",")
         reader = csv.DictReader(f, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC)
         for row in reader:
             airports[row[key]] = row
-    airports.pop('', None)
+    airports.pop("", None)
     return airports
 
 
