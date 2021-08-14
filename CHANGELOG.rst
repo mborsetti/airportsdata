@@ -7,7 +7,7 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
-Version 20210814
+Version 20210814.1
 ==================
 * Updated EDDB (formerly IATA SXF) to be the new Berlin Brandenburg Airport (IATA BER)
 

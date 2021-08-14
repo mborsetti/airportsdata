@@ -7676,8 +7676,7 @@
 "EDCW","","Wismar Airport","Wismar","Mecklenburg-Vorpommern","DE",43,53.9144439697,11.4994440079,"Europe/Berlin"
 "EDCX","","Purkshof Airport","Rostock","Mecklenburg-Vorpommern","DE",66,54.1616668701,12.2486114502,"Europe/Berlin"
 "EDCY","","Spremberg-Welzow Airport","Welzow","Brandenburg","DE",374,51.5755577087,14.1369438171,"Europe/Berlin"
-"EDDB","BER","Berlin Brandenburg Airport","Berlin","Brandenburg","DE",157,52.362167,13.500667,
-"Europe/Berlin"
+"EDDB","BER","Berlin Brandenburg Airport","Berlin","Brandenburg","DE",157,52.362167,13.500667,"Europe/Berlin"
 "EDDC","DRS","Dresden Airport","Dresden","Saxony","DE",755,51.1328010559,13.76720047,"Europe/Berlin"
 "EDDE","ERF","Erfurt Airport","Erfurt","Thuringia","DE",1036,50.979801178,10.9581003189,"Europe/Berlin"
 "EDDF","FRA","Frankfurt am Main International Airport","Frankfurt-am-Main","Hesse","DE",364,50.0264015198,8.543129921,"Europe/Berlin"
