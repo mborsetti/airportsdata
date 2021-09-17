@@ -7,6 +7,13 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20210917
+==================
+* Added ZMCK/UBN entry for Chinggis Khaan International Airport, Ulanbaatar, Mongolia (started operations on 4 July
+  2021)
+* Renamed ZMUB/ULN to Buyant-Ukhaa International Airport (formerly Chinggis Khaan International Airport, until 30 June
+  2021)
+
 Version 20210814.1
 ==================
 * Updated EDDB (formerly IATA SXF) to be the new Berlin Brandenburg Airport (IATA BER)
