@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Extensive database of location data for nearly every airport and landing strip in the world
+Extensive database of location and timezone data for nearly every airport and landing strip in the world.
 """
 
 import csv
@@ -11,17 +11,17 @@ import sys
 from typing import Dict
 
 if sys.version_info >= (3, 8):
-    from typing import TypedDict
+    from typing import Literal, TypedDict
 else:
     try:
-        from typing_extensions import TypedDict
+        from typing_extensions import Literal, TypedDict
     except ModuleNotFoundError:
         pass
 
 
 __project_name__ = __package__
 # Release numbering follows the release data
-__version__ = '20210921'
+__version__ = '20210926'
 __min_python_version__ = (3, 6)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
@@ -45,8 +45,13 @@ if 'TypedDict' in globals():
         },
     )
 
+if 'Literal' in globals():
+    CodeType = Literal['ICAO', 'IATA']
+else:
+    CodeType = True
 
-def load(code_type: str = 'ICAO') -> Dict[str, 'Airports']:
+
+def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airports']:  # Version 3.8 and greater this should be a Literal
     """Loads airport data into a dict
 
     :param code_type: optional argument defining the key in the dictionary: 'ICAO' (default if omitted) or 'IATA'
@@ -61,8 +66,8 @@ def load(code_type: str = 'ICAO') -> Dict[str, 'Airports']:
         'elevation': MSL elevation (the highest point of the landing area) in feet
         'lat': latitude (decimal)
         'lon': longitude (decimal)
-        'tz': timezone expressed in tz database name (IANA-compliant) string (empty string for 'AQ' Antarctica).
-            Originally sourced from [TimeZoneDB] (https://timezonedb.com)
+        'tz': timezone expressed as a string representing its tz database name (IANA-compliant) or empty string
+            for country 'AQ' (Antarctica). Originally sourced from [TimeZoneDB] (https://timezonedb.com)
     :rtype: dict
     """
     # with open(os.path.join(dir, 'airports.json'), encoding='utf8') as f:

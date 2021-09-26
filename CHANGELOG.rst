@@ -7,9 +7,19 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
-Version 20210917
+Version 20210926
 ==================
-* Added ZMCK/UBN entry for Chinggis Khaan International Airport, Ulanbaatar, Mongolia (started operations on 4 July
+* Renamed KSJG to Northeast Florida Regional Airport (formerly St Augustine Airport)
+* Upstream contributions by `himelsaha29 <https://github.com/himelsaha29>`__ in `#53
+  <https://github.com/mwgg/Airports/pull/53>`__:
+  * Added ``iata`` UST to KSJG Northeast Florida Regional Airport
+  * Added UAAL/USJ Usharal Airport, Usharal, Kazakhstan
+  * Added city to YBLN/BQB Busselton Regional Airport, Busselton, WA, Australia
+* Python code now has more extensive type hints
+
+Version 20210921
+==================
+* Added ZMCK/UBN Chinggis Khaan International Airport, Ulanbaatar, Mongolia (started operations on 4 July
   2021)
 * Renamed ZMUB/ULN to Buyant-Ukhaa International Airport (formerly Chinggis Khaan International Airport, until 30 June
   2021)
@@ -20,7 +30,7 @@ Version 20210814.1
 
 Version 20210608.3
 ==================
-* Added VVVD/Van Don International Airport
+* Added VVVD Van Don International Airport, Vân Đồn, Vietnam
 * Fixed elevation being saved as float (with '.0' decimal) instead of integer; file is smaller as a result, with no
   change in precision
 * Removed non-breaking spaces found in names of 4 airports
