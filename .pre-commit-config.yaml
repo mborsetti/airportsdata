@@ -10,6 +10,12 @@
 
 # NOTE: in this package implementation, tox runs 'pre-commit run -a'
 
+minimum_pre_commit_version: 2.15.0
+
+# Force all unspecified python hooks to run python3
+default_language_version:
+    python: python3
+
 # A list of repository mappings.
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -109,12 +115,12 @@ repos:
       - id: text-unicode-replacement-char
         description: Forbid files which have a UTF-8 Unicode replacement character
 
-#  NOT using black because it does not support single-quote
-#  - repo: https://github.com/python/black
-#    rev: 20.8b1
-#    hooks:
-#      - id: black
-#        language_version: python3
+  - repo: https://github.com/python/black
+    rev: 21.9b0
+    hooks:
+      - id: black
+        name: Uncompromising code formatting (black)
+        language_version: python3
 
   - repo: https://github.com/pycqa/flake8
     rev: 3.9.2

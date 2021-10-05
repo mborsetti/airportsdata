@@ -19,5 +19,4 @@ README_rst = ''.join(out_lines)
 with open('README.rst', 'w', newline='\n') as f:
     f.write(README_rst)
 
-print(f'Updated counts of entries in README.rst to ICAO={icao_count:,} '
-      f'and IATA={iata_count:,}')
+print(f'Updated counts of entries in README.rst to ICAO={icao_count:,} ' f'and IATA={iata_count:,}')

@@ -63,8 +63,8 @@ Known issues:
 Please report any issues you may find `here
 <https://github.com/mborsetti/airportsdata/blob/main/CONTRIBUTING.rst>`__.
 
-This project is a fork of https://github.com/mwgg/Airports and all IATA codes submitted in this fork have been
-valdidated against `IATA <https://www.iata.org/en/publications/directories/code-search/>`__.
+This project is a fork of https://github.com/mwgg/Airports. All IATA codes submitted in this fork have been
+validated against `IATA <https://www.iata.org/en/publications/directories/code-search/>`__.
 
 Raw data
 ========

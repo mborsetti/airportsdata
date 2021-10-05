@@ -1,0 +1,10 @@
+[tool.black]
+# Uncompromising code formatting
+# Runs as part of pre-commit
+# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
+# What's in here overrides the command-line options shown by running $ black --help.
+line-length = 120
+target-version = ['py37']
+skip-string-normalization = true
+extend-exclude = '/(\.idea|\.pytest_cache|\__pycache__|\venv.*|\webchanges.egg-info)/'
+color = true
