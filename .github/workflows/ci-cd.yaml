@@ -33,6 +33,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -U pip wheel
+          if [ -f tests/requirements_precommit.txt ]; then python -m pip install -U -r requirements_precommit.txt; fi
           if [ -f requirements.txt ]; then python -m pip install -U -r requirements.txt; fi
 
       # Run pre-commit cache per https://github.com/pre-commit/action

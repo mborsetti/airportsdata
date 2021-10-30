@@ -1,6 +1,4 @@
 backports.zoneinfo; python_version < "3.9"
-black
-flake8
 pytest
 pytest-cov
 tzdata; os_name == "nt"
