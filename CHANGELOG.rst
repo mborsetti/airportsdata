@@ -7,6 +7,10 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20211030
+==================
+* Added VEKI/KBK Kushinagar Airport, Kushinagar, Uttar Pradesh, India (started operations on 20 October 2021)
+
 Version 20211005
 ==================
 * Support for Python 3.10

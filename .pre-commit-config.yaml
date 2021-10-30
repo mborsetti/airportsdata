@@ -115,19 +115,21 @@ repos:
       - id: text-unicode-replacement-char
         description: Forbid files which have a UTF-8 Unicode replacement character
 
-  - repo: https://github.com/python/black
-    rev: 21.9b0
+  - repo: local
     hooks:
-      - id: black
+      - id: black  # https://github.com/python/black
         name: Uncompromising code formatting (black)
-        language_version: python3
-
-  - repo: https://github.com/pycqa/flake8
-    rev: 3.9.2
-    hooks:
+        entry: black
+        language: python
+        types: [python]
       - id: flake8
-        name: Check for errors, style, and over-complexity (flake8)
+        name: Check for errors, style, [and over-complexity] (flake8)
         description: Code linter
+        entry: flake8  # https://gitlab.com/pycqa/flake8
+        language: python
+        types: [python]
+        require_serial: true
+        args: [--max-line-length, '120']
 #        additional_dependencies: [flake8-import-order]  # conflicts with PyCharm's Optimize imports
 
 #  - repo: https://github.com/pycqa/doc8

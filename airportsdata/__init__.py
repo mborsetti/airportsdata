@@ -5,9 +5,8 @@ Extensive database of location and timezone data for nearly every airport and la
 """
 
 import csv
-from pathlib import Path
 import sys
-
+from pathlib import Path
 from typing import Dict
 
 if sys.version_info >= (3, 8):
@@ -21,7 +20,7 @@ else:
 
 __project_name__ = __package__
 # Release numbering follows the release data
-__version__ = '20211005'
+__version__ = '20211030'
 __min_python_version__ = (3, 6)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'

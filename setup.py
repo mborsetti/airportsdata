@@ -5,9 +5,9 @@
 import re
 import sys
 
-from setuptools import setup
-
 import airportsdata as project
+
+from setuptools import setup
 
 if sys.version_info < project.__min_python_version__:
     sys.exit(
