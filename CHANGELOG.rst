@@ -7,10 +7,15 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20211228.1
+==================
+* Added KL52 Oceano County Airport, Oceano, California, United States of America (contributed by 
+  `Michel Vidal-Naquet <https://github.com/micvn>`__ in `#8 <https://github.com/mborsetti/airportsdata/pull/8>`__)
+
 Version 20211228
 ================
-* Added KO69 Petaluma Municipal Airport (contributed upstream by `Michel Vidal-Naquet <https://github.com/micvn>`__ in
-  `#55 <https://github.com/mwgg/Airports/pull/55>`__)
+* Added KO69 Petaluma Municipal Airport, Petaluma, California, United States of America (contributed upstream by 
+  `Michel Vidal-Naquet <https://github.com/micvn>`__ in `#55 <https://github.com/mwgg/Airports/pull/55>`__)
 
 Version 20211030.1
 ==================

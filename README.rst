@@ -36,7 +36,7 @@ entries.
 
 Each entry consists of the following data:
 
-* ``icao``: ICAO (or FAA/TD LID prefaced by "K") 4-alphanumeric code
+* ``icao``: ICAO 4-alphanumeric code or FAA/TD LID prefaced by "K" (|ICAO| entries)
 * ``iata``: IATA 3-letter code (for |IATA| entries) or an empty string
 * ``name``: Official name (latin script)
 * ``city``: City
@@ -54,7 +54,7 @@ expected by users.
 
 Known issues:
 
-* 219 aerodromes have IATA codes that are not in the `IATA database;
+* 219 aerodromes have IATA codes that are not in the `IATA database
   <https://www.iata.org/en/publications/directories/code-search/>`__ and may be incorrect;
 * A small, but unknown, number of aerodromes are missing their IATA code (none are major ones);
 * Timezone was originally sourced from `TimeZoneDB <https://timezonedb.com>`__ and is missing for Antarctica;
@@ -88,6 +88,7 @@ Once installed, to load the data into a dict:
 
   import airportsdata
   airports = airportsdata.load()  # key is ICAO code, the default
+  print(airports['KJFK'])
 
 or
 
@@ -95,6 +96,7 @@ or
 
   import airportsdata
   airports = airportsdata.load('IATA')  # key is IATA code
+  print(airports['JFK'])
 
 License
 =======
