@@ -7,6 +7,11 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20211228
+================
+* Added KO69 Petaluma Municipal Airport (contributed upstream by `Michel Vidal-Naquet <https://github.com/micvn>`__ in
+  `#55 <https://github.com/mwgg/Airports/pull/55>`__)
+
 Version 20211030.1
 ==================
 * Added VEKI/KBK Kushinagar Airport, Kushinagar, Uttar Pradesh, India (started operations on 20 October 2021)

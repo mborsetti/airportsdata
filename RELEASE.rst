@@ -1,1 +1,2 @@
-* Added VEKI/KBK Kushinagar Airport, Kushinagar, Uttar Pradesh, India (started operations on 20 October 2021)
+* Added KO69 Petaluma Municipal Airport (contributed upstream by `Michel Vidal-Naquet <https://github.com/micvn>`__ in
+  `#55 <https://github.com/mwgg/Airports/pull/55>`__)
