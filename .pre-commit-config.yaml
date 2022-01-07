@@ -10,7 +10,7 @@
 
 # NOTE: in this package implementation, tox runs 'pre-commit run -a'
 
-minimum_pre_commit_version: 2.15.0
+minimum_pre_commit_version: 2.16.0
 
 # Force all unspecified python hooks to run python3
 default_language_version:
@@ -170,7 +170,7 @@ repos:
 
   - repo: local
     hooks:
-      - id: update_counts
+      - id: update_readme_counts
         name: Update database counts in README.rst
         entry: python update_readme_counts.py
         language: system

@@ -1,11 +1,5 @@
-* Upstream contributions by `rysiekpl <https://github.com/rysiekpl>`__ in `#54
-  <https://github.com/mwgg/Airports/pull/55>`__:
-
-  * Added EBMB Melsbroek Air Base, Brussels, Flanders, Belgium
-  * Added EPEK Ełk-Makosieje Airport, Giże, Warmia-Masuria, Poland
-  * Added EPGM Giżycko-Mazury Residence, Giżycko, Warmia-Masuria, Poland
-  * Fixed ``icao`` of EPRU/CZW Częstochowa-Rudniki Airport (was EPCH)
-  * Added EPSY Olsztyn-Mazury Airport, Szymany, Warmia-Mazury, Poland
-  * Added EPWT Watorowo Airport, Watorowo, Kuyavian-Pomerania, Poland
-  * Added ``iata`` ZWK to EPSU Suwalki Airport
-* Restored most diacritical marks to ``icao`` entries starting with ``EP`` (Poland)
+* Replaced MHSC/XPL Coronel Enrique Soto Cano Air Base, Comayagua, Comayagua, Honduras with MHPR/XPL
+  Comayagua-Palmerola International Airport due to its conversion to a civil airport (started operations in
+  October 2021) and retirement of MHSC.
+* Fixed typo in name of LHBP/BUD Budapest Liszt Ferenc International Airport, Budapest, Budapest, Hungary (contributed
+  upstream by `benelori <https://github.com/benelori>`__ in `#56 <https://github.com/mwgg/Airports/pull/56>`__).

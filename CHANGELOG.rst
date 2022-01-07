@@ -7,6 +7,14 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20220107
+==================
+* Replaced MHSC/XPL Coronel Enrique Soto Cano Air Base, Comayagua, Comayagua, Honduras with MHPR/XPL
+  Comayagua-Palmerola International Airport due to its conversion to a civil airport (started operations in
+  October 2021) and retirement of MHSC.
+* Fixed typo in name of LHBP/BUD Budapest Liszt Ferenc International Airport, Budapest, Budapest, Hungary (contributed
+  upstream by `benelori <https://github.com/benelori>`__ in `#56 <https://github.com/mwgg/Airports/pull/56>`__).
+  
 Version 20211228.2
 ==================
 * Upstream contributions by `rysiekpl <https://github.com/rysiekpl>`__ in `#54
@@ -45,6 +53,7 @@ Version 20210926
 * Renamed KSJG to Northeast Florida Regional Airport (formerly St Augustine Airport)
 * Upstream contributions by `himelsaha29 <https://github.com/himelsaha29>`__ in `#53
   <https://github.com/mwgg/Airports/pull/53>`__:
+
   * Added ``iata`` UST to KSJG Northeast Florida Regional Airport
   * Added UAAL/USJ Usharal Airport, Usharal, Kazakhstan
   * Added city to YBLN/BQB Busselton Regional Airport, Busselton, WA, Australia

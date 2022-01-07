@@ -483,7 +483,7 @@ def test_data_quality():
 def test_iata_integrity():
     """Test that there are no IATA code duplicates and that the function works correctly."""
     iata = [airport['iata'] for airport in airports.values() if airport['iata']]
-    assert len(iata) == len(set(iata))  # no duplicate
+    assert set([x for x in iata if iata.count(x) > 1]) == set()  # no duplicates
     assert list(airports_iata.keys()) == iata  # items returned is identical to those we just built
 
 
