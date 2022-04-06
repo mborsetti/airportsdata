@@ -456,8 +456,7 @@ def test_data_quality():
     """Test data quality."""
     for key, airport in airports.items():
         assert key == airport['icao']
-        assert airport['icao'].isupper() and len(airport['icao']) in (4, 3)
-        assert airport['icao'].isalnum()
+        assert key.isalnum() and key.isupper() and len(key) == 4
         assert isinstance(airport['name'], str)
         if airport['iata']:
             assert airport['iata'].isalpha() and airport['iata'].isupper() and len(airport['iata']) == 3

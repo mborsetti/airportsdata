@@ -1,22 +1,23 @@
-"""Updates counts in readme.rst file."""
+"""Updates counts in readme.rst file.  Requires Python 3.10."""
+from pathlib import Path
 
 import airportsdata
 
 icao_count = len(airportsdata.load('ICAO'))
 iata_count = len(airportsdata.load('IATA'))
 
-with open('README.rst') as f:
-    README_rst = f.read()
-README_rst = README_rst.splitlines(keepends=True)
-out_lines = []
-for line in README_rst:
+readme_file = Path('README.rst')
+readme = readme_file.read_text()
+out_lines = readme.splitlines(keepends=True)
+for i, line in enumerate(out_lines):
     if line.startswith('.. |ICAO| replace::'):
-        line = f'.. |ICAO| replace:: {icao_count:,}\n'
+        out_lines[i] = f'.. |ICAO| replace:: {icao_count:,}\n'
     elif line.startswith('.. |IATA| replace::'):
-        line = f'.. |IATA| replace:: {iata_count:,}\n'
-    out_lines.append(line)
-README_rst = ''.join(out_lines)
-with open('README.rst', 'w', newline='\n') as f:
-    f.write(README_rst)
+        out_lines[i] = f'.. |IATA| replace:: {iata_count:,}\n'
+out = ''.join(out_lines)
 
-print(f'Updated counts of entries in README.rst to ICAO={icao_count:,} ' f'and IATA={iata_count:,}')
+if out != readme:
+    print(f'Updated counts in README.rst to ICAO={icao_count:,} and IATA={iata_count:,}')
+    readme_file.write_text(out)
+else:
+    print(f'No changes to counts in README.rst: ICAO={icao_count:,} and IATA={iata_count:,}')

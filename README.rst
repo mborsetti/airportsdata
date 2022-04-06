@@ -36,7 +36,7 @@ entries.
 
 Each entry consists of the following data:
 
-* ``icao``: ICAO 4-alphanumeric code or FAA/TD LID prefaced by "K" (|ICAO| entries)
+* ``icao``: ICAO 4-alphanumeric code or FAA/TC LID[*] (|ICAO| entries)
 * ``iata``: IATA 3-letter code (for |IATA| entries) or an empty string
 * ``name``: Official name (latin script)
 * ``city``: City
@@ -48,6 +48,10 @@ Each entry consists of the following data:
 * ``lon``: Longitude (decimal)
 * ``tz``: Timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
   (IANA-compliant)
+
+.. [*] See `here <https://github.com/mborsetti/airportsdata/README_LIDs.rst>`__ for an explanation on how
+   airports with only an U.S. FAA or Transport Canada Location Identifier location identifier (FAA/TC LID) are
+   listed.
 
 Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed nor should be
 expected by users.

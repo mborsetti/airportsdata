@@ -20,8 +20,8 @@ else:
 
 __project_name__ = __package__
 # Release numbering follows the release data
-__version__ = '20220107'
-__min_python_version__ = (3, 6)
+__version__ = '20220406'
+__min_python_version__ = (3, 7)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
 __license__ = 'MIT'
