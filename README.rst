@@ -2,9 +2,9 @@
 airportsdata
 ============
 
-.. |ICAO| replace:: 28,876
+.. |ICAO| replace:: 28,875
 
-.. |IATA| replace:: 6,565
+.. |IATA| replace:: 6,566
 
 .. |version| image:: https://img.shields.io/pypi/v/airportsdata.svg
     :target: https://pypi.org/project/airportsdata/
@@ -49,9 +49,10 @@ Each entry consists of the following data:
 * ``tz``: Timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
   (IANA-compliant)
 
-.. [*] See `here <https://github.com/mborsetti/airportsdata/README_LIDs.rst>`__ for an explanation on how
+.. [*] See `here <https://github.com/mborsetti/airportsdata/README_FAA.rst>`__ for an explanation on how
    airports with only an U.S. FAA or Transport Canada Location Identifier location identifier (FAA/TC LID) are
-   listed.
+   listed.  See `here <https://github.com/mborsetti/airportsdata/README_IATA.rst>`__ for a list of IATA Multi
+   Airport Cities.
 
 Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed nor should be
 expected by users.

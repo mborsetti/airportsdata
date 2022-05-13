@@ -7,10 +7,20 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20220512
+==================
+* Fixed ICAO identifier of LYPR/PRN Pristina International Airport, Prishtina, Pristina, Kosovo (was BKPR)
+  (contributed by `Błażej Cyrzon <https://github.com/bc291>`__ in PR `#12 <https://github
+  .com/mborsetti/airportsdata/pull/12>`__.
+* Added IATA code for KMDD Midland Airpark, Midland, Texas, USA (contributed by
+  `Henry A Schimke upstream <https://github.com/hschimke>`__ in `#58 <https://github.com/mwgg/Airports/pull/58>`__).
+* Added README_IATA with a list of IATA Multi Airport Cities.
+
+
 Version 20220406
 ==================
-* Added README to explain how airports with only an U.S. FAA or Transport Canada Location Identifier location identifier
-  (FAA/TC LID) are listed in this database
+* Added README to explain how airports with only an U.S. FAA or Transport Canada Location Identifier (FAA/TC LID) are
+  listed in this database
 * Removed support for Python 3.6, which has reached `end-of-life
   <https://devguide.python.org/devcycle/#end-of-life-branches>`__ and is no longer receiving security updates.
 * Fixed FAOR/JNB O. R. Tambo International Airport, Johannesburg, Gauteng, South Africa (contributed upstream by
