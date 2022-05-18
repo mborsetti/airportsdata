@@ -7,6 +7,12 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20220518
+==================
+* Added IATA identifier WMI to EPMO Warsaw Modlin Airport, Warsaw, Mazovia, Poland (contributed by `drewblin
+  <https://github.com/drewblin>`__ in PR `#59 <https://github.com/mwgg/Airports/pull/59>`__ upstream.
+
+
 Version 20220512
 ==================
 * Fixed ICAO identifier of LYPR/PRN Pristina International Airport, Prishtina, Pristina, Kosovo (was BKPR)
