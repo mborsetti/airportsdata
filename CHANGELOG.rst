@@ -7,7 +7,7 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
-Version 20220607
+Version 20220608
 ==================
 * Added IATA identifier OGD to KOGD Ogden Hinckley Airport, Ogden, Utah, United States of America
   (contributed by Spencer Yoder <https://github.com/Spencer-Yoder>`__ in PR `#13
