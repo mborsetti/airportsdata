@@ -149,10 +149,9 @@ jobs:
           pip install -U pip setuptools wheel
           pip install -U .
 
-      # Only building wheel; otherwise run 'python setup.py sdist bdist_wheel'
       - name: Build dist
         run: |
-          python setup.py bdist_wheel
+          python setup.py sdist bdist_wheel
 
       # PyPI publish GitHub Action from https://github.com/pypa/gh-action-pypi-publish
       - name: Publish package
