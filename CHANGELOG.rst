@@ -7,6 +7,12 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20220625
+==================
+* The source distribution is now available on PyPI to support certain packagers like `fpm` (contributed by Joe Groocock
+  <https://github.com/frebib>`__ in PR `#14  <https://github.com/mborsetti/Airports/pull/14>`__.
+
+
 Version 20220608
 ==================
 * Added IATA identifier OGD to KOGD Ogden Hinckley Airport, Ogden, Utah, United States of America
