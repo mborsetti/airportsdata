@@ -7,24 +7,37 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20220731
+================
+* Added UECT/TLK, Talakan Airport, Lenskiy Ulus, Sakha, Russia (contributed by Vladimir Simakhin
+  <https://github.com/vsimakhin>`__ upstream in PR `#60  <https://github.com/mwgg/Airports/pull/60>`__.
+* Updated name and added IATA code to KORL/ORL, Orlando Executive Airport, Orlando, Florida, USA (partially
+  contributed by jeremiahmorton20 <https://github.com/jeremiahmorton20>`__ upstream in PR `#61
+  <https://github.com/mwgg/Airports/pull/61>`__.
+* Fixed city of KIAD/IAD, Washington Dulles International Airport, Dulles, Virginia, USA (contributed by Glenn Rempe
+  <https://github.com/grempe>`__ upstream in PR `#63  <https://github.com/mwgg/Airports/pull/63>`__.
+  * Updated elevation of EDDB/SXF, Berlin Brandenburg Airport, Berlin, Germany (contributed by Vladimir Simakhin
+  <https://github.com/vsimakhin>`__ upstream in PR `#64  <https://github.com/mwgg/Airports/pull/64>`__.
+
+
 Version 20220625
 ==================
 * The source distribution is now available on PyPI to support certain packagers like `fpm` (contributed by Joe Groocock
-  <https://github.com/frebib>`__ in PR `#14  <https://github.com/mborsetti/Airports/pull/14>`__.
+  <https://github.com/frebib>`__ in PR `#14  <https://github.com/mborsetti/airportsdata/pull/14>`__.
 
 
 Version 20220608
 ==================
 * Added IATA identifier OGD to KOGD Ogden Hinckley Airport, Ogden, Utah, United States of America
   (contributed by Spencer Yoder <https://github.com/Spencer-Yoder>`__ in PR `#13
-  <https://github.com/mborsetti/Airports/pull/13>`__.
+  <https://github.com/mborsetti/airportsdata/pull/13>`__.
 * Added IATA identifier PVU to KPVU Provo Municipal Airport, Provo, Utah, United States of America
   (contributed by Spencer Yoder <https://github.com/Spencer-Yoder>`__ in PR `#13
-  <https://github.com/mborsetti/Airports/pull/13>`__.
+  <https://github.com/mborsetti/airportsdata/pull/13>`__.
 * Updated name from McCarran International Airport to Harry Reid International Airport for KLAS/LAS in Las Vegas,
   Nevada, United States of America
   (contributed by Spencer Yoder <https://github.com/Spencer-Yoder>`__ in PR `#13
-  <https://github.com/mborsetti/Airports/pull/13>`__.
+  <https://github.com/mborsetti/airportsdata/pull/13>`__.
 
 
 Version 20220518
