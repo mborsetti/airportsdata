@@ -2,9 +2,9 @@
 airportsdata
 ============
 
-.. |ICAO| replace:: 28,876
+.. |ICAO| replace:: 28,877
 
-.. |IATA| replace:: 6,571
+.. |IATA| replace:: 6,572
 
 .. |version| image:: https://img.shields.io/pypi/v/airportsdata.svg
     :target: https://pypi.org/project/airportsdata/
