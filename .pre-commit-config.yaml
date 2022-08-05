@@ -10,7 +10,7 @@
 
 # NOTE: in this package implementation, tox runs 'pre-commit run -a'
 
-minimum_pre_commit_version: 2.16.0
+minimum_pre_commit_version: 2.20.0
 
 # Force all unspecified python hooks to run python3
 default_language_version:
@@ -38,6 +38,8 @@ repos:
 #        description: Attempts to load all json files to verify syntax
       - id: check-merge-conflict
         description: Check for files that contain merge conflict strings
+#      - id: check-shebang-scripts-are-executable
+#        description: Checks that scripts with shebangs are executable
 #      - id: check-symlinks
 #        description: Checks for symlinks which do not point to anything
 #      - id: check-toml
@@ -120,12 +122,14 @@ repos:
       - id: black  # https://github.com/python/black
         name: Uncompromising code formatting (black)
         entry: black
+        additional_dependencies: [black]
         language: python
         types: [python]
       - id: flake8
         name: Check for errors, style, [and over-complexity] (flake8)
         description: Code linter
         entry: flake8  # https://gitlab.com/pycqa/flake8
+        additional_dependencies: [flake8]
         language: python
         types: [python]
         require_serial: true

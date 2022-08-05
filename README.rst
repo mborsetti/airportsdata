@@ -36,8 +36,8 @@ entries.
 
 Each entry consists of the following data:
 
-* ``icao``: ICAO 4-alphanumeric code or FAA/TC LID[*] (|ICAO| entries)
-* ``iata``: IATA 3-letter code (for |IATA| entries) or an empty string
+* ``icao``: ICAO 4-letter Location Indicator or 4-alphanumeric FAA/TC LID[*] (|ICAO| entries)
+* ``iata``: IATA 3-letter Location Code (for |IATA| entries) or an empty string
 * ``name``: Official name (latin script)
 * ``city``: City
 * ``subd``: Subdivision (e.g. state, province, region, etc.)
@@ -49,9 +49,9 @@ Each entry consists of the following data:
 * ``tz``: Timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
   (IANA-compliant)
 
-.. [*] See `here <https://github.com/mborsetti/airportsdata/README_FAA.rst>`__ for an explanation on how
+.. [*] See `here <https://github.com/mborsetti/airportsdata/blob/main/README_FAA.rst>`__ for an explanation on how
    airports with only an U.S. FAA or Transport Canada Location Identifier location identifier (FAA/TC LID) are
-   listed.  See `here <https://github.com/mborsetti/airportsdata/README_IATA.rst>`__ for a list of IATA Multi
+   listed.  See `here <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__ for a list of IATA Multi
    Airport Cities.
 
 Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed nor should be
@@ -59,9 +59,9 @@ expected by users.
 
 Known issues:
 
-* 219 aerodromes have IATA codes that are not in the `IATA database
+* 219 aerodromes have IATA Location Codes that are not in the `IATA database
   <https://www.iata.org/en/publications/directories/code-search/>`__ and may be incorrect;
-* A small, but unknown, number of aerodromes are missing their IATA code (none are major ones);
+* A small, but unknown, number of aerodromes are missing their IATA Location Code (none are major ones);
 * Timezone was originally sourced from `TimeZoneDB <https://timezonedb.com>`__ and is missing for Antarctica;
 * No historical data.
 
