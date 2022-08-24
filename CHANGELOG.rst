@@ -7,6 +7,14 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20220824
+================
+* Added RPEN/ENI, El Nido Airport, El Nido, Palawan, Philippines (partially
+  contributed by Leon Braun <https://github.com/OBrown92>`__ upstream in PR `#65
+  <https://github.com/mwgg/Airports/pull/65>`__; fixed ICAO).
+* Added ``py.typed`` marker file to implement `PEP 561 <https://peps.python.org/pep-0561/>`__.
+
+
 Version 20220805
 ================
 * Added ICAO Location Indicator EPKZ to OSZ, Koszalin Zegrze Airport, West Pomerania, Poland (contributed by `Błażej

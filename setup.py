@@ -56,7 +56,7 @@ SETUP = {
     'project_urls': {
         'Bug Tracker': f'{project.__url__.rstrip("//")}/issues',
         'Source Code': project.__url__,
-        'Documentation': f'{project.__url__.rstrip("//")}/README.rst',
+        'Documentation': f'{project.__url__.rstrip("//")}/blob/main/README.rst',
     },
 }
 setup(**SETUP)

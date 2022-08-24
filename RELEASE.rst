@@ -1,5 +1,4 @@
-* Added ICAO Location Indicator EPKZ to OSZ, Koszalin Zegrze Airport, West Pomerania, Poland (contributed by `Błażej
-  Cyrzon <https://github.com/bc291>`__ in PR `#15 <https://github.com/mborsetti/airportsdata/pull/15>`__).
-* Added IATA Location Code FKN to KFKN, Franklin Municipal John Beverly Rose Airport, Franklin, Virginia, USA
-  (contributed by `Błażej Cyrzon <https://github.com/bc291>`__ in PR `#15
-  https://github.com/mborsetti/airportsdata/pull/15>`__).
+* Added RPEN/ENI, El Nido Airport, El Nido, Palawan, Philippines (partially
+  contributed by Leon Braun <https://github.com/OBrown92>`__ upstream in PR `#65
+  <https://github.com/mwgg/Airports/pull/65>`__; ICAO fixed).
+* Added ``py.typed`` marker file to implement `PEP 561 <https://peps.python.org/pep-0561/>`__.
