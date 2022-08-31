@@ -7,6 +7,11 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20220831
+===============
+* Added UBTT/ZXT, Zabrat Airport, Baku, Bakı, Azerbaijan
+
+
 Version 20220824
 ================
 * Added RPEN/ENI, El Nido Airport, El Nido, Palawan, Philippines (partially
