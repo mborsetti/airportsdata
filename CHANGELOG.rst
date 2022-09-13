@@ -7,6 +7,12 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20220913
+================
+* Added KXWA/XWA, Williston Basin International Airport, Williston, North Dakota, USA
+* Updated ME26 from defunct Super Cub Field, Westbrook, Maine, USA to Ragmuff Airport, Greenville, Maine, USA
+
+
 Version 20220831
 ===============
 * Added UBTT/ZXT, Zabrat Airport, Baku, Bakı, Azerbaijan

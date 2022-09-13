@@ -1,5 +1,5 @@
 IATA resolution 011c adopted at 3rd IATA Passenger Standards Conference October 2021 in PTC123(186), for intended
-implementation date of 01 April 2022, defines the following Multi Airport Cities list for the purpose of pricing, fare
+implementation date of 03 October 2022, defines the following Multi Airport Cities list for the purpose of pricing, fare
 construction and mileage creation:
 
 CCD – Multi Airport Cities list
