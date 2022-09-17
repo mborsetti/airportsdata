@@ -20,7 +20,7 @@ else:
 
 __project_name__ = __package__
 # Release numbering follows the release date
-__version__ = '20220913'
+__version__ = '20220917'
 __min_python_version__ = (3, 7)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
@@ -81,8 +81,7 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airports']:  # Version 3.8 
     key = 'icao' if code_type.lower() == 'icao' else 'iata'
     airports = {}
     with this_dir.joinpath('airports.csv').open(encoding='utf8') as f:
-        fieldnames = f.readline().replace('"', '').rstrip().split(',')
-        reader = csv.DictReader(f, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC)
+        reader = csv.DictReader(f, quoting=csv.QUOTE_NONNUMERIC)
         for row in reader:
             airports[row[key]] = row
     airports.pop('', None)
