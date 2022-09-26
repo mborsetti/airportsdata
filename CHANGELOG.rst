@@ -7,10 +7,29 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20220921
+================
+* Updated ICAO identifiers, name and altitude of Kyrgyzstan airports present in their `AIP
+  <http://kan.kg/ais/eaip/2022-10-06-AIRAC/html/index_commands.html>`__ (UCFL, UCFM, UCFO, UCFP) and added IATA
+  identifier to UCFL/IKU. (Partially contributed upstream by `Vladimir Simakhin <https://github.com/vsimakhin>`__ in PR
+  `#69 <https://github.com/mwgg/Airports/pull/69>`__).
+* Replaced UAJT Turkestan Airport, Turkistan, Ongtuestik-Qazaqstan, Kazakhstan (decommissioned) with UAIT/HSA
+  Turkistan International Airport, Turkistan, Ongtuestik-Qazaqstan, Kazakhstan (replacement aerodrome).
+  Source: `AIP <https://www.ans.kz/AIP/eAIP/2022-10-06-AIRAC/html/index-en-GB.html>`__
+  (note: here we use the AIP/IATA official name even though the new airport also carries the name of Hazret
+  Sultan International Airport). (Partially contributed upstream by `vort3 <https://github.com/vort3>`__ in PR `#71
+  <https://github.com/mwgg/Airports/pull/71>`__).
+* Updated names and elevation of all Kazakhstani aerodromes present in their `AIP
+  <https://www.ans.kz/AIP/eAIP/2022-10-06-AIRAC/html/index-en-GB.html>`__, adding UASU and UASZ airports.
+* Fixed the IATA identifier for UASS/PLX, Semey International Airport, Semey, East Kazakhstan, Kazakhstan (found DLX, a
+  non-existend IATA identifier).
+
+
+
 Version 20220917
 ================
-* Added SLAL/SRE, Alcantarí International Airport, Sucre, Chuquisaca, Bolivia (partially
-  contributed by 687er <https://github.com/687er>`__ upstream in PR `70 <https://github.com/mwgg/Airports/pull/70>`__).
+* Added SLAL/SRE, Alcantarí International Airport, Sucre, Chuquisaca, Bolivia (partially contributed upstream by `687er
+  <https://github.com/687er>`__  in PR `#70 <https://github.com/mwgg/Airports/pull/70>`__).
 * Removed SRE IATA code from Juana Azurduy De Padilla Airport, Sucre, Chuquisaca, Bolivia (same partial contribution).
 * Updated ZSOF/HFE to Hefei Xinqiao International Airport, Hefei, Anhui, China (was Hefei Luogang International
   Airport, which has been repurposed) (same partial contribution).
@@ -29,9 +48,8 @@ Version 20220831
 
 Version 20220824
 ================
-* Added RPEN/ENI, El Nido Airport, El Nido, Palawan, Philippines (partially
-  contributed by Leon Braun <https://github.com/OBrown92>`__ upstream in PR `#65
-  <https://github.com/mwgg/Airports/pull/65>`__; fixed ICAO).
+* Added RPEN/ENI, El Nido Airport, El Nido, Palawan, Philippines (partially contributed upstream by `Leon Braun
+  <https://github.com/OBrown92>`__  in PR `#65 <https://github.com/mwgg/Airports/pull/65>`__; fixed ICAO).
 * Added ``py.typed`` marker file to implement `PEP 561 <https://peps.python.org/pep-0561/>`__.
 
 
@@ -41,7 +59,7 @@ Version 20220805
   Cyrzon <https://github.com/bc291>`__ in PR `#15 <https://github.com/mborsetti/airportsdata/pull/15>`__).
 * Added IATA Location Code FKN to KFKN, Franklin Municipal John Beverly Rose Airport, Franklin, Virginia, USA
   (contributed by `Błażej Cyrzon <https://github.com/bc291>`__ in PR `#15
-  https://github.com/mborsetti/airportsdata/pull/15>`__).
+  <https://github.com/mborsetti/airportsdata/pull/15>`__).
 
 
 Version 20220731
@@ -49,47 +67,46 @@ Version 20220731
 * Added UECT/TLK, Talakan Airport, Lenskiy Ulus, Sakha, Russia (contributed by Vladimir Simakhin
   <https://github.com/vsimakhin>`__ upstream in PR `#60  <https://github.com/mwgg/Airports/pull/60>`__.
 * Updated name and added IATA code to KORL/ORL, Orlando Executive Airport, Orlando, Florida, USA (partially
-  contributed by jeremiahmorton20 <https://github.com/jeremiahmorton20>`__ upstream in PR `#61
+  contributed upstream by `jeremiahmorton20 <https://github.com/jeremiahmorton20>`__ in PR `#61
   <https://github.com/mwgg/Airports/pull/61>`__).
-* Fixed city of KIAD/IAD, Washington Dulles International Airport, Dulles, Virginia, USA (contributed by Glenn Rempe
-  <https://github.com/grempe>`__ upstream in PR `#63  <https://github.com/mwgg/Airports/pull/63>`__).
-  * Updated elevation of EDDB/SXF, Berlin Brandenburg Airport, Berlin, Germany (contributed by Vladimir Simakhin
-  <https://github.com/vsimakhin>`__ upstream in PR `#64  <https://github.com/mwgg/Airports/pull/64>`__).
+* Fixed city of KIAD/IAD, Washington Dulles International Airport, Dulles, Virginia, USA (contributed upstream by `Glenn
+  Rempe <https://github.com/grempe>`__ in PR `#63  <https://github.com/mwgg/Airports/pull/63>`__).
+  * Updated elevation of EDDB/SXF, Berlin Brandenburg Airport, Berlin, Germany (contributed upstream by `Vladimir
+  Simakhin <https://github.com/vsimakhin>`__ in PR `#64  <https://github.com/mwgg/Airports/pull/64>`__).
 
 
 Version 20220625
 ==================
 * The source distribution is now available on PyPI to support certain packagers like `fpm` (contributed by Joe Groocock
-  <https://github.com/frebib>`__ in PR `#14  <https://github.com/mborsetti/airportsdata/pull/14>`__).
+  <https://github.com/frebib>`__ in PR `#14 <https://github.com/mborsetti/airportsdata/pull/14>`__).
 
 
 Version 20220608
 ==================
 * Added IATA identifier OGD to KOGD Ogden Hinckley Airport, Ogden, Utah, United States of America
-  (contributed by Spencer Yoder <https://github.com/Spencer-Yoder>`__ in PR `#13
+  (contributed by `Spencer Yoder <https://github.com/Spencer-Yoder>`__ in PR `#13
   <https://github.com/mborsetti/airportsdata/pull/13>`__).
 * Added IATA identifier PVU to KPVU Provo Municipal Airport, Provo, Utah, United States of America
-  (contributed by Spencer Yoder <https://github.com/Spencer-Yoder>`__ in PR `#13
+  (contributed by `Spencer Yoder <https://github.com/Spencer-Yoder>`__ in PR `#13
   <https://github.com/mborsetti/airportsdata/pull/13>`__).
 * Updated name from McCarran International Airport to Harry Reid International Airport for KLAS/LAS in Las Vegas,
-  Nevada, United States of America
-  (contributed by Spencer Yoder <https://github.com/Spencer-Yoder>`__ in PR `#13
+  Nevada, United States of America (contributed by `Spencer Yoder <https://github.com/Spencer-Yoder>`__ in PR `#13
   <https://github.com/mborsetti/airportsdata/pull/13>`__).
 
 
 Version 20220518
 ==================
-* Added IATA identifier WMI to EPMO Warsaw Modlin Airport, Warsaw, Mazovia, Poland (contributed by `drewblin
-  <https://github.com/drewblin>`__ in PR `#59 <https://github.com/mwgg/Airports/pull/59>`__ upstream).
+* Added IATA identifier WMI to EPMO Warsaw Modlin Airport, Warsaw, Mazovia, Poland (contributed upstream by `drewblin
+  <https://github.com/drewblin>`__ in PR `#59 <https://github.com/mwgg/Airports/pull/59>`__).
 
 
 Version 20220512
 ==================
 * Fixed ICAO identifier of LYPR/PRN Pristina International Airport, Prishtina, Pristina, Kosovo (was BKPR)
-  (contributed by `Błażej Cyrzon <https://github.com/bc291>`__ in PR `#12 <https://github
-  .com/mborsetti/airportsdata/pull/12>`__).
-* Added IATA code for KMDD Midland Airpark, Midland, Texas, USA (contributed by
-  `Henry A Schimke upstream <https://github.com/hschimke>`__ in `#58 <https://github.com/mwgg/Airports/pull/58>`__).
+  (contributed by `Błażej Cyrzon <https://github.com/bc291>`__ in PR `#12
+  <https://github.com/mborsetti/airportsdata/pull/12>`__).
+* Added IATA code for KMDD Midland Airpark, Midland, Texas, USA (contributed upstream by
+  `Henry A Schimke <https://github.com/hschimke>`__ in `#58 <https://github.com/mwgg/Airports/pull/58>`__).
 * Added README_IATA with a list of IATA Multi Airport Cities.
 
 
