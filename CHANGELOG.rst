@@ -7,6 +7,19 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20221017
+================
+* Added SBJE/JJD, Comandante Ariston Pessoa Airport, Jijoca de Jericoacoara (Cruz), Ceará, Bazil. (Partially contributed
+  upstream by `Nicolas Bridoux <https://github.com/Bridouille>`__ in issue `#74
+  <https://github.com/mwgg/Airports/issues/74>`__).
+* Added IATA identifier to YCWA/CJF, Coondewanna Airport, Western Australia, Australia and fixed elevation and
+  coordinates. (Partially contributed upstream by `Nicolas Bridoux <https://github.com/Bridouille>`__ in issue `#74
+  <https://github.com/mwgg/Airports/issues/74>`__).
+* Fixed punctuation and accents of all Brazilian subdivisions (federative units).
+* Support for Python 3.11
+* Added Python static type testing using `mypy`
+
+
 Version 20220921
 ================
 * Updated ICAO identifiers, name and altitude of Kyrgyzstan airports present in their `AIP
@@ -23,7 +36,6 @@ Version 20220921
   <https://www.ans.kz/AIP/eAIP/2022-10-06-AIRAC/html/index-en-GB.html>`__, adding UASU and UASZ airports.
 * Fixed the IATA identifier for UASS/PLX, Semey International Airport, Semey, East Kazakhstan, Kazakhstan (found DLX, a
   non-existend IATA identifier).
-
 
 
 Version 20220917

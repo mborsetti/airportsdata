@@ -9,7 +9,7 @@ import pytest
 try:
     from zoneinfo import ZoneInfo
 except ImportError:
-    from backports.zoneinfo import ZoneInfo
+    from backports.zoneinfo import ZoneInfo  # type: ignore[no-redef]
 
 pylatest_only = pytest.mark.skipif(
     sys.version_info < (3, 10),

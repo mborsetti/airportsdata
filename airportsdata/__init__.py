@@ -3,6 +3,7 @@
 """
 Extensive database of location and timezone data for nearly every airport and landing strip in the world.
 """
+from __future__ import annotations
 
 import csv
 import sys
@@ -20,7 +21,7 @@ else:
 
 __project_name__ = __package__
 # Release numbering follows the release date
-__version__ = '20220921'
+__version__ = '20221017'
 __min_python_version__ = (3, 7)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
@@ -47,7 +48,7 @@ if 'TypedDict' in globals():
 if 'Literal' in globals():
     CodeType = Literal['ICAO', 'IATA']
 else:
-    CodeType = True
+    CodeType = True  # type: ignore[misc]
 
 
 def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airports']:  # Version 3.8 and greater this should be a Literal
@@ -56,17 +57,17 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airports']:  # Version 3.8 
     :param code_type: optional argument defining the key in the dictionary: 'ICAO' (default if omitted) or 'IATA'
     :type code_type: str
     :return: a dict of dicts, each entry having the following keys:
-        'icao': ICAO 4-character code or FAA 3-character code
-        'iata': IATA 3-letter code or an empty string
-        'name': official name (latin script)
-        'city': city
-        'subd': subdivision (e.g. state, province, region, etc.)
-        'country': ISO 3166-1 alpha 2-code + 'XK' for Kosovo
+        'icao': ICAO 4-letter Location Indicator or 4-alphanumeric FAA/TC LID
+        'iata': IATA 3-letter Location Code or an empty string
+        'name': Official name (latin script)
+        'city': City
+        'subd': Subdivision (e.g. state, province, region, etc.)
+        'country': ISO 3166-1 alpha 2-code (plus 'XK' for Kosovo)
         'elevation': MSL elevation (the highest point of the landing area) in feet
-        'lat': latitude (decimal)
-        'lon': longitude (decimal)
-        'tz': timezone expressed as a string representing its tz database name (IANA-compliant) or empty string
-            for country 'AQ' (Antarctica). Originally sourced from [TimeZoneDB] (https://timezonedb.com)
+        'lat': Latitude (decimal)
+        'lon': Longitude (decimal)
+        'tz': Timezone expressed as a tz database name (IANA-compliant) or empty string for country 'AQ' (Antarctica).
+            Originally sourced from [TimeZoneDB](https://timezonedb.com)
     :rtype: dict
     """
     # with open(os.path.join(dir, 'airports.json'), encoding='utf8') as f:
@@ -79,11 +80,11 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airports']:  # Version 3.8 
     #
     this_dir = Path(__file__).parent
     key = 'icao' if code_type.lower() == 'icao' else 'iata'
-    airports = {}
+    airports: Dict[str, Airports] = {}
     with this_dir.joinpath('airports.csv').open(encoding='utf8') as f:
         reader = csv.DictReader(f, quoting=csv.QUOTE_NONNUMERIC)
         for row in reader:
-            airports[row[key]] = row
+            airports[row[key]] = row  # type: ignore[assignment]
     airports.pop('', None)
     return airports
 

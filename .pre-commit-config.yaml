@@ -134,7 +134,13 @@ repos:
         types: [python]
         require_serial: true
         args: [--max-line-length, '120']
-#        additional_dependencies: [flake8-import-order]  # conflicts with PyCharm's Optimize imports
+      - id: mypy  # https://github.com/python/mypy
+        name: Static typing for Python (mypy)
+        entry: mypy
+        additional_dependencies: [mypy, pytest, types-backports]
+        language: python
+        types: [python]
+        args: [--show-error-codes]
 
 #  - repo: https://github.com/pycqa/doc8
 #    rev: 0.9.0a1
