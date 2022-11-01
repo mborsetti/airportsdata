@@ -6,13 +6,13 @@ import airportsdata
 
 import pytest
 
-try:
+try:  # required for < Python 3.9
     from zoneinfo import ZoneInfo
 except ImportError:
     from backports.zoneinfo import ZoneInfo  # type: ignore[no-redef]
 
 pylatest_only = pytest.mark.skipif(
-    sys.version_info < (3, 10),
+    sys.version_info < (3, 11),
     reason='Only checking data integrity once with latest Python version',
 )
 
@@ -446,17 +446,22 @@ tz_deprecated = [
 ]  # from https://www.php.net/timezones.others 2020-11-08; UTC kept in the list as it's non-geographical
 
 
-def test_loading():
+def test_loading() -> None:
     """Test no errors in loading module."""
     assert airports
 
 
 @pylatest_only
-def test_data_quality():
+def test_data_quality() -> None:
     """Test data quality."""
     for key, airport in airports.items():
         assert key == airport['icao']
-        assert key.isalnum() and key.isupper() and len(key) == 4
+        assert key.isupper()
+        assert len(key) == 4
+        if key[0] != '_':
+            assert key.isalnum()
+        else:
+            assert key[1:].isalpha()
         assert isinstance(airport['name'], str)
         if airport['iata']:
             assert airport['iata'].isalpha() and airport['iata'].isupper() and len(airport['iata']) == 3
@@ -479,7 +484,7 @@ def test_data_quality():
 
 
 @pylatest_only
-def test_iata_integrity():
+def test_iata_integrity() -> None:
     """Test that there are no IATA code duplicates and that the function works correctly."""
     iata = [airport['iata'] for airport in airports.values() if airport['iata']]
     assert set([x for x in iata if iata.count(x) > 1]) == set()  # no duplicates
@@ -496,6 +501,6 @@ def test_iata_integrity():
 
 
 @pylatest_only
-def test_is_sorted():
+def test_is_sorted() -> None:
     """Test that database is sorted alphabetically."""
     assert list(airports.keys()) == sorted(airports.keys())

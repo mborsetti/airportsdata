@@ -17,7 +17,7 @@ if sys.version_info < project.__min_python_version__:
     )
 
 # requirements = list(map(str.strip, open('requirements.txt').readlines()))
-requirements = ['typing_extensions; python_version < "3.8"']
+# requirements = ['typing_extensions; python_version < "3.8"']
 # requirements_testing = list(map(str.strip, open('tests/requirements_testing.txt').readlines()))
 requirements_testing = ['backports.zoneinfo; python_version < "3.9"', 'pytest', 'pytest-cov', 'tzdata; os_name == "nt"']
 README_rst = open('README.rst').read()
@@ -50,7 +50,7 @@ SETUP = {
     'package_dir': {'': '.'},
     'package_data': {'': ['*.csv']},
     # 'exclude_package_data': {},
-    'install_requires': requirements,
+    # 'install_requires': requirements,
     # 'entry_points': {},
     'extras_require': {'testing': requirements_testing},
     'python_requires': f'>={".".join(str(v) for v in project.__min_python_version__)}',
