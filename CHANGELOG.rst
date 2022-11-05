@@ -7,9 +7,17 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20221105
+================
+* Added LLER/ETM, Ilan and Asaf Ramon Airport, Eilat, Southern District, Israel. Reported by `Andrzej Pomirski
+  <https://github.com/Acrobot>`__ in issue `#7 <https://github.com/mborsetti/airportsdata/issues/17>`__.
+* Added LENE, La Caminera Airport, Torrenueva, Ciudad Real, Spain. (Contributed upstream by `Vladimir Simakhin
+  <https://github.com/vsimakhin>`__ in in PR `#78 <https://github.com/mwgg/Airports/pull/77>`__).
+
+
 Version 20221101
 ==================
-* Added IATA identifier to VEJH/JRG, Jharsuguda Airport, Veer Surendra Sai, Odisha, India and fixed City, elevation and
+* Added IATA identifier to VEJH/JRG, Jharsuguda Airport, Veer Surendra Sai, Odisha, India and fixed city, elevation and
   coordinates. (Partially contributed upstream by `Nicolas Bridoux <https://github.com/Bridouille>`__ in issue `#74
   <https://github.com/mwgg/Airports/issues/74>`__).
 * Fixed IATA identifier (was XHE) to LFTH/TLN, Toulon-Hyeres Airport, Toulon/Hyeres/Le Palyvestre,
