@@ -7,8 +7,8 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
-Version 20221105
-================
+Version 20221105.1
+==================
 * Added LLER/ETM, Ilan and Asaf Ramon Airport, Eilat, Southern District, Israel. Reported by `Andrzej Pomirski
   <https://github.com/Acrobot>`__ in issue `#7 <https://github.com/mborsetti/airportsdata/issues/17>`__.
 * Added LENE, La Caminera Airport, Torrenueva, Ciudad Real, Spain. (Contributed upstream by `Vladimir Simakhin
