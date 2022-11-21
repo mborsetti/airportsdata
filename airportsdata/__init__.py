@@ -12,15 +12,15 @@ from typing import Dict, Literal, TypedDict
 
 __project_name__ = __package__
 # Release numbering follows the release date
-__version__ = '20221105.1'
+__version__ = '20221121'
 __min_python_version__ = (3, 8)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
 __license__ = 'MIT'
 __url__ = f'https://github.com/mborsetti/{__project_name__}'
 
-Airports = TypedDict(
-    'Airports',
+Airport = TypedDict(
+    'Airport',
     {
         'icao': str,
         'iata': str,
@@ -32,15 +32,17 @@ Airports = TypedDict(
         'lat': float,
         'lon': float,
         'tz': str,
+        'lid': str,
     },
 )
-CodeType = Literal['ICAO', 'IATA']
+CodeType = Literal['ICAO', 'IATA', 'LID']
 
 
-def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airports']:
+def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airport']:
     """Loads airport data into a dict
 
-    :param code_type: optional argument defining the key in the dictionary: 'ICAO' (default if omitted) or 'IATA'
+    :param code_type: optional argument defining the key in the dictionary: 'ICAO' (default if omitted),
+    'IATA' (for IATA Location Codes) or 'LID' (for U.S. FAA Location Identifiers).
 
     :return: a dict of dicts, each entry having the following keys:
         'icao': ICAO 4-letter Location Indicator or 4-alphanumeric FAA/TC LID
@@ -54,6 +56,7 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airports']:
         'lon': Longitude (decimal)
         'tz': Timezone expressed as a tz database name (IANA-compliant) or empty string for country 'AQ' (Antarctica).
             Originally sourced from [TimeZoneDB](https://timezonedb.com)
+        'lid': The FAA Location Identifier (for US country only; others is blank)
     """
     # with open(os.path.join(dir, 'airports.json'), encoding='utf8') as f:
     #     airports = json.load(f)
@@ -63,9 +66,11 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airports']:
     #     return {airport['iata']: airport for airport in dict(airports).values() if airport['iata']}
     #
     #
+    key = code_type.lower()
+    if key not in ('icao', 'iata', 'lid'):
+        raise ValueError(f'code_type must be one of ICAO, IATA or LID; received {code_type}')
     this_dir = Path(__file__).parent
-    key = 'icao' if code_type.lower() == 'icao' else 'iata'
-    airports: Dict[str, Airports] = {}
+    airports: Dict[str, Airport] = {}
     with this_dir.joinpath('airports.csv').open(encoding='utf8') as f:
         reader = csv.DictReader(f, quoting=csv.QUOTE_NONNUMERIC)
         for row in reader:

@@ -34,7 +34,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@main
         with:
-          python-version: '3.10'
+          python-version: '3.11'
           cache: 'pip'
 
       # Install dependencies needed by the repo: local in .pre-commit-config.yaml
@@ -89,7 +89,7 @@ jobs:
       - name: Run tests (Linux/MacOS)
         if: runner.os == 'Linux' || runner.os == 'macOS'
         run:
-          python -m pytest tests/ -v
+          python -m pytest tests/ -v --cov=./ --cov-report term --cov-report html --cov-report xml --cov-config=.coveragerc
         env:
           PYTHONUTF8: 1
 
@@ -97,7 +97,7 @@ jobs:
         if: runner.os == 'Windows'
         run:
           # workaround for Windows fatal exception: access violation
-          python -m pytest tests/ -v -p no:faulthandler
+          python -m pytest tests/ -v --cov=./ --cov-report term --cov-report html --cov-report xml --cov-config=.coveragerc -p no:faulthandler
         env:
           PYTHONUTF8: 1
 

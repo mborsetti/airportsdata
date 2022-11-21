@@ -48,7 +48,7 @@ SETUP = {
     'license': project.__license__,
     # data_files is deprecated. It does not work with wheels, so it should be avoided.
     'package_dir': {'': '.'},
-    'package_data': {'': ['*.csv']},
+    'package_data': {'': ['*.csv', 'py.typed']},
     # 'exclude_package_data': {},
     # 'install_requires': requirements,
     # 'entry_points': {},

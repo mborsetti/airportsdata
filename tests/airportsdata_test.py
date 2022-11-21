@@ -481,6 +481,12 @@ def test_data_quality() -> None:
                     f'(see https://github.com/eggert/tz/blob/master/backward)'
                 )
             )
+        if airport['lid']:
+            assert len(airport['lid']) in (3, 4)
+            assert airport['lid'].isupper()
+            assert airport['lid'].isalnum()
+            if len(airport['lid']) == 4:
+                assert not airport['lid'].isalpha()
 
 
 @pylatest_only

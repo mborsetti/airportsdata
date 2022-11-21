@@ -2,9 +2,11 @@
 airportsdata
 ============
 
-.. |ICAO| replace:: 28,894
+.. |ICAO| replace:: 28,130
 
-.. |IATA| replace:: 6,583
+.. |IATA| replace:: 6,577
+
+.. |LID| replace:: 12,566
 
 .. |version| image:: https://img.shields.io/pypi/v/airportsdata.svg
     :target: https://pypi.org/project/airportsdata/
@@ -31,13 +33,14 @@ airportsdata
     :alt: code coverage by Coveralls
 
 
-Extensive database of location and timezone data for nearly every airport and landing strip in the world, with |ICAO|
-entries.
+Extensive database of location and timezone data for nearly every operational airport and landing strip in the world,
+with |ICAO| entries.
 
 Each entry consists of the following data:
 
-* ``icao``: ICAO 4-letter Location Indicator or 4-alphanumeric FAA/TC LID[*] (|ICAO| entries)
-* ``iata``: IATA 3-letter Location Code (for |IATA| entries) or an empty string
+* ``icao``: ICAO 4-letter Location Indicator, or, if missing, a 4-alphanumeric or ``K`` + 3-alphanumeric FAA LID[*]
+  (|ICAO| entries)
+* ``iata``: IATA 3-letter Location Code (|IATA| entries) or an empty string
 * ``name``: Official name (latin script)
 * ``city``: City
 * ``subd``: Subdivision (e.g. state, province, region, etc.)
@@ -48,22 +51,21 @@ Each entry consists of the following data:
 * ``lon``: Longitude (decimal)
 * ``tz``: Timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
   (IANA-compliant)
+* ``lid``: U.S. FAA location identifier (|LID| entries) or an empty string
 
 .. [*] See `here <https://github.com/mborsetti/airportsdata/blob/main/README_FAA.rst>`__ for an explanation on how
-   airports and seaplane bases with only an U.S. FAA or Transport Canada Location Identifier (FAA/TC LID), or IATA
-   location identifier, are listed.  See `here <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__
-   for a list of IATA Multi Airport Cities.
+   airports and seaplane bases with only an U.S. FAA Location Identifier (FAA LID), or IATA location identifier, are
+   listed. See `here <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__ for a list of IATA Multi
+   Airport Cities.
 
 Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed nor should be
 expected by users.
 
 Known issues:
 
-* 219 aerodromes have IATA Location Codes that are not in the `IATA database
-  <https://www.iata.org/en/publications/directories/code-search/>`__ and may be incorrect;
 * A small, but unknown, number of aerodromes are missing their IATA Location Code (none are major ones);
 * Timezone was originally sourced from `TimeZoneDB <https://timezonedb.com>`__ and is missing for Antarctica;
-* No historical data.
+* No historical data (closed airports are removed).
 
 Please report any issues you may find `here
 <https://github.com/mborsetti/airportsdata/blob/main/CONTRIBUTING.rst>`__.
@@ -92,7 +94,7 @@ Once installed, to load the data into a dict:
 .. code-block:: python
 
   import airportsdata
-  airports = airportsdata.load()  # key is ICAO code, the default
+  airports = airportsdata.load()  # key is the ICAO identifier (the default)
   print(airports['KJFK'])
 
 or
@@ -100,8 +102,16 @@ or
 .. code-block:: python
 
   import airportsdata
-  airports = airportsdata.load('IATA')  # key is IATA code
+  airports = airportsdata.load('IATA')  # key is the IATA location code
   print(airports['JFK'])
+
+or
+
+.. code-block:: python
+
+  import airportsdata
+  airports = airportsdata.load('LID')  # key is the FAA LID
+  print(airports['01AA'])
 
 License
 =======
