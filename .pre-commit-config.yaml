@@ -19,7 +19,7 @@ default_language_version:
 # A list of repository mappings.
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: v4.4.0
     hooks:
       # see https://github.com/pre-commit/pre-commit-hooks
 #      - id: check-added-large-files
@@ -92,7 +92,7 @@ repos:
 #        description: Trims trailing whitespace
 
   - repo: https://github.com/pre-commit/pygrep-hooks
-    rev: v1.9.0
+    rev: v1.10.0
     hooks:
       - id: python-check-blanket-noqa
         description: >-
