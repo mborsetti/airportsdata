@@ -21,6 +21,6 @@ out = ''.join(out_lines)
 
 if out != readme:
     print(f'Updated counts in README.rst to ICAO={icao_count:,}, IATA={iata_count:,} and LID={lid_count:,}')
-    readme_file.write_text(out)
+    readme_file.write_text(out, newline='\n')
 else:
     print(f'No changes to counts in README.rst: ICAO={icao_count:,}, IATA={iata_count:,} and LID={lid_count:,}')

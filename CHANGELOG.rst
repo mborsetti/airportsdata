@@ -7,13 +7,44 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+
+20230303
+==================
+* Better documented our use of pseudo-ICAO Identifiers.
+* Reworded the IATA Multi Airport Cities page.
+* Removed IATA code QUS from DNGU, Gusau Airport, Gusau, Zamfara, Nigeria (code not in IATA database).
+* Implemented suggestions made upstream by `Nicolas Bridoux
+  <https://github.com/Bridouille>`__ in issue `#80 <https://github.com/mborsetti/airportsdata/issues/80>`__:
+
+  * Added:
+
+    - AYLO/LWI, Lowai Airstrip, Lowai, Morobe Province, Papua New Guinea
+    - LTCW/YKO, Yüksekova Selahaddin Eyyubi Airport, Yüksekova, Hakkari, Turkey
+    - MPRH/RIH, Río Hato Airport, Río Hato, Coclé, Panama
+    - UWSG/GSV, Gagarin Airport, Saratov, Saratov, Russia
+    - ZSSM/SQJ, Sanming Shaxian Airport, Sanming, Fujian, China
+  * Added IATA code and updated ICAO one:
+
+    - VEDH/DBR, Darbhanga Airport, Bihar, India (was VE89)
+    - VOTK/TCR, Tuticorin Southwest Airport, Tamil-Nadu, India (was VO80)
+  * Added IATA code:
+
+    - 5MS1/RFK, Rollang Field, Rolling Fork, Mississippi, USA
+    - KTHM/THM, Thompson Falls Airport, Thompson Falls, Montana, USA
+    - MMSM/NLU, Santa Lucia Air Force Base, Reyes Acozac, Mexico
+    - SKSA/RVE, Los Colonizadores Airport, Saravena, Arauca, Colombia
+    - SKVG/VGZ, Villagarzon Airport, Villagarzon, Putumayo, Colombia
+    - YBGD/OCM, Boolgeeda Airport, Western Australia, Australia
+* Added ``tox-ini-fmt`` to ``pre-commit`` to apply a consistent format to tox.ini files.
+
+
 Version 20221121
 ==================
-* All USA airports have been replaced with information sourced by the FAA. This consists of 12,566 operational airports
-  located in the US and its territories, and covers country codes ``US``, ``PR`` (The Commonwealth of Puerto Rico),
-  ``VI`` (The Virgin Islands of the United States), ``AS`` (The Territory of American Samoa), ``FM`` (The Federated
-  States of Micronesia), ``GU`` (The Territory of Guam), ``MH`` (The Republic of the Marshall Islands), ``MP`` (The
-  Commonwealth of the Northern Mariana Islands) and ``PW`` (The Republic of Palau).
+* All USA airports have been replaced with information sourced from the FAA. This consists of 12,566 operational
+  airports located in the US and its territories, and covers country codes ``US``, ``PR`` (The Commonwealth of Puerto
+  Rico), ``VI`` (The Virgin Islands of the United States), ``AS`` (The Territory of American Samoa), ``FM`` (The
+  Federated States of Micronesia), ``GU`` (The Territory of Guam), ``MH`` (The Republic of the Marshall Islands),
+  ``MP`` (The Commonwealth of the Northern Mariana Islands) and ``PW`` (The Republic of Palau).
 * As a result of this upgrade, 379 airports that the FAA shows as permanently closed have been removed, and for
   other reasons the total net number of airports has decreased by an additional 387. Timezone information, when not
   available in the previous database, has been sourced from `TimeZoneDB  <https://timezonedb.com>`__.
@@ -29,7 +60,7 @@ Version 20221121
 Version 20221105.1
 ==================
 * Added LLER/ETM, Ilan and Asaf Ramon Airport, Eilat, Southern District, Israel. Reported by `Andrzej Pomirski
-  <https://github.com/Acrobot>`__ in issue `#7 <https://github.com/mborsetti/airportsdata/issues/17>`__.
+  <https://github.com/Acrobot>`__ in issue `#17 <https://github.com/mborsetti/airportsdata/issues/17>`__.
 * Added LENE, La Caminera Airport, Torrenueva, Ciudad Real, Spain. (Contributed upstream by `Vladimir Simakhin
   <https://github.com/vsimakhin>`__ in in PR `#78 <https://github.com/mwgg/Airports/pull/77>`__).
 

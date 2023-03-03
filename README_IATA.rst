@@ -1,8 +1,14 @@
-IATA resolution 011c adopted at 3rd IATA Passenger Standards Conference October 2021 in PTC123(186), for intended
-implementation date of 03 October 2022, defines the following Multi Airport Cities list for the purpose of pricing, fare
-construction and mileage creation:
+IATA resolution 011c adopted at the 3rd IATA Passenger Standards Conference October 2021 in PTC123(186), for intended
+implementation date of 3 October 2022, defines the following Multi Airport Cities list for the "purpose of pricing, fare
+construction and mileage creation."
 
-CCD – Multi Airport Cities list
+The list below is not a complete list of all city IATA Location Identifiers. Please also note that some GDSs and/or
+websites use their own custom-defined metropolitan areas, some with their own pseudo-city codes that are not IATA
+Location Identifiers (e.g. Travelport's ``QBA`` for the San Francisco Bay Area).
+
+Furthermore, we do not have IATA Location Identifiers for metropolitan areas or surface transportation locations.
+
+**City Code Directory (CCD) – Multi Airport Cities list**
 
 .. list-table::
    :header-rows: 1
@@ -461,4 +467,4 @@ CCD – Multi Airport Cities list
      - JNB
      - Johannesburg
      - JNB
-     - O. R. Tambo International Airport
+     - \O. R. Tambo International Airport

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# this is run to install the project
+"""This is run to install the project."""
 
 import re
 import sys

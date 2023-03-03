@@ -1,6 +1,7 @@
 """Tests."""
 import sys
 import warnings
+from pathlib import Path
 
 import airportsdata
 
@@ -13,12 +14,11 @@ except ImportError:
 
 pylatest_only = pytest.mark.skipif(
     sys.version_info < (3, 11),
-    reason='Only checking data integrity once with latest Python version',
+    reason='Data quality and integrity is only checked once, with latest Python version',
 )
 
 
-airports = airportsdata.load()
-airports_iata = airportsdata.load('IATA')
+airports_icao = airportsdata.load('ICAO')
 iso_3166_1 = [
     'AF',
     'AX',
@@ -448,13 +448,14 @@ tz_deprecated = [
 
 def test_loading() -> None:
     """Test no errors in loading module."""
-    assert airports
+    assert airports_icao
 
 
 @pylatest_only
 def test_data_quality() -> None:
-    """Test data quality."""
-    for key, airport in airports.items():
+    """Test data quality. Fields are "icao","iata","name","city","subd","country","elevation","lat","lon","tz",
+    "lid"."""
+    for key, airport in airports_icao.items():
         assert key == airport['icao']
         assert key.isupper()
         assert len(key) == 4
@@ -462,7 +463,6 @@ def test_data_quality() -> None:
             assert key.isalnum()
         else:
             assert key[1:].isalpha()
-        assert isinstance(airport['name'], str)
         if airport['iata']:
             assert airport['iata'].isalpha() and airport['iata'].isupper() and len(airport['iata']) == 3
         assert isinstance(airport['name'], str)
@@ -482,7 +482,7 @@ def test_data_quality() -> None:
                 )
             )
         if airport['lid']:
-            assert len(airport['lid']) in (3, 4)
+            assert len(airport['lid']) in {3, 4}
             assert airport['lid'].isupper()
             assert airport['lid'].isalnum()
             if len(airport['lid']) == 4:
@@ -490,23 +490,31 @@ def test_data_quality() -> None:
 
 
 @pylatest_only
-def test_iata_integrity() -> None:
-    """Test that there are no IATA code duplicates and that the function works correctly."""
-    iata = [airport['iata'] for airport in airports.values() if airport['iata']]
-    assert set([x for x in iata if iata.count(x) > 1]) == set()  # no duplicates
-    assert list(airports_iata.keys()) == iata  # items returned is identical to those we just built
-
-
-# the below test has migrated to pre-commit
-# def test_flake8():
-#     """Test that we conform to PEP-8"""
-#     style_guide = flake8.get_style_guide(ignore=['A', 'W503'])
-#     py_files = [y for x in os.walk(os.path.abspath('airportsdata')) for y in glob(os.path.join(x[0], '*.py'))]
-#     report = style_guide.check_files(py_files)
-#     assert report.get_statistics('E') == [], 'Flake8 found violations'
+def test_load_integrity() -> None:
+    """Test that there are no ICAO code duplicates in the CSV file."""
+    csv_len = bytearray(Path(__file__).parent.parent.joinpath('airportsdata', 'airports.csv').read_bytes()).count(b'\n')
+    assert csv_len - 1 == len(airports_icao)  # 1 is header line
 
 
 @pylatest_only
-def test_is_sorted() -> None:
+def test_iata_integrity() -> None:
+    """Test that there are no IATA code duplicates and that the load function works correctly."""
+    iata = [airport['iata'] for airport in airports_icao.values() if airport['iata']]
+    if len(set(iata)) != len(iata):
+        assert set([x for x in iata if iata.count(x) > 1]) == set()  # show duplicate(s)
+    assert list(airportsdata.load('IATA').keys()) == iata  # items returned are identical to those we just built
+
+
+@pylatest_only
+def test_lid_integrity() -> None:
+    """Test that there are no LID duplicates and that the load function works correctly."""
+    lid = [airport['lid'] for airport in airports_icao.values() if airport['lid']]
+    if len(set(lid)) != len(lid):
+        assert set([x for x in lid if lid.count(x) > 1]) == set()  # show duplicate(s)
+    assert list(airportsdata.load('LID').keys()) == lid  # items returned are identical to those we just built
+
+
+@pylatest_only
+def test_csv_is_sorted() -> None:
     """Test that database is sorted alphabetically."""
-    assert list(airports.keys()) == sorted(airports.keys())
+    assert list(airports_icao.keys()) == sorted(airports_icao.keys())
