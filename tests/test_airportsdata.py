@@ -19,7 +19,7 @@ pylatest_only = pytest.mark.skipif(
 
 
 airports_icao = airportsdata.load('ICAO')
-iso_3166_1 = [
+iso_3166_1 = {
     'AF',
     'AX',
     'AL',
@@ -269,11 +269,11 @@ iso_3166_1 = [
     'YE',
     'ZM',
     'ZW',
-]  # As of 2020-11-06
+}  # As of 2020-11-06
 # There is no ISO 3166-1 country code for the Republic of Kosovo, however 'XK' is a self assigned code that is used by
 # many international organisations per https://en.wikipedia.org/wiki/ISO_3166-2:RS#Note
-iso_3166_1.append('XK')
-tz_deprecated = [
+iso_3166_1.add('XK')
+tz_deprecated = {
     'Africa/Asmera',
     'Africa/Timbuktu',
     'America/Argentina/ComodRivadavia',
@@ -443,7 +443,7 @@ tz_deprecated = [
     'W-SU',
     'WET',
     'Zulu',
-]  # from https://www.php.net/timezones.others 2020-11-08; UTC kept in the list as it's non-geographical
+}  # from https://www.php.net/timezones.others 2020-11-08; UTC kept in the list as it's non-geographical
 
 
 def test_loading() -> None:

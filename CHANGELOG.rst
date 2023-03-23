@@ -7,6 +7,10 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+20230323
+==================
+* Added ZUTF/TFU, Chengdu/Tianfu Airport, Tianfu, Sichuan, China
+
 
 20230303
 ==================

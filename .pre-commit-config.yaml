@@ -15,7 +15,7 @@ minimum_pre_commit_version: 3.1.1
 
 # Force all unspecified python hooks to run python3
 default_language_version:
-    python: python3
+  python: python3
 
 # A list of repository mappings.
 repos:
