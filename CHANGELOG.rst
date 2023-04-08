@@ -7,6 +7,12 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+20230408
+==================
+* Changed IATA code of UBBG/GNJ, Ganja Airport, Ganja, Goygol-Rayon, Azerbaijan. (Contributed upstream by `Vladislav
+  Kobyakov <https://github.com/ayakudere>`__ in in PR `#82 <https://github.com/mwgg/Airports/pull/82>`__).
+
+
 20230323
 ==================
 * Added ZUTF/TFU, Chengdu/Tianfu Airport, Tianfu, Sichuan, China
@@ -66,7 +72,7 @@ Version 20221105.1
 * Added LLER/ETM, Ilan and Asaf Ramon Airport, Eilat, Southern District, Israel. Reported by `Andrzej Pomirski
   <https://github.com/Acrobot>`__ in issue `#17 <https://github.com/mborsetti/airportsdata/issues/17>`__.
 * Added LENE, La Caminera Airport, Torrenueva, Ciudad Real, Spain. (Contributed upstream by `Vladimir Simakhin
-  <https://github.com/vsimakhin>`__ in in PR `#78 <https://github.com/mwgg/Airports/pull/77>`__).
+  <https://github.com/vsimakhin>`__ in in PR `#78 <https://github.com/mwgg/Airports/pull/78>`__).
 
 
 Version 20221101
