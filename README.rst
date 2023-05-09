@@ -38,7 +38,7 @@ with |ICAO| entries.
 
 Each entry consists of the following data:
 
-* ``icao``: ICAO 4-letter Location Indicator or (if none) an internal Pseudo-ICAO Identifier[*] (|ICAO| entries)
+* ``icao``: ICAO 4-letter DOC7910 Location Indicator or (if none) an internal Pseudo-ICAO Identifier[*] (|ICAO| entries)
 * ``iata``: IATA 3-letter Location Code (|IATA| entries) or an empty string[#]
 * ``name``: Official name (latin script)
 * ``city``: City

@@ -7,10 +7,18 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+20230509
+==================
+* Updated Kuwait International's ICAO Location Indicator from OKBK to OKKK. Confirmed with ICAO data.
+  (Contributed upstream by `Toni Vicente <https://github.com/arv187>`__ in in PR `#85
+  <https://github.com/mwgg/Airports/pull/85>`__).
+
+
 20230408
 ==================
-* Changed IATA code of UBBG/GNJ, Ganja Airport, Ganja, Goygol-Rayon, Azerbaijan. (Contributed upstream by `Vladislav
-  Kobyakov <https://github.com/ayakudere>`__ in in PR `#82 <https://github.com/mwgg/Airports/pull/82>`__).
+* Changed IATA location identifier of UBBG/GNJ, Ganja Airport, Ganja, Goygol-Rayon, Azerbaijan. (Contributed
+  upstream by `Vladislav Kobyakov <https://github.com/ayakudere>`__ in in PR `#82
+  <https://github.com/mwgg/Airports/pull/82>`__).
 
 
 20230323

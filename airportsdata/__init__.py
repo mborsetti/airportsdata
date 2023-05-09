@@ -12,7 +12,7 @@ from typing import Dict, Literal, TypedDict
 
 __project_name__ = __package__
 # Release numbering follows the release date
-__version__ = '20230408'
+__version__ = '20230509'
 __min_python_version__ = (3, 8)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'

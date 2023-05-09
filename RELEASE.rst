@@ -1,2 +1,3 @@
-* Changed IATA code of UBBG/GNJ, Ganja Airport, Ganja, Goygol-Rayon, Azerbaijan. (Contributed upstream by `Vladislav
-  Kobyakov <https://github.com/ayakudere>`__ in in PR `#82 <https://github.com/mwgg/Airports/pull/82>`__).
+* Updated Kuwait International's ICAO Location Indicator from OKBK to OKKK. Confirmed with ICAO data.
+  (Contributed upstream by `Toni Vicente <https://github.com/arv187>`__ in in PR `#85
+  <https://github.com/mwgg/Airports/pull/85>`__).
