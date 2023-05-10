@@ -7,6 +7,12 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+20230510
+==================
+* Updated city of EDDF/FRA, Frankfurt am Main International Airport, Frankfurt am Main, Hesse, Germany to remove
+  erroneous hyphenation (requested by `Magic Mike <https://github.com/deezknuts>`__ in issue `#20
+  <https://github.com/mborsetti/airportsdata/issues/20>`__).
+
 20230509
 ==================
 * Updated Kuwait International's ICAO Location Indicator from OKBK to OKKK. Confirmed with ICAO data.
