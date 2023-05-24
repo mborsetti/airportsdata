@@ -56,8 +56,8 @@ Each entry consists of the following data:
    how the Pseudo-ICAO Identifier is generated for airports and seaplane bases without an ICAO 4-letter Location
    Indicator.
 
-.. [#] See `here <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__ for a list of IATA Multi
-   Airport Cities.
+.. [#] IATA Multi Airport Cities are not included (because they are not airports!). We document them `here
+   <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__ for your reference.
 
 Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed nor should be
 expected by users.

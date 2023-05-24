@@ -2,8 +2,19 @@ IATA resolution 011c adopted at the 3rd IATA Passenger Standards Conference Octo
 implementation date of 3 October 2022, defines the following Multi Airport Cities list for the "purpose of pricing, fare
 construction and mileage creation."
 
-The list below is not a complete list of all city IATA Location Identifiers. Please also note that some GDSs and/or
-websites use their own custom-defined metropolitan areas, some with their own pseudo-city codes that are not IATA
+This database furnishes data for operational airports and landing strips only, so querying for a IATA Multi Airport City like ``NYC`` will yield an error.
+
+..
+  As a tool for users, we provide a list of these IATA Multi Airport Cities list used for the "purpose of pricing, fare
+  construction and mileage creation" both below and as a csv.file called ``ista_macs.csv``, and in addition we provide
+  Python users with the function to retrieve them in a structured way:
+  .. code-block:: python
+   import airportsdata
+   iata_macs = airportsdata.iata_macs()
+   print(iata_macs['NYC'])
+
+Please note that this list is not a complete list of all city IATA Location Identifiers. Please also note that some GDSs and/or
+websites use their own custom-defined metropolitan areas, often with private pseudo-city codes that are not IATA
 Location Identifiers (e.g. Travelport's ``QBA`` for the San Francisco Bay Area).
 
 Furthermore, we do not have IATA Location Identifiers for metropolitan areas or surface transportation locations.

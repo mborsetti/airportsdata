@@ -1,3 +1,3 @@
-* Updated city of EDDF/FRA, Frankfurt am Main International Airport, Frankfurt am Main, Hesse, Germany to remove
-  erroneous hyphenation (requested by `Magic Mike <https://github.com/deezknuts>`__ in issue `#20
-  <https://github.com/mborsetti/airportsdata/issues/20>`__).
+* Fixed timezone of KECP/ECP, Northwest Florida Beaches International Airport, Panama City, Florida, USA
+  (reported by `DonalChilde <https://github.com/DonalChilde>`__ in issue `#21
+  <https://github.com/mborsetti/airportsdata/issues/21>`__).

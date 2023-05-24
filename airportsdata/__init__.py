@@ -12,7 +12,7 @@ from typing import Dict, Literal, TypedDict
 
 __project_name__ = __package__
 # Release numbering follows the release date
-__version__ = '20230510'
+__version__ = '20230524'
 __min_python_version__ = (3, 8)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
@@ -36,6 +36,7 @@ Airport = TypedDict(
     },
 )
 CodeType = Literal['ICAO', 'IATA', 'LID']
+IATAMAC = TypedDict('IATAMAC', {'name': str, 'country': str, 'airports': dict[str, Airport]})
 
 
 def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airport']:
@@ -77,6 +78,50 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airport']:
             airports[row[key]] = row  # type: ignore[assignment]
     airports.pop('', None)
     return airports
+
+
+def load_iata_macs() -> dict[str, IATAMAC]:
+    """Loads IATA's Multi Airport Cities (for the "purpose of pricing, fare construction and mileage creation")
+    data into a dict.
+
+    :return: a dict of dicts, each entry having the following keys:
+        'name': The IATA city name,
+        'country': The IATA country code,
+        'airports': a dict with the same data returned by load() for each airport that makes up the Multi Airport
+           City, where the key is the airport's IATA code.
+    """
+    # with open(os.path.join(dir, 'airports.json'), encoding='utf8') as f:
+    #     airports = json.load(f)
+    # if code_type.lower() == 'icao':
+    #     return airports
+    # else:
+    #     return {airport['iata']: airport for airport in dict(airports).values() if airport['iata']}
+    #
+    #
+    airports = load('IATA')
+    this_dir = Path(__file__).parent
+    iata_macs: dict[str, IATAMAC] = {}
+    with this_dir.joinpath('iata_macs.csv').open(encoding='utf8') as f:
+        reader = csv.DictReader(f, quoting=csv.QUOTE_NONNUMERIC)
+        for row in reader:
+            for key, value in row.items():
+                if key == 'Country':
+                    country = value
+                elif key == 'City Code':
+                    multi_airport_city_code = value
+                elif key == 'City Name':
+                    name = value
+                elif key == 'Airport Code':
+                    airport = value
+            if multi_airport_city_code not in iata_macs:
+                iata_macs[multi_airport_city_code] = {  # type: ignore[assignment]
+                    'name': name,
+                    'country': country,
+                    'airports': {airport: airports[airport]},
+                }
+            else:
+                iata_macs[multi_airport_city_code]['airports'][airport] = airports[airport]
+    return iata_macs
 
 
 # Python 3.9 code used to save the dict to CSV:

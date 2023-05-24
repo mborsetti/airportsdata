@@ -7,6 +7,12 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+20230524
+==================
+* Fixed timezone of KECP/ECP, Northwest Florida Beaches International Airport, Panama City, Florida, USA
+  (reported by `DonalChilde <https://github.com/DonalChilde>`__ in issue `#21
+  <https://github.com/mborsetti/airportsdata/issues/21>`__).
+
 20230510
 ==================
 * Updated city of EDDF/FRA, Frankfurt am Main International Airport, Frankfurt am Main, Hesse, Germany to remove

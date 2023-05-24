@@ -518,3 +518,10 @@ def test_lid_integrity() -> None:
 def test_csv_is_sorted() -> None:
     """Test that database is sorted alphabetically."""
     assert list(airports_icao.keys()) == sorted(airports_icao.keys())
+
+
+@pylatest_only
+def test_iata_macs() -> None:
+    """Test that iata_macs are being returned."""
+    iata_macs = airportsdata.load_iata_macs()
+    assert len(iata_macs) == 41
