@@ -9,7 +9,6 @@ import csv
 from pathlib import Path
 from typing import Dict, Literal, TypedDict
 
-
 __project_name__ = __package__
 # Release numbering follows the release date
 __version__ = '20230524'
@@ -36,7 +35,7 @@ Airport = TypedDict(
     },
 )
 CodeType = Literal['ICAO', 'IATA', 'LID']
-IATAMAC = TypedDict('IATAMAC', {'name': str, 'country': str, 'airports': dict[str, Airport]})
+IATAMAC = TypedDict('IATAMAC', {'name': str, 'country': str, 'airports': Dict[str, Airport]})
 
 
 def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airport']:
@@ -103,8 +102,8 @@ def load_iata_macs() -> dict[str, IATAMAC]:
     iata_macs: dict[str, IATAMAC] = {}
     with this_dir.joinpath('iata_macs.csv').open(encoding='utf8') as f:
         reader = csv.DictReader(f, quoting=csv.QUOTE_NONNUMERIC)
-        for row in reader:
-            for key, value in row.items():
+        for row_d in reader:
+            for key, value in row_d.items():
                 if key == 'Country':
                     country = value
                 elif key == 'City Code':
