@@ -7,17 +7,29 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+
+20230528
+==================
+* Added IATA Multi Airport City Location Identifiers as database file ``iata_macs.csv`` and in a dict
+  (containing data of the city's airports) returned by a new Python function; see `README_IATA.rst
+  <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__) for complete information (requested by
+  `Étienne Corbillé <https://github.com/etiennecrb>`__ in issue `#19
+  <https://github.com/mborsetti/airportsdata/issues/19>`__).
+
+
 20230524
 ==================
 * Fixed timezone of KECP/ECP, Northwest Florida Beaches International Airport, Panama City, Florida, USA
   (reported by `DonalChilde <https://github.com/DonalChilde>`__ in issue `#21
   <https://github.com/mborsetti/airportsdata/issues/21>`__).
 
+
 20230510
 ==================
 * Updated city of EDDF/FRA, Frankfurt am Main International Airport, Frankfurt am Main, Hesse, Germany to remove
   erroneous hyphenation (requested by `Magic Mike <https://github.com/deezknuts>`__ in issue `#20
   <https://github.com/mborsetti/airportsdata/issues/20>`__).
+
 
 20230509
 ==================

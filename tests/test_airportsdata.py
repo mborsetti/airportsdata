@@ -522,6 +522,18 @@ def test_csv_is_sorted() -> None:
 
 @pylatest_only
 def test_iata_macs() -> None:
-    """Test that iata_macs are being returned."""
+    """Test that iata_macs are being returned and that NYC has the correct airports."""
+    airports_iata = airportsdata.load('IATA')
     iata_macs = airportsdata.load_iata_macs()
     assert len(iata_macs) == 41
+    assert list(iata_macs['NYC']['airports'].keys()) == ['JFK', 'LGA']
+    for key, mac in iata_macs.items():
+        assert key.isupper()
+        assert len(key) == 3
+        assert key.isalpha()
+        assert key.isupper()
+        assert isinstance(mac['name'], str)
+        assert isinstance(mac['country'], str)
+        assert mac['country'] in iso_3166_1
+        for iata, airport in mac['airports'].items():
+            assert airports_iata[iata] == airport

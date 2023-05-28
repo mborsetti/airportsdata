@@ -1,24 +1,56 @@
+.. |IATA_MACs| replace:: 41
+
+.. |IATA_MACs_apts| replace:: 89
+
 IATA resolution 011c adopted at the 3rd IATA Passenger Standards Conference October 2021 in PTC123(186), for intended
-implementation date of 3 October 2022, defines the following Multi Airport Cities list for the "purpose of pricing, fare
-construction and mileage creation."
+implementation date of 3 October 2022, defines |IATA_MACs| Multi Airport Cities (comprising of a total of
+|IATA_MACs_apts| airports) for the "Identifiers are identical to Airport ones (e.g. ``DXB``), and others are unique
+(e.g. ``NYC``). As a tool for users, we provide the |IATA_MACs| IATA Multi Airport Cities
 
-This database furnishes data for operational airports and landing strips only, so querying for a IATA Multi Airport City
-like ``NYC`` will yield an error.
+* in the table below;
+* as a csv file named ``iata_macs.csv``; and
+* as a Python dict containing the data for each individual airport of a Multi Airport City:
 
-..
-  As a tool for users, we provide a list of these IATA Multi Airport Cities list used for the "purpose of pricing, fare
-  construction and mileage creation" both below and as a csv.file called ``ista_macs.csv``, and in addition we provide
-  Python users with the function to retrieve them in a structured way:
-  .. code-block:: python
+.. code-block:: python
+
    import airportsdata
-   iata_macs = airportsdata.iata_macs()
+   iata_macs = airportsdata.load_iata_macs()
    print(iata_macs['NYC'])
 
-Please note that this list is not a complete list of all city IATA Location Identifiers. Please also note that some
-GDSs and/or websites use their own custom-defined metropolitan areas, often with private pseudo-city codes that are
-not IATA Location Identifiers (e.g. Travelport's ``QBA`` for the San Francisco Bay Area).
+.. code-block::
 
-Furthermore, we do not have IATA Location Identifiers for metropolitan areas or surface transportation locations.
+   'airports': {'JFK': {'city': 'New York',
+                        'country': 'US',
+                        'elevation': 13.0,
+                        'iata': 'JFK',
+                        'icao': 'KJFK',
+                        'lat': 40.6399277777778,
+                        'lid': 'JFK',
+                        'lon': -73.7786925,
+                        'name': 'John F Kennedy International Airport',
+                        'subd': 'New York',
+                        'tz': 'America/New_York'},
+                'LGA': {'city': 'New York',
+                        'country': 'US',
+                        'elevation': 20.6,
+                        'iata': 'LGA',
+                        'icao': 'KLGA',
+                        'lat': 40.77725,
+                        'lid': 'LGA',
+                        'lon': -73.8726111111111,
+                        'name': 'Laguardia Airport',
+                        'subd': 'New York',
+                        'tz': 'America/New_York'}},
+   'country': 'US',
+   'name': 'New York'}
+
+
+Please note that some GDSs and/or websites use their own custom-defined metropolitan areas often using codes that are
+not official IATA Location Identifiers (e.g. Travelport's ``QBA`` for the San Francisco Bay Area); please consult
+with the provider.
+
+Also keep in mind that we do not have IATA Location Identifiers for surface transportation locations (we only support
+airports).
 
 **City Code Directory (CCD) – Multi Airport Cities list**
 

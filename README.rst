@@ -56,8 +56,9 @@ Each entry consists of the following data:
    how the Pseudo-ICAO Identifier is generated for airports and seaplane bases without an ICAO 4-letter Location
    Indicator.
 
-.. [#] IATA Multi Airport Cities are not included (because they are not airports!). We document them `here
-   <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__ for your reference.
+.. [#] IATA Multi Airport Cities are not not airports so are not included, but we provide a database and a Python
+   function that returns the above data for all of their component airports of a IATA MAC. Please see documentation
+   `here <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__.
 
 Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed nor should be
 expected by users.
@@ -72,7 +73,8 @@ Please report any issues you may find `here
 <https://github.com/mborsetti/airportsdata/blob/main/CONTRIBUTING.rst>`__.
 
 This project is a fork of https://github.com/mwgg/Airports. All new data submitted in this fork have been validated
-against `IATA <https://www.iata.org/en/publications/directories/code-search/>`__ and ARINC database or national AFD.
+against national AFD or ARINC database and `IATA <https://www.iata.org/en/publications/directories/code-search/>`__
+before publishing.
 
 Raw data
 ========
