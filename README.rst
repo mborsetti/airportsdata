@@ -2,9 +2,9 @@
 airportsdata
 ============
 
-.. |ICAO| replace:: 28,131
+.. |ICAO| replace:: 28,140
 
-.. |IATA| replace:: 6,479
+.. |IATA| replace:: 6,547
 
 .. |LID| replace:: 12,566
 
@@ -73,8 +73,9 @@ Please report any issues you may find `here
 <https://github.com/mborsetti/airportsdata/blob/main/CONTRIBUTING.rst>`__.
 
 This project is a fork of https://github.com/mwgg/Airports. All new data submitted in this fork have been validated
-against national AFD or ARINC database and `IATA <https://www.iata.org/en/publications/directories/code-search/>`__
-before publishing.
+against national `Aeronauical Information Publications (AIP) or equivalent
+<https://github.com/mborsetti/airportsdata/blob/main/README_AIP.rst>`__ (or
+ARINC database) and `IATA <https://www.iata.org/en/publications/directories/code-search/>`__ before publishing.
 
 Raw data
 ========
