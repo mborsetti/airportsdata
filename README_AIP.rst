@@ -23,9 +23,15 @@ contained here.
    * - FM
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
      - Airport/Facility Directory
+   * - GB
+     - https://nats-uk.ead-it.com/cms-nats/opencms/en/Publications/AIP/
+     -
    * - GU
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
      - Airport/Facility Directory
+   * - LK
+     - https://www.airport.lk/aasl/AIS/web.Home.htm
+     -
    * - IT
      - https://pre.enav.it/en/services/list
      - Registration required
@@ -44,6 +50,9 @@ contained here.
    * - PW
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
      - Airport/Facility Directory
+   * - RU
+     - http://www.caiga.ru/products/?lang=en
+     -
    * - SG
      - https://aim-sg.caas.gov.sg/
      - Registration required
