@@ -2,9 +2,9 @@
 airportsdata
 ============
 
-.. |ICAO| replace:: 28,141
+.. |ICAO| replace:: 28,130
 
-.. |IATA| replace:: 6,550
+.. |IATA| replace:: 7,586
 
 .. |LID| replace:: 12,567
 
@@ -63,9 +63,8 @@ Each entry consists of the following data:
 Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed nor should be
 expected by users.
 
-Known issues:
+Important notes:
 
-* A small, but unknown, number of aerodromes are missing their IATA Location Code (none are major ones);
 * Timezone was originally sourced from `TimeZoneDB <https://timezonedb.com>`__ and is missing for Antarctica;
 * No historical data (closed airports are removed).
 

@@ -14,6 +14,9 @@ contained here.
    * - AS
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
      - Airport/Facility Directory
+   * - AU
+     - https://www.airservicesaustralia.com/aip/aip.asp
+     -
    * - CA
      - https://www.navcanada.ca/en/aeronautical-information/aip-canada.aspx
      -
