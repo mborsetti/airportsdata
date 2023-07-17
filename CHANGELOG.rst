@@ -7,6 +7,13 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+
+20230717
+================
+* Added new airport LRBV/GHV, Braşov-Ghimbav International Airport, Braşov, Transylvania, Romania (reported by `Jonas
+  Eberle <https://github.com/jonaseberle>`__ in issue `#28 <https://github.com/mborsetti/airportsdata/issues/28>`__).
+
+
 20230716
 ================
 * Fixed ICAO location identifier in HSSK/KRT, Khartoum International Airport, Khartoum, Sudan (reported by `Jonas Eberle
