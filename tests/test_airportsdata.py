@@ -8,9 +8,9 @@ import airportsdata
 import pytest
 
 try:  # required for < Python 3.9
-    from zoneinfo import ZoneInfo
+    import zoneinfo
 except ImportError:
-    from backports.zoneinfo import ZoneInfo  # type: ignore[no-redef]
+    import backports.zoneinfo as zoneinfo  # type: ignore[no-redef]
 
 pylatest_only = pytest.mark.skipif(
     sys.version_info < (3, 11),
@@ -273,6 +273,7 @@ iso_3166_1 = {
 # There is no ISO 3166-1 country code for the Republic of Kosovo, however 'XK' is a self assigned code that is used by
 # many international organisations per https://en.wikipedia.org/wiki/ISO_3166-2:RS#Note
 iso_3166_1.add('XK')
+tz_available = zoneinfo.available_timezones()
 tz_deprecated = {
     'Africa/Asmera',
     'Africa/Timbuktu',
@@ -384,6 +385,7 @@ tz_deprecated = {
     'Etc/UTC',
     'Etc/Zulu',
     'Europe/Belfast',
+    'Europe/Kiev',  # added by author on 2023-09-01
     'Europe/Nicosia',
     'Europe/Tiraspol',
     'Factory',
@@ -473,7 +475,6 @@ def test_data_quality() -> None:
         assert isinstance(airport['elevation'], float)
         assert isinstance(airport['lat'], float)
         assert isinstance(airport['lon'], float)
-        assert ZoneInfo(airport['tz'])
         if airport['tz'] in tz_deprecated:
             warnings.warn(
                 DeprecationWarning(
@@ -481,6 +482,7 @@ def test_data_quality() -> None:
                     f'(see https://github.com/eggert/tz/blob/master/backward)'
                 )
             )
+        assert airport['tz'] in tz_available
         if airport['lid']:
             assert len(airport['lid']) in {3, 4}
             assert airport['lid'].isupper()
@@ -537,3 +539,11 @@ def test_iata_macs() -> None:
         assert mac['country'] in iso_3166_1
         for iata, airport in mac['airports'].items():
             assert airports_iata[iata] == airport
+
+@pylatest_only
+def test_wrong_key() -> None:
+    """Test that you receive an error when using the wrong key."""
+    with pytest.raises(ValueError) as e:
+        # noinspection PyTypeChecker
+        airports_iata = airportsdata.load('wrong_key')
+    assert e.value.args[0] == 'code_type must be one of ICAO, IATA or LID; received wrong_key'

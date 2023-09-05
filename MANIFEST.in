@@ -1,0 +1,3 @@
+# https://docs.python.org/3/distutils/sourcedist.html#specifying-the-files-to-distribute
+# do not include test files
+prune tests

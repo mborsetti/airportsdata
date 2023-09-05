@@ -11,7 +11,7 @@
 # NOTE: in this package implementation, tox runs 'pre-commit run -a'
 # To manually run without committing > pre-commit run --all-files
 
-minimum_pre_commit_version: 3.1.1
+minimum_pre_commit_version: 3.4.0
 
 # Force all unspecified python hooks to run python3
 default_language_version:
@@ -144,13 +144,14 @@ repos:
         language: python
         types: [python]
         args: [--show-error-codes]
-      - id: tox-ini-fmt  # https://github.com/tox-dev/tox-ini-fmt
-        name: Apply a consistent format to tox.ini files (tox-ini-fmt)
-        entry: tox-ini-fmt
-        additional_dependencies: [tox-ini-fmt]
-        language: python
-        files: tox.ini
-        types: [ini]
+# Not using the below as it removes remarks
+#      - id: tox-ini-fmt  # https://github.com/tox-dev/tox-ini-fmt
+#        name: Apply a consistent format to tox.ini files (tox-ini-fmt)
+#        entry: tox-ini-fmt
+#        additional_dependencies: [tox-ini-fmt]
+#        language: python
+#        files: tox.ini
+#        types: [ini]
 
 #  - repo: https://github.com/pycqa/doc8
 #    rev: 0.9.0a1
@@ -194,3 +195,4 @@ repos:
         name: Update database counts in README.rst
         entry: python update_readme_counts.py
         language: system
+        pass_filenames: false

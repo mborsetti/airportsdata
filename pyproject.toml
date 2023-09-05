@@ -1,10 +1,85 @@
-[tool.black]
+# Project metadata, including build by setuptools
+# See https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+
+# TOML syntax at https://toml.io/en/
+
+
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ['setuptools']  # PEP 508 specifications.
+# Setuptools specification
+build-backend = "setuptools.build_meta"
+
+
+[project]
+# See https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+dynamic = ['version', 'dependencies']
+name = 'airportsdata'
+description = """\
+    Extensive database of location and timezone data for nearly every airport and landing strip in the world.\
+    """
+readme = { file = 'README.rst', content-type = 'text/x-rst' }
+requires-python = '>=3.8'
+license = {file = 'LICENSE'}
+authors = [
+    {name = 'Mike Borsetti', email = 'mike+airportsdata@borsetti.com'},
+]
+maintainers = [
+    {name = 'Mike Borsetti', email = 'mike+airportsdata@borsetti.com'},
+]
+keywords = ['airports', 'aerodromes', 'ICAO', 'IATA']
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12.0-rc.1',
+    'Operating System :: OS Independent',
+    'Topic :: Database',
+    'Intended Audience :: Developers',
+]
+
+[project.urls]
+Documentation = 'https://github.com/mborsetti/airportsdata/blob/main/README.rst'
+Repository = 'https://github.com/mborsetti/airportsdata/'
+'Database (csv)' = 'https://github.com/mborsetti/airportsdata/blob/main/airportsdata/airports.csv'
+Changelog = 'https://github.com/mborsetti/airportsdata/blob/main/CHANGELOG.rst'
+Issues = 'https://github.com/mborsetti/airportsdata/issues'
+
+
+# -------------------------- setuptools --------------------------
+# Called by build
+# See https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+[tool.setuptools]
+packages = ['airportsdata']
+
+[tool.setuptools.dynamic]
+version = {attr = 'airportsdata.__version__'}
+dependencies = {file = 'requirements.txt'}
+
+
+# -------------------------- black --------------------------
 # Uncompromising code formatting
 # Runs as part of pre-commit
+# Config file documentation
 # https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
+[tool.black]
 # What's in here overrides the command-line options shown by running $ black --help.
 line-length = 120
 target-version = ['py38']
 skip-string-normalization = true
 extend-exclude = '/(\.idea|\.pytest_cache|\__pycache__|\venv.*|\webchanges.egg-info)/'
 color = true
+
+# -------------------------- pytest --------------------------
+[tool.pytest.ini_options]
+# Disable below when running in PyCharm to enable breakpoints: https://github.com/pytest-dev/pytest-cov/issues/131
+# Adds pytest-cov functionality (see https://pytest-cov.readthedocs.io/en/latest/config.html)
+# addopts = --cov=./ --cov-report term --cov-report html --cov-report xml --cov-config=.coveragerc
+
+# Enable log display during test run (aka "live logging" https://docs.pytest.org/en/stable/logging.html#live-logs)
+log_cli = true
