@@ -37,7 +37,7 @@ classifiers = [
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
-    'Programming Language :: Python :: 3.12.0-rc.1',
+    'Programming Language :: Python :: 3.12',
     'Operating System :: OS Independent',
     'Topic :: Database',
     'Intended Audience :: Developers',
