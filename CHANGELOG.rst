@@ -14,6 +14,10 @@ after being obsoleted by a new major release (i.e. about 4 years since their ori
 the CSV file.
 
 
+20230906
+================
+* Fixed regression in 20230905 where Python installation would not include the data files.
+
 20230905
 ================
 * Fixed names of airports, cities, subdivisions (which now match `ISO 3166-2

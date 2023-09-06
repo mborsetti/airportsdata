@@ -47,8 +47,9 @@ with |ICAO| entries.
 
 Each entry consists of the following data:
 
-* ``icao``: ICAO 4-letter DOC7910 Location Indicator or (if none) an internal Pseudo-ICAO Identifier[*] (|ICAO| entries)
-* ``iata``: IATA 3-letter Location Code (|IATA| entries) or an empty string[#]
+* ``icao``: ICAO 4-letter DOC7910 Location Indicator or (if none) an internal Pseudo-ICAO Identifier [#]_ (|ICAO|
+  entries)
+* ``iata``: IATA 3-letter Location Code (|IATA| entries) or an empty string [#]_
 * ``name``: Official name (latin script)
 * ``city``: City in latin script, ideally using the local language
 * ``subd``: Subdivision (e.g. state, province, region, etc.), ideally using the local-language or English names of
@@ -62,7 +63,7 @@ Each entry consists of the following data:
   (IANA-compliant) or an empty string for Antarctica
 * ``lid``: U.S. FAA Location Identifier (|LID| entries), or an empty string
 
-.. [*] See `here <https://github.com/mborsetti/airportsdata/blob/main/README_identifiers.rst>`__ for an explanation on
+.. [#] See `here <https://github.com/mborsetti/airportsdata/blob/main/README_identifiers.rst>`__ for an explanation on
    how the Pseudo-ICAO Identifier is generated for airports and seaplane bases without an ICAO 4-letter Location
    Indicator.
 

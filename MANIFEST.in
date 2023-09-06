@@ -1,3 +1,5 @@
-# https://docs.python.org/3/distutils/sourcedist.html#specifying-the-files-to-distribute
+# https://packaging.python.org/en/latest/guides/using-manifest-in/
 # do not include test files
 prune tests
+# include csv files
+include airportsdata/*.csv
