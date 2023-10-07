@@ -35,6 +35,9 @@ contained here.
    * - LK
      - https://www.airport.lk/aasl/AIS/web.Home.htm
      -
+   * - IN
+     - https://aim-india.aai.aero/
+     -
    * - IT
      - https://pre.enav.it/en/services/list
      - Registration required

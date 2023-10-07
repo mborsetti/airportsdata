@@ -19,7 +19,7 @@ description = """\
     Extensive database of location and timezone data for nearly every airport and landing strip in the world.\
     """
 readme = { file = 'README.rst', content-type = 'text/x-rst' }
-requires-python = '>=3.8'
+requires-python = '>=3.9'
 license = {file = 'LICENSE'}
 authors = [
     {name = 'Mike Borsetti', email = 'mike+airportsdata@borsetti.com'},
@@ -32,8 +32,6 @@ classifiers = [
     'Development Status :: 5 - Production/Stable',
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.7',
-    'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
@@ -69,11 +67,58 @@ dependencies = {file = 'requirements.txt'}
 # https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
 [tool.black]
 # What's in here overrides the command-line options shown by running $ black --help.
-line-length = 120
-target-version = ['py38']
-skip-string-normalization = true
-extend-exclude = '/(\.idea|\.pytest_cache|\__pycache__|\venv.*|\webchanges.egg-info)/'
+line_length = 120
+target_version = ['py39']
+skip_string_normalization = true
+extend_exclude = '/(\.idea|\.pytest_cache|\__pycache__|\venv.*|\webchanges.egg-info)/'
 color = true
+
+
+# -------------------------- coverage --------------------------
+# Runs in Github Actions (see .github/workflows/ci-cd.yaml) and in tox (see tox.ini).
+# Config file documentation at https://coverage.readthedocs.io/en/latest/config.html
+[tool.coverage.run]
+branch = true
+source = ['./']
+omit = [
+    '.*/*',
+    'build/*',
+    'dist/*',
+    'docs/*',
+    'htmlcov/*',
+    'pip/*',
+    'tests/*',
+    'airportsdata.egg-info/*'
+]
+relative_files = true
+command_line = '-m pytest -vv'
+
+[tool.coverage.report]
+# Regexes for lines to exclude from consideration
+exclude_lines = [
+    # Don't complain about missing debug-only code:
+    'def __repr__',
+    'if self\.debug:',
+
+    # Have to re-enable the standard pragma
+    'pragma: no cover',
+
+    # Don't complain if tests don't hit defensive assertion code:
+    'raise AssertionError',
+    'raise NotImplementedError',
+
+    # Don't complain if non-runnable code isn't run:
+    'if 0:',
+    'if __name__ == .__main__.:',
+
+    # Don't complain if module is not importable (handled by code):
+    'except ImportError:',
+
+    # Don't cover IDE code:
+    'if TYPE_CHECKING:'
+]
+# ignore_errors = true
+
 
 # -------------------------- pytest --------------------------
 [tool.pytest.ini_options]

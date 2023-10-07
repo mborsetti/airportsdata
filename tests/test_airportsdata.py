@@ -540,10 +540,11 @@ def test_iata_macs() -> None:
         for iata, airport in mac['airports'].items():
             assert airports_iata[iata] == airport
 
+
 @pylatest_only
 def test_wrong_key() -> None:
     """Test that you receive an error when using the wrong key."""
     with pytest.raises(ValueError) as e:
         # noinspection PyTypeChecker
-        airports_iata = airportsdata.load('wrong_key')
+        airportsdata.load('wrong_key')  # type: ignore[arg-type]
     assert e.value.args[0] == 'code_type must be one of ICAO, IATA or LID; received wrong_key'

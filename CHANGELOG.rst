@@ -7,18 +7,24 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
-Notice
-======
-Support for Python 3.8 will be removed on or about 5 October 2023. Older Python versions are supported for 3 years
-after being obsoleted by a new major release (i.e. about 4 years since their original release). This will not affect
-the CSV file.
+Version 20231007
+==================
+* Added support for Python 3.12
+* Removed support for Python 3.8 (This does not affect users of the the CSV files). As a reminder, older Python
+  versions are supported for 3 years after being obsoleted by a new major release (i.e. about 4 years since their
+  original release).
+* Added VOKN/CNN, Kannur International Airport, Mattannur, Kerala, India. Based on a contribution upstream by `Ryan-DL
+  <https://github.com/Ryan-DL>`__ in PRs `#99 <https://github.com/mwgg/Airports/pull/91>`__
+  and `#93 <https://github.com/mwgg/Airports/pull/99>`__, but with official data from Indian AIP.
+* Fixed IATA code and name of UELL/NER, Chulman Neryungri Airport, Chulman, Chukot, Russia.
 
 
-20230906
+Version 20230906
 ================
 * Fixed regression in 20230905 where Python installation would not include the data files.
 
-20230905
+
+Version 20230905
 ================
 * Fixed names of airports, cities, subdivisions (which now match `ISO 3166-2
   <https://en.wikipedia.org/wiki/ISO_3166-2:UA#Current_codes>`__ names) and timezones for Ukraine (contributed by
@@ -34,13 +40,14 @@ the CSV file.
   - Upgraded ``tox`` testing framework.
   - Support Python 3.12 (version 3.12.0-rc.1).
 
-20230717
+
+Version 20230717
 ================
 * Added new airport LRBV/GHV, Braşov-Ghimbav International Airport, Braşov, Transylvania, Romania (contributed by `Jonas
   Eberle <https://github.com/jonaseberle>`__ in issue `#28 <https://github.com/mborsetti/airportsdata/issues/28>`__).
 
 
-20230716
+Version 20230716
 ================
 * Fixed ICAO location identifier in HSSK/KRT, Khartoum International Airport, Khartoum, Sudan (reported by `Jonas Eberle
   <https://github.com/jonaseberle>`__ in issue `#25 <https://github.com/mborsetti/airportsdata/issues/25>`__).
@@ -48,7 +55,7 @@ the CSV file.
   <https://github.com/angelabinoyy>`__ in issue `#26 <https://github.com/mborsetti/airportsdata/issues/26>`__).
 
 
-20230630
+Version 20230630
 =================
 * Added a net of 1,036 IATA location identifiers. Based on contributions upstream by `Justin Dixson
   <https://github.com/JDShadowline>`__ in PRs `#91 <https://github.com/mwgg/Airports/pull/91>`__
@@ -69,7 +76,7 @@ the CSV file.
 
 
 
-20230624
+Version 20230624
 =================
 * Added \_OUK/OUK, Out Skerries Airstrip, Shetland, Scotland, Great Britain, LID: EG78. This is a landing strip
   which has an IATA location identifier but no ICAO one, and is not present in GB'S AIP. As such, a pseudo-IATA location
@@ -88,7 +95,7 @@ the CSV file.
 
 
 
-20230617
+Version 20230617
 =================
 * Multiple fixes and additions suggested by `Nicolas Bridoux <https://github.com/Bridouille>`__ upstream in issue `#86
   <https://github.com/mwgg/Airports/issues/86>`__.
@@ -99,7 +106,7 @@ the CSV file.
 * Added IATA codes to multiple KL** airports.
 
 
-20230528
+Version 20230528
 ==================
 * Added IATA Multi Airport City Location Identifiers as database file ``iata_macs.csv`` and in a dict
   (containing data of the city's airports) returned by a new Python function; see `README_IATA.rst
@@ -108,40 +115,40 @@ the CSV file.
   <https://github.com/mborsetti/airportsdata/issues/19>`__).
 
 
-20230524
+Version 20230524
 ==================
 * Fixed timezone of KECP/ECP, Northwest Florida Beaches International Airport, Panama City, Florida, USA
   (reported by `DonalChilde <https://github.com/DonalChilde>`__ in issue `#21
   <https://github.com/mborsetti/airportsdata/issues/21>`__).
 
 
-20230510
+Version 20230510
 ==================
 * Updated city of EDDF/FRA, Frankfurt am Main International Airport, Frankfurt am Main, Hesse, Germany to remove
   erroneous hyphenation (requested by `Magic Mike <https://github.com/deezknuts>`__ in issue `#20
   <https://github.com/mborsetti/airportsdata/issues/20>`__).
 
 
-20230509
+Version 20230509
 ==================
 * Updated Kuwait International's ICAO Location Indicator from OKBK to OKKK. Confirmed with ICAO data.
   (Contributed upstream by `Toni Vicente <https://github.com/arv187>`__ in in PR `#85
   <https://github.com/mwgg/Airports/pull/85>`__).
 
 
-20230408
+Version 20230408
 ==================
 * Changed IATA location identifier of UBBG/GNJ, Ganja Airport, Ganja, Goygol-Rayon, Azerbaijan. (Contributed
   upstream by `Vladislav Kobyakov <https://github.com/ayakudere>`__ in in PR `#82
   <https://github.com/mwgg/Airports/pull/82>`__).
 
 
-20230323
+Version 20230323
 ==================
 * Added ZUTF/TFU, Chengdu/Tianfu Airport, Tianfu, Sichuan, China
 
 
-20230303
+Version 20230303
 ==================
 * Better documented our use of pseudo-ICAO Identifiers.
 * Reworded the IATA Multi Airport Cities page.

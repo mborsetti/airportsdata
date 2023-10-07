@@ -11,8 +11,8 @@ from typing import Dict, Literal, TypedDict
 
 __project_name__ = __package__
 # Release numbering follows the release date
-__version__ = '20230906'
-__min_python_version__ = (3, 8)
+__version__ = '20231007'
+__min_python_version__ = (3, 9)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
 __license__ = 'MIT'
