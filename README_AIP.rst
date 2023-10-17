@@ -41,6 +41,9 @@ contained here.
    * - IT
      - https://pre.enav.it/en/services/list
      - Registration required
+   * - KH
+     - http://www.civilaviation.gov.kh/en/2014-04-07-07-52-5/aip-cambodia/aip-sup
+     -
    * - MH
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
      - Airport/Facility Directory
