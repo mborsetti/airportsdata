@@ -2,9 +2,9 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,133
+.. |ICAO| replace:: 28,135
 
-.. |IATA| replace:: 7,588
+.. |IATA| replace:: 7,590
 
 .. |LID| replace:: 12,567
 
@@ -47,7 +47,7 @@ with |ICAO| entries.
 
 Each entry consists of the following data:
 
-* ``icao``: ICAO 4-letter DOC7910 Location Indicator or (if none) an internal Pseudo-ICAO Identifier [#]_ (|ICAO|
+* ``icao``: ICAO 4-letter Location Indicator (Doc 7910) or (if none) an internal Pseudo-ICAO Identifier [#]_ (|ICAO|
   entries)
 * ``iata``: IATA 3-letter Location Code (|IATA| entries) or an empty string [#]_
 * ``name``: Official name (latin script)
@@ -56,9 +56,9 @@ Each entry consists of the following data:
   `ISO 3166-2 <https://en.wikipedia.org/wiki/ISO_3166-2#Current_codes>`__
 * ``country``: `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes>`__ alpha-2 country code
   (plus ``XK`` for Kosovo)
-* ``elevation``: MSL elevation (the highest point of the landing area) in feet; it is often wrong
-* ``lat``: Latitude (decimal)
-* ``lon``: Longitude (decimal)
+* ``elevation``: MSL elevation of the highest point of the landing area, in feet; it is often wrong
+* ``lat``: Latitude (decimal) of the `airport reference point <https://en.wikipedia.org/wiki/Airport_reference_point>`__
+* ``lon``: Longitude (decimal) of the `airport reference point <https://en.wikipedia.org/wiki/Airport_reference_point>`__
 * ``tz``: Timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
   (IANA-compliant) or an empty string for Antarctica
 * ``lid``: U.S. FAA Location Identifier (|LID| entries), or an empty string

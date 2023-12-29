@@ -45,9 +45,9 @@ jobs:
 #      # Install dependencies needed by the repo: local in .pre-commit-config.yaml
 #      - name: Install dependencies
 #        run: |
-#          pip install -U pip wheel
+#          pip install --upgrade pip wheel
 #          if [ -f tests/requirements_pre-commit.txt ]; then pip install -U -r tests/requirements_pre-commit.txt; fi
-#          if [ -f requirements.txt ]; then pip install -U -r requirements.txt; fi
+#          if [ -f requirements.txt ]; then pip install --upgrade -r requirements.txt; fi
 #
 #      # The below has been replaced with the integration in GitHub of the "pre-commit ci" app https://pre-commit.ci
 #      # # Run pre-commit cache per https://github.com/pre-commit/action
@@ -83,11 +83,10 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        # pip -e installs a project in editable mode (i.e. setuptools “develop mode”) from a local project path
         run: |
-          pip install -U pip setuptools wheel
-          pip install -U .
-          pip install -U coveralls -r tests/requirements_testing.txt
+          pip install --upgrade pip wheel
+          pip install --upgrade .
+          pip install --upgrade coveralls -r tests/requirements_testing.txt
 
       - name: Run tests (Linux/MacOS)
         if: runner.os == 'Linux' || runner.os == 'macOS'
@@ -149,7 +148,7 @@ jobs:
       # Install pip dependencies
       - name: Install dependencies
         run: |
-          pip install -U pip build
+          pip install --upgrade pip build
 
       - name: Build dist
         run: |

@@ -59,6 +59,8 @@ packages = ['airportsdata']
 version = {attr = 'airportsdata.__version__'}
 dependencies = {file = 'requirements.txt'}
 
+[tool.setuptools.package-data]
+'airportsdata' = ['py.typed']
 
 # -------------------------- black --------------------------
 # Uncompromising code formatting

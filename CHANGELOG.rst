@@ -7,6 +7,20 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20231229
+==================
+* Changed IATA code of YTNG/ZBL, Thangool Airport, Biloela, Queensland, Australia from THG. IATA confusingly lists both
+  codes for this airport, but the only commercial service there (by Link Airways) uses the ZBL code. Based on a
+  contribution by `BhagyalakshmiMurugesan <https://github.com/BhagyalakshmiMurugesan-ninja>`__ in issue `#33
+  <https://github.com/mborsetti/airportsdata/issues/33>`__, but with own research.
+* Added LETL/TEV, Teruel Airport, Teruel, Aragón, Spain, Based on a contribution upstream by `Gabriel Campo
+  <https://github.com/gamma-ninja>`__ in upstream issue `#106 <https://github.com/mwgg/Airports/issues/106>`__,  but
+  with data from ARINC.
+* Localized subdivision names for Spain.
+* Added MMTU/TQO, Felipe Carrillo Puerto International Airport, Tulum, Quintana Roo, Mexico, opened on 1 December
+  2023
+
+
 Version 20231017
 ==================
 * Addded VDSA/SAI, Siem Reap Angkor International Airport, Siem Reap, Siem-Reap, Cambodia, opened on 05 October
@@ -21,8 +35,8 @@ Version 20231007
   versions are supported for 3 years after being obsoleted by a new major release (i.e. about 4 years since their
   original release).
 * Added VOKN/CNN, Kannur International Airport, Mattannur, Kerala, India. Based on a contribution upstream by `Ryan-DL
-  <https://github.com/Ryan-DL>`__ in PRs `#99 <https://github.com/mwgg/Airports/pull/91>`__
-  and `#93 <https://github.com/mwgg/Airports/pull/99>`__, but with official data from Indian AIP.
+  <https://github.com/Ryan-DL>`__ in PRs `#99 <https://github.com/mwgg/Airports/pull/99>`__
+  and `#93 <https://github.com/mwgg/Airports/pull/93>`__, but with official data from Indian AIP.
 * Fixed IATA code and name of UELL/NER, Chulman Neryungri Airport, Chulman, Chukot, Russia.
 
 
