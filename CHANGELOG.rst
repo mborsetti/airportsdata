@@ -7,7 +7,7 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
-Version 20231229
+Version 20231230
 ==================
 * Changed IATA code of YTNG/ZBL, Thangool Airport, Biloela, Queensland, Australia from THG. IATA confusingly lists both
   codes for this airport, but the only commercial service there (by Link Airways) uses the ZBL code. Based on a

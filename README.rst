@@ -48,20 +48,22 @@ with |ICAO| entries.
 Each entry consists of the following data:
 
 * ``icao``: ICAO 4-letter Location Indicator (Doc 7910) or (if none) an internal Pseudo-ICAO Identifier [#]_ (|ICAO|
-  entries)
-* ``iata``: IATA 3-letter Location Code (|IATA| entries) or an empty string [#]_
-* ``name``: Official name (latin script)
-* ``city``: City in latin script, ideally using the local language
+  entries);
+* ``iata``: IATA 3-letter Location Code (|IATA| entries) or an empty string [#]_;
+* ``name``: Official name (latin script);
+* ``city``: City in latin script, ideally using the local language;
 * ``subd``: Subdivision (e.g. state, province, region, etc.), ideally using the local-language or English names of
-  `ISO 3166-2 <https://en.wikipedia.org/wiki/ISO_3166-2#Current_codes>`__
+  `ISO 3166-2 <https://en.wikipedia.org/wiki/ISO_3166-2#Current_codes>`__;
 * ``country``: `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes>`__ alpha-2 country code
-  (plus ``XK`` for Kosovo)
-* ``elevation``: MSL elevation of the highest point of the landing area, in feet; it is often wrong
-* ``lat``: Latitude (decimal) of the `airport reference point <https://en.wikipedia.org/wiki/Airport_reference_point>`__
-* ``lon``: Longitude (decimal) of the `airport reference point <https://en.wikipedia.org/wiki/Airport_reference_point>`__
+  (plus ``XK`` for Kosovo);
+* ``elevation``: MSL elevation of the highest point of the landing area, in feet (warning: it is often wrong);
+* ``lat``: Latitude (decimal) of the `airport reference point
+  <https://en.wikipedia.org/wiki/Airport_reference_point>`__;
+* ``lon``: Longitude (decimal) of the `airport reference point
+  <https://en.wikipedia.org/wiki/Airport_reference_point>`__;
 * ``tz``: Timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
-  (IANA-compliant) or an empty string for Antarctica
-* ``lid``: U.S. FAA Location Identifier (|LID| entries), or an empty string
+  (IANA-compliant) or an empty string for Antarctica;
+* ``lid``: U.S. FAA Location Identifier (|LID| entries), or an empty string.
 
 .. [#] See `here <https://github.com/mborsetti/airportsdata/blob/main/README_identifiers.rst>`__ for an explanation on
    how the Pseudo-ICAO Identifier is generated for airports and seaplane bases without an ICAO 4-letter Location
@@ -130,10 +132,8 @@ or
 Older Python versions are supported for 3 years after being obsoleted by a new major release (i.e. about 4 years
 since their original release).
 
-License
-=======
-
-|license|
+License |license|
+=================
 
 Released under the `MIT License <https://opensource.org/licenses/MIT>`__ (see license `here
 <https://github.com/mborsetti/airportsdata/blob/main/LICENSE>`__).
