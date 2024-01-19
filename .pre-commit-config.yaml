@@ -11,7 +11,7 @@
 # NOTE: in this package implementation, tox runs 'pre-commit run -a'
 # To manually run without committing > pre-commit run --all-files
 
-minimum_pre_commit_version: 3.4.0
+minimum_pre_commit_version: 3.6.0
 
 # Force all unspecified python hooks to run python3
 default_language_version:

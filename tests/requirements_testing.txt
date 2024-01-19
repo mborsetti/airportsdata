@@ -1,4 +1,4 @@
-backports.zoneinfo; python_version < "3.9"
+# pip requirements for pytest (testing) (in addition to ./requirements.txt)
 pytest
 pytest-cov
 tzdata; os_name == "nt"

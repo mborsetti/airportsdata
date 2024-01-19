@@ -1,10 +1,5 @@
-* Changed IATA code of YTNG/ZBL, Thangool Airport, Biloela, Queensland, Australia from THG. IATA confusingly lists both
-  codes for this airport, but the only commercial service there (by Link Airways) uses the ZBL code. Based on a
-  contribution by `BhagyalakshmiMurugesan <https://github.com/BhagyalakshmiMurugesan-ninja>`__ in issue `#33
-  <https://github.com/mborsetti/airportsdata/issues/33>`__, but with own research.
-* Added LETL/TEV, Teruel Airport, Teruel, Aragón, Spain, Based on a contribution upstream by `Gabriel Campo
-  <https://github.com/gamma-ninja>`__ in upstream issue `#106 <https://github.com/mwgg/Airports/issues/106>`__,  but
-  with data from ARINC.
-* Localized subdivision names for Spain.
-* Added MMTU/TQO, Felipe Carrillo Puerto International Airport, Tulum, Quintana Roo, Mexico, opened on 1 December
-  2023
+* Changed IATA code of LUKK/RMO, Chișinău International Airport, Chișinău, Chișinău Municipality, Moldova from KIV.
+  The change was effective on 18 Jnauary 2024 per `Wikipedia
+  <https://en.wikipedia.org/wiki/Chi%C8%99in%C4%83u_International_Airport>`__; the new code is confirmed by the
+  airport's `website <https://airport.md/en/about-us/airport-history>`__. Originally contributed upstream by
+  `drewblin <https://github.com/drewblin>`__ in PR `#107 <https://github.com/mwgg/Airports/pull/107>`__.
