@@ -7,6 +7,11 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20240202
+==================
+* Added ZHEC/EHU, Ezhou Huahu Airport, Ezhou, Hubei, China. Contributed by `HaGoijer  <https://github.com/HaGoijer>`__
+  in issue `#34 <https://github.com/mborsetti/airportsdata/issues/34>`__)
+
 Version 20240119
 ==================
 * Changed IATA code of LUKK/RMO, Chișinău International Airport, Chișinău, Chișinău Municipality, Moldova from KIV.
@@ -59,7 +64,7 @@ Version 20230905
 * Fixed names of airports, cities, subdivisions (which now match `ISO 3166-2
   <https://en.wikipedia.org/wiki/ISO_3166-2:UA#Current_codes>`__ names) and timezones for Ukraine (contributed by
   `YURII D. <https://github.com/dejurin>`__ via pull request `#30
-  <https://github.com/mborsetti/airportsdata/issues/30>`__).
+  <https://github.com/mborsetti/airportsdata/pull/30>`__).
 * Fixed script for various Norwegian airports, which lacked accents etc.
 * Internal:
 
