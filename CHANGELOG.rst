@@ -7,6 +7,12 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+
+Version 20240207
+==================
+* Added VEAY/AYJ, Maharishi Valmiki International Airport, Ayodhya, Uttar Pradesh, India. Contributed by `Vedant Modi
+  <https://github.com/thevedantmodi>`__ in issue `#35 <https://github.com/mborsetti/airportsdata/issues/35>`__).
+
 Version 20240202
 ==================
 * Added ZHEC/EHU, Ezhou Huahu Airport, Ezhou, Hubei, China. Contributed by `HaGoijer  <https://github.com/HaGoijer>`__

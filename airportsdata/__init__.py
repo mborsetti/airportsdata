@@ -11,7 +11,7 @@ from typing import Dict, Literal, TypedDict
 
 __project_name__ = __package__
 # Release numbering follows the release date
-__version__ = '20240202'
+__version__ = '20240207'
 __min_python_version__ = (3, 9)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
@@ -47,7 +47,7 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airport']:
     :return: a dict of dicts, each entry having the following keys:
         'icao': ICAO 4-letter Location Indicator or 4-alphanumeric FAA/TC LID
         'iata': IATA 3-letter Location Code or an empty string
-        'name': Official name (latin script)
+        'name': Official name (diacritized latin script)
         'city': City
         'subd': Subdivision (e.g. state, province, region, etc.)
         'country': ISO 3166-1 alpha 2-code (plus 'XK' for Kosovo)

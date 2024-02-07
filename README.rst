@@ -2,9 +2,9 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,136
+.. |ICAO| replace:: 28,137
 
-.. |IATA| replace:: 7,591
+.. |IATA| replace:: 7,592
 
 .. |LID| replace:: 12,567
 
@@ -50,8 +50,8 @@ Each entry consists of the following data:
 * ``icao``: ICAO 4-letter Location Indicator (Doc 7910) or (if none) an internal Pseudo-ICAO Identifier [#]_ (|ICAO|
   entries);
 * ``iata``: IATA 3-letter Location Code (|IATA| entries) or an empty string [#]_;
-* ``name``: Official name (latin script);
-* ``city``: City in latin script, ideally using the local language;
+* ``name``: Official name (diacritized latin script);
+* ``city``: City (diacritized latin script), ideally using the local language;
 * ``subd``: Subdivision (e.g. state, province, region, etc.), ideally using the local-language or English names of
   `ISO 3166-2 <https://en.wikipedia.org/wiki/ISO_3166-2#Current_codes>`__;
 * ``country``: `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes>`__ alpha-2 country code
