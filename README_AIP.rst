@@ -17,6 +17,9 @@ contained here.
    * - AU
      - https://www.airservicesaustralia.com/aip/aip.asp
      -
+   * - BR
+     - https://aisweb.decea.mil.br/
+     -
    * - CA
      - https://www.navcanada.ca/en/aeronautical-information/aip-canada.aspx
      -

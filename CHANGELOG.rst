@@ -8,15 +8,30 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
+Version 20240309
+===================
+* Added MZBG/BGK, Big Creek Airport, Big Creek, Toledo, Belize.
+* Added MZSL/MZE, Manatee Airport, Spanish Lookout, Cayo, Belize.
+* Added SBVC/VDC, Glauber de Andrade Rocha Airport, Vitória da Conquista, Bahia, Brazil. Based on a contribution by
+  `maidough <https://github.com/maidough>`__ in PR `#110 <https://github.com/mwgg/Airports/pull/110>`__ upstream, but
+  with own research.
+* Removed SBQV/VDC, Vitoria da Conquista Airport, Vitoria Da Conquista, Bahia, Brazil, decommissioned on 23 July 2019.
+* Added SBHJ/JHF, São Paulo Catarina Executive Airport, São Roque, São Paulo, Brazil. Contributed by `maidough
+  <https://github.com/maidough>`__ in PR `#110 <https://github.com/mwgg/Airports/pull/110>`__ upstream.
+* Added IATA codes to 218 airports, for a total of 7,814.
+
+
 Version 20240207
 ==================
 * Added VEAY/AYJ, Maharishi Valmiki International Airport, Ayodhya, Uttar Pradesh, India. Contributed by `Vedant Modi
   <https://github.com/thevedantmodi>`__ in issue `#35 <https://github.com/mborsetti/airportsdata/issues/35>`__).
 
+
 Version 20240202
 ==================
 * Added ZHEC/EHU, Ezhou Huahu Airport, Ezhou, Hubei, China. Contributed by `HaGoijer  <https://github.com/HaGoijer>`__
-  in issue `#34 <https://github.com/mborsetti/airportsdata/issues/34>`__)
+  in issue `#34 <https://github.com/mborsetti/airportsdata/issues/34>`__).
+
 
 Version 20240119
 ==================
@@ -38,7 +53,7 @@ Version 20231230
   with data from ARINC.
 * Localized subdivision names for Spain.
 * Added MMTU/TQO, Felipe Carrillo Puerto International Airport, Tulum, Quintana Roo, Mexico, opened on 1 December
-  2023
+  2023.
 
 
 Version 20231017
@@ -50,7 +65,7 @@ Version 20231017
 
 Version 20231007
 ==================
-* Added support for Python 3.12
+* Added support for Python 3.12.
 * Removed support for Python 3.8 (This does not affect users of the the CSV files). As a reminder, older Python
   versions are supported for 3 years after being obsoleted by a new major release (i.e. about 4 years since their
   original release).
@@ -114,7 +129,6 @@ Version 20230630
   - URFF/SIP, Simferopol International Airport, Simferopol, Republic-of-Crimea, Russia (in Ukraine, duplicate of UKFF);
   - VTBH/KKM, Sa Pran Nak Airport, Lop-Buri, Thailand (correct identifier VTBL);
   - WAOM/MTW, Beringin Airport, Murateweh-Borneo Island, Central Kalimantan, Indonesia (closed 10 September 2020).
-
 
 
 Version 20230624

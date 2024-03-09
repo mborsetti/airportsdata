@@ -1,4 +1,5 @@
 """Updates counts in readme.rst file.  Requires Python >= 3.10."""
+
 from pathlib import Path
 
 import airportsdata
