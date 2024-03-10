@@ -472,7 +472,11 @@ def test_data_quality() -> None:
         assert isinstance(airport['city'], str)
         assert isinstance(airport['subd'], str)
         assert isinstance(airport['country'], str)
-        assert airport['country'] in iso_3166_1
+        if airport['lat'] <= -60:  # Antarctica
+            assert airport['country'] == 'AQ'
+            assert airport['tz'].startswith('Antarctica/')
+        else:
+            assert airport['country'] in iso_3166_1
         assert isinstance(airport['elevation'], float)
         assert isinstance(airport['lat'], float)
         assert isinstance(airport['lon'], float)
@@ -549,3 +553,9 @@ def test_wrong_key() -> None:
         # noinspection PyTypeChecker
         airportsdata.load('wrong_key')  # type: ignore[arg-type]
     assert e.value.args[0] == 'code_type must be one of ICAO, IATA or LID; received wrong_key'
+
+
+@pylatest_only
+def test_lid_loading() -> None:
+    """Test retrieval by LID."""
+    assert airportsdata.load('LID')['AK03'] == airports_icao['PAWT']

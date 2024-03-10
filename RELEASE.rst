@@ -1,9 +1,10 @@
-* Added MZBG/BGK, Big Creek Airport, Big Creek, Toledo, Belize.
-* Added MZSL/MZE, Manatee Airport, Spanish Lookout, Cayo, Belize.
-* Added SBVC/VDC, Glauber De Andrade Rocha Airport, Vitória da Conquista, Bahia, Brazil. Based on a contribution by
-  `maidough <https://github.com/maidough>`__ in PR `#110 <https://github.com/mwgg/Airports/pull/110>`__ upstream, but
-  with own research.
-* Removed SBQV/VDC, Vitoria da Conquista Airport, Vitoria Da Conquista, Bahia, Brazil, decommissioned on 23 July 2019.
-* Added SBHJ/JHF, São Paulo Catarina Executive Airport, São Roque, São Paulo, Brazil. Contributed by `maidough
-  <https://github.com/maidough>`__ in PR `#110 <https://github.com/mwgg/Airports/pull/110>`__ upstream.
-* Added IATA codes to 218 airports, for a total of 7,814.
+* Synchronized the database with data from the U.S. FAA `Airport/Facility Directory (AF/D)
+  <https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/>`__ effective 2024-Jan-25:
+
+  - Added 195 new airports;
+  - Updated data of 378 airports;
+  - Removed 158 closed airports.
+  - See full details in `CHANGES_240310.rst <https://github.com/mborsetti/airportsdata/blob/main/CHANGES_240310.rst>`__.
+* Updated ICAO code of LLPL, Palmahim Air Base, Rishon LeZion, Israel (was LL59).
+* Removed SC49, Oficina Victoria Airport, Oficina Victoria, Tarapaca, Chile (closed).
+* Removed UT73, Maymanak Airport, Maynanak, Qashqadaryo, Uzbekistan (closed).

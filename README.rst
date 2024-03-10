@@ -2,11 +2,11 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,140
+.. |ICAO| replace:: 28,175
 
-.. |IATA| replace:: 7,814
+.. |IATA| replace:: 7,813
 
-.. |LID| replace:: 12,567
+.. |LID| replace:: 12,603
 
 .. |pyversion| image:: https://img.shields.io/pypi/v/airportsdata.svg
     :target: https://pypi.org/project/airportsdata/
@@ -62,23 +62,23 @@ Each entry consists of the following data:
 * ``lon``: Longitude (decimal) of the `airport reference point
   <https://en.wikipedia.org/wiki/Airport_reference_point>`__;
 * ``tz``: Timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
-  (IANA-compliant) or an empty string for Antarctica;
+  (IANA-compliant);
 * ``lid``: U.S. FAA Location Identifier (|LID| entries), or an empty string.
 
 .. [#] See `here <https://github.com/mborsetti/airportsdata/blob/main/README_identifiers.rst>`__ for an explanation on
    how the Pseudo-ICAO Identifier is generated for airports and seaplane bases without an ICAO 4-letter Location
    Indicator.
 
-.. [#] IATA Multi Airport Cities are not not airports so are not included, but we provide a database and a Python
-   function that returns the above data for all of their component airports of a IATA MAC. Please see documentation
-   `here <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__.
+.. [#] IATA Multi Airport Cities are not not airports and therfore not included, but we provide a database and a Python
+   function that returns the above data for all the airports of a IATA MAC. Please see documentation `here
+   <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__.
 
 Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed nor should be
 expected by users.
 
 Important notes:
 
-* Timezone was originally sourced from `TimeZoneDB <https://timezonedb.com>`__ and is missing for Antarctica;
+* Timezone was originally sourced from `TimeZoneDB <https://timezonedb.com>`__;
 * No historical data (closed airports are removed).
 
 Please report any issues you may find `here
