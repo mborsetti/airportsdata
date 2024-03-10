@@ -8,7 +8,7 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
-Version 20240310
+Version 20240310.1
 ===================
 * Synchronized the database with data from the U.S. FAA `Airport/Facility Directory (AF/D)
   <https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/>`__ effective 2024-Jan-25:
