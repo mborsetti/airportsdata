@@ -1,7 +1,7 @@
-* Added BKPR/PRN, Pristina International Airport, Pristina, Kosovo. Contributed by `niclaswue
-  <https://github.com/niclaswue>`__ in issue `#36 <https://github.com/mborsetti/airportsdata/issues/36>`__.
 * Added VOGA/GOX, Manohar International Airport, Mopa, Goa, IN. Contributed by `eatdostacos
   <https://github.com/eatdostacos>`__ in PR `#114 <https://github.com/mwgg/Airports/pull/114>`__ upstream.
+* Changed ICAO of BKPR/PRN, Pristina International Airport, Pristina, Kosovo (was LYPR). Contributed by `niclaswue
+  <https://github.com/niclaswue>`__ in issue `#36 <https://github.com/mborsetti/airportsdata/issues/36>`__.
 * Added the following 2 Nav Canada-towered Canadian airports:
 
   - CYHC/CXH, Vancouver Harbour BC (Water Airport), Vancouver, British Columbia, CA.
