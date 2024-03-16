@@ -4,14 +4,14 @@ import sys
 import warnings
 from pathlib import Path
 
-import airportsdata
-
 import pytest
+
+import airportsdata
 
 try:  # required for < Python 3.9
     import zoneinfo
 except ImportError:
-    import backports.zoneinfo as zoneinfo  # type: ignore[no-redef]
+    import backports.zoneinfo as zoneinfo  # type: ignore[no-redef,import-not-found]
 
 pylatest_only = pytest.mark.skipif(
     sys.version_info < (3, 11),
@@ -447,6 +447,120 @@ tz_deprecated = {
     'WET',
     'Zulu',
 }  # from https://www.php.net/timezones.others 2020-11-08; UTC kept in the list as it's non-geographical
+subdiv = {  # ISO 3166-2 subdivisions for certain countries https://en.wikipedia.org/wiki/ISO_3166-2
+    'CA': {
+        'Ontario',
+        'Quebec',
+        'Nova Scotia',
+        'New Brunswick',
+        'Manitoba',
+        'British Columbia',
+        'Prince Edward Island',
+        'Saskatchewan',
+        'Alberta',
+        'Newfoundland and Labrador',
+        'Northwest Territories',
+        'Yukon',
+        'Nunavut',
+    },
+    'IN': {
+        'Andhra Pradesh',
+        'Arunachal Pradesh',
+        'Assam',
+        'Bihar',
+        'Chhattisgarh',
+        'Goa',
+        'Gujarat',
+        'Haryana',
+        'Himachal Pradesh',
+        'Jharkhand',
+        'Karnataka',
+        'Kerala',
+        'Madhya Pradesh',
+        'Maharashtra',
+        'Manipur',
+        'Meghalaya',
+        'Mizoram',
+        'Nagaland',
+        'Odisha',
+        'Punjab',
+        'Rajasthan',
+        'Sikkim',
+        'Tamil Nadu',
+        'Telangana',
+        'Tripura',
+        'Uttar Pradesh',
+        'Uttarakhand',
+        'West Bengal',
+        'Andaman and Nicobar Islands',
+        'Chandigarh',
+        'Dadra and Nagar Haveli and Daman and Diu',
+        'Delhi',
+        'Jammu and Kashmir',
+        'Ladakh',
+        'Lakshadweep',
+        'Puducherry',
+    },
+    'US': {
+        'Alabama',
+        'Alaska',
+        'Arizona',
+        'Arkansas',
+        'California',
+        'Colorado',
+        'Connecticut',
+        'Delaware',
+        'Florida',
+        'Georgia',
+        'Hawaii',
+        'Idaho',
+        'Illinois',
+        'Indiana',
+        'Iowa',
+        'Kansas',
+        'Kentucky',
+        'Louisiana',
+        'Maine',
+        'Maryland',
+        'Massachusetts',
+        'Michigan',
+        'Minnesota',
+        'Mississippi',
+        'Missouri',
+        'Montana',
+        'Nebraska',
+        'Nevada',
+        'New Hampshire',
+        'New Jersey',
+        'New Mexico',
+        'New York',
+        'North Carolina',
+        'North Dakota',
+        'Ohio',
+        'Oklahoma',
+        'Oregon',
+        'Pennsylvania',
+        'Rhode Island',
+        'South Carolina',
+        'South Dakota',
+        'Tennessee',
+        'Texas',
+        'Utah',
+        'Vermont',
+        'Virginia',
+        'Washington',
+        'West Virginia',
+        'Wisconsin',
+        'Wyoming',
+        'District of Columbia',
+        # 'American Samoa',  # using own ISO 3166-1 country code
+        # 'Guam',  # using own ISO 3166-1 country code
+        # 'Northern Mariana Islands',  # using own ISO 3166-1 country code
+        'Puerto Rico',  # also has own ISO 3166-1 country code
+        # 'United States Minor Outlying Islands',  # using own ISO 3166-1 country code
+        'Virgin Islands',  # also has own ISO 3166-1 country code
+    },
+}
 
 
 def test_loading() -> None:
@@ -477,6 +591,10 @@ def test_data_quality() -> None:
             assert airport['tz'].startswith('Antarctica/')
         else:
             assert airport['country'] in iso_3166_1
+        if airport['country'] in subdiv:
+            if not airport['subd'] in subdiv[airport['country']]:
+                print(airport)
+                assert airport['subd'] in subdiv[airport['country']]
         assert isinstance(airport['elevation'], float)
         assert isinstance(airport['lat'], float)
         assert isinstance(airport['lon'], float)

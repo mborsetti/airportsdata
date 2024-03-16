@@ -2,9 +2,9 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,175
+.. |ICAO| replace:: 28,177
 
-.. |IATA| replace:: 7,813
+.. |IATA| replace:: 7,817
 
 .. |LID| replace:: 12,603
 

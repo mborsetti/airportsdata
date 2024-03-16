@@ -14,11 +14,11 @@ This database uses FAA data for all operational public use airports in these ISO
 - ``GU`` (The Territory of Guam),
 - ``MH`` (The Republic of the Marshall Islands),
 - ``MP`` (The Commonwealth of the Northern Mariana Islands),
-- ``PR`` (The Commonwealth of Puerto Rico),
+- ``PR`` (The Commonwealth of Puerto Rico) (saved as subdivision "Puerto Rico" of country US),
 - ``PW`` (The Republic of Palau),
 - ``UM`` (The United States Minor Outlying Islands),
 - ``US`` (The United States of America),
-- ``VI`` (The Virgin Islands of the United States).
+- ``VI`` (The Virgin Islands of the United States) (saved as subdivision "Virgin Islands" of country US).
 
 Many of the airports in country ``US`` do not have an ICAO Location Indicator, but only have a Location Identifier
 assigned by the FAA ('FAA LID'). For the purposes of this database, these have been given a Pseudo-ICAO Identifier as
