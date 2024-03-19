@@ -28029,7 +28029,7 @@
 "ZLGM","GOQ","Golmud Airport","Golmud","Qinghai","CN",0,36.4006004333,94.7861022949,"Asia/Shanghai",""
 "ZLGY","GYU","Guyuan Liupanshan Airport","Guyuan","Ningsia-Hui-Autonomous-Region","CN",5696,36.0788888889,106.216944444,"Asia/Shanghai",""
 "ZLHZ","HZG","Hanzhong Airport","Hanzhong","Shaanxi","CN",0,33.0635986328,107.0080032349,"Asia/Shanghai",""
-"ZLIC","INC","Yinchuan Airport","Yinchuan","Ningsia-Hui-Autonomous-Region","CN",0,38.4818992615,106.0090026855,"Asia/Shanghai",""
+"ZLIC","INC","Yinchuan Hedong International Airport","Yinchuan","Ningxia Hui Autonomous Region","CN",3743,38.320999,106.389782,"Asia/Shanghai",""
 "ZLJC","JIC","Jinchuan Airport","Jinchang","Gansu","CN",4740,38.5422222222,102.348333333,"Asia/Shanghai",""
 "ZLJN","JNG","Jining Qufu Airport","Jining","Shandong","CN",134,35.2927777778,116.346666667,"Asia/Shanghai",""
 "ZLJQ","JGN","Jiayuguan Airport","Jiayuguan","Gansu","CN",0,39.8568992615,98.3414001465,"Asia/Shanghai",""
@@ -28183,3 +28183,4 @@
 "_AYM","AYM","Yas Island Seaplane Base","Yas Island","Abu Dhabi","AE",0,24.467,54.6103,"Asia/Dubai",""
 "_KBH","KBH","Buzwagi","Kahama","Shinyanga","TZ",3980,-3.791667,32.646667,"Africa/Dar_es_Salaam",""
 "_OUK","OUK","Out Skerries Airstrip","Shetland","Scotland","GB",20,60.425583,-0.7466,"Europe/London","EG78"
+"_YEH","YEH","Yinchuan Helanshan Airport","Yinchuan","Ningxia Hui Autonomous Region","CN",1149,38.4818992615,106.0090026855,"Asia/Shanghai",""
