@@ -4,7 +4,7 @@ airportsdata |downloads|
 
 .. |ICAO| replace:: 28,185
 
-.. |IATA| replace:: 7,819
+.. |IATA| replace:: 7,820
 
 .. |LID| replace:: 12,603
 
@@ -58,9 +58,9 @@ Each entry consists of the following data:
   (plus ``XK`` for Kosovo);
 * ``elevation``: MSL elevation of the highest point of the landing area, in feet (warning: it is often wrong);
 * ``lat``: Latitude (decimal) of the `airport reference point
-  <https://en.wikipedia.org/wiki/Airport_reference_point>`__;
+  <https://en.wikipedia.org/wiki/Airport_reference_point>`__ (max 5 decimal digits);
 * ``lon``: Longitude (decimal) of the `airport reference point
-  <https://en.wikipedia.org/wiki/Airport_reference_point>`__;
+  <https://en.wikipedia.org/wiki/Airport_reference_point>`__ (max 5 decimal digits);
 * ``tz``: Timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
   (IANA-compliant);
 * ``lid``: U.S. FAA Location Identifier (|LID| entries), or an empty string.
