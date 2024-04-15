@@ -8,6 +8,14 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
+
+
+Version 20240415
+================
+* Added IATA code and fixed spelling for UTNM/MOK, Muynaq Airport, Muynaq, Karakalpakstan, Uzbekhistan. Contributed
+  by `1oKPro1 <https://github.com/1oKPro1>`__ in PR `#37 <https://github.com/mborsetti/airportsdata/pull/37>`__.
+* Added OPRN, Nur Khan Air Base, Rawalpindi, Punjab, Pakistan.
+
 Version 20240409
 ================
 * Reduced file size by 10.2% by removing unnecessary decimal places (fake precision) in latitude and longitude values.
