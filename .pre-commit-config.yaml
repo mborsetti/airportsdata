@@ -191,8 +191,14 @@ repos:
 
   - repo: local
     hooks:
+      - id: sort_and_fix
+        name: Sort database and fix data precision
+        entry: python pre-commit/sort_and_fix.py
+        language: system
+        pass_filenames: false
+
       - id: update_readme_counts
         name: Update database counts in README.rst
-        entry: python update_readme_counts.py
+        entry: python pre-commit/update_readme_counts.py
         language: system
         pass_filenames: false
