@@ -9,6 +9,13 @@ on the UTC date of the release.
 
 
 
+Version 2024-08-06
+==================
+* Added K6N7/NYS, New York Skyports Inc Seaplane Base, New York, New York, US. Contributed by `maidough
+  <https://github.com/maidough>`__ in PRs `#132 <https://github.com/mwgg/Airports/pull/132>`__, validated and modified
+  using FAA data.
+
+
 Version 2024-07-28
 ==================
 * Added 40 new airports and fixed 56 ones:
