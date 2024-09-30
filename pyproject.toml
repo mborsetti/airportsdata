@@ -31,14 +31,17 @@ keywords = ['airports', 'aerodromes', 'ICAO', 'IATA']
 classifiers = [
     'Development Status :: 5 - Production/Stable',
     'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
     'Operating System :: OS Independent',
     'Topic :: Database',
     'Intended Audience :: Developers',
+    'Typing :: Typed',
 ]
 
 [project.urls]
@@ -47,6 +50,7 @@ Repository = 'https://github.com/mborsetti/airportsdata/'
 'Database (csv)' = 'https://github.com/mborsetti/airportsdata/blob/main/airportsdata/airports.csv'
 Changelog = 'https://github.com/mborsetti/airportsdata/blob/main/CHANGELOG.rst'
 Issues = 'https://github.com/mborsetti/airportsdata/issues'
+CI = 'https://github.com/mborsetti/airportsdata/actions'
 
 
 # -------------------------- setuptools --------------------------
@@ -127,6 +131,8 @@ exclude_lines = [
 # Disable below when running in PyCharm to enable breakpoints: https://github.com/pytest-dev/pytest-cov/issues/131
 # Adds pytest-cov functionality (see https://pytest-cov.readthedocs.io/en/latest/config.html)
 # addopts = --cov=./ --cov-report term --cov-report html --cov-report xml --cov-config=.coveragerc
-
+log_auto_indent = true
 # Enable log display during test run (aka "live logging" https://docs.pytest.org/en/stable/logging.html#live-logs)
 log_cli = true
+minversion = '8.3.3'
+testpaths = ['tests']

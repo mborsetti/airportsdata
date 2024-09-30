@@ -64,7 +64,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        python-version: ['3.12', '3.11', '3.10', '3.9']
+        python-version: ['3.13.0-rc.2', '3.12', '3.11', '3.10', '3.9']
         # for valid python-version see https://github.com/actions/python-versions/releases
 
     env:

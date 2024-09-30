@@ -2,19 +2,15 @@
 
 import sys
 import warnings
+import zoneinfo
 from pathlib import Path
 
+import airportsdata
 import pytest
 
-import airportsdata
-
-try:  # required for < Python 3.9
-    import zoneinfo
-except ImportError:
-    import backports.zoneinfo as zoneinfo  # type: ignore[no-redef,import-not-found]
 
 pylatest_only = pytest.mark.skipif(
-    sys.version_info < (3, 11),
+    sys.version_info < (3, 12),
     reason='Data quality and integrity is only checked once, with latest Python version',
 )
 
@@ -598,7 +594,9 @@ def test_data_quality() -> None:
                 assert airport['subd'] in subdiv[airport['country']]
         assert isinstance(airport['elevation'], float)
         assert isinstance(airport['lat'], float)
+        assert -90 <= airport['lat'] <= 90
         assert isinstance(airport['lon'], float)
+        assert -180 <= airport['lon'] <= 180
         if airport['tz'] in tz_deprecated:
             warnings.warn(
                 DeprecationWarning(
