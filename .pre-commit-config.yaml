@@ -20,7 +20,7 @@ default_language_version:
 # A list of repository mappings.
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       # see https://github.com/pre-commit/pre-commit-hooks
 #      - id: check-added-large-files
