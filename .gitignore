@@ -2,9 +2,13 @@
 /.idea/
 /.pytest_cache/
 /.tox/
-/**/__*
 /dist/
 /htmlcov/
 /venv/
 /.coverage
 /coverage.xml
+.*
+__pycache__/
+/pip/
+/build/
+/airportsdata/airports_*.csv

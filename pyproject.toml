@@ -33,7 +33,6 @@ classifiers = [
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python',
     'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python :: 3.12',
@@ -85,7 +84,7 @@ color = true
 # Config file documentation at https://coverage.readthedocs.io/en/latest/config.html
 [tool.coverage.run]
 branch = true
-source = ['./']
+source = ['.']
 omit = [
     '.*/*',
     'build/*',
@@ -97,7 +96,8 @@ omit = [
     'airportsdata.egg-info/*'
 ]
 relative_files = true
-command_line = '-m pytest -vv'
+command_line = '-m pytest -v'
+parallel = true
 
 [tool.coverage.report]
 # Regexes for lines to exclude from consideration
@@ -127,12 +127,17 @@ exclude_lines = [
 
 
 # -------------------------- pytest --------------------------
+# Testing framework
+# Config file documentation at https://docs.pytest.org/en/stable/reference/reference.html#ini-options-ref
 [tool.pytest.ini_options]
-# Disable below when running in PyCharm to enable breakpoints: https://github.com/pytest-dev/pytest-cov/issues/131
-# Adds pytest-cov functionality (see https://pytest-cov.readthedocs.io/en/latest/config.html)
-# addopts = --cov=./ --cov-report term --cov-report html --cov-report xml --cov-config=.coveragerc
 log_auto_indent = true
 # Enable log display during test run (aka "live logging" https://docs.pytest.org/en/stable/logging.html#live-logs)
 log_cli = true
 minversion = '8.3.3'
 testpaths = ['tests']
+
+# Adds pytest-cov functionality (see https://pytest-cov.readthedocs.io/en/latest/config.html)
+# Note: --cov moved to .github/workflows/ci-cd.yaml and tox.ini due to interference with PyCharm breakpoints (see
+# https://github.com/pytest-dev/pytest-cov/issues/131) and to enable running tox --parallel
+# Instead of below, now runs with $ coverage run --parallel-mode
+# addopts = --cov=./ --cov-report=term --cov-report=html
