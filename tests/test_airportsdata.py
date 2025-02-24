@@ -649,7 +649,7 @@ def test_iata_macs() -> None:
     """Test that iata_macs are being returned and that NYC has the correct airports."""
     airports_iata = airportsdata.load('IATA')
     iata_macs = airportsdata.load_iata_macs()
-    assert len(iata_macs) == 41
+    assert len(iata_macs) == 42
     assert list(iata_macs['NYC']['airports'].keys()) == ['JFK', 'LGA']
     for key, mac in iata_macs.items():
         assert key.isupper()
