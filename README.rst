@@ -2,11 +2,11 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,237
+.. |ICAO| replace:: 28,258
 
-.. |IATA| replace:: 7,876
+.. |IATA| replace:: 7,908
 
-.. |LID| replace:: 12,604
+.. |LID| replace:: 12,609
 
 .. |pyversion| image:: https://img.shields.io/pypi/v/airportsdata.svg
     :target: https://pypi.org/project/airportsdata/
@@ -69,8 +69,8 @@ Each entry consists of the following data:
    how the Pseudo-ICAO Identifier is generated for airports and seaplane bases without an ICAO 4-letter Location
    Indicator.
 
-.. [#] IATA Multi Airport Cities are not not airports and therfore not included, but we provide a database and a Python
-   function that returns the above data for all the airports of a IATA MAC. Please see documentation `here
+.. [#] IATA Multi Airport Cities (MAC) are not not airports and therfore not included, but we provide a database and a 
+   Python function that returns the above data for all the airports of a IATA MAC. Please see documentation `here
    <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__.
 
 Best efforts are placed to review all contributions for accuracy, but accuracy cannot be guaranteed nor should be
@@ -79,7 +79,10 @@ expected by users.
 Important notes:
 
 * Timezone was originally sourced from `TimeZoneDB <https://timezonedb.com>`__;
-* No historical data (closed airports are removed).
+* No historical data (closed airports are removed);
+* No heliports without a IATA code;
+* No sea bases without a IATA code;
+* No surface transportation stations, even if they have an official IATA code.
 
 Please report any issues you may find `here
 <https://github.com/mborsetti/airportsdata/blob/main/CONTRIBUTING.rst>`__.

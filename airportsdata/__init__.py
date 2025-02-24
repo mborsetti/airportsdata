@@ -10,8 +10,8 @@ from pathlib import Path
 from typing import Dict, Literal, TypedDict
 
 __project_name__ = __package__
-__min_python_version__ = (3, 9)  # minimum version of Python required to run; supported until 4 October 2024
-__version__ = '20241001'  # numbering follows the release date
+__min_python_version__ = (3, 10)  # minimum version of Python required to run; supported until October 2025
+__version__ = '20250224'  # numbering follows the release date
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
 __license__ = 'MIT'
@@ -57,14 +57,6 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airport']:
             Originally sourced from [TimeZoneDB](https://timezonedb.com)
         'lid': The FAA Location Identifier (for US country only; others is blank)
     """
-    # with open(os.path.join(dir, 'airports.json'), encoding='utf8') as f:
-    #     airports = json.load(f)
-    # if code_type.lower() == 'icao':
-    #     return airports
-    # else:
-    #     return {airport['iata']: airport for airport in dict(airports).values() if airport['iata']}
-    #
-    #
     key = code_type.lower()
     if key not in ('icao', 'iata', 'lid'):
         raise ValueError(f'code_type must be one of ICAO, IATA or LID; received {code_type}')
@@ -73,6 +65,8 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airport']:
     with this_dir.joinpath('airports.csv').open(encoding='utf8') as f:
         reader = csv.DictReader(f, quoting=csv.QUOTE_NONNUMERIC)
         for row in reader:
+            # if row[key] and row[key] in airports:
+            #     raise ValueError(f"Duplicate key in csv: '{row[key]}'")
             airports[row[key]] = row  # type: ignore[assignment]
     airports.pop('', None)
     return airports
@@ -88,14 +82,6 @@ def load_iata_macs() -> dict[str, IATAMAC]:
         'airports': a dict with the same data returned by load() for each airport that makes up the Multi Airport
            City, where the key is the airport's IATA code.
     """
-    # with open(os.path.join(dir, 'airports.json'), encoding='utf8') as f:
-    #     airports = json.load(f)
-    # if code_type.lower() == 'icao':
-    #     return airports
-    # else:
-    #     return {airport['iata']: airport for airport in dict(airports).values() if airport['iata']}
-    #
-    #
     airports = load('IATA')
     this_dir = Path(__file__).parent
     iata_macs: dict[str, IATAMAC] = {}

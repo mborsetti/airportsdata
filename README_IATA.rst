@@ -4,8 +4,7 @@
 
 IATA resolution 011c adopted at the 3rd IATA Passenger Standards Conference October 2021 in PTC123(186), for intended
 implementation date of 3 October 2022, defines |IATA_MACs| Multi Airport Cities (comprising of a total of
-|IATA_MACs_apts| airports) for the "Identifiers are identical to Airport ones (e.g. ``DXB``), and others are unique
-(e.g. ``NYC``). As a tool for users, we provide the |IATA_MACs| IATA Multi Airport Cities
+|IATA_MACs_apts| airports) which consist of a mix of identifiers that are identical to Airport ones (e.g. ``DXB``) and others that are unique (e.g. ``NYC``). As a tool for users, we provide the |IATA_MACs| IATA Multi Airport Cities
 
 * in the table below;
 * as a csv file named ``iata_macs.csv``; and
@@ -24,9 +23,9 @@ implementation date of 3 October 2022, defines |IATA_MACs| Multi Airport Cities 
                         'elevation': 13.0,
                         'iata': 'JFK',
                         'icao': 'KJFK',
-                        'lat': 40.6399277777778,
+                        'lat': 40.63993,
                         'lid': 'JFK',
-                        'lon': -73.7786925,
+                        'lon': -73.77869,
                         'name': 'John F Kennedy International Airport',
                         'subd': 'New York',
                         'tz': 'America/New_York'},
@@ -37,7 +36,7 @@ implementation date of 3 October 2022, defines |IATA_MACs| Multi Airport Cities 
                         'icao': 'KLGA',
                         'lat': 40.77725,
                         'lid': 'LGA',
-                        'lon': -73.8726111111111,
+                        'lon': -73.87261,
                         'name': 'Laguardia Airport',
                         'subd': 'New York',
                         'tz': 'America/New_York'}},
@@ -45,9 +44,8 @@ implementation date of 3 October 2022, defines |IATA_MACs| Multi Airport Cities 
    'name': 'New York'}
 
 
-Please note that some GDSs and/or websites use their own custom-defined metropolitan areas often using codes that are
-not official IATA Location Identifiers (e.g. Travelport's ``QBA`` for the San Francisco Bay Area); please consult
-with the provider.
+Please note that some GDSs and/or websites use their own custom-defined metropolitan areas, typically appropriating
+codes that are not official IATA Location Identifiers (e.g. Travelport's ``QBA`` for the San Francisco Bay Area); these are not part of this database.
 
 Also keep in mind that we do not have IATA Location Identifiers for surface transportation locations (we only support
 airports).

@@ -64,8 +64,9 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        python-version: ['3.13.0-rc.2', '3.12', '3.11', '3.10', '3.9']
-        # for valid python-version see https://github.com/actions/python-versions/releases
+        # Python versions at https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json
+        # RCs need to be specified fully, e.g. '3.13.0-rc.3'
+        python-version: ['3.13', '3.12', '3.11', '3.10']
 
     env:
       commitmsg: ${{ github.event.head_commit.message }}  # only available at check-out; becomes env.commitmsg
@@ -91,7 +92,7 @@ jobs:
       - name: Run tests (Linux/MacOS)
         if: runner.os == 'Linux' || runner.os == 'macOS'
         run:
-          python -m pytest tests/ -v --cov=./ --cov-report term --cov-report html --cov-report xml --cov-config=.coveragerc
+          python -m pytest -v --cov=./ --cov-report=term tests/
         env:
           PYTHONUTF8: 1
 
@@ -99,24 +100,26 @@ jobs:
         if: runner.os == 'Windows'
         run:
           # workaround for Windows fatal exception: access violation
-          python -m pytest tests/ -v --cov=./ --cov-report term --cov-report html --cov-report xml --cov-config=.coveragerc -p no:faulthandler
+          python -m pytest -v --cov=./ --cov-report=term -p no:faulthandler tests/
         env:
           PYTHONUTF8: 1
+          COVERALLS_FLAG_NAME: tests-${{ matrix.python-version }}-${{ matrix.os }}
+          COVERALLS_PARALLEL: true
 
-#      # below not working as pytest-cov does not create the ./coverage/lcov.info file!
+      # below may not be working as pytest-cov does not create the ./coverage/lcov.info file!
 #      - name: Upload LCOV coverage data to Coveralls
-#        uses: coverallsapp/github-action@master
+#        uses: coverallsapp/github-action@main
 #        with:
 #          github-token: ${{ secrets.github_token }}
 #          flag-name: tests-${{ matrix.python-version }}-${{ matrix.os }}
 #          parallel: true
-
-      - name: Upload coverage to Coveralls (parallel)
-        run: coveralls --service=github
-        env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
-          COVERALLS_FLAG_NAME: tests-${{ matrix.python-version }}-${{ matrix.os }}
-          COVERALLS_PARALLEL: true
+#
+#      - name: Upload coverage to Coveralls (parallel)
+#        run: coveralls --service=github
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.github_token }}
+#          COVERALLS_FLAG_NAME: tests-${{ matrix.python-version }}-${{ matrix.os }}
+#          COVERALLS_PARALLEL: true
 
   coveralls:
     name: Indicate completion to coveralls.io
@@ -124,17 +127,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Coveralls parallel finished
-      uses: coverallsapp/github-action@master
+      uses: coverallsapp/github-action@main
       with:
         github-token: ${{ secrets.github_token }}
         parallel-finished: true
 
   deploy:
     name: Deploy release
-    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write  # IMPORTANT: this permission is mandatory for trusted publishing
+    needs: [test]
     # ref https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
-    needs: [test]
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/airportsdata>
     steps:
       - name: Check out repo
         uses: actions/checkout@main
@@ -142,7 +151,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@main
         with:
-          python-version: '3.12'
+          python-version: '3.13'
           cache: 'pip'
 
       # Install pip dependencies
@@ -155,20 +164,21 @@ jobs:
           python -m build
 
       # PyPI publish GitHub Action from https://github.com/pypa/gh-action-pypi-publish
-      - name: Publish package
+      - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          user: __token__
-          password: ${{ secrets.pypi_password }}
+#        with:
+#          user: __token__
+#          password: ${{ secrets.pypi_password }}
 
       - name: Create GitHub release
         id: create_release
-        uses: actions/create-release@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
+#        uses: actions/create-release@main
+        uses: softprops/action-gh-release@main
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ github.ref }}
           body_path: RELEASE.rst
           draft: false
           prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.github_token }}

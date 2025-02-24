@@ -1,4 +1,3 @@
 # pip requirements for pytest (testing) (in addition to ./requirements.txt)
 pytest
 pytest-cov
-tzdata; os_name == "nt"
