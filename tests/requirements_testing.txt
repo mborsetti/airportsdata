@@ -1,3 +1,4 @@
 # pip requirements for pytest (testing) (in addition to ./requirements.txt)
 pytest
 pytest-cov
+tzdata; sys_platform == 'win32'
