@@ -159,6 +159,7 @@ jobs:
         run: |
           pip install --upgrade pip build
 
+      # build https://pypa-build.readthedocs.io/en/latest/
       - name: Build dist
         run: |
           python -m build
@@ -172,13 +173,10 @@ jobs:
 
       - name: Create GitHub release
         id: create_release
-#        uses: actions/create-release@main
-        uses: softprops/action-gh-release@main
+        uses: softprops/action-gh-release@master
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
           body_path: RELEASE.rst
           draft: false
           prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
+          preserve_order: false
+          make_latest: true
