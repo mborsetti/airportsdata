@@ -2,9 +2,9 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,258
+.. |ICAO| replace:: 28,223
 
-.. |IATA| replace:: 7,908
+.. |IATA| replace:: 7,859
 
 .. |LID| replace:: 12,609
 
@@ -51,16 +51,16 @@ Each entry consists of the following data:
   entries);
 * ``iata``: IATA 3-letter Location Code (|IATA| entries) or an empty string [#]_;
 * ``name``: Official name (diacritized latin script);
-* ``city``: City (diacritized latin script), ideally using the local language;
+* ``city``: City (diacritized latin script), ideally using the local language or English;
 * ``subd``: Subdivision (e.g. state, province, region, etc.), ideally using the local-language or English names of
   `ISO 3166-2 <https://en.wikipedia.org/wiki/ISO_3166-2#Current_codes>`__;
 * ``country``: `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes>`__ alpha-2 country code
   (plus ``XK`` for Kosovo);
 * ``elevation``: MSL elevation of the highest point of the landing area, in feet (warning: it is often wrong);
 * ``lat``: Latitude (decimal) of the `airport reference point
-  <https://en.wikipedia.org/wiki/Airport_reference_point>`__ (max 5 decimal digits);
+  <https://en.wikipedia.org/wiki/Airport_reference_point>`__ (max 5 or 6 decimal digits);
 * ``lon``: Longitude (decimal) of the `airport reference point
-  <https://en.wikipedia.org/wiki/Airport_reference_point>`__ (max 5 decimal digits);
+  <https://en.wikipedia.org/wiki/Airport_reference_point>`__ (max 5 or 6 decimal digits);
 * ``tz``: Timezone expressed as a `tz database name <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>`__
   (IANA-compliant);
 * ``lid``: U.S. FAA Location Identifier (|LID| entries), or an empty string.

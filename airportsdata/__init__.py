@@ -11,7 +11,7 @@ from typing import Dict, Literal, TypedDict
 
 __project_name__ = __package__
 __min_python_version__ = (3, 10)  # minimum version of Python required to run; supported until October 2025
-__version__ = '20250224'  # numbering follows the release date
+__version__ = '20250523'  # numbering follows the release date
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
 __license__ = 'MIT'
@@ -86,6 +86,10 @@ def load_iata_macs() -> dict[str, IATAMAC]:
     this_dir = Path(__file__).parent
     iata_macs: dict[str, IATAMAC] = {}
     row_d: dict[str, str]
+    multi_airport_city_code = ''
+    name = ''
+    country = ''
+    airport = ''
     with this_dir.joinpath('iata_macs.csv').open(encoding='utf8') as f:
         reader = csv.DictReader(f, quoting=csv.QUOTE_NONNUMERIC)
         for row_d in reader:

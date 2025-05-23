@@ -6,9 +6,46 @@ import shutil
 from pathlib import Path
 import airportsdata
 
-from .update_readme_counts import load_airportsdata
 
 module_dir = Path(__file__).parent.parent.joinpath('airportsdata')
+
+
+def load_airportsdata(
+    code_type: airportsdata.CodeType = 'ICAO',
+    filename: str = 'airports.csv',
+    data_dir: Path = module_dir,
+) -> dict[str, airportsdata.Airport]:
+    """Loads airport data into a dict
+
+    :param code_type: optional argument defining the key in the dictionary: 'ICAO' (default if omitted),
+    'IATA' (for IATA Location Codes) or 'LID' (for U.S. FAA Location Identifiers).
+
+    :return: a dict of dicts, each entry having the following keys:
+        'icao': ICAO 4-letter Location Indicator or 4-alphanumeric FAA/TC LID
+        'iata': IATA 3-letter Location Code or an empty string
+        'name': Official name (diacritized latin script)
+        'city': City
+        'subd': Subdivision (e.g. state, province, region, etc.)
+        'country': ISO 3166-1 alpha 2-code (plus 'XK' for Kosovo)
+        'elevation': MSL elevation (the highest point of the landing area) in feet
+        'lat': Latitude (decimal)
+        'lon': Longitude (decimal)
+        'tz': Timezone expressed as a tz database name (IANA-compliant) or empty string for country 'AQ' (Antarctica).
+            Originally sourced from [TimeZoneDB](https://timezonedb.com)
+        'lid': The FAA Location Identifier (for US country only; others is blank)
+    """
+    key = code_type.lower()
+    if key not in ('icao', 'iata', 'lid'):
+        raise ValueError(f'code_type must be one of ICAO, IATA or LID; received {code_type}')
+    airports: dict[str, airportsdata.Airport] = {}
+    with data_dir.joinpath(filename).open(encoding='utf8') as f:
+        reader = csv.DictReader(f, quoting=csv.QUOTE_NONNUMERIC)
+        for row in reader:
+            if row['elevation'] == (elevation_int := int(row['elevation'])):
+                row['elevation'] = elevation_int
+            airports[row[key]] = row  # type: ignore[assignment]
+    airports.pop('', None)
+    return airports
 
 
 def make_backup(data_path: Path) -> None:
@@ -43,6 +80,6 @@ if __name__ == '__main__':
     # make a backup
     make_backup(data_path)
     # load airports
-    airports = load_airportsdata(this_dir=module_dir)
+    airports = load_airportsdata(data_dir=module_dir)
     # fix and resave them
     fix_and_save_airports(airports, data_path)

@@ -12,7 +12,7 @@ module_dir = Path(__file__).parent.parent.joinpath('airportsdata')
 def load_airportsdata(
     code_type: CodeType = 'ICAO',
     filename: str = 'airports.csv',
-    this_dir: Path = Path(__file__).parent,
+    data_dir: Path = module_dir,
 ) -> dict[str, Airport]:
     """Loads airport data into a dict
 
@@ -37,7 +37,7 @@ def load_airportsdata(
     if key not in ('icao', 'iata', 'lid'):
         raise ValueError(f'code_type must be one of ICAO, IATA or LID; received {code_type}')
     airports: dict[str, Airport] = {}
-    with this_dir.joinpath(filename).open(encoding='utf8') as f:
+    with data_dir.joinpath(filename).open(encoding='utf8') as f:
         reader = csv.DictReader(f, quoting=csv.QUOTE_NONNUMERIC)
         for row in reader:
             if row['elevation'] == (elevation_int := int(row['elevation'])):
@@ -60,11 +60,15 @@ def load_iata_macs(
         'airports': a dict with the same data returned by load() for each airport that makes up the Multi Airport
            City, where the key is the airport's IATA code.
     """
-    airports = load_airportsdata('IATA', this_dir=this_dir)
+    airports = load_airportsdata('IATA', data_dir=this_dir)
     iata_macs: dict[str, IATAMAC] = {}
     row_d: dict[str, str]
     with this_dir.joinpath(filename).open(encoding='utf8') as f:
         reader = csv.DictReader(f, quoting=csv.QUOTE_NONNUMERIC)
+        multi_airport_city_code = ''
+        name = ''
+        country = ''
+        airport = ''
         for row_d in reader:
             for key, value in row_d.items():
                 if key == 'Country':
@@ -87,9 +91,9 @@ def load_iata_macs(
 
 
 def update_readme_counts() -> None:
-    icao_count = len(load_airportsdata('ICAO', this_dir=module_dir))
-    iata_count = len(load_airportsdata('IATA', this_dir=module_dir))
-    lid_count = len(load_airportsdata('LID', this_dir=module_dir))
+    icao_count = len(load_airportsdata('ICAO', data_dir=module_dir))
+    iata_count = len(load_airportsdata('IATA', data_dir=module_dir))
+    lid_count = len(load_airportsdata('LID', data_dir=module_dir))
 
     readme_file = module_dir.parent.joinpath('README.rst')
     readme = readme_file.read_text()
