@@ -6,7 +6,7 @@ import zoneinfo
 from pathlib import Path
 
 import airportsdata
-import pytest
+import pytest  # type: ignore[import-not-found]
 
 
 pylatest_only = pytest.mark.skipif(

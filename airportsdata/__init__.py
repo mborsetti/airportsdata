@@ -11,7 +11,7 @@ from typing import Dict, Literal, TypedDict
 
 __project_name__ = __package__
 __min_python_version__ = (3, 10)  # minimum version of Python required to run; supported until October 2025
-__version__ = '20250523'  # numbering follows the release date
+__version__ = '20250622'  # numbering follows the release date
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
 __license__ = 'MIT'
@@ -103,7 +103,7 @@ def load_iata_macs() -> dict[str, IATAMAC]:
                 elif key == 'Airport Code':
                     airport = value
             if multi_airport_city_code not in iata_macs:
-                iata_macs[multi_airport_city_code] = {  # type: ignore[assignment]
+                iata_macs[multi_airport_city_code] = {
                     'name': name,
                     'country': country,
                     'airports': {airport: airports[airport]},

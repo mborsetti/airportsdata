@@ -80,7 +80,7 @@ def load_iata_macs(
                 elif key == 'Airport Code':
                     airport = value
             if multi_airport_city_code not in iata_macs:
-                iata_macs[multi_airport_city_code] = {  # type: ignore[assignment]
+                iata_macs[multi_airport_city_code] = {
                     'name': name,
                     'country': country,
                     'airports': {airport: airports[airport]},
