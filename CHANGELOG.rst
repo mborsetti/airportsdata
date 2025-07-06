@@ -7,6 +7,13 @@ on the UTC date of the release.
 
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
+Version 20250706
+================
+* Updated IATA for the following 1 airports:
+
+  - EPSY/SZY, Olsztyn-Mazury Airport, Szymany, Warmia-Mazury, PL: iata added. Reported by `cosypanther 
+    <https://github.com/cosypanther >`__ in issue `#45 <https://github.com/mborsetti/airportsdata/issues/45>`.
+
 
 Version 20250622
 ================
@@ -49,7 +56,7 @@ Version 20250523
   <https://github.com/AndriyKy>`__ in issue `#159 <https://github.com/mwgg/Airports/issues/159>`__ upstream.
 * Changed ICAO of Nairobi's Enfidha airport from DTNZ (incorrect) to DTNH. Reported by `daman2k 
   <https://github.com/daman2k>`__ in issue `#161 <https://github.com/mwgg/Airports/issues/161>`__ upstream.
-* Mega-contribution by `Maxine Fonua <https://github.com/mborsetti/airportsdata/issues/44>`__ in issue `#44 
+* Mega-contribution by `Maxine Fonua <https://github.com/maxinefonua>`__ in issue `#44 
   <https://github.com/mborsetti/airportsdata/issues/44>`, removing the following 35 airports confirmed as closed (via 
   Google maps):
 
