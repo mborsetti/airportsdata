@@ -3,8 +3,7 @@
 import csv
 from pathlib import Path
 
-from airportsdata import Airport, CodeType, IATAMAC
-
+from airportsdata import IATAMAC, Airport, CodeType
 
 module_dir = Path(__file__).parent.parent.joinpath('airportsdata')
 
@@ -116,7 +115,7 @@ def update_readme_counts() -> None:
 
 def update_readme_iata_counts() -> None:
     iata_macs_count = len(load_iata_macs(this_dir=module_dir))
-    IATA_MACs_apts_count = sum(len(a['airports']) for a in load_iata_macs(this_dir=module_dir).values())
+    iata_macs_apts_count = sum(len(a['airports']) for a in load_iata_macs(this_dir=module_dir).values())
 
     readme_file = module_dir.parent.joinpath('README_IATA.rst')
     readme = readme_file.read_text()
@@ -125,19 +124,19 @@ def update_readme_iata_counts() -> None:
         if line.startswith('.. |IATA_MACs| replace::'):
             out_lines[i] = f'.. |IATA_MACs| replace:: {iata_macs_count:,}\n'
         if line.startswith('.. |IATA_MACs_apts| replace::'):
-            out_lines[i] = f'.. |IATA_MACs_apts| replace:: {IATA_MACs_apts_count:,}\n'
+            out_lines[i] = f'.. |IATA_MACs_apts| replace:: {iata_macs_apts_count:,}\n'
             break
     out = ''.join(out_lines)
     if out != readme:
         print(
             f'Updated counts in README_IATA.rst to IATA_MACs={iata_macs_count:,} and '
-            f'IATA_MACs_apts={IATA_MACs_apts_count:,}'
+            f'IATA_MACs_apts={iata_macs_apts_count:,}'
         )
         readme_file.write_text(out, newline='\n')
     else:
         print(
             f'No changes to counts in README_IATA.rst: IATA_MACs={iata_macs_count:,} and '
-            f'IATA_MACs_apts={IATA_MACs_apts_count:,}'
+            f'IATA_MACs_apts={iata_macs_apts_count:,}'
         )
 
 

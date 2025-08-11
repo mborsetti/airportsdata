@@ -1,11 +1,11 @@
 """Sort the database and save with integers as integers and with lat/lon precision of 5 digits"""
 
 import csv
-from datetime import datetime
 import shutil
+from datetime import datetime
 from pathlib import Path
-import airportsdata
 
+import airportsdata
 
 module_dir = Path(__file__).parent.parent.joinpath('airportsdata')
 
@@ -63,12 +63,12 @@ def fix_and_save_airports(airports: dict[str, airportsdata.Airport], data_path: 
         elevation = airport['elevation']
         if elevation == int(elevation):
             airport['elevation'] = int(elevation)
-            assert airport['elevation'] == elevation  # noqa: S101 removed when compiling
+            assert airport['elevation'] == elevation
         airport['lat'] = round(airport['lat'], 6)
         airport['lon'] = round(airport['lon'], 6)
     # Save them
     with data_path.joinpath('airports.csv').open('w', encoding='utf-8', newline='') as f:
-        fieldnames = airports[list(airports.keys())[0]].keys()
+        fieldnames = airports[next(iter(airports.keys()))].keys()
         writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC, lineterminator='\n')
         writer.writeheader()
         for data in airports.values():

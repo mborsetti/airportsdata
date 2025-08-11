@@ -20,7 +20,7 @@ default_language_version:
 # A list of repository mappings.
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       # see https://github.com/pre-commit/pre-commit-hooks
 #      - id: check-added-large-files
@@ -70,9 +70,6 @@ repos:
 #        description: Sort the lines in specified files (defaults to alphabetical)
       - id: fix-byte-order-marker
         description: removes UTF-8 byte order marker
-      - id: fix-encoding-pragma
-        args: [--remove]
-        description: "Remove # -*- coding: utf-8 -*- from the top of python files"
 #      - id: forbid-new-submodules
 #        description: Prevent addition of new git submodules
       - id: forbid-submodules
@@ -122,28 +119,33 @@ repos:
 
   - repo: local
     hooks:
-      - id: black  # https://github.com/python/black
-        name: Uncompromising code formatting (black)
-        entry: black
-        # additional_dependencies: [black]
+      - id: ruff # https://docs.astral.sh/ruff/
+        name: lint Python code (ruff check)
+        entry: ruff check --fix
         language: system
-        types: [python]
-      - id: flake8
-        name: Check for errors, style, [and over-complexity] (flake8)
-        description: Code linter
-        entry: flake8  # https://gitlab.com/pycqa/flake8
-        # additional_dependencies: [flake8]
+        pass_filenames: false
+      - id: ruff-format  # https://docs.astral.sh/ruff/
+        name: format Python code (ruff format)
+        entry: ruff format
         language: system
-        types: [python]
-        require_serial: true
-        args: [--max-line-length, '120', '--extend-ignore', 'S101']
+        pass_filenames: false
       - id: mypy  # https://github.com/python/mypy
-        name: Static typing for Python (mypy)
-        entry: mypy
-        # additional_dependencies: [mypy, pytest, types-backports]
+        name: check Python static typing (mypy)
+        entry: dmypy
         language: system
-        types: [python]
-        args: [--show-error-codes]
+        args: ['run', '--timeout', '1800', '.', '--', '--config-file', 'pyproject.toml', '--cache-fine-grained']
+        pass_filenames: false
+      - id: sort_and_fix
+        name: Sort database and fix data precision
+        entry: python utils/sort_and_fix.py
+        language: system
+        pass_filenames: false
+      - id: update_readme_counts
+        name: Update database counts in README.rst
+        entry: python utils/update_readme_counts.py
+        language: system
+        pass_filenames: false
+
 # Not using the below as it removes remarks
 #      - id: tox-ini-fmt  # https://github.com/tox-dev/tox-ini-fmt
 #        name: Apply a consistent format to tox.ini files (tox-ini-fmt)
@@ -188,17 +190,3 @@ repos:
 #        files: ^docs
 #        types: [file]
 #        pass_filenames: false
-
-  - repo: local
-    hooks:
-      - id: sort_and_fix
-        name: Sort database and fix data precision
-        entry: python utils/sort_and_fix.py
-        language: system
-        pass_filenames: false
-
-      - id: update_readme_counts
-        name: Update database counts in README.rst
-        entry: python utils/update_readme_counts.py
-        language: system
-        pass_filenames: false

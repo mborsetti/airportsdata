@@ -30,7 +30,6 @@ maintainers = [
 keywords = ['airports', 'aerodromes', 'ICAO', 'IATA']
 classifiers = [
     'Development Status :: 5 - Production/Stable',
-    'License :: OSI Approved :: MIT License',
     'Programming Language :: Python',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.10',
@@ -64,20 +63,6 @@ dependencies = {file = 'requirements.txt'}
 
 [tool.setuptools.package-data]
 'airportsdata' = ['py.typed']
-
-# -------------------------- black --------------------------
-# Uncompromising code formatting
-# Runs as part of pre-commit
-# Config file documentation
-# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
-[tool.black]
-# What's in here overrides the command-line options shown by running $ black --help.
-line_length = 120
-target_version = ['py39']
-skip_string_normalization = true
-extend_exclude = '/(\.idea|\.pytest_cache|\__pycache__|\venv.*|\webchanges.egg-info)/'
-color = true
-
 
 # -------------------------- coverage --------------------------
 # Runs in Github Actions (see .github/workflows/ci-cd.yaml) and in tox (see tox.ini).
@@ -141,3 +126,194 @@ testpaths = ['tests']
 # https://github.com/pytest-dev/pytest-cov/issues/131) and to enable running tox --parallel
 # Instead of below, now runs with $ coverage run --parallel-mode
 # addopts = --cov=./ --cov-report=term --cov-report=html
+
+# -------------------------- mypy --------------------------
+[tool.mypy]
+# Static Typing for Python
+# Runs as part of pre-commit
+# Config file documentation at https://mypy.readthedocs.io/en/stable/config_file.html
+
+# Disables import discovery of namespace packages (see PEP 420)
+# namespace_packages = false
+
+# Top-level packages will be based in either the current directory, or a member of the MYPYPATH environment variable or
+# mypy_path config option. This option is only useful in the absence of __init__.py. See Mapping file paths to modules
+# for details.
+explicit_package_bases = true
+mypy_path = "C:\\users\\mike\\Documents\\python\\git_repos\\webchanges"
+
+# Suppresses error messages about imports that cannot be resolved.
+ignore_missing_imports = false
+
+# Specifies the Python version used to parse and check the target program.
+# python_version = 3.12
+
+# Disallows calling functions without type annotations from functions with type annotations.
+disallow_untyped_calls = true
+
+# Disallows defining functions without type annotations or with incomplete type annotations.
+disallow_untyped_defs = true
+
+# Reports an error whenever a function with type annotations is decorated with a decorator without annotations.
+# disallow_untyped_decorators = true
+
+# Warns about casting an expression to its inferred type.
+warn_redundant_casts = true
+
+# Warns about unneeded # type: ignore comments.
+# May behave differently in GitHub Actions than it does on Windows.
+warn_unused_ignores = true
+
+# Allows disabling one or multiple error codes globally.
+disable_error_code = ["import-not-found", "import-untyped"]
+
+# Shows a warning when returning a value with type Any from a function declared with a non-Any return type.
+warn_return_any = true
+
+# Shows a warning when encountering any code inferred to be unreachable or redundant after performing type analysis.
+warn_unreachable = false
+
+# Enables additional checks that are technically correct but may be impractical in real code.
+extra_checks = true
+
+# Shows documentation link to corresponding error code.
+show_error_code_links = true
+
+# Use visually nicer output in error messages: use soft word wrap, show source code snippets, and show error location
+# markers.
+pretty = true
+
+# Use an SQLite database to store the cache.
+sqlite_cache = true
+
+# Warns about per-module sections in the config file that do not match any files processed when invoking mypy.
+warn_unused_configs = true
+
+# -------------------------- ruff --------------------------
+[tool.ruff]
+# Config file documentation at https://docs.astral.sh/ruff/configuration/
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# By default, Ruff will discover files matching *.py, *.pyi, *.ipynb, or pyproject.toml.
+# Include additional files
+# include = []
+
+# Set the maximum line length.
+line-length = 120
+indent-width = 4
+
+# Target Python version
+# target-version = "py311"  # Commented out to infer from [project] requires-python
+
+[tool.ruff.lint]
+# By default, Ruff enables Flake8's F rules, along with a subset of the E rules
+# Enable rules not enabled by default, and ignore specific rules.
+select = [
+    # flake8-builtins
+    "B",
+    # flake8-bandit
+    "S",
+    # flake8-datetimez
+    "DTZ",
+    # isort
+    "I",
+    # McCabe complexity 
+    # "C901",
+    # pepe8-naming
+    "N",
+    # Pyflakes
+    "F",
+    # pycodestyle errors and warnings
+    "E",
+    "W",
+    # Ruff-specific rules
+    "RUF",
+]
+ignore = [
+    "B904",   # Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None`
+    "S101",   # Use of `assert` detected
+    "DTZ001", # `datetime.datetime()` called without a `tzinfo` argument
+    "DTZ005", # `datetime.datetime.now()` called without a `tz` argument
+    "DTZ006", # `datetime.datetime.fromtimestamp()` called without a `tz` argument
+    "DTZ007", # Naive datetime constructed using `datetime.datetime.strptime()` without %z
+    "DTZ011", # `datetime.date.today()` used,
+    "RUF001", # String contains ambiguous `–` (EN DASH). Did you mean `-` (HYPHEN-MINUS)?
+    "RUF002", # Docstring contains ambiguous `’` (RIGHT SINGLE QUOTATION MARK). Did you mean ``` (GRAVE ACCENT)?
+    "RUF003", # Comment contains ambiguous `–` (EN DASH). Did you mean `-` (HYPHEN-MINUS)?
+    "RUF012", # Mutable class attributes should be annotated with `typing.ClassVar`
+]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+# Enable the formatter, which is a drop-in replacement for Black.
+# No extra configuration is needed for basic formatting.
+
+# Exclude files for formatting only
+exclude = []
+
+# Use single quotes for strings.
+quote-style = "single"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+#
+# This is currently disabled by default, but it is planned for this
+# to be opt-out in the future.
+docstring-code-format = true
+
+# Set the line length limit used when formatting code snippets in
+# docstrings.
+#
+# This only has an effect when the `docstring-code-format` setting is
+# enabled.
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint.per-file-ignores]
+"test_*" = [
+    # Use of `assert` detected
+    "S101",
+]

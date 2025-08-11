@@ -3,6 +3,7 @@
 """
 Extensive database of location and timezone data for nearly every airport and landing strip in the world.
 """
+
 from __future__ import annotations
 
 import csv
@@ -11,7 +12,7 @@ from typing import Dict, Literal, TypedDict
 
 __project_name__ = __package__
 __min_python_version__ = (3, 10)  # minimum version of Python required to run; supported until October 2025
-__version__ = '20250706'  # numbering follows the release date
+__version__ = '20250811'  # numbering follows the release date
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
 __license__ = 'MIT'

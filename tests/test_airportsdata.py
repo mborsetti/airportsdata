@@ -5,9 +5,9 @@ import warnings
 import zoneinfo
 from pathlib import Path
 
-import airportsdata
 import pytest
 
+import airportsdata
 
 pylatest_only = pytest.mark.skipif(
     sys.version_info < (3, 12),
@@ -589,7 +589,7 @@ def test_data_quality() -> None:
         else:
             assert airport['country'] in iso_3166_1
         if airport['country'] in subdiv:
-            if not airport['subd'] in subdiv[airport['country']]:
+            if airport['subd'] not in subdiv[airport['country']]:
                 print(airport)
                 assert airport['subd'] in subdiv[airport['country']]
         assert isinstance(airport['elevation'], float)
@@ -601,8 +601,9 @@ def test_data_quality() -> None:
             warnings.warn(
                 DeprecationWarning(
                     f'"{key}": tz "{airport["tz"]}" is deprecated; replace with correct one\n'
-                    f'(see https://github.com/eggert/tz/blob/master/backward)'
-                )
+                    f'(see https://github.com/eggert/tz/blob/master/backward)',
+                ),
+                stacklevel=1,
             )
         assert airport['tz'] in tz_available
         if airport['lid']:
