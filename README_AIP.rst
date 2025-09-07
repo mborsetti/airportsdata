@@ -71,6 +71,9 @@ contained here.
    * - RU
      - http://www.caiga.ru/products/?lang=en
      -
+   * - SA
+     - https://www.sans.com.sa/services/services-aim
+     - 
    * - SG
      - https://aim-sg.caas.gov.sg/
      - Registration required

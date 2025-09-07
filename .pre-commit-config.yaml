@@ -35,6 +35,8 @@ repos:
 #        description: Checks for a common error of placing code before the docstring.
       - id: check-executables-have-shebangs
         description: Checks that non-binary executables have a proper shebang.
+      - id: check-illegal-windows-names
+        description: Check for files that cannot be created on Windows.
       - id: check-json
         description: Attempts to load all json files to verify syntax.
       - id: check-merge-conflict
@@ -119,16 +121,19 @@ repos:
 
   - repo: local
     hooks:
-      - id: ruff # https://docs.astral.sh/ruff/
+      - id: ruff-check # https://github.com/astral-sh/ruff-pre-commit/blob/main/.pre-commit-hooks.yaml
         name: lint Python code (ruff check)
-        entry: ruff check --fix
+        entry: ruff check --fix --force-exclude
         language: system
-        pass_filenames: false
-      - id: ruff-format  # https://docs.astral.sh/ruff/
+        types_or: [python, pyi, jupyter]
+        require_serial: true
+      - id: ruff-format  # https://github.com/astral-sh/ruff-pre-commit/blob/main/.pre-commit-hooks.yaml
         name: format Python code (ruff format)
-        entry: ruff format
+        entry: ruff format --force-exclude
         language: system
         pass_filenames: false
+        types_or: [python, pyi, jupyter]
+        require_serial: true
       - id: mypy  # https://github.com/python/mypy
         name: check Python static typing (mypy)
         entry: dmypy

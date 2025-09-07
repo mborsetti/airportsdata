@@ -2,9 +2,9 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,224
+.. |ICAO| replace:: 28,257
 
-.. |IATA| replace:: 7,861
+.. |IATA| replace:: 7,893
 
 .. |LID| replace:: 12,609
 
@@ -103,35 +103,41 @@ Python
 ======
 |pyversion| |support| |format| |status| |security| |CI| |coveralls| |issues|
 
-Install from `PyPi <https://pypi.org/project/airportsdata/>`__  using pip:
+Install from `PyPi <https://pypi.org/project/airportsdata/>`__  using ``uv`` (recommended):
 
 .. code-block:: bash
 
-  pip install -U airportsdata
+  uv pip install --update airportsdata
+
+Or, using ``pip`:
+
+.. code-block:: bash
+
+  pip uv install --update airportsdata
 
 Once installed, to load the data into a dict:
 
 .. code-block:: python
 
    import airportsdata
-   airports = airportsdata.load()  # key is the ICAO identifier (the default)
-   print(airports['KJFK'])
+   icao_airports = airportsdata.load()  # key is the ICAO identifier (the default)
+   print(icao_airports['KJFK'])
 
 or
 
 .. code-block:: python
 
    import airportsdata
-   airports = airportsdata.load('IATA')  # key is the IATA location code
-   print(airports['JFK'])
+   iata_airports = airportsdata.load('IATA')  # key is the IATA location code
+   print(iata_airports['JFK'])
 
 or
 
 .. code-block:: python
 
    import airportsdata
-   airports = airportsdata.load('LID')  # key is the FAA LID
-   print(airports['01AA'])
+   lid_airports = airportsdata.load('LID')  # key is the FAA LID
+   print(lid_airports['01AA'])
 
 Older Python versions are supported for 3 years after being obsoleted by a new major release (i.e. about 4 years
 since their original release).
