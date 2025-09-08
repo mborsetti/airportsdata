@@ -617,8 +617,20 @@ def test_data_quality() -> None:
 @pylatest_only
 def test_load_integrity() -> None:
     """Test that there are no ICAO code duplicates in the CSV file."""
-    csv_len = bytearray(Path(__file__).parent.parent.joinpath('airportsdata', 'airports.csv').read_bytes()).count(b'\n')
-    assert csv_len - 1 == len(airports_icao)  # 1 is header line
+    csv_len = len(Path(__file__).parent.parent.joinpath('airportsdata', 'airports.csv').read_text().splitlines())
+    # csv_len = (
+    #     bytearray(Path(__file__).parent.parent.joinpath('airportsdata', 'airports.csv').read_bytes()).count(b'\n')
+    # )
+    if csv_len - 1 != len(airports_icao):  # 1 is header line
+        csv = Path(__file__).parent.parent.joinpath('airportsdata', 'airports.csv').read_text()
+        icao = set()
+        icao_dupes = []
+        for line in csv.splitlines()[1:]:
+            if line.split(',')[0] in icao:
+                icao_dupes.append(line.split(',')[0])
+            else:
+                icao.add(line.split(',')[0])
+        assert icao_dupes == []  # show duplicate(s)
 
 
 @pylatest_only

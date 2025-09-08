@@ -2,11 +2,11 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,257
+.. |ICAO| replace:: 28,271
 
-.. |IATA| replace:: 7,893
+.. |IATA| replace:: 7,859
 
-.. |LID| replace:: 12,609
+.. |LID| replace:: 12,610
 
 .. |pyversion| image:: https://img.shields.io/pypi/v/airportsdata.svg
     :target: https://pypi.org/project/airportsdata/
