@@ -27,7 +27,7 @@
   - UKBM/MXR, Myrhorod Air Base, Myrhorod, Poltava Oblast, UA.
   - UTAN/BKN, Balkanabat International Airport, Jebel, Balkan, TM.
   - UTTZ/OMN, Zomin Airport, Lyaylyakul, Jizzax, UZ.
-  - VEAP/AHA, Maa Mahamaya Airport, Ambikapur, Chhattisgarh, India, IN.
+  - VEAP/AHA, Maa Mahamaya Airport, Ambikapur, Chhattisgarh, IN.
   - VLFL/PCQ, Boun Neau Airport, Boun Neau, Phongsaly, LA.
   - VLNK/NEU, Nong Khang Airport, Nong Khang, Houaphan, LA.
   - VNRG    , Gulmi Resunga Airport, Resunga, Western-Region, NP.

@@ -10,7 +10,7 @@ import pytest
 import airportsdata
 
 pylatest_only = pytest.mark.skipif(
-    sys.version_info < (3, 12),
+    sys.version_info < (3, 13),
     reason='Data quality and integrity is only checked once, with latest Python version',
 )
 
