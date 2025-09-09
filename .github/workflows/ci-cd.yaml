@@ -158,7 +158,7 @@ jobs:
       # Install pip dependencies
       - name: Install dependencies
         run: |
-          uv pip install --upgrade build
+          uv pip install --system --upgrade build
 
       # build https://pypa-build.readthedocs.io/en/latest/
       - name: Build dist
