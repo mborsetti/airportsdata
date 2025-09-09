@@ -8,7 +8,7 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
-Version 20250908
+Version 20250909
 ================
 
 * Added the following 60 airports:
@@ -74,7 +74,7 @@ Version 20250908
   - _WNJ/WNJ, Weining Airport (under construction), Leshan, Guizhou, CN.
   - _ZSP/ZSP, Zhushan Majiadu Airport (under construction, unknown coordinates), Shiyan, Hubei, CN.
 
-* Updated IATA (and potentially other data) for the following 30 airports:
+* Updated IATA (and potentially other data) for the following 89 airports:
 
   - BIFF    , Fáskrúðsfjörður Airport, Fáskrúðsfjörður, East, IS: iata changed from "FAS", name changed from
     "Faskrudsfjordur Airport", city changed from "Faskrudsfjordur".
@@ -122,7 +122,7 @@ Version 20250908
     Airport", city added, elevation changed from 3026 to 3031, latitude changed from 24.4499 to 24.449722, longitude
     changed from 44.1212 to 44.121111.
   - OEDR    , King Abdulaziz Air Base, , Eastern Province, SA: iata deleted.
-  - OIBP/YEH, Persian Gulf International Airport, Asalouyeh, Bushehr, IR: iata changed from "PGU".
+  - OIBP    , Persian Gulf International Airport, Asalouyeh, Bushehr, IR: iata deleted.
   - OMBY/XSB, Sir Bani Yas Airport, Sir Bani Yas, Abu Dhabi, AE: iata added, elevation changed from 10 to 14, latitude
     changed from 24.283 to 24.282196, longitude changed from 52.58117 to 52.582068.
   - OYAB/EAB, Abs Airport, Abs, Hajjah, YE: iata added, name changed from "Ibb Airport", city added, subd changed from
@@ -133,10 +133,12 @@ Version 20250908
   - OYSH    , Sadah Airport, Sadah, Sa‘dah, YE: iata deleted.
   - RJBH    , Hiroshimanishi Airport, , Hiroshima, JP: iata deleted.
   - RJCR    , Rebun Airport Airport, , Hokkaido, JP: iata deleted.
-  - RPMB/GES, General Santos International Airport, General Santos City, Soccsksargen, PH: iata added, name changed from
+  - RPMB    , General Santos International Airport, General Santos City, Soccsksargen, PH: iata added, name changed from
     "Rajah Buayan Air Base".
-  - RPML/CGY, Cagayan De Oro Airfield, Cagayan De Oro, Northern Mindanao, PH: iata added, name changed from "Lumbia
-    Airfield", city changed from "Cagayan De Oro City".
+  - RPML    , Cagayan De Oro Airfield, Cagayan De Oro, Northern Mindanao, PH: name changed from "Lumbia Airfield", city
+    changed from "Cagayan De Oro City".
+  - RPMR/GES, General Santos International Airport, General Santos, Soccsksargen, PH: name changed from "Tambler
+    Prinipal Airport", city changed from "South Cotabato".
   - SBCD/CFC, Caçador Airport, Caçador, Santa Catarina, BR: iata added, name changed from "Cacador Airport", city
     changed from "Cacador", latitude changed from -26.7884 to -26.788056, longitude changed from -50.9398 to -50.939999.
   - SDLO/PBA, Fazenda Pontal Airport, Cairu, Bahia, BR: iata added, elevation changed from 12 to 20.
@@ -279,7 +281,7 @@ Version 20250908
   - ZUTR/TEN, Tongren Fenghuang Airport, , Guizhou, CN: elevation changed from 0 to 2313.
   - _KBH/KBH, Buzwagi Airport, Kahama, Shinyanga, TZ: name changed from "Buzwagi", lid added to "TZ-0146".
 
-* Removed the following 13 airports:
+* Removed the following 14 airports:
 
   - BIPA/PFJ, Patreksfjordur Airport, Patreksfjordur, Westfjords, IS.
   - ENSA    , Svea Airport, Svea, Svalbard, NO.
@@ -288,6 +290,7 @@ Version 20250908
   - ETIN/KZG, Kitzingen Army Air Field, , Bayern, DE.
   - LFBV    , Brive-La Roche Airport, Brive-la-Gaillarde, Nouvelle-Aquitaine, FR.
   - MDSB    , Sabana de Mar Airport, Sabana de Mar, Hato-Mayor, DO.
+  - OEDW/DWD, Dawadmi Domestic Airport, Dawadmi, Ar-Riyaḑ, SA.
   - SKIO    , Cicuco Airport, Limon, Bolivar, CO.
   - VDKT    , Kratie Airport, Kratie, Kratie, KH.
   - VLSN/NEU, Sam Neua Airport, , Houaphan, LA.
