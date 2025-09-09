@@ -109,11 +109,11 @@ Install from `PyPi <https://pypi.org/project/airportsdata/>`__  using ``uv`` (re
 
   uv pip install --update airportsdata
 
-Or, using ``pip`:
+Or, using ``pip``:
 
 .. code-block:: bash
 
-  pip uv install --update airportsdata
+  pip install --update airportsdata
 
 Once installed, to load the data into a dict:
 
