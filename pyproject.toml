@@ -15,9 +15,7 @@ build-backend = "setuptools.build_meta"
 # See https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
 dynamic = ['version', 'dependencies']
 name = 'airportsdata'
-description = """\
-    Extensive database of location and timezone data for nearly every airport and landing strip in the world.\
-    """
+description = """Extensive database of location and timezone data for nearly every airport and landing strip in the world."""
 readme = { file = 'README.rst', content-type = 'text/x-rst' }
 requires-python = '>=3.9'
 license = {file = 'LICENSE'}
