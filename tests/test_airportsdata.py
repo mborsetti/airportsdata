@@ -7,6 +7,8 @@ from pathlib import Path
 
 import pytest
 
+sys.path.insert(1, str(Path(__file__).parent.parent))
+
 import airportsdata
 
 pylatest_only = pytest.mark.skipif(
@@ -607,11 +609,18 @@ def test_data_quality() -> None:
             )
         assert airport['tz'] in tz_available
         if airport['lid']:
-            assert len(airport['lid']) in {3, 4}
-            assert airport['lid'].isupper()
-            assert airport['lid'].isalnum()
-            if len(airport['lid']) == 4:
+            assert len(airport['lid']) in {3, 4, 7}  # 7 is ICAO
+            if len(airport['lid']) == 7:
+                assert airport['lid'][:2].isalpha()
+                assert airport['lid'][2] == '-'
+                assert airport['lid'][3:].isdigit()
+            elif len(airport['lid']) == 4:
                 assert not airport['lid'].isalpha()
+                assert airport['lid'].isupper()
+                assert airport['lid'].isalnum()
+            else:
+                assert airport['lid'].isupper()
+                assert airport['lid'].isalnum()
 
 
 @pylatest_only
