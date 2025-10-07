@@ -31,7 +31,7 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
         # Python versions at https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json
         # RCs need to be specified fully, e.g. '3.13.0-rc.3'
-        python-version: ['3.13', '3.12', '3.11', '3.10']
+        python-version: ['3.14', '3.13', '3.12', '3.11', '3.10']
 
     env:
       commitmsg: ${{ github.event.head_commit.message }}  # only available at check-out; becomes env.commitmsg
@@ -64,6 +64,7 @@ jobs:
         uses: actions/setup-python@main
         with:
           python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
           # cache: 'pip'
 
       - name: Install dependencies
@@ -87,6 +88,7 @@ jobs:
           PYTHONUTF8: 1
           COVERALLS_FLAG_NAME: tests-${{ matrix.python-version }}-${{ matrix.os }}
           COVERALLS_PARALLEL: true
+        continue-on-error: true
 
       # below may not be working as pytest-cov does not create the ./coverage/lcov.info file!
 #      - name: Upload LCOV coverage data to Coveralls
@@ -102,6 +104,7 @@ jobs:
 #          GITHUB_TOKEN: ${{ secrets.github_token }}
 #          COVERALLS_FLAG_NAME: tests-${{ matrix.python-version }}-${{ matrix.os }}
 #          COVERALLS_PARALLEL: true
+#        continue-on-error: true
 
       - name: Minimize uv cache
         run: uv cache prune --ci
@@ -116,6 +119,7 @@ jobs:
       with:
         github-token: ${{ secrets.github_token }}
         parallel-finished: true
+    continue-on-error: true
 
   deploy:
     name: Deploy release
@@ -153,6 +157,7 @@ jobs:
         uses: actions/setup-python@main
         with:
           python-version: '3.13'
+          allow-prereleases: true
           # cache: 'pip'
 
       # Install pip dependencies

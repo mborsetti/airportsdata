@@ -550,8 +550,7 @@ subdiv = {  # ISO 3166-2 subdivisions for certain countries https://en.wikipedia
         'West Virginia',
         'Wisconsin',
         'Wyoming',
-        'Dist. Of Columbia',
-        # 'District of Columbia',
+        'Dist. Of Columbia',  # Should be 'District of Columbia',
         # 'American Samoa',  # using own ISO 3166-1 country code
         # 'Guam',  # using own ISO 3166-1 country code
         # 'Northern Mariana Islands',  # using own ISO 3166-1 country code
@@ -569,18 +568,30 @@ def test_loading() -> None:
 
 @pylatest_only
 def test_data_quality() -> None:
-    """Test data quality. Fields are "icao","iata","name","city","subd","country","elevation","lat","lon","tz",
-    "lid"."""
-    for key, airport in airports_icao.items():
-        assert key == airport['icao']
-        assert key.isupper()
-        assert len(key) == 4
-        if key[0] != '_':
-            assert key.isalnum()
+    """Test data quality.
+
+    Fields are icao, iata, name, city, subd, country, elevation, lat, lon, tz, lid.
+    """
+    for icao, airport in airports_icao.items():
+        assert icao == airport['icao']
+        assert icao.isupper()
+        assert len(icao) == 4
+        if icao[0] != '_':
+            assert icao.isalnum()
         else:
-            assert key[1:].isalpha()
+            assert icao[1:].isalpha()
+        # ICAO airport codes do not begin with I, J, X, or Q.
+        # In Russia, the Latin letter X is used to designate government, military, and experimental aviation
+        # airfields in internal airfield codes similar in structure and purpose to ICAO codes but not used
+        # internationally.
+        # Codes beginning with I (Ixx and Ixxx) are often used for navigational aids such as radio beacons.
+        # The Q code is reserved for international radiocommunications and non-geographical special use.
+        if icao != airport['lid'] and airport['country'] != 'RU' and icao != 'XBRO':
+            assert icao[0] not in ('I', 'J', 'Q', 'X')
         if airport['iata']:
-            assert airport['iata'].isalpha() and airport['iata'].isupper() and len(airport['iata']) == 3
+            assert airport['iata'].isalpha()
+            assert airport['iata'].isupper()
+            assert len(airport['iata']) == 3
         assert isinstance(airport['name'], str)
         assert isinstance(airport['city'], str)
         assert isinstance(airport['subd'], str)
@@ -590,10 +601,9 @@ def test_data_quality() -> None:
             assert airport['tz'].startswith('Antarctica/')
         else:
             assert airport['country'] in iso_3166_1
-        if airport['country'] in subdiv:
-            if airport['subd'] not in subdiv[airport['country']]:
-                print(airport)
-                assert airport['subd'] in subdiv[airport['country']]
+        if airport['country'] in subdiv and airport['subd'] not in subdiv[airport['country']]:
+            print(airport)
+            assert airport['subd'] in subdiv[airport['country']]
         assert isinstance(airport['elevation'], float)
         assert isinstance(airport['lat'], float)
         assert -90 <= airport['lat'] <= 90
@@ -602,7 +612,7 @@ def test_data_quality() -> None:
         if airport['tz'] in tz_deprecated:
             warnings.warn(
                 DeprecationWarning(
-                    f'"{key}": tz "{airport["tz"]}" is deprecated; replace with correct one\n'
+                    f'"{icao}": tz "{airport["tz"]}" is deprecated; replace with correct one\n'
                     f'(see https://github.com/eggert/tz/blob/master/backward)',
                 ),
                 stacklevel=1,
@@ -647,7 +657,7 @@ def test_iata_integrity() -> None:
     """Test that there are no IATA code duplicates and that the load function works correctly."""
     iata = [airport['iata'] for airport in airports_icao.values() if airport['iata']]
     if len(set(iata)) != len(iata):
-        assert set([x for x in iata if iata.count(x) > 1]) == set()  # show duplicate(s)
+        assert {x for x in iata if iata.count(x) > 1} == set()  # show duplicate(s)
     assert list(airportsdata.load('IATA').keys()) == iata  # items returned are identical to those we just built
 
 
@@ -656,7 +666,7 @@ def test_lid_integrity() -> None:
     """Test that there are no LID duplicates and that the load function works correctly."""
     lid = [airport['lid'] for airport in airports_icao.values() if airport['lid']]
     if len(set(lid)) != len(lid):
-        assert set([x for x in lid if lid.count(x) > 1]) == set()  # show duplicate(s)
+        assert {x for x in lid if lid.count(x) > 1} == set()  # show duplicate(s)
     assert list(airportsdata.load('LID').keys()) == lid  # items returned are identical to those we just built
 
 
@@ -688,10 +698,8 @@ def test_iata_macs() -> None:
 @pylatest_only
 def test_wrong_key() -> None:
     """Test that you receive an error when using the wrong key."""
-    with pytest.raises(ValueError) as e:
-        # noinspection PyTypeChecker
+    with pytest.raises(ValueError, match='code_type must be one of ICAO, IATA or LID; received wrong_key'):
         airportsdata.load('wrong_key')  # type: ignore[arg-type]
-    assert e.value.args[0] == 'code_type must be one of ICAO, IATA or LID; received wrong_key'
 
 
 @pylatest_only

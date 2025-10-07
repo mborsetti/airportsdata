@@ -110,12 +110,12 @@ repos:
         description: A quick check for the deprecated .warn() method of python loggers
       - id: python-use-type-annotations
         description: Enforce that python3.6+ type annotations are used instead of type comments
-#      - id: rst-backticks
-#        description: Detect common mistake of using single backticks when writing rst
-#      - id: rst-directive-colons
-#        description: Detect mistake of rst directive not ending with double colon
-#      - id: rst-inline-touching-normal
-#        description: Detect mistake of inline code touching normal text in rst
+      - id: rst-backticks
+        description: Detect common mistake of using single backticks when writing rst
+      - id: rst-directive-colons
+        description: Detect mistake of rst directive not ending with double colon
+      - id: rst-inline-touching-normal
+        description: Detect mistake of inline code touching normal text in rst
       - id: text-unicode-replacement-char
         description: Forbid files which have a UTF-8 Unicode replacement character
 

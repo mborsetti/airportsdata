@@ -57,7 +57,7 @@ def make_backup(data_path: Path) -> None:
 def fix_and_save_airports(airports: dict[str, airportsdata.Airport], data_path: Path) -> None:
     """Save airports to file after cleanup"""
     # Sort them
-    airports = {k: v for k, v in sorted(airports.items(), key=lambda x: x[0])}
+    airports = dict(sorted(airports.items(), key=lambda x: x[0]))
     # Integers elevation and lat/lon rounded to 5 decimals
     for airport in airports.values():
         elevation = airport['elevation']
