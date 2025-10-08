@@ -30,8 +30,9 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
         # Python versions at https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json
-        # RCs need to be specified fully, e.g. '3.13.0-rc.3'
+        # RCs need to be specified fully, e.g. '3.13.0-rc.3', or use allow-preleleases: true in setop-python
         python-version: ['3.14', '3.13', '3.12', '3.11', '3.10']
+        disable-gil: [true]
 
     env:
       commitmsg: ${{ github.event.head_commit.message }}  # only available at check-out; becomes env.commitmsg
@@ -156,7 +157,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@main
         with:
-          python-version: '3.13'
+          python-version: '3.14'
           allow-prereleases: true
           # cache: 'pip'
 

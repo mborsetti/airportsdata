@@ -64,7 +64,7 @@ contained here.
      -
    * - RO
      - https://www.aisro.ro/
-     - No direct link: navigate Publications -> AIP -> AD_x.xx_
+     - No direct link: navigate Publications -> AIP -> AD_x.xx
    * - PW
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
      - Airport/Facility Directory

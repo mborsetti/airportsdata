@@ -8,7 +8,7 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
-Version 20251007
+Version 20251008
 ================
 
 * VDPP/PNH, Phnom Penh International Airport, Phnom Penh, Phnom Penh, KH, has been removed as it is now officially
@@ -52,6 +52,8 @@ Version 20251007
   - EHOW    , Oostwold Airport, Oostwold, Groningen, NL: city added.
   - VIND/DXN, Noida International Airport, Jewar, Uttar Pradesh, IN: Elevation changed from from 642 to 652.54, city 
     changed from "Noida", latitude changed from 28.17 to 28.175556, longitude changed from 77.61 to 77.606111.
+
+* Supports Python 3.14 and 3.14t.
 
 Version 20250909
 ================
@@ -676,6 +678,7 @@ Version 20240806
 Version 20240728
 ================
 * Added 40 new airports and fixed 56 ones:
+
   - Multiple additions and fixes contributed by `eatdostacos <https://github.com/eatdostacos>`__ in PRs `#119
     <https://github.com/mwgg/Airports/pull/119>`__, `#120  <https://github.com/mwgg/Airports/pull/120>`__, `#121
     <https://github.com/mwgg/Airports/pull/121>`__ and `#125 <https://github.com/mwgg/Airports/pull/125>`__, `Leon Brown
@@ -685,7 +688,7 @@ Version 20240728
   - Added multiple IATA codes from airline database.
 
 Detail of changes
-^^^^^^^^^^^^^^^^^
+-----------------
 * Added the following 40 airports:
 
   - FNBJ/NBJ, Dr. Antonio Agostinho Neto International Airport, Luanda, Luanda, AO.
@@ -1303,7 +1306,7 @@ Version 20220913
 
 
 Version 20220831
-===============
++===============
 * Added UBTT/ZXT, Zabrat Airport, Baku, Bakı, Azerbaijan.
 
 

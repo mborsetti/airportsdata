@@ -119,6 +119,13 @@ repos:
       - id: text-unicode-replacement-char
         description: Forbid files which have a UTF-8 Unicode replacement character
 
+  - repo: https://github.com/rstcheck/rstcheck
+    rev: v6.2.5
+    hooks:
+      - id: rstcheck
+        description: Check syntax of reStructuredText and code blocks nested within it
+        args: ['--ignore-languages', 'bash']  # for windows
+
   - repo: local
     hooks:
       - id: ruff-check # https://github.com/astral-sh/ruff-pre-commit/blob/main/.pre-commit-hooks.yaml
