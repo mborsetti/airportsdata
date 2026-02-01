@@ -43,7 +43,7 @@ def load_airportsdata(
         for row in reader:
             if row['elevation'] == (elevation_int := int(row['elevation'])):
                 row['elevation'] = elevation_int
-            airports[row[key]] = row  # type: ignore[assignment]
+            airports[row[key]] = row
     airports.pop('', None)
     return airports
 

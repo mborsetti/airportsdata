@@ -17,6 +17,9 @@ contained here.
    * - AU
      - https://www.airservicesaustralia.com/aip/aip.asp
      -
+   * - BE
+     - https://ops.skeyes.be/html/belgocontrol_static/eaip/eAIP_Main/html/index-en-GB.html
+     -
    * - BR
      - https://aisweb.decea.mil.br/
      -
@@ -46,6 +49,9 @@ contained here.
      - Registration required
    * - KH
      - http://www.civilaviation.gov.kh/en/2014-04-07-07-52-5/aip-cambodia/aip-sup
+     -
+   * - LU
+     - https://ops.skeyes.be/html/belgocontrol_static/eaip/eAIP_Main/html/index-en-GB.html
      -
    * - MH
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/

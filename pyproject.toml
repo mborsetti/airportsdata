@@ -7,8 +7,10 @@
 [build-system]
 # Minimum requirements for the build system to execute.
 requires = ['setuptools'] # PEP 508 specifications.
+# requires = ['uv_build']
 # Setuptools specification
-build-backend = "setuptools.build_meta"
+build-backend = 'setuptools.build_meta'
+# build-backend = 'uv_build'
 
 
 [project]
@@ -19,8 +21,9 @@ description = """\
     Extensive database of location and timezone data for nearly every airport and landing strip in the world.\
     """
 readme = { file = 'README.rst', content-type = 'text/x-rst' }
-requires-python = '>=3.9'
-license = { file = 'LICENSE' }
+requires-python = '>=3.10'
+license = 'MIT'
+license-files = ['LICENSE']
 authors = [{ name = 'Mike Borsetti', email = 'mike+airportsdata@borsetti.com' }]
 maintainers = [
     { name = 'Mike Borsetti', email = 'mike+airportsdata@borsetti.com' },
@@ -29,7 +32,6 @@ keywords = ['airports', 'aerodromes', 'ICAO', 'IATA']
 classifiers = [
     'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Developers',
-    'License :: OSI Approved :: MIT License',
     'Natural Language :: English',
     'Operating System :: OS Independent',
     'Programming Language :: Python',
@@ -57,13 +59,19 @@ CI = 'https://github.com/mborsetti/airportsdata/actions'
 # See https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
 [tool.setuptools]
 packages = ['airportsdata']
+include-package-data = false
+
+[tool.setuptools.package-data]
+airportsdata = [
+    '__init__.py',
+    'airports.csv',
+    'iata_macs.csv',
+    'py.typed',
+    ]
 
 [tool.setuptools.dynamic]
 version = { attr = 'airportsdata.__version__' }
 dependencies = { file = 'requirements.txt' }
-
-[tool.setuptools.package-data]
-'airportsdata' = ['py.typed']
 
 # -------------------------- coverage --------------------------
 # Runs in Github Actions (see .github/workflows/ci-cd.yaml) and in tox (see tox.ini).
@@ -116,10 +124,10 @@ exclude_lines = [
 # Testing framework
 # Config file documentation at https://docs.pytest.org/en/stable/reference/reference.html#ini-options-ref
 [tool.pytest.ini_options]
-log_auto_indent = true
+log_auto_indent = 2
 # Enable log display during test run (aka "live logging" https://docs.pytest.org/en/stable/logging.html#live-logs)
 log_cli = true
-minversion = '8.3.3'
+minversion = '9.0.2'
 testpaths = ['tests']
 
 # Adds pytest-cov functionality (see https://pytest-cov.readthedocs.io/en/latest/config.html)
@@ -128,67 +136,6 @@ testpaths = ['tests']
 # Instead of below, now runs with $ coverage run --parallel-mode
 # addopts = --cov=./ --cov-report=term --cov-report=html
 
-# -------------------------- mypy --------------------------
-[tool.mypy]
-# Static Typing for Python
-# Runs as part of pre-commit
-# Config file documentation at https://mypy.readthedocs.io/en/stable/config_file.html
-
-# Disables import discovery of namespace packages (see PEP 420)
-# namespace_packages = false
-
-# Top-level packages will be based in either the current directory, or a member of the MYPYPATH environment variable or
-# mypy_path config option. This option is only useful in the absence of __init__.py. See Mapping file paths to modules
-# for details.
-explicit_package_bases = true
-mypy_path = "C:\\users\\mike\\Documents\\python\\git_repos\\webchanges"
-
-# Suppresses error messages about imports that cannot be resolved.
-ignore_missing_imports = false
-
-# Specifies the Python version used to parse and check the target program.
-# python_version = 3.12
-
-# Disallows calling functions without type annotations from functions with type annotations.
-disallow_untyped_calls = true
-
-# Disallows defining functions without type annotations or with incomplete type annotations.
-disallow_untyped_defs = true
-
-# Reports an error whenever a function with type annotations is decorated with a decorator without annotations.
-# disallow_untyped_decorators = true
-
-# Warns about casting an expression to its inferred type.
-warn_redundant_casts = true
-
-# Warns about unneeded # type: ignore comments.
-# May behave differently in GitHub Actions than it does on Windows.
-warn_unused_ignores = true
-
-# Allows disabling one or multiple error codes globally.
-disable_error_code = ["import-not-found", "import-untyped"]
-
-# Shows a warning when returning a value with type Any from a function declared with a non-Any return type.
-warn_return_any = true
-
-# Shows a warning when encountering any code inferred to be unreachable or redundant after performing type analysis.
-warn_unreachable = false
-
-# Enables additional checks that are technically correct but may be impractical in real code.
-extra_checks = true
-
-# Shows documentation link to corresponding error code.
-show_error_code_links = true
-
-# Use visually nicer output in error messages: use soft word wrap, show source code snippets, and show error location
-# markers.
-pretty = true
-
-# Use an SQLite database to store the cache.
-sqlite_cache = true
-
-# Warns about per-module sections in the config file that do not match any files processed when invoking mypy.
-warn_unused_configs = true
 
 # -------------------------- ruff --------------------------
 [tool.ruff]
@@ -208,81 +155,81 @@ line-length = 120
 # By default, Ruff enables Flake8's F rules, along with a subset of the E rules
 # Enable rules not enabled by default, and ignore specific rules.
 select = [
-    "S",   # flake8-bandit
-    "BLE", # flake8-blind-except
-    "B",   # flake8-bugbear
-    "A",   # flake8-builtin
-    "C4",  # flake8-comprehensions
-    "DTZ", # flake8-datetimez
-    # "EM",   # flake8-errmsg
-    "FA",  # flake8-future-annotations
-    "INT", # flake8-gettext
-    "ISC", # flake8-implicit-str-concat
-    "LOG", # flake8-logging
-    # "G",    # flake8-logging-format
-    "PIE", # flake8-pie
-    "PYI", # flake8-pyi
-    "PT",  # flake8-pytest-style
-    "Q",   # flake8-quotes
-    "RSE", # flake8-raise
-    "RET", # flake8-return
-    "SIM", # flake8-simplify
-    "TID", # flake8-tidy-imports
-    "TD",  # flake8-todos
-    "TC",  # flake8-type-checking
-    # "ARG",  # flake8-unused-arguments
-    "PTH", # flake8-use-pathlib
-    # "FLY",  # flynt 
-    "I",    # isort
-    "C90",  # mccabe 
-    "N",    # pep8-naming
-    "PERF", # Perflint
-    "E",    # pycodestyle errors
-    "W",    # pycodestyle warnings
-    # "DOC",  # pydoclint
-    # "D",    # pydocstyle
-    "F", # Pyflakes
-    # "PL",   # Pylint
-    "FURB", # refurb 
-    "RUF",  # Ruff-specific rules
-    # "TRY",  # tryceratops
+    'S',   # flake8-bandit
+    'BLE', # flake8-blind-except
+    'B',   # flake8-bugbear
+    'A',   # flake8-builtin
+    'C4',  # flake8-comprehensions
+    'DTZ', # flake8-datetimez
+    # 'EM',   # flake8-errmsg
+    'FA',  # flake8-future-annotations
+    'INT', # flake8-gettext
+    'ISC', # flake8-implicit-str-concat
+    'LOG', # flake8-logging
+    # 'G',    # flake8-logging-format
+    'PIE', # flake8-pie
+    'PYI', # flake8-pyi
+    'PT',  # flake8-pytest-style
+    'Q',   # flake8-quotes
+    'RSE', # flake8-raise
+    'RET', # flake8-return
+    'SIM', # flake8-simplify
+    'TID', # flake8-tidy-imports
+    'TD',  # flake8-todos
+    'TC',  # flake8-type-checking
+    # 'ARG',  # flake8-unused-arguments
+    'PTH', # flake8-use-pathlib
+    # 'FLY',  # flynt 
+    'I',    # isort
+    'C90',  # mccabe 
+    'N',    # pep8-naming
+    'PERF', # Perflint
+    'E',    # pycodestyle errors
+    'W',    # pycodestyle warnings
+    # 'DOC',  # pydoclint
+    # 'D',    # pydocstyle
+    'F', # Pyflakes
+    # 'PL',   # Pylint
+    'FURB', # refurb 
+    'RUF',  # Ruff-specific rules
+    # 'TRY',  # tryceratops
 ]
 
 ignore = [
-    "B904",   # Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None`
-    "S101",   # Use of `assert` detected
-    "DTZ001", # `datetime.datetime()` called without a `tzinfo` argument
-    "DTZ005", # `datetime.datetime.now()` called without a `tz` argument
-    "DTZ006", # `datetime.datetime.fromtimestamp()` called without a `tz` argument
-    "DTZ007", # Naive datetime constructed using `datetime.datetime.strptime()` without %z
-    "DTZ011", # `datetime.date.today()` used,
-    "RUF012", # Mutable class attributes should be annotated with `typing.ClassVar`
-    "SIM105", # Use contextlib.suppress({exception}) instead of try-except-pass
-    "SIM115", # Use a context manager for opening files
-    "TD002",  #	Missing author in TODO
-    "TD003",  # Missing issue link for this TODO
+    'B904',   # Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None`
+    'S101',   # Use of `assert` detected
+    'DTZ001', # `datetime.datetime()` called without a `tzinfo` argument
+    'DTZ005', # `datetime.datetime.now()` called without a `tz` argument
+    'DTZ006', # `datetime.datetime.fromtimestamp()` called without a `tz` argument
+    'DTZ007', # Naive datetime constructed using `datetime.datetime.strptime()` without %z
+    'DTZ011', # `datetime.date.today()` used,
+    'RUF012', # Mutable class attributes should be annotated with `typing.ClassVar`
+    'SIM105', # Use contextlib.suppress({exception}) instead of try-except-pass
+    'SIM115', # Use a context manager for opening files
+    'TD002',  #	Missing author in TODO
+    'TD003',  # Missing issue link for this TODO
 ]
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
-fixable = ["ALL"]
+fixable = ['ALL']
 unfixable = []
 
 # Allow unused variables when underscore-prefixed.
-dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+dummy-variable-rgx = '^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$'
 
-# List of allowed "confusable" Unicode characters to ignore when enforcing RUF001, RUF002, and RUF003.
-allowed-confusables = ["–", "‘", "’"]
+# List of allowed 'confusable' Unicode characters to ignore when enforcing RUF001, RUF002, and RUF003.
+allowed-confusables = ['–', '‘', '’']
 
 [tool.ruff.lint.flake8-quotes]
-inline-quotes = "single"
+inline-quotes = 'single'
 
 [tool.ruff.lint.mccabe]
 # Flag errors (`C901`) whenever the complexity level exceeds below.
 max-complexity = 30
 
 [tool.ruff.lint.per-file-ignores]
-"test_*" = [
-    "S101", # Use of `assert` detected
+'test_*' = [
+    'S101', # Use of `assert` detected
 ]
 
 [tool.ruff.lint.pydoclint]
@@ -290,10 +237,10 @@ max-complexity = 30
 ignore-one-line-docstrings = true
 
 [tool.ruff.lint.pydocstyle]
-convention = "google"
+convention = 'google'
 
 [tool.ruff.per-file-target-version]
-".*.py" = "py314"
+'.*.py' = 'py314'
 
 [tool.ruff.format]
 # Enable the formatter, which is a drop-in replacement for Black.
@@ -303,16 +250,16 @@ convention = "google"
 exclude = []
 
 # Use single quotes for strings.
-quote-style = "single"
+quote-style = 'single'
 
 # Like Black, indent with spaces, rather than tabs.
-indent-style = "space"
+indent-style = 'space'
 
 # Like Black, respect magic trailing commas.
 skip-magic-trailing-comma = false
 
 # Like Black, automatically detect the appropriate line ending.
-line-ending = "auto"
+line-ending = 'auto'
 
 # Enable auto-formatting of code examples in docstrings. Markdown,
 # reStructuredText code/literal blocks and doctests are all supported.
@@ -326,4 +273,8 @@ docstring-code-format = true
 #
 # This only has an effect when the `docstring-code-format` setting is
 # enabled.
-docstring-code-line-length = "dynamic"
+docstring-code-line-length = 'dynamic'
+
+
+# -------------------------- ty --------------------------
+# Config file documentation at https://docs.astral.sh/ty/reference/configuration/

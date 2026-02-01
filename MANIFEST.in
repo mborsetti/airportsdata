@@ -1,5 +1,0 @@
-# https://packaging.python.org/en/latest/guides/using-manifest-in/
-# do not include test files
-prune tests
-# include csv files
-include airportsdata/*.csv
