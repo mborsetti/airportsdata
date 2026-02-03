@@ -1,5 +1,5 @@
-mypy
 pre-commit
 # pip requirements for pre-commit (in addition to ./requirements.txt )
 ruff
+ty
 types-backports

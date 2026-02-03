@@ -8,7 +8,7 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
-Version 20250201
+Version 20250202
 ================
 
 * Added the following 3 airports:

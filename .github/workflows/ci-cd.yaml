@@ -72,7 +72,7 @@ jobs:
         run: >
           uv pip install
           --upgrade
-          -r tests/requirements_pytest.txt
+          -r tests/requirements_testing.txt
 
       - name: Run tests
         run: >

@@ -137,22 +137,26 @@ repos:
       - id: ruff-check # https://github.com/astral-sh/ruff-pre-commit/blob/main/.pre-commit-hooks.yaml
         name: lint Python code (ruff check)
         entry: ruff check --fix --force-exclude
-        language: system
+        language: python
         types_or: [python, pyi, jupyter]
         require_serial: true
+        additional_dependencies: [ruff]
       - id: ruff-format  # https://github.com/astral-sh/ruff-pre-commit/blob/main/.pre-commit-hooks.yaml
         name: format Python code (ruff format)
         entry: ruff format --force-exclude
-        language: system
+        language: python
         pass_filenames: false
         types_or: [python, pyi, jupyter]
         require_serial: true
+        additional_dependencies: [ruff]
       - id: ty 
         name: check Python static typing (ty)
         entry: ty
-        args: ['check', '**/*.py']
+        args: ['check']
         language: python
-        pass_filenames: false
+        pass_filenames: true
+        types_or: [python, pyi, jupyter]
+        require_serial: true
         additional_dependencies: [ty]
       - id: sort_and_fix
         name: Sort database and fix data precision
