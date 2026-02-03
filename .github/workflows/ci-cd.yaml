@@ -61,12 +61,11 @@ jobs:
 
       # Install uv per https://github.com/astral-sh/setup-uv/blob/main/README.md
       # and https://docs.astral.sh/uv/guides/integration/github
+      # Caching is enabled on on GitHub-hosted runners
       - name: Set up uv
         uses: astral-sh/setup-uv@803947b9bd8e9f986429fa0c5a41c367cd732b41 # v7.2.1
         with:
           python-version: ${{ matrix.python-version }}
-          enable-cache: true
-          cache-dependency-glob: '**/uv.lock'
 
       - name: Install dependencies
         run: >
@@ -146,12 +145,11 @@ jobs:
         with:
           python-version: '3.14'
 
-      # Install uv per https://github.com/astral-sh/setup-uv / https://docs.astral.sh/uv/guides/integration/github
+      # Install uv per https://github.com/astral-sh/setup-uv/blob/main/README.md
+      # and https://docs.astral.sh/uv/guides/integration/github
+      # Caching is enabled on GitHub-hosted runners
       - name: Set up uv
         uses: astral-sh/setup-uv@803947b9bd8e9f986429fa0c5a41c367cd732b41 # v7.2.1
-        with:
-          enable-cache: true
-          cache-dependency-glob: '**/uv.lock'
 
       # Build using uv https://docs.astral.sh/uv/concepts/projects/build/
       - name: Build dist
@@ -160,7 +158,6 @@ jobs:
       # PyPI publish GitHub Action from https://github.com/pypa/gh-action-pypi-publish
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e # release/v1
-
 
       - name: Create GitHub release
         uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # V2.5.0
