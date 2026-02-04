@@ -8,22 +8,26 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
-Version 20250202
+Version 20250204
 ================
 
-* Added the following 3 airports:
+* Added the following 5 airports:
 
+  - SBSG/NAT, Greater Natal International Airport, São Gonçalo do Amarante, Rio Grande do Norte, BR.
   - SCQP/ZCO, La Araucanía Airport (Temuco), Freire, Aisen, CL.
+  - SSTE/TSQ, Torres Airport, Torres, Rio Grande do Sul, BR.
   - VQBT/BUT, Bathbalathang Domestic Airport, Jakar, Bumthang, BT.
   - ZYYK/YKH, Yingkou Lanqi Airport, Yingkou, Liaoning, CN.
 
-* Updated IATA locators for the following 7 airports:
+* Updated IATA locator (and other data) for the following 8 airports:
 
   - 90WA/WDN, Waldron Airstrip, East Sound, Washington, US: iata added.
   - KANJ/SSM, Sault Ste Marie Municipal/Sanderson Field, Sault Ste Marie, Michigan, US: iata added.
   - KBDH/ILL, Willmar Municipal/John L Rice Field, Willmar, Minnesota, US: iata added.
   - KODO/ODT, Odessa-Schlemeyer Field, Odessa, Texas, US: iata added.
   - LKCS/JCL, Ceske Budejovice Airport, Ceske Budejovice, Jihocesky, CZ: iata added.
+  - SBNT    , Augusto Severo Airport (Base Aérea de Natal), Parnamirim, Rio Grande do Norte, BR: iata "NAT" deleted,
+    name changed from "Augusto Severo Airport", city changed from "Natal".
   - SCTC    , Maquehue Airport, Temuco, Araucania, CL: iata deleted.
   - URRY    , Zavetnoe Airport, , Rostov, RU: iata deleted.
 
@@ -248,7 +252,10 @@ Version 20250202
   - WRLW    , Muara Wahau Airport, Muara Wahau, Borneo Island, East Kalimantan, ID: city changed from "Muara Wahau-
     Borneo Island".
   - WRSP    , Surabaya Airport, Surabaya, Java Island, , ID: city changed from "Surabaya-Java Island".
- 
+
+* Removed the following airport:
+
+  - SBTR/TSQ, Torres Airport, Torres, Rio Grande do Sul, BR (change in ICAO designator to SSTE).
 
 Version 20251008
 ================
