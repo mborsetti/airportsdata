@@ -12,7 +12,7 @@ from typing import Dict, Literal, TypedDict
 
 __project_name__ = __package__
 __min_python_version__ = (3, 10)  # minimum version of Python required to run; supported until October 2025
-__version__ = '20250204'  # numbering follows the release date (UTC)
+__version__ = '20260204'  # numbering follows the release date (UTC)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
 __license__ = 'MIT'
