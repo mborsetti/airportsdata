@@ -2,11 +2,11 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,274
+.. |ICAO| replace:: 28,409
 
-.. |IATA| replace:: 7,865
+.. |IATA| replace:: 7,864
 
-.. |LID| replace:: 12,610
+.. |LID| replace:: 12,746
 
 .. |pyversion| image:: https://img.shields.io/pypi/v/airportsdata.svg
     :target: https://pypi.org/project/airportsdata/
@@ -80,8 +80,7 @@ Important notes:
 
 * Timezone was originally sourced from `TimeZoneDB <https://timezonedb.com>`__;
 * No historical data (closed airports are removed);
-* No heliports without a IATA code;
-* No sea bases without a IATA code;
+* No seaplane bases or heliports unless they have a IATA code;
 * No surface transportation stations, even if they have an official IATA code.
 
 Please report any issues you may find `here
@@ -90,8 +89,6 @@ Please report any issues you may find `here
 This project is a fork of https://github.com/mwgg/Airports. All new data submitted in this fork have been validated
 against national `Aeronautical Information Publications (AIP) or equivalent
 <https://github.com/mborsetti/airportsdata/blob/main/README_AIP.rst>`__ (or
-ARINC database) and `IATA <https://www.iata.org/en/publications/directories/code-search/>`__ or 
-`<https://www.ch-aviation.com/airports/{IATA}>`__  before publishing.
 ARINC database) and `IATA <https://www.iata.org/en/publications/directories/code-search/>`__ or
 `<https://www.ch-aviation.com/airports/{IATA}>`_  before publishing.
 

@@ -550,7 +550,7 @@ subdiv = {  # ISO 3166-2 subdivisions for certain countries https://en.wikipedia
         'West Virginia',
         'Wisconsin',
         'Wyoming',
-        'Dist. Of Columbia',  # Should be 'District of Columbia',
+        'District of Columbia',
         # 'American Samoa',  # using own ISO 3166-1 country code
         # 'Guam',  # using own ISO 3166-1 country code
         # 'Northern Mariana Islands',  # using own ISO 3166-1 country code
