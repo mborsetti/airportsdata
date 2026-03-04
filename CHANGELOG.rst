@@ -8,10 +8,18 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
+Version 20260304
+================
+
+* Added the following airport:
+
+  - ZBSN/TVS, Tangshan Sannühe Airport, Tangshan, Hebei, CN.
+
+
 Version 20260208
 ================
 
-Updated US FAA data to Digital - Chart Supplement (d-CS) released on 22 January 2026. Coverage: United States, Puerto 
+Updated US FAA data to Digital - Chart Supplement (d-CS) released on 22 January 2026. Coverage: United States, Puerto
 Rico, U.S. Virgin Islands, and the Pacific Territories.
 
 * Added the following 427 airports:
@@ -446,7 +454,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
 
 * Updated data for the following 533 airports:
 
-  - 01ID    , Lava Hot Springs Airpark, Lava Hot Springs, Idaho, US: name changed from "Lava Hot Springs Airport",  
+  - 01ID    , Lava Hot Springs Airpark, Lava Hot Springs, Idaho, US: name changed from "Lava Hot Springs Airport",
     elevation changed from 5268.0 to 5300.0
   - 04CA    , Gray Butte Field, Palmdale, California, US: elevation changed from 3028.0 to 3039.0
   - 04IL    , Full Throttle Airport, Hudson, Illinois, US: name changed from "Schertz Aerial Service - Hudson Airport"
@@ -454,15 +462,15 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
     from 1550.0 to 1550.5
   - 05ME    , Drisko Kelley Airport, Jonesboro, Maine, US: name changed from "Drisko Airport"
   - 07FA/OCA, Ocean Reef Club Airport, Key Largo, Florida, US: elevation changed from 6.0 to 6.4
-  - 07TS    , Cross Country Estates Marshall Field, Georgetown, Texas, US: elevation changed from 690.0 to 689.0    
+  - 07TS    , Cross Country Estates Marshall Field, Georgetown, Texas, US: elevation changed from 690.0 to 689.0
   - 07VA    , Alpha Hotel Airport, Clover, Virginia, US: elevation changed from 350.0 to 440.0
   - 0PN0    , Lakeview Airport, Sheakeyville, Pennsylvania, US: name changed from "Fletcher Airport", elevation changed
     from 1335.0 to 1317.0
-  - 14NC    , Camp Davis Mcolf Airport, Holly Ridge, North Carolina, US: longitude changed from -77.5 to -77.6      
+  - 14NC    , Camp Davis Mcolf Airport, Holly Ridge, North Carolina, US: longitude changed from -77.5 to -77.6
   - 14WS    , Gillette's Lakewood Lodge Airport, Stone Lake, Wisconsin, US: name changed from "Lakewood Lodge Airport"
   - 15WA    , Oomrang Air Airport, Stanwood, Washington, US: name changed from "Sunset Airport", elevation changed from
     156.0 to 121.0
-  - 17XA    , Mandyland Airport, Floresville, Texas, US: name changed from "Hunter Field", city changed from        
+  - 17XA    , Mandyland Airport, Floresville, Texas, US: name changed from "Hunter Field", city changed from
     "Jacksonville", elevation changed from 580.0 to 406.0, latitude changed from 32.0 to 29.0, longitude changed from
     -95.3 to -98.3
   - 19NE    , Hoyt Airport, Mc Cook/Culbertson, Nebraska, US: elevation changed from 2707.0 to 2700.0
@@ -489,7 +497,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - 3OH6    , Youngpeter Airport, Delphos, Ohio, US: elevation changed from 815.0 to 806.0
   - 3VA4    , Bill Davenport Memorial Airport, Warsaw, Virginia, US: elevation changed from 10.0 to 7.9
   - 41TT    , Rancho Paraiso Airport, Mountain Home, Texas, US: elevation changed from 2097.0 to 2095.7
-  - 42AK    , Bear Tooth Airport, Nuiqsut, Alaska, US: name changed from "Willow Conocophillips Airport", elevation 
+  - 42AK    , Bear Tooth Airport, Nuiqsut, Alaska, US: name changed from "Willow Conocophillips Airport", elevation
     changed from 100.8 to 92.5, longitude changed from -152.1 to -152.0
   - 48TE    , 4M Ranch Airfield, Langtry, Texas, US: elevation changed from 1824.0 to 1900.0
   - 48TS    , Kevin Lee Berry Field, Rocksprings, Texas, US: name changed from "Fox Airport", city changed from "New
@@ -502,36 +510,36 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - 54CL    , Lake Riverside Estates Airport, Anza, California, US: elevation changed from 3410.0 to 3404.0
   - 57AK    , Fly8Ma Pilot Lodge Airport, Big Lake, Alaska, US: elevation changed from 220.0 to 212.0
   - 5AZ9    , Regeneration Airport, Fort Thomas, Arizona, US: elevation changed from 2750.0 to 2779.0
-  - 5CL1    , Robert Oliver Airpark, Santa Margarita, California, US: name changed from "Hart Ranch Airport"        
-  - 5CL7    , Gene Wash Reservoir Airport, Parker Dam, California, US: elevation changed from 850.0 to 898.0        
+  - 5CL1    , Robert Oliver Airpark, Santa Margarita, California, US: name changed from "Hart Ranch Airport"
+  - 5CL7    , Gene Wash Reservoir Airport, Parker Dam, California, US: elevation changed from 850.0 to 898.0
   - 5CL8    , Northshore Airport, Arvin, California, US: name changed from "Creekside Airport"
   - 5GA3    , Eagles Landing Airport, Williamson, Georgia, US: elevation changed from 980.0 to 932.0
   - 5KY5    , Seven Springs Farms Airport, Cadiz, Kentucky, US: name changed from "Lowe Airport"
   - 63NY    , Windshear Airport, Youngstown, New York, US: name changed from "Windsor Airport"
   - 65AR    , Pleasant Hill Airport, Newark, Arkansas, US: elevation changed from 412.0 to 416.0
-  - 67FL    , Bald Eagle Airfield- Myakka Head Airport, Zolfo Springs, Florida, US: name changed from "Myakka Head  
+  - 67FL    , Bald Eagle Airfield- Myakka Head Airport, Zolfo Springs, Florida, US: name changed from "Myakka Head
     Airport"
   - 69MO    , Brilhart's Farmport Airport, Higbee, Missouri, US: name changed from "Hess-Mckeown Airport"
   - 6TS8    , Rabb And Nobra Airport, Industry, Texas, US: elevation changed from 400.0 to 417.0
   - 79FL    , Good Dog Landing Airport, Chiefland, Florida, US: name changed from "Neal Field"
   - 7AK8    , Crosswinds Landing Airport, Wasilla, Alaska, US: name changed from "Hess Airport"
-  - 7GA2    , Alyssas Animal Sanctuary Air Park, Valdosta, Georgia, US: elevation changed from 229.0 to 179.0       
+  - 7GA2    , Alyssas Animal Sanctuary Air Park, Valdosta, Georgia, US: elevation changed from 229.0 to 179.0
   - 7IN9    , The Last Resort Airport, Springport, Indiana, US: elevation changed from 1070.0 to 1075.0
-  - 7KY3    , Soggy Bottom Farm Airport, Winchester, Kentucky, US: name changed from "Little Mount International    
+  - 7KY3    , Soggy Bottom Farm Airport, Winchester, Kentucky, US: name changed from "Little Mount International
     Airport", city changed from "Taylorsville", elevation changed from 750.0 to 912.0, latitude changed from 38.1 to
     37.9, longitude changed from -85.2 to -84.3
   - 7XS0    , Polly Ranch Airport, Friendswood, Texas, US: elevation changed from 24.0 to 22.0
-  - 80PN    , Hanover Airpark Inc Airport, Hookstown, Pennsylvania, US: name changed from "Hanny Beaver Airpark Inc 
+  - 80PN    , Hanover Airpark Inc Airport, Hookstown, Pennsylvania, US: name changed from "Hanny Beaver Airpark Inc
     Airport"
-  - 81IL    , Illinois Antique Airfield, Minier, Illinois, US: name changed from "Illinois Valley Parachute Club    
+  - 81IL    , Illinois Antique Airfield, Minier, Illinois, US: name changed from "Illinois Valley Parachute Club
     Airport"
-  - 83TX    , Texas A & M - Rellis Airport, Bryan, Texas, US: name changed from "Texas A & M Flight Test Station    
+  - 83TX    , Texas A & M - Rellis Airport, Bryan, Texas, US: name changed from "Texas A & M Flight Test Station
     Airport", elevation changed from 264.0 to 260.0
   - 88PA    , Mc Coy Airport, Clinton, Pennsylvania, US: elevation changed from 1200.0 to 1188.0
   - 8FA4    , New Smyrna Beach Airport, Samsula, Florida, US: name changed from "Coe Field"
   - 8NC4    , Twin Silos Airport, Pittsboro, North Carolina, US: name changed from "Dead Dog Airport"
   - 8PA1    , Dee Jay Airport, Ono, Pennsylvania, US: elevation changed from 505.0 to 514.0
-  - 94TS    , Hidden Springs Ranch Airport, Sulphur Springs, Texas, US: elevation changed from 485.0 to 484.0       
+  - 94TS    , Hidden Springs Ranch Airport, Sulphur Springs, Texas, US: elevation changed from 485.0 to 484.0
   - 97MT    , Cabin Creek Landing Airport, Marion, Montana, US: elevation changed from 3999.0 to 3929.1
   - 9KY9    , Paintsville-Prestonsburg-Combs Field, Paintsville, Kentucky, US: elevation changed from 624.0 to 625.0
   - 9NM9    , Spaceport America Airport, Truth Or Consequences, New Mexico, US: elevation changed from 4595.0 to 4622.0
@@ -549,7 +557,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - CL46    , Quail Lake Sky Park Airport, Gorman/Lancaster, California, US: elevation changed from 3370.0 to 3372.0
   - CO12    , Van Aire Airport, Brighton, Colorado, US: elevation changed from 5055.0 to 5061.0
   - DE15    , Reliance Airport, Seaford, Delaware, US: name changed from "Pevey Airport"
-  - FL34    , Eglin Aux Field 6 Airport, Valparaiso, Florida, US: name changed from "Eglin Test Site B6 Airport",   
+  - FL34    , Eglin Aux Field 6 Airport, Valparaiso, Florida, US: name changed from "Eglin Test Site B6 Airport",
     elevation changed from 120.0 to 128.0
   - FL59    , Buckingham Field, Lehigh Acres, Florida, US: city changed from "Fort Myers", elevation changed from 23.0
     to 20.0
@@ -559,7 +567,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - IN31    , Bitar Field, Pendleton, Indiana, US: name changed from "Hanna Airfield"
   - IN51    , Windy Knoll Airport, Sheridan, Indiana, US: elevation changed from 920.0 to 915.0
   - K06U/KPT, Jackpot/Hayden Field, Jackpot, Nevada, US: elevation changed from 5224.1 to 5223.7
-  - K0A9    , William B Greene Jr Regional Airport, Elizabethton, Tennessee, US: name changed from "Elizabethton    
+  - K0A9    , William B Greene Jr Regional Airport, Elizabethton, Tennessee, US: name changed from "Elizabethton
     Municipal Airport"
   - K0B4    , Hartington Municipal/Bud Becker Field, Hartington, Nebraska, US: name changed from "Hartington Municipal/
     Bud Becker Field"
@@ -567,7 +575,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - K0J8    , Flying Ten Airport, Archer, Florida, US: elevation changed from 90.0 to 92.0
   - K0S5    , Nezperce Municipal Airport, Nezperce, Idaho, US: elevation changed from 3201.0 to 3204.0
   - K0W3    , Harford County Airport, Churchville, Maryland, US: elevation changed from 411.5 to 411.6
-  - K11V    , Easton/Valley View Airport, Greeley, Colorado, US: name changed from "Easton/Valley View/ Airport"    
+  - K11V    , Easton/Valley View Airport, Greeley, Colorado, US: name changed from "Easton/Valley View/ Airport"
   - K11Y    , Flying Feathers Airport, Chilton, Wisconsin, US: elevation changed from 917.0 to 913.0
   - K15M    , Segars Field, Iuka, Mississippi, US: name changed from "Iuka Airport"
   - K1A5    , Macon County Airport, Franklin, North Carolina, US: elevation changed from 2034.0 to 2033.9
@@ -576,7 +584,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
     Airport"
   - K1L4    , Kidwell Airport, Cal Nev Ari, Nevada, US: elevation changed from 2605.0 to 2602.0
   - K1M5    , Douglas Hunter Field, Portland, Tennessee, US: elevation changed from 817.2 to 817.6
-  - K1S6    , Priest River Municipal Airport, Priest River, Idaho, US: elevation changed from 2193.0 to 2192.8      
+  - K1S6    , Priest River Municipal Airport, Priest River, Idaho, US: elevation changed from 2193.0 to 2192.8
   - K22I    , Vinton County Airport, Mc Arthur, Ohio, US: elevation changed from 958.0 to 954.2
   - K24F    , Cypress River Airport, Jefferson, Texas, US: elevation changed from 221.2 to 221.6
   - K25J    , Randolph County Airport, Cuthbert, Georgia, US: name changed from "Lower Chattahoochee Regional Airport"
@@ -585,48 +593,48 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - K2B3/NWH, Parlin Field, Newport, New Hampshire, US: elevation changed from 785.0 to 783.9
   - K2E6    , Groton Municipal Airport, Groton, South Dakota, US: elevation changed from 1306.0 to 1310.0
   - K2K9    , Haskell Airport, Haskell, Oklahoma, US: elevation changed from 588.0 to 587.0
-  - K2M2    , Lawrenceburg/Lawrence County (Fleeman Field) Airport, Lawrenceburg, Tennessee, US: name changed from  
+  - K2M2    , Lawrenceburg/Lawrence County (Fleeman Field) Airport, Lawrenceburg, Tennessee, US: name changed from
     "Lawrenceburg-Lawrence County Airport"
   - K2VA    , Zangger Vintage Airpark, Larchwood, Iowa, US: elevation changed from 1477.0 to 1478.0
   - K2W3    , Swanson Field, Eatonville, Washington, US: name changed from "Swanson Airport"
-  - K2W6/LTW, St Mary's County Regional Airport, Leonardtown, Maryland, US: elevation changed from 141.8 to 141.6   
+  - K2W6/LTW, St Mary's County Regional Airport, Leonardtown, Maryland, US: elevation changed from 141.8 to 141.6
   - K33R    , Groveton/Trinity County Airport, Groveton, Texas, US: name changed from "Groveton-Trinity County Airport"
-  - K35A/USC, Union County, Troy Shelton Field, Union, South Carolina, US: elevation changed from 610.2 to 609.9    
-  - K37T    , Calico Rock Municipal Airport, Calico Rock, Arkansas, US: name changed from "Calico Rock-Izard County 
+  - K35A/USC, Union County, Troy Shelton Field, Union, South Carolina, US: elevation changed from 610.2 to 609.9
+  - K37T    , Calico Rock Municipal Airport, Calico Rock, Arkansas, US: name changed from "Calico Rock-Izard County
     Airport"
   - K38U    , Wayne Wonderland Airport, Loa, Utah, US: elevation changed from 7029.0 to 7027.4
   - K39K    , Dragoon Creek Airport, Lyndon, Kansas, US: name changed from "Versaair Services Airport"
   - K3AU    , Augusta Municipal Airport, Augusta, Kansas, US: elevation changed from 1328.0 to 1325.5
   - K3CK    , Lake In The Hills Airport, Chicago/Lake In The Hills, Illinois, US: elevation changed from 887.3 to 887.2
   - K3D2    , Ephraim/Gibraltar Airport, Ephraim, Wisconsin, US: elevation changed from 763.2 to 773.1
-  - K3M9    , Warren Municipal/John B Frazer Jr Field, Warren, Arkansas, US: name changed from "Warren Municipal    
+  - K3M9    , Warren Municipal/John B Frazer Jr Field, Warren, Arkansas, US: name changed from "Warren Municipal
     Airport"
   - K41U/NTJ, Sanpete County Regional Airport, Manti, Utah, US: name changed from "Manti-Ephraim Airport"
   - K42A    , Melbourne Municipal/John E Miller Field, Melbourne, Arkansas, US: name changed from "Melbourne Municipal -
     John E Miller Field"
-  - K42J    , Keystone Heights Airport, Keystone Heights, Florida, US: elevation changed from 196.0 to 195.6        
+  - K42J    , Keystone Heights Airport, Keystone Heights, Florida, US: elevation changed from 196.0 to 195.6
   - K49C    , Camp Lake Airport, Camp Lake, Wisconsin, US: elevation changed from 755.0 to 749.0
   - K4A2/ATT, Atmautluak Airport, Atmautluak, Alaska, US: elevation changed from 19.4 to 18.6
-  - K4A6    , Scottsboro Municipal-Word Field, Scottsboro, Alabama, US: elevation changed from 650.3 to 650.5       
+  - K4A6    , Scottsboro Municipal-Word Field, Scottsboro, Alabama, US: elevation changed from 650.3 to 650.5
   - K4J5    , Quitman Brooks County Airport, Quitman, Georgia, US: elevation changed from 184.8 to 184.9
-  - K4N4    , Lidgerwood Municipal Airport, Lidgerwood, North Dakota, US: elevation changed from 1081.0 to 1082.0   
+  - K4N4    , Lidgerwood Municipal Airport, Lidgerwood, North Dakota, US: elevation changed from 1081.0 to 1082.0
   - K51M    , Oscoda County/Dennis Kauffman Memorial Airport, Mio, Michigan, US: elevation changed from 1033.0 to 1032.8
-  - K51R    , Madisonville Municipal Airport, Madisonville, Texas, US: elevation changed from 286.7 to 286.4        
+  - K51R    , Madisonville Municipal Airport, Madisonville, Texas, US: elevation changed from 286.7 to 286.4
   - K57C    , East Troy Municipal Airport, East Troy, Wisconsin, US: elevation changed from 860.2 to 860.4
-  - K5A1    , Norwalk/Huron County Airport, Norwalk, Ohio, US: name changed from "Norwalk-Huron County Airport"     
+  - K5A1    , Norwalk/Huron County Airport, Norwalk, Ohio, US: name changed from "Norwalk-Huron County Airport"
   - K5R4    , Holk Field At Foley Municipal Airport, Foley, Alabama, US: name changed from "Foley Municipal Airport"
   - K5S6    , Cape Blanco State Airport, Sixes, Oregon, US: elevation changed from 214.0 to 202.0
   - K5V5    , Shiprock Airstrip, Shiprock, New Mexico, US: elevation changed from 5272.4 to 5272.6
-  - K5W5    , Southern Wake Regional Airport, Raleigh, North Carolina, US: name changed from "Triple W Airport",    
+  - K5W5    , Southern Wake Regional Airport, Raleigh, North Carolina, US: name changed from "Triple W Airport",
     elevation changed from 244.0 to 243.0
-  - K61C    , Fort Atkinson Municipal Airport, Fort Atkinson, Wisconsin, US: elevation changed from 799.9 to 800.1  
-  - K61D    , Virgil L Williams Plainwell Municipal Airport, Plainwell, Michigan, US: name changed from "Plainwell  
+  - K61C    , Fort Atkinson Municipal Airport, Fort Atkinson, Wisconsin, US: elevation changed from 799.9 to 800.1
+  - K61D    , Virgil L Williams Plainwell Municipal Airport, Plainwell, Michigan, US: name changed from "Plainwell
     Municipal Airport"
   - K63S    , Colville Municipal Airport, Colville, Washington, US: elevation changed from 1888.0 to 1883.0
   - K6G5    , Barnesville/Bradfield Airport, Barnesville, Ohio, US: name changed from "Barnesville-Bradfield Airport",
     elevation changed from 1312.2 to 1312.3
   - K6G8    , Brooklyn Airport, Brooklyn, Michigan, US: elevation changed from 987.0 to 981.0
-  - K6I2    , Lebanon Springfield/George Hoerter Field, Springfield, Kentucky, US: name changed from "Lebanon       
+  - K6I2    , Lebanon Springfield/George Hoerter Field, Springfield, Kentucky, US: name changed from "Lebanon
     Springfield-George Hoerter Field", elevation changed from 871.1 to 871.2
   - K6V4    , Wall Municipal Airport, Wall, South Dakota, US: elevation changed from 2812.7 to 2813.3
   - K6Y9    , Prickett-Grooms Field, Sidnaw, Michigan, US: elevation changed from 1372.0 to 1377.0
@@ -637,21 +645,21 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - K7D8    , Gates Airport, Garrettsville, Ohio, US: elevation changed from 1110.0 to 1104.0
   - K7K7    , Graham Field, North Sioux City, South Dakota, US: elevation changed from 1107.0 to 1109.0
   - K7W6    , Hyde County Airport, Engelhard, North Carolina, US: elevation changed from 6.3 to 6.7
-  - K84D    , Cheyenne Eagle Butte Airport, Eagle Butte, South Dakota, US: elevation changed from 2448.7 to 2448.8  
+  - K84D    , Cheyenne Eagle Butte Airport, Eagle Butte, South Dakota, US: elevation changed from 2448.7 to 2448.8
   - K8GK    , Gallatin County Airport, Sparta, Kentucky, US: elevation changed from 830.0 to 830.4
   - K8U8    , Broadwater County Airport, Townsend, Montana, US: name changed from "Townsend Airport"
-  - K90F    , Broken Bow Municipal Airport, Broken Bow, Oklahoma, US: name changed from "Broken Bow Airport"        
+  - K90F    , Broken Bow Municipal Airport, Broken Bow, Oklahoma, US: name changed from "Broken Bow Airport"
   - K94C    , Gilbert Field, Rio, Wisconsin, US: elevation changed from 925.0 to 921.0, latitude changed from 43.4 to
     43.5
   - K94K    , Cassville Municipal Airport, Cassville, Missouri, US: elevation changed from 1482.6 to 1482.7
-  - K9A0    , Lumpkin County-Wimpys Airport, Dahlonega, Georgia, US: elevation changed from 1328.8 to 1329.0        
+  - K9A0    , Lumpkin County-Wimpys Airport, Dahlonega, Georgia, US: elevation changed from 1328.8 to 1329.0
   - K9A5    , Barwick Lafayette Airport, Lafayette, Georgia, US: elevation changed from 776.3 to 776.4
   - K9D1    , Gregory Municipal/Flynn Field, Gregory, South Dakota, US: name changed from "Gregory Municipal - Flynn
     Field"
   - K9K7    , Ellsworth Municipal Airport, Ellsworth, Kansas, US: elevation changed from 1632.7 to 1632.9
   - K9R5    , Hunt Airport, Portland, Texas, US: elevation changed from 40.0 to 38.0
   - KAAS    , Taylor County Airport, Campbellsville, Kentucky, US: elevation changed from 920.5 to 921.0
-  - KABY/ABY, Southwest Georgia Regional Airport, Albany, Georgia, US: elevation changed from 196.2 to 196.1        
+  - KABY/ABY, Southwest Georgia Regional Airport, Albany, Georgia, US: elevation changed from 196.2 to 196.1
   - KACK/ACK, Nantucket Memorial Airport, Nantucket, Massachusetts, US: elevation changed from 46.7 to 46.8
   - KACZ    , Wallace-Pender Airport, Wallace, North Carolina, US: name changed from "Henderson Field"
   - KAFF/AFF, Usaf Academy Davis Airfield, Colorado Springs, Colorado, US: name changed from "Davis Field (Usaf Academy
@@ -661,9 +669,9 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KAHH/AHH, Amery Municipal Airport, Amery, Wisconsin, US: elevation changed from 1087.9 to 1088.1
   - KAHQ    , Wahoo Municipal Airport, Wahoo, Nebraska, US: elevation changed from 1223.7 to 1225.6
   - KAID/AID, Anderson Regional Airport, Anderson, Indiana, US: name changed from "Anderson Municipal-Darlington Field"
-  - KAIZ/AIZ, Lee C Fine Memorial Airport, Kaiser/Lake Ozark, Missouri, US: elevation changed from 868.9 to 868.8   
+  - KAIZ/AIZ, Lee C Fine Memorial Airport, Kaiser/Lake Ozark, Missouri, US: elevation changed from 868.9 to 868.8
   - KANB/ANB, Anniston Regional Airport, Anniston, Alabama, US: elevation changed from 612.0 to 612.1
-  - KANK/SLT, Salida/Harriett Alexander Field, Salida, Colorado, US: elevation changed from 7522.8 to 7523.0        
+  - KANK/SLT, Salida/Harriett Alexander Field, Salida, Colorado, US: elevation changed from 7522.8 to 7523.0
   - KAPH/APH, Ap Hill Lz (Fort Ap Hill) Airport, Bowling Green, Virginia, US: name changed from "Mary Walker Lz Airport"
   - KATL/ATL, Hartsfield/Jackson Atlanta International Airport, Atlanta, Georgia, US: name changed from "Hartsfield -
     Jackson Atlanta International Airport"
@@ -671,7 +679,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
     Field"
   - KAUN/AUN, Auburn Municipal Airport, Auburn, California, US: elevation changed from 1538.4 to 1538.2
   - KAXA/AXG, Algona Municipal Airport, Algona, Iowa, US: elevation changed from 1216.0 to 1216.1
-  - KAXN/AXN, Alexandria Regional/Chandler Field, Alexandria, Minnesota, US: name changed from "Chandler Field"     
+  - KAXN/AXN, Alexandria Regional/Chandler Field, Alexandria, Minnesota, US: name changed from "Chandler Field"
   - KBAC    , Barnes County Municipal Airport, Valley City, North Dakota, US: elevation changed from 1401.6 to 1401.7
   - KBBP/BTN, Marlboro County Jetport/H E Avent Field, Bennettsville, South Carolina, US: name changed from "Marlboro
     County Jetport - H E Avent Field"
@@ -681,9 +689,9 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
     "Western Nebraska Regional/William B Heilig Field"
   - KBJJ/BJJ, Wayne County Airport, Wooster, Ohio, US: elevation changed from 1135.8 to 1135.5
   - KBKE/BKE, Baker City Municipal Airport, Baker City, Oregon, US: elevation changed from 3373.4 to 3373.2
-  - KBKT/BKT, Allan C Perkinson/Blackstone Army Air Field, Blackstone, Virginia, US: name changed from "Allen C     
+  - KBKT/BKT, Allan C Perkinson/Blackstone Army Air Field, Blackstone, Virginia, US: name changed from "Allen C
     Perkinson Blackstone Army Air Field"
-  - KBKV    , Brooksville-Tampa Bay Regional Airport, Brooksville, Florida, US: elevation changed from 76.0 to 76.1 
+  - KBKV    , Brooksville-Tampa Bay Regional Airport, Brooksville, Florida, US: elevation changed from 76.0 to 76.1
   - KBLF/BLF, Mercer County Airport, Bluefield, West Virginia, US: elevation changed from 2856.7 to 2856.8
   - KBPG/HCA, Big Spring/Mc Mahon-Wrinkle Airport, Big Spring, Texas, US: name changed from "Big Spring Mc Mahon-Wrinkle
     Airport", elevation changed from 2572.9 to 2572.8
@@ -700,21 +708,21 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
     Field"
   - KCKC/GRM, Grand Marais/Cook County Airport, Grand Marais, Minnesota, US: elevation changed from 1803.1 to 1803.0
   - KCKF    , Crisp County-Cordele Airport, Cordele, Georgia, US: elevation changed from 309.5 to 309.6
-  - KCKN/CKN, Crookston Municipal/Kirkwood Field, Crookston, Minnesota, US: elevation changed from 900.3 to 896.7   
+  - KCKN/CKN, Crookston Municipal/Kirkwood Field, Crookston, Minnesota, US: elevation changed from 900.3 to 896.7
   - KCKP    , Cherokee County Regional Airport, Cherokee, Iowa, US: elevation changed from 1226.4 to 1227.0
   - KCLT/CLT, Charlotte/Douglas International Airport, Charlotte, North Carolina, US: longitude changed from -80.9 to
     -81.0
-  - KCLW/CLW, Clearwater Executive Airport, Clearwater, Florida, US: name changed from "Clearwater Air Park"        
-  - KCMX/CMX, Houghton County Memorial Airport, Hancock, Michigan, US: elevation changed from 1095.2 to 1095.1      
-  - KCNI    , Cherokee County Regional Airport, Canton, Georgia, US: elevation changed from 1219.1 to 1219.8        
+  - KCLW/CLW, Clearwater Executive Airport, Clearwater, Florida, US: name changed from "Clearwater Air Park"
+  - KCMX/CMX, Houghton County Memorial Airport, Hancock, Michigan, US: elevation changed from 1095.2 to 1095.1
+  - KCNI    , Cherokee County Regional Airport, Canton, Georgia, US: elevation changed from 1219.1 to 1219.8
   - KCNU/CNU, Chanute Martin Johnson Airport, Chanute, Kansas, US: elevation changed from 1003.1 to 1002.5
   - KCOU/COU, Columbia Regional Airport, Columbia, Missouri, US: elevation changed from 889.3 to 889.4
-  - KCPC    , Columbus County Regional Airport, Whiteville, North Carolina, US: name changed from "Columbus County  
+  - KCPC    , Columbus County Regional Airport, Whiteville, North Carolina, US: name changed from "Columbus County
     Municipal Airport"
   - KCPF    , Wendell H Ford Airport, Hazard, Kentucky, US: elevation changed from 1256.4 to 1256.8
   - KCPU    , Calaveras County/Maury Rasmussen Field, San Andreas, California, US: name changed from "Calaveras County-
     Maury Rasmussen Field"
-  - KCRP/CRP, Corpus Christi International Airport, Corpus Christi, Texas, US: elevation changed from 46.1 to 46.2  
+  - KCRP/CRP, Corpus Christi International Airport, Corpus Christi, Texas, US: elevation changed from 46.1 to 46.2
   - KCTJ    , West Georgia Regional/O V Gray Field, Carrollton, Georgia, US: name changed from "West Georgia Regional -
     O V Gray Field", elevation changed from 1164.5 to 1164.6
   - KCWV    , Claxton-Evans County Airport, Claxton, Georgia, US: elevation changed from 111.6 to 111.5
@@ -724,8 +732,8 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KDCA    , Ronald Reagan Washington Ntl Airport, Washington, District of Columbia, US: iata changed from "DCA", subd
     changed from "Dist. Of Columbia"
   - KDDH    , William H Morse State Airport, Bennington, Vermont, US: elevation changed from 826.8 to 826.6
-  - KDED    , Deland Municipal-Sidney H Taylor Field, Deland, Florida, US: elevation changed from 79.1 to 79.2      
-  - KDET/DET, Coleman A Young Municipal Airport, Detroit, Michigan, US: elevation changed from 625.8 to 624.2       
+  - KDED    , Deland Municipal-Sidney H Taylor Field, Deland, Florida, US: elevation changed from 79.1 to 79.2
+  - KDET/DET, Coleman A Young Municipal Airport, Detroit, Michigan, US: elevation changed from 625.8 to 624.2
   - KDIJ    , Driggs/Reed Memorial Airport, Driggs, Idaho, US: elevation changed from 6231.0 to 6257.2
   - KDLL    , Baraboo/Wisconsin Dells Regional Airport, Baraboo, Wisconsin, US: elevation changed from 979.3 to 980.2
   - KDNS/DNS, Denison Municipal Airport, Denison, Iowa, US: elevation changed from 1274.0 to 1274.3
@@ -739,47 +747,47 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KEVB    , New Smyrna Beach Municipal (Jack Bolt Field) Airport, New Smyrna Beach, Florida, US: name changed from
     "New Smyrna Beach Municipal Airport"
   - KEVV/EVV, Evansville Regional Airport, Evansville, Indiana, US: elevation changed from 421.9 to 421.7
-  - KEVW/EVW, Evanston-Uinta County Burns Field, Evanston, Wyoming, US: elevation changed from 7142.5 to 7142.7     
-  - KEWR/EWR, Newark Liberty International Airport, Newark, New Jersey, US: elevation changed from 17.4 to 17.5     
+  - KEVW/EVW, Evanston-Uinta County Burns Field, Evanston, Wyoming, US: elevation changed from 7142.5 to 7142.7
+  - KEWR/EWR, Newark Liberty International Airport, Newark, New Jersey, US: elevation changed from 17.4 to 17.5
   - KF17    , Center Municipal Airport, Center, Texas, US: elevation changed from 318.6 to 318.7
   - KF41    , Ennis Municipal Airport, Ennis, Texas, US: elevation changed from 500.1 to 500.3
   - KF82    , Lubbock Executive Airpark, Lubbock, Texas, US: elevation changed from 3200.0 to 3175.7
   - KF87    , Union Parish Airport, Farmerville, Louisiana, US: elevation changed from 121.0 to 118.7
-  - KFBG/FBG, Simmons Army Air Field, Fort Bragg, North Carolina, US: city changed from "Fort Liberty", elevation   
+  - KFBG/FBG, Simmons Army Air Field, Fort Bragg, North Carolina, US: city changed from "Fort Liberty", elevation
     changed from 244.1 to 243.3
   - KFFM/FFM, Fergus Falls Regional Airport, Fergus Falls, Minnesota, US: name changed from "Fergus Falls
     Municipal/Einar Mickelson Field", elevation changed from 1182.6 to 1182.4
   - KFFT/FFT, Capital City Airport, Frankfort, Kentucky, US: elevation changed from 812.3 to 812.5
   - KFLD/FLD, Fond Du Lac County Airport, Fond Du Lac, Wisconsin, US: elevation changed from 808.4 to 808.6
   - KFLT/FLT, Flat Airport, Flat, Alaska, US: elevation changed from 309.0 to 343.0
-  - KFME/FME, Fort Meade Executive Airport, Fort Meade (Odenton), Maryland, US: name changed from "Tipton Airport", 
+  - KFME/FME, Fort Meade Executive Airport, Fort Meade (Odenton), Maryland, US: name changed from "Tipton Airport",
     elevation changed from 150.0 to 149.5
   - KFMY/FMY, Page Field, Fort Myers, Florida, US: elevation changed from 17.1 to 17.0
   - KFNB    , Brenner Field, Falls City, Nebraska, US: elevation changed from 984.0 to 983.9
   - KFRG/FRG, Republic Airport, Farmingdale, New York, US: elevation changed from 81.0 to 81.6
-  - KFWB    , Branson West Municipal/Emerson Field, Branson West, Missouri, US: name changed from "Branson West     
+  - KFWB    , Branson West Municipal/Emerson Field, Branson West, Missouri, US: name changed from "Branson West
     Municipal - Emerson Field"
-  - KFXY/FXY, Forest City Municipal/Trimble Field, Forest City, Iowa, US: name changed from "Forest City Municipal  
+  - KFXY/FXY, Forest City Municipal/Trimble Field, Forest City, Iowa, US: name changed from "Forest City Municipal
     Airport"
   - KFZG    , Fitzgerald Municipal Airport, Fitzgerald, Georgia, US: elevation changed from 364.8 to 364.7
   - KFZI    , Donald P Miller Airport, Fostoria, Ohio, US: name changed from "Fostoria Metro Airport"
-  - KGBG/GBG, Harrel W Timmons Galesburg Regional Airport, Galesburg, Illinois, US: name changed from "Galesburg    
+  - KGBG/GBG, Harrel W Timmons Galesburg Regional Airport, Galesburg, Illinois, US: name changed from "Galesburg
     Municipal Airport"
-  - KGBR/GBR, Great Barrington Airport, Great Barrington, Massachusetts, US: name changed from "Walter J Koladza    
+  - KGBR/GBR, Great Barrington Airport, Great Barrington, Massachusetts, US: name changed from "Walter J Koladza
     Airport"
-  - KGEU    , Glendale Regional Airport, Glendale, Arizona, US: name changed from "Glendale Municipal Airport"      
+  - KGEU    , Glendale Regional Airport, Glendale, Arizona, US: name changed from "Glendale Municipal Airport"
   - KGFK/GFK, Grand Forks International Airport, Grand Forks, North Dakota, US: elevation changed from 844.6 to 845.1
   - KGKY    , Arlington Municipal Airport, Arlington, Texas, US: elevation changed from 628.2 to 628.3
-  - KGLH/GLH, Greenville Mid-Delta Airport, Greenville, Mississippi, US: elevation changed from 130.5 to 130.7      
+  - KGLH/GLH, Greenville Mid-Delta Airport, Greenville, Mississippi, US: elevation changed from 130.5 to 130.7
   - KGOO    , Nevada County Airport, Grass Valley, California, US: elevation changed from 3157.6 to 3157.7
   - KGRK/GRK, Robert Gray Army Air Field, Fort Hood (Killeen), Texas, US: city changed from "Fort Cavazos (Killeen)"
   - KGRN/GRN, Gordon Municipal Airport, Gordon, Nebraska, US: elevation changed from 3562.1 to 3562.4
   - KGSH/GSH, Goshen Municipal Airport, Goshen, Indiana, US: elevation changed from 826.6 to 826.4
   - KGUP/GUP, Gallup Municipal Airport, Gallup, New Mexico, US: elevation changed from 6472.3 to 6472.6
-  - KGVE/GVE, Gordonsville Municipal Airport, Gordonsville, Virginia, US: elevation changed from 454.0 to 452.0     
-  - KGWB    , Auburn/Dekalb Executive Airport, Auburn, Indiana, US: name changed from "De Kalb County Airport"      
-  - KGWR    , Gwinner/Roger Melroe Field, Gwinner, North Dakota, US: name changed from "Gwinner-Roger Melroe Field" 
-  - KGWS/GWS, Kgws Sumers Airpark, Glenwood Springs, Colorado, US: name changed from "Glenwood Springs Municipal    
+  - KGVE/GVE, Gordonsville Municipal Airport, Gordonsville, Virginia, US: elevation changed from 454.0 to 452.0
+  - KGWB    , Auburn/Dekalb Executive Airport, Auburn, Indiana, US: name changed from "De Kalb County Airport"
+  - KGWR    , Gwinner/Roger Melroe Field, Gwinner, North Dakota, US: name changed from "Gwinner-Roger Melroe Field"
+  - KGWS/GWS, Kgws Sumers Airpark, Glenwood Springs, Colorado, US: name changed from "Glenwood Springs Municipal
     Airport"
   - KGXF    , Gila Bend Af Aux Airport, Gila Bend, Arizona, US: elevation changed from 883.0 to 881.0
   - KGYY/GYY, Gary/Chicago International Airport, Gary/Chicago, Indiana, US: city changed from "Gary"
@@ -795,9 +803,9 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KHSP/HSP, Ingalls Field, Hot Springs, Virginia, US: elevation changed from 3792.7 to 3792.4
   - KHUM/HUM, Houma-Terrebonne Airport, Houma, Louisiana, US: elevation changed from 9.0 to 8.5
   - KHVC    , Hopkinsville-Christian County Airport, Hopkinsville, Kentucky, US: elevation changed from 563.5 to 563.6
-  - KHXD/HHH, Hilton Head Airport, Hilton Head Island, South Carolina, US: elevation changed from 19.4 to 19.3      
+  - KHXD/HHH, Hilton Head Airport, Hilton Head Island, South Carolina, US: elevation changed from 19.4 to 19.3
   - KHYR/HYR, Sawyer County Airport, Hayward, Wisconsin, US: elevation changed from 1216.0 to 1215.9
-  - KHZD    , Sgt Lee Russell Carroll County Airport, Huntingdon, Tennessee, US: name changed from "Carroll County  
+  - KHZD    , Sgt Lee Russell Carroll County Airport, Huntingdon, Tennessee, US: name changed from "Carroll County
     Airport"
   - KI20/OTN, Ed-Air Airport, Oaktown, Indiana, US: latitude changed from 38.9 to 38.8
   - KI34    , Greensburg Municipal Airport, Greensburg, Indiana, US: elevation changed from 912.0 to 908.9
@@ -819,7 +827,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KJAC/JAC, Jackson Hole Airport, Jackson, Wyoming, US: elevation changed from 6450.7 to 6451.3
   - KJDN/JDN, Jordan Airport, Jordan, Montana, US: elevation changed from 2666.3 to 2667.0
   - KJES    , Jesup-Wayne County Airport, Jesup, Georgia, US: elevation changed from 107.1 to 107.5
-  - KJFX    , Walker County/Bevill Field, Jasper, Alabama, US: name changed from "Walker County-Bevill Field"       
+  - KJFX    , Walker County/Bevill Field, Jasper, Alabama, US: name changed from "Walker County-Bevill Field"
   - KJGG    , Waltrip Williamsburg Executive Airport Airport, Williamsburg, Virginia, US: name changed from
     "Williamsburg-Jamestown Airport"
   - KJHN    , Stanton County Municipal Airport, Johnson City, Kansas, US: city changed from "Johnson"
@@ -833,43 +841,43 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KK78    , Abilene Municipal Airport, Abilene, Kansas, US: elevation changed from 1152.5 to 1152.9
   - KL18    , Fallbrook Community Airpark, Fallbrook, California, US: elevation changed from 708.0 to 710.9
   - KL31    , St Tammany Regional Airport, Covington, Louisiana, US: elevation changed from 39.0 to 37.7
-  - KLAA/LAA, Southeast Colorado Regional Airport, Lamar, Colorado, US: elevation changed from 3705.5 to 3705.3     
+  - KLAA/LAA, Southeast Colorado Regional Airport, Lamar, Colorado, US: elevation changed from 3705.5 to 3705.3
   - KLAF/LAF, Purdue University Airport, Lafayette, Indiana, US: elevation changed from 605.9 to 605.8
-  - KLAN/LAN, Capital Region International Airport, Lansing, Michigan, US: elevation changed from 860.8 to 860.5    
-  - KLAS/LAS, Harry Reid International Airport, Las Vegas, Nevada, US: elevation changed from 2181.2 to 2183.1      
-  - KLBT/LBT, Lumberton Regional Airport, Lumberton, North Carolina, US: elevation changed from 124.5 to 124.6      
-  - KLCH/LCH, Lake Charles Regional Airport, Lake Charles, Louisiana, US: elevation changed from 14.6 to 14.5       
+  - KLAN/LAN, Capital Region International Airport, Lansing, Michigan, US: elevation changed from 860.8 to 860.5
+  - KLAS/LAS, Harry Reid International Airport, Las Vegas, Nevada, US: elevation changed from 2181.2 to 2183.1
+  - KLBT/LBT, Lumberton Regional Airport, Lumberton, North Carolina, US: elevation changed from 124.5 to 124.6
+  - KLCH/LCH, Lake Charles Regional Airport, Lake Charles, Louisiana, US: elevation changed from 14.6 to 14.5
   - KLEX/LEX, Blue Grass Airport, Lexington, Kentucky, US: elevation changed from 979.3 to 979.5
   - KLFI/LFI, Langley Afb Airport, Hampton, Virginia, US: elevation changed from 8.0 to 8.4
-  - KLFT/LFT, Lafayette Regional/Paul Fournet Field, Lafayette, Louisiana, US: elevation changed from 41.7 to 40.9  
+  - KLFT/LFT, Lafayette Regional/Paul Fournet Field, Lafayette, Louisiana, US: elevation changed from 41.7 to 40.9
   - KLGA/LGA, Laguardia Airport, New York, New York, US: elevation changed from 20.6 to 20.7
-  - KLNA/LNA, Palm Beach County Park Airport, West Palm Beach, Florida, US: elevation changed from 14.2 to 14.4     
+  - KLNA/LNA, Palm Beach County Park Airport, West Palm Beach, Florida, US: elevation changed from 14.2 to 14.4
   - KLNP/LNP, Lonesome Pine Airport, Wise, Virginia, US: elevation changed from 2684.3 to 2684.8
   - KLOU/LOU, Bowman Field, Louisville, Kentucky, US: elevation changed from 545.6 to 545.5
   - KLRF/LRF, Little Rock Afb Airport, Jacksonville, Arkansas, US: elevation changed from 312.0 to 308.9
-  - KLSB/LSB, Lordsburg Municipal Airport, Lordsburg, New Mexico, US: elevation changed from 4289.0 to 4287.9       
-  - KLSF/LSF, Lawson Army Air Field (Fort Benning) Airport, Fort Benning (Columbus), Georgia, US: name changed from 
+  - KLSB/LSB, Lordsburg Municipal Airport, Lordsburg, New Mexico, US: elevation changed from 4289.0 to 4287.9
+  - KLSF/LSF, Lawson Army Air Field (Fort Benning) Airport, Fort Benning (Columbus), Georgia, US: name changed from
     "Lawson Army Air Field (Fort Moore) Airport", city changed from "Fort Moore (Columbus)"
-  - KLUK/LUK, Cincinnati Municipal/Lunken Field, Cincinnati, Ohio, US: elevation changed from 483.3 to 481.6        
+  - KLUK/LUK, Cincinnati Municipal/Lunken Field, Cincinnati, Ohio, US: elevation changed from 483.3 to 481.6
   - KLUL/LUL, Hesler/Noble Field, Laurel, Mississippi, US: name changed from "Hesler-Noble Field"
-  - KLUM    , Menomonie Municipal/Score Field, Menomonie, Wisconsin, US: elevation changed from 895.1 to 895.0      
+  - KLUM    , Menomonie Municipal/Score Field, Menomonie, Wisconsin, US: elevation changed from 895.1 to 895.0
   - KLWC/LWC, Lawrence Regional Airport, Lawrence, Kansas, US: elevation changed from 833.3 to 833.2
   - KLXT    , Kansas City/Lee's Summit Regional Airport, Lee'S Summit, Missouri, US: name changed from "Lee's Summit
     Municipal Airport"
   - KM04    , Covington Municipal Airport, Covington, Tennessee, US: elevation changed from 280.1 to 280.2
   - KMAO    , Marion County Airport, Marion, South Carolina, US: elevation changed from 92.3 to 92.7
-  - KMBG/MBG, Mobridge Municipal Airport, Mobridge, South Dakota, US: elevation changed from 1716.2 to 1716.1       
-  - KMBT    , Murfreesboro Municipal Airport, Murfreesboro, Tennessee, US: elevation changed from 614.1 to 614.2    
+  - KMBG/MBG, Mobridge Municipal Airport, Mobridge, South Dakota, US: elevation changed from 1716.2 to 1716.1
+  - KMBT    , Murfreesboro Municipal Airport, Murfreesboro, Tennessee, US: elevation changed from 614.1 to 614.2
   - KMEI/MEI, Key Field, Meridian, Mississippi, US: elevation changed from 298.0 to 297.8
   - KMEM/MEM, Frederick W Smith International Airport, Memphis, Tennessee, US: name changed from "Memphis International
     Airport"
-  - KMFR/MFR, Rogue Valley International/Medford Airport, Medford, Oregon, US: name changed from "Rogue Valley      
+  - KMFR/MFR, Rogue Valley International/Medford Airport, Medford, Oregon, US: name changed from "Rogue Valley
     International - Medford Airport"
   - KMGM/MGM, Montgomery Regional (Dannelly Field) Airport, Montgomery, Alabama, US: elevation changed from 221.1 to
     232.0
   - KMHK/MHK, Manhattan Regional Airport, Manhattan, Kansas, US: elevation changed from 1066.0 to 1066.1
   - KMI1    , Denton Farms Airport, Clare, Michigan, US: elevation changed from 849.0 to 851.0
-  - KMKC/MKC, Kansas City Downtown/Wheeler Field, Kansas City, Missouri, US: name changed from "Charles B Wheeler   
+  - KMKC/MKC, Kansas City Downtown/Wheeler Field, Kansas City, Missouri, US: name changed from "Charles B Wheeler
     Downtown Airport", elevation changed from 756.8 to 756.9
   - KMKG/MKG, Muskegon County Airport, Muskegon, Michigan, US: elevation changed from 628.5 to 628.2
   - KMKL/MKL, Jackson Regional Airport, Jackson, Tennessee, US: name changed from "Mc Kellar-Sipes Regional Airport"
@@ -877,7 +885,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KMNM/MNM, Menominee Regional Airport, Menominee, Michigan, US: elevation changed from 624.6 to 624.9
   - KMO3    , Stockton Lake Airport, Stockton, Missouri, US: name changed from "Stockton Municipal Airport"
   - KMOR/MOR, Moore-Murrell Airport, Morristown, Tennessee, US: elevation changed from 1313.1 to 1312.8
-  - KMSS/MSS, Massena International-Richards Field, Massena, New York, US: elevation changed from 221.4 to 221.5    
+  - KMSS/MSS, Massena International-Richards Field, Massena, New York, US: elevation changed from 221.4 to 221.5
   - KMSY/MSY, Louis Armstrong New Orleans International Airport, New Orleans, Louisiana, US: elevation changed from 3.7
     to 3.0
   - KMTH/MTH, The Florida Keys Marathon International Airport, Marathon, Florida, US: elevation changed from 5.2 to 7.3
@@ -896,18 +904,18 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KNQI/NQI, Kingsville Nas Airport, Kingsville, Texas, US: elevation changed from 50.0 to 49.7
   - KO20    , Kingdon Airpark, Lodi, California, US: elevation changed from 15.0 to 18.1
   - KO48    , Salmon Bar Airport, Imnaha, Oregon, US: name changed from "Salmom Bar Airport"
-  - KO79    , Sierraville Dearwater Airport, Sierraville, California, US: elevation changed from 4984.0 to 4989.7   
+  - KO79    , Sierraville Dearwater Airport, Sierraville, California, US: elevation changed from 4984.0 to 4989.7
   - KO81    , Tulelake Municipal Airport, Tulelake, California, US: elevation changed from 4044.0 to 4048.7
   - KOAK/OAK, Oakland San Francisco Bay Airport, Oakland, California, US: name changed from "Metro Oakland International
     Airport"
-  - KOEO/OEO, L O Simenstad Municipal Airport, Osceola, Wisconsin, US: elevation changed from 905.5 to 905.6        
+  - KOEO/OEO, L O Simenstad Municipal Airport, Osceola, Wisconsin, US: elevation changed from 905.5 to 905.6
   - KOFF/OFF, Offutt Afb Airport, Omaha, Nebraska, US: elevation changed from 1048.6 to 1048.2
   - KOFP    , Hanover County Municipal Airport, Richmond/Ashland, Virginia, US: elevation changed from 206.5 to 206.8
   - KOKC/OKC, Okc Will Rogers International Airport, Oklahoma City, Oklahoma, US: name changed from "Will Rogers World
     Airport", elevation changed from 1295.8 to 1295.5
   - KOKK/OKK, Kokomo Municipal Airport, Kokomo, Indiana, US: elevation changed from 832.3 to 832.2
   - KOLG    , Solon Springs Municipal Airport, Solon Springs, Wisconsin, US: elevation changed from 1102.1 to 1102.0
-  - KOMN    , Ormond Beach Municipal Airport, Ormond Beach, Florida, US: elevation changed from 27.9 to 28.1        
+  - KOMN    , Ormond Beach Municipal Airport, Ormond Beach, Florida, US: elevation changed from 27.9 to 28.1
   - KONA/ONA, Winona Municipal/Max Conrad Field, Winona, Minnesota, US: name changed from "Winona Municipal-Max Conrad
     Field"
   - KORL/ORL, Orlando Executive Airport, Orlando, Florida, US: name changed from "Executive Airport"
@@ -917,7 +925,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KOVS    , Boscobel Airport, Boscobel, Wisconsin, US: elevation changed from 672.8 to 672.6
   - KOZR/OZR, Cairns Army Air Field (Fort Rucker) Airport, Fort Rucker, Alabama, US: name changed from "Cairns Army Air
     Field (Fort Novosel) Airport", city changed from "Fort Novosel (Ozark)"
-  - KOZW    , Livingston County/Spencer J Hardy Airport, Howell, Michigan, US: name changed from "Livingston County 
+  - KOZW    , Livingston County/Spencer J Hardy Airport, Howell, Michigan, US: name changed from "Livingston County
     Spencer J Hardy Airport"
   - KP01    , Eric Marcus Municipal Airport, Ajo, Arizona, US: elevation changed from 1458.0 to 1450.0
   - KPAH/PAH, Barkley Regional Airport, Paducah, Kentucky, US: elevation changed from 410.9 to 410.4
@@ -926,74 +934,74 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KPAO/PAO, Palo Alto Airport, Palo Alto, California, US: elevation changed from 6.8 to 6.7
   - KPBX/PVL, Pike County/Hatcher Field, Pikeville, Kentucky, US: elevation changed from 1470.2 to 1464.5
   - KPCD    , Perryville Regional Airport, Perryville, Missouri, US: elevation changed from 371.7 to 372.6
-  - KPDT/PDT, Eastern Oregon Regional At Pendleton Airport, Pendleton, Oregon, US: elevation changed from 1494.2 to 
+  - KPDT/PDT, Eastern Oregon Regional At Pendleton Airport, Pendleton, Oregon, US: elevation changed from 1494.2 to
     1494.0
   - KPEO    , Penn Yan/Yates County Airport, Penn Yan, New York, US: name changed from "Penn Yan/Yates City Airport"
-  - KPHG    , Phillipsburg Municipal Airport, Phillipsburg, Kansas, US: elevation changed from 1906.8 to 1910.1     
+  - KPHG    , Phillipsburg Municipal Airport, Phillipsburg, Kansas, US: elevation changed from 1906.8 to 1910.1
   - KPIL    , Cameron County Airport, Port Isabel, Texas, US: name changed from "Port Isabel-Cameron County Airport"
   - KPJC    , Zelienople Municipal Airport, Zelienople, Pennsylvania, US: elevation changed from 897.8 to 907.0
-  - KPLU    , Pierce County/Thun Field, Puyallup, Washington, US: name changed from "Pierce County - Thun Field"    
+  - KPLU    , Pierce County/Thun Field, Puyallup, Washington, US: name changed from "Pierce County - Thun Field"
   - KPMP/PPM, Pompano Beach Airpark, Pompano Beach, Florida, US: elevation changed from 19.4 to 19.3
-  - KPRC/PRC, Prescott Regional/Ernest A Love Field, Prescott, Arizona, US: name changed from "Prescott Regional -  
+  - KPRC/PRC, Prescott Regional/Ernest A Love Field, Prescott, Arizona, US: name changed from "Prescott Regional -
     Ernest A Love Field"
   - KPRZ    , Portales Municipal Airport, Portales, New Mexico, US: elevation changed from 4078.0 to 4077.8
   - KPSC/PSC, Tri-Cities Airport, Pasco, Washington, US: elevation changed from 410.4 to 410.3
-  - KPSF/PSF, Pittsfield Municipal Airport, Pittsfield, Massachusetts, US: elevation changed from 1188.4 to 1188.5  
+  - KPSF/PSF, Pittsfield Municipal Airport, Pittsfield, Massachusetts, US: elevation changed from 1188.4 to 1188.5
   - KPSP/PSP, Palm Springs International Airport, Palm Springs, California, US: elevation changed from 476.4 to 476.6
   - KPYP    , Centre Piedmont/Cherokee County Regional Airport, Centre, Alabama, US: name changed from "Centre-Piedmont-
     Cherokee County Regional Airport"
   - KRAL/RAL, Riverside Airport, Riverside, California, US: name changed from "Riverside Municipal Airport"
   - KRDD/RDD, Redding Regional Airport, Redding, California, US: elevation changed from 504.7 to 505.0
   - KRFI    , Rusk County Airport, Henderson, Texas, US: elevation changed from 442.0 to 441.9
-  - KRGA    , Central Kentucky Regional Airport, Richmond, Kentucky, US: elevation changed from 1002.5 to 1002.3    
+  - KRGA    , Central Kentucky Regional Airport, Richmond, Kentucky, US: elevation changed from 1002.5 to 1002.3
   - KRGK    , Red Wing Regional Airport, Red Wing, Minnesota, US: elevation changed from 777.9 to 778.1
-  - KRIW/RIW, Central Wyoming Regional Airport, Riverton, Wyoming, US: elevation changed from 5515.9 to 5516.0      
+  - KRIW/RIW, Central Wyoming Regional Airport, Riverton, Wyoming, US: elevation changed from 5515.9 to 5516.0
   - KRMG/RMG, Richard B Russell Regional - J H Towers Field, Rome, Georgia, US: elevation changed from 644.1 to 644.0
   - KRMN    , Stafford Regional Airport, Stafford, Virginia, US: elevation changed from 211.2 to 219.1
   - KRVS/RVS, Tulsa Riverside Airport, Tulsa, Oklahoma, US: elevation changed from 637.9 to 638.2
   - KRZL/RNZ, Jasper County Airport, Rensselaer, Indiana, US: elevation changed from 698.2 to 698.3
   - KS36    , Norman Grier Field, Covington, Washington, US: city changed from "Kent"
   - KS39/PRZ, Prineville Airport, Prineville, Oregon, US: elevation changed from 3251.2 to 3251.0
-  - KSAD/SAD, Safford Regional/1Lt Duane Spalsbury Field, Safford, Arizona, US: name changed from "Safford Regional 
+  - KSAD/SAD, Safford Regional/1Lt Duane Spalsbury Field, Safford, Arizona, US: name changed from "Safford Regional
     Airport"
   - KSBM/SBM, Sheboygan County Memorial International Airport, Sheboygan, Wisconsin, US: name changed from "Sheboygan
     County Memorial Airport", elevation changed from 755.2 to 755.3
   - KSCK/SCK, Stockton Metro Airport, Stockton, California, US: elevation changed from 33.2 to 32.6
-  - KSCR    , Siler City Municipal Airport, Siler City, North Carolina, US: elevation changed from 615.4 to 615.6   
-  - KSDY/SDY, Sidney-Richland Regional Airport, Sidney, Montana, US: elevation changed from 1985.3 to 1985.1        
-  - KSFB/SFB, Orlando Sanford International Airport, Orlando, Florida, US: elevation changed from 54.9 to 54.8      
+  - KSCR    , Siler City Municipal Airport, Siler City, North Carolina, US: elevation changed from 615.4 to 615.6
+  - KSDY/SDY, Sidney-Richland Regional Airport, Sidney, Montana, US: elevation changed from 1985.3 to 1985.1
+  - KSFB/SFB, Orlando Sanford International Airport, Orlando, Florida, US: elevation changed from 54.9 to 54.8
   - KSGJ/UST, St Augustine Airport, St Augustine, Florida, US: name changed from "Northeast Florida Regional Airport"
   - KSPA/SPA, Spartanburg Downtown Memorial/Simpson Field, Spartanburg, South Carolina, US: elevation changed from 801.9
     to 802.0
-  - KSPI/SPI, Abraham Lincoln Capital Airport, Springfield, Illinois, US: elevation changed from 597.8 to 597.9     
+  - KSPI/SPI, Abraham Lincoln Capital Airport, Springfield, Illinois, US: elevation changed from 597.8 to 597.9
   - KSTP/STP, St Paul Downtown Holman Field, St Paul, Minnesota, US: elevation changed from 705.4 to 705.0
   - KSTS/STS, Charles M Schulz/Sonoma County Airport, Santa Rosa, California, US: name changed from "Charles M Schulz -
     Sonoma County Airport"
   - KSUS/SUS, Spirit Of St Louis Airport, St Louis, Missouri, US: elevation changed from 463.2 to 463.3
   - KSUX/SUX, Sioux Gateway/Brig General Bud Day Field, Sioux City, Iowa, US: elevation changed from 1098.4 to 1098.5
-  - KSYR/SYR, Syracuse Hancock International Airport, Syracuse, New York, US: elevation changed from 421.4 to 421.1 
+  - KSYR/SYR, Syracuse Hancock International Airport, Syracuse, New York, US: elevation changed from 421.4 to 421.1
   - KT28    , Cain Airport, Slidell, Texas, US: elevation changed from 890.0 to 917.0
-  - KT36    , Paul Pittman Memorial Airport, Tylertown, Mississippi, US: elevation changed from 384.0 to 384.2      
+  - KT36    , Paul Pittman Memorial Airport, Tylertown, Mississippi, US: elevation changed from 384.0 to 384.2
   - KT54    , Lane Airpark, Rosenberg, Texas, US: elevation changed from 94.0 to 94.1
   - KT69    , Sinton Airport, Sinton, Texas, US: name changed from "Alfred C 'Bubba' Thomas Airport"
   - KT82    , Gillespie County Airport, Fredericksburg, Texas, US: elevation changed from 1694.7 to 1694.9
-  - KTAN    , Taunton Municipal/King Field, Taunton, Massachusetts, US: name changed from "Taunton Municipal - King 
+  - KTAN    , Taunton Municipal/King Field, Taunton, Massachusetts, US: name changed from "Taunton Municipal - King
     Field", elevation changed from 41.5 to 41.3
   - KTEB/TEB, Teterboro Airport, Teterboro, New Jersey, US: elevation changed from 8.4 to 8.3
-  - KTFP    , Ingleside Regional Airport, Ingleside, Texas, US: name changed from "Mccampbell-Porter Airport"       
+  - KTFP    , Ingleside Regional Airport, Ingleside, Texas, US: name changed from "Mccampbell-Porter Airport"
   - KTIF    , Thomas County Airport, Thedford, Nebraska, US: elevation changed from 2925.0 to 2925.4
   - KTIX/TIX, Space Coast Regional Airport, Titusville, Florida, US: elevation changed from 33.8 to 34.0
   - KTPA/TPA, Tampa International Airport, Tampa, Florida, US: elevation changed from 26.4 to 26.5
-  - KTRI/TRI, Tri-Cities Airport, Bristol/Johnson/Kingsport, Tennessee, US: elevation changed from 1518.7 to 1518.6 
+  - KTRI/TRI, Tri-Cities Airport, Bristol/Johnson/Kingsport, Tennessee, US: elevation changed from 1518.7 to 1518.6
   - KTSO    , Carroll County/Tolson Airport, Carrollton, Ohio, US: name changed from "Carroll County-Tolson Airport"
   - KTUL/TUL, Tulsa International Airport, Tulsa, Oklahoma, US: elevation changed from 677.5 to 677.8
   - KTVY    , Bolinder Field/Tooele Valley Airport, Tooele, Utah, US: name changed from "Bolinder Field-Tooele Valley
     Airport"
-  - KTYQ    , Indianapolis Executive Airport, Indianapolis, Indiana, US: elevation changed from 922.3 to 922.2      
+  - KTYQ    , Indianapolis Executive Airport, Indianapolis, Indiana, US: elevation changed from 922.3 to 922.2
   - KU01    , Savage Field, American Falls, Idaho, US: name changed from "American Falls Airport"
   - KU52    , Beaver Municipal Airport, Beaver, Utah, US: elevation changed from 5863.3 to 5863.2
   - KU86    , Fairfield/Frostenson Airfield, Fairfield, Idaho, US: name changed from "Frostenson Field"
-  - KUKF/IKB, Wilkes County Airport, North Wilkesboro, North Carolina, US: elevation changed from 1303.1 to 1303.4  
+  - KUKF/IKB, Wilkes County Airport, North Wilkesboro, North Carolina, US: elevation changed from 1303.1 to 1303.4
   - KUT9    , West Desert Airpark, Fairfield, Utah, US: elevation changed from 4890.0 to 4886.0
   - KVBT    , Bentonville Municipal/Louise M Thaden Field, Bentonville, Arkansas, US: elevation changed from 1298.1 to
     1297.9
@@ -1009,10 +1017,10 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KW50    , Davis Airport, Laytonsville, Maryland, US: longitude changed from -77.1 to -77.2
   - KWVL/WVL, Waterville Regional Airport, Waterville, Maine, US: name changed from "Waterville Robert Lafleur Airport"
   - KX01    , Everglades Airpark, Everglades City, Florida, US: elevation changed from 5.0 to 4.0
-  - KX10    , Belle Glade State Municipal Airport, Belle Glade, Florida, US: elevation changed from 14.0 to 10.6    
+  - KX10    , Belle Glade State Municipal Airport, Belle Glade, Florida, US: elevation changed from 14.0 to 10.6
   - KX21    , Arthur Dunn Air Park, Titusville, Florida, US: elevation changed from 30.0 to 30.3
-  - KX60    , Williston Regional Airport, Williston, Florida, US: name changed from "Williston Municipal Airport"   
-  - KX63/HUC, Dr Hermenegildo Ortiz Quinones Airport, Humacao, Puerto Rico, US: elevation changed from 35.1 to 34.8 
+  - KX60    , Williston Regional Airport, Williston, Florida, US: name changed from "Williston Municipal Airport"
+  - KX63/HUC, Dr Hermenegildo Ortiz Quinones Airport, Humacao, Puerto Rico, US: elevation changed from 35.1 to 34.8
   - KY51    , Viroqua Municipal Airport, Viroqua, Wisconsin, US: elevation changed from 1291.7 to 1292.0
   - KY89    , Kalkaska City Airport, Kalkaska, Michigan, US: elevation changed from 1030.0 to 1029.0
   - KY95    , Hillman Airport, Hillman, Michigan, US: elevation changed from 852.0 to 853.0
@@ -1027,14 +1035,14 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - ND40    , Rau Field, Medina, North Dakota, US: elevation changed from 1855.0 to 1857.0, longitude changed from -99.3
     to -99.2
   - NH38    , Dolittle Field, Albany, New Hampshire, US: name changed from "Leavitt Airport"
-  - NJ24    , Warren Grove Range Airport, Burlington County, New Jersey, US: elevation changed from 105.0 to 135.0  
+  - NJ24    , Warren Grove Range Airport, Burlington County, New Jersey, US: elevation changed from 105.0 to 135.0
   - NV00    , The Airport Club Airport, Pahrump, Nevada, US: name changed from "Valley View Airport", elevation changed
     from 2740.0 to 2736.6
   - NY76    , Neverland Airport, Cattaraugus, New York, US: elevation changed from 1901.0 to 1959.0
   - NY95    , Creekside Airport, Bloomfield, New York, US: city changed from "Holcomb", elevation changed from 820.0 to
     798.0
   - OG49    , Country Twilight Airport, Corvallis, Oregon, US: name changed from "Coca Cola Airport"
-  - OK14    , Walker Family Farm Airport, Mountain Park, Oklahoma, US: name changed from "Woodlake Airport", city   
+  - OK14    , Walker Family Farm Airport, Mountain Park, Oklahoma, US: name changed from "Woodlake Airport", city
     changed from "Alva", elevation changed from 1420.0 to 1426.0, latitude changed from 36.8 to 34.7, longitude changed
     from -98.7 to -98.9
   - OK24    , Colby Field, Lone Grove, Oklahoma, US: elevation changed from 930.0 to 923.0
@@ -1042,15 +1050,15 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - OK93    , Airman Acres Airport, Collinsville, Oklahoma, US: elevation changed from 695.0 to 694.0
   - OL99    , Lookout Airport, Homer, Alaska, US: elevation changed from 1310.0 to 1208.0
   - OR79    , Fallen Rock Airport, Redmond, Oregon, US: name changed from "Flying Alpaca Airport"
-  - PA53    , Cosklos Elkview Airport, Carbondale, Pennsylvania, US: elevation changed from 1710.0 to 1737.0        
+  - PA53    , Cosklos Elkview Airport, Carbondale, Pennsylvania, US: elevation changed from 1710.0 to 1737.0
   - PADY/KKH, Kongiganak Airport, Kongiganak, Alaska, US: elevation changed from 32.7 to 39.6
   - PAGN/AGN, Angoon Seaplane Base, Angoon, Alaska, US: lid changed from "" to "AGN"
   - PAHN/HNS, Haines Airport, Haines, Alaska, US: elevation changed from 15.3 to 29.1
   - PGUM/GUM, Guam International Airport, Tamuning, , GU: city changed from "Guam"
-  - PHJR/JRF, Kalaeloa (John Rodgers Field) Airport, Kapolei, Hawaii, US: elevation changed from 30.0 to 32.3       
-  - PHKO/KOA, Ellison Onizuka Kona International At Keahole Airport, Kailua-Kona, Hawaii, US: city changed from     
+  - PHJR/JRF, Kalaeloa (John Rodgers Field) Airport, Kapolei, Hawaii, US: elevation changed from 30.0 to 32.3
+  - PHKO/KOA, Ellison Onizuka Kona International At Keahole Airport, Kailua-Kona, Hawaii, US: city changed from
     "Kailua/Kona", elevation changed from 48.6 to 50.5
-  - PHNL/HNL, Daniel K Inouye International Airport, Honolulu, Hawaii, US: elevation changed from 12.6 to 13.5      
+  - PHNL/HNL, Daniel K Inouye International Airport, Honolulu, Hawaii, US: elevation changed from 12.6 to 13.5
   - PKMJ/MAJ, Amata Kabua International Airport, Majuro Atoll, , MH: elevation changed from 6.6 to 6.5
   - SC99    , Whiteplains Airport, Lexington, South Carolina, US: elevation changed from 525.0 to 524.0
   - SN47    , Converse Farm Airport, Eskridge, Kansas, US: elevation changed from 1231.0 to 1229.0, latitude changed
@@ -1058,14 +1066,14 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - TA24    , Smoky Bend Ranch Airport, Mullin, Texas, US: elevation changed from 1326.0 to 1342.4
   - TA66    , Freedom Springs Ranch Airport, Pipe Creek, Texas, US: elevation changed from 1384.0 to 1379.0
   - TA85    , Chips Airport, Seguin, Texas, US: elevation changed from 573.0 to 576.0
-  - TE38    , Loghouse /Stol Airport, Goodrich, Texas, US: name changed from "Loghouse /Stol/ Airport", elevation   
+  - TE38    , Loghouse /Stol Airport, Goodrich, Texas, US: name changed from "Loghouse /Stol/ Airport", elevation
     changed from 184.0 to 179.0
-  - TISX/STX, Henry E Rohlsen Airport, Christiansted, Virgin Islands, US: elevation changed from 74.1 to 73.2       
-  - TJAB/ARE, Antonio/Nery/Juarbe Pol Airport, Arecibo, Puerto Rico, US: elevation changed from 20.8 to 20.5        
+  - TISX/STX, Henry E Rohlsen Airport, Christiansted, Virgin Islands, US: elevation changed from 74.1 to 73.2
+  - TJAB/ARE, Antonio/Nery/Juarbe Pol Airport, Arecibo, Puerto Rico, US: elevation changed from 20.8 to 20.5
   - TJBQ/BQN, Rafael Hernandez Airport, Aguadilla, Puerto Rico, US: elevation changed from 237.2 to 237.7
   - TJCP/CPX, Benjamin Rivera Noriega Airport, Isla De Culebra, Puerto Rico, US: elevation changed from 49.0 to 42.9
-  - TJIG/SIG, Fernando Luis Ribas Dominicci Airport, San Juan, Puerto Rico, US: elevation changed from 9.8 to 9.6   
-  - TJMZ/MAZ, Eugenio Maria De Hostos Airport, Mayaguez, Puerto Rico, US: elevation changed from 27.7 to 28.7       
+  - TJIG/SIG, Fernando Luis Ribas Dominicci Airport, San Juan, Puerto Rico, US: elevation changed from 9.8 to 9.6
+  - TJMZ/MAZ, Eugenio Maria De Hostos Airport, Mayaguez, Puerto Rico, US: elevation changed from 27.7 to 28.7
   - TJPS/PSE, Mercedita Airport, Ponce, Puerto Rico, US: elevation changed from 28.4 to 36.7
   - TJRV/NRR, Jose Aponte De La Torre Airport, Ceiba, Puerto Rico, US: elevation changed from 38.1 to 38.5
   - TN49    , Bellwood Field, Lebanon, Tennessee, US: elevation changed from 589.0 to 590.0
@@ -1081,22 +1089,22 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - WA93    , Eliza Island Airport, Bellingham, Washington, US: elevation changed from 8.0 to 11.0
   - WA97    , Talus Ranch Airport, Odessa, Washington, US: name changed from "Buena Airport", city changed from "Buena",
     elevation changed from 830.0 to 1690.0, latitude changed from 46.4 to 47.4, longitude changed from -120.3 to -118.8
-  - WI69    , Air Troy Estates Airport, East Troy, Wisconsin, US: name changed from "Air Troy Estates - Restricted  
+  - WI69    , Air Troy Estates Airport, East Troy, Wisconsin, US: name changed from "Air Troy Estates - Restricted
     Airport"
-  - WN98    , Northern Trails Aviation Airport, Birchwood, Wisconsin, US: name changed from "Florida North Airport" 
+  - WN98    , Northern Trails Aviation Airport, Birchwood, Wisconsin, US: name changed from "Florida North Airport"
   - WT44    , Michair Airport, Cathlamet, Washington, US: elevation changed from 13.0 to 7.3
   - WV12    , Mallory Airport, South Charleston, West Virginia, US: elevation changed from 880.0 to 885.0
 
 * Removed the following 292 airports:
 
-  - 00MD    , Slater Field, Federalsburg, Maryland, US is no longer listed in the FAA A/FD (old FAA LID: 00MD)      
-  - 01IS    , William E Koenig Airport, Dow, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 01IS)   
+  - 00MD    , Slater Field, Federalsburg, Maryland, US is no longer listed in the FAA A/FD (old FAA LID: 00MD)
+  - 01IS    , William E Koenig Airport, Dow, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 01IS)
   - 02VA    , The Greenhouse Airport, Culpeper, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 02VA)
-  - 07CO    , Comanche Creek Airport, Kiowa, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 07CO)   
+  - 07CO    , Comanche Creek Airport, Kiowa, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 07CO)
   - 08NC    , Whiteheart Farm Airport, Lewisville, North Carolina, US is no longer listed in the FAA A/FD (old FAA LID:
     08NC)
-  - 09MO    , Hogue Farm Airport, Willard, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: 09MO)     
-  - 0MU1    , Sunderland Airport, Avilla, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: 0MU1)      
+  - 09MO    , Hogue Farm Airport, Willard, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: 09MO)
+  - 0MU1    , Sunderland Airport, Avilla, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: 0MU1)
   - 0PA6    , Hostetler Airport, Huntingdon, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 0PA6)
   - 0PN4    , Kitner Airport, New Bloomfield, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 0PN4)
   - 0SD7    , Porch Ranch Airport, Wanblee, South Dakota, US is no longer listed in the FAA A/FD (old FAA LID: 0SD7)
@@ -1105,20 +1113,20 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - 0WI8    , Oconomowoc Airport, Oconomowoc, Wisconsin, US: Closed Indefinitely (old FAA LID: 0WI8)
   - 0WI9    , Mc Manus Hoonch-Na-Shee-Kaw Airport, Oregon, Wisconsin, US is no longer listed in the FAA A/FD (old FAA
     LID: 0WI9)
-  - 12CO    , Omega 1 Airport, Hotchkiss, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 12CO)      
-  - 12IL    , Hawker Airport, Kankakee, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 12IL)        
-  - 12XA    , Wood Farm Airfield, Gardendale, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 12XA)     
-  - 12XS    , Mc Croskey Field, Butlerville, Arkansas, US is no longer listed in the FAA A/FD (old FAA LID: 12XS)   
+  - 12CO    , Omega 1 Airport, Hotchkiss, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 12CO)
+  - 12IL    , Hawker Airport, Kankakee, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 12IL)
+  - 12XA    , Wood Farm Airfield, Gardendale, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 12XA)
+  - 12XS    , Mc Croskey Field, Butlerville, Arkansas, US is no longer listed in the FAA A/FD (old FAA LID: 12XS)
   - 14NK    , Mountain View Airport, Kingsbury, New York, US is no longer listed in the FAA A/FD (old FAA LID: 14NK)
-  - 16IS    , Kellums Airport, Goreville, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 16IS)      
-  - 17KY    , Lester Airfield, Sacramento, Kentucky, US is no longer listed in the FAA A/FD (old FAA LID: 17KY)     
+  - 16IS    , Kellums Airport, Goreville, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 16IS)
+  - 17KY    , Lester Airfield, Sacramento, Kentucky, US is no longer listed in the FAA A/FD (old FAA LID: 17KY)
   - 17PS    , Mountain Crest Airport, Tidioute, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 17PS)
   - 1IL1    , Horsefeathers Ranch Airport, Irving, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 1IL1)
   - 1IS4    , Swan Valley Farm Airport, Lanark, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 1IS4)
-  - 1PN1    , Napodano Airport, Transfer, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 1PN1)  
-  - 1SC3    , Stol-It Farm Airport, Fair Play, South Carolina, US is no longer listed in the FAA A/FD (old FAA LID: 
+  - 1PN1    , Napodano Airport, Transfer, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 1PN1)
+  - 1SC3    , Stol-It Farm Airport, Fair Play, South Carolina, US is no longer listed in the FAA A/FD (old FAA LID:
     1SC3)
-  - 1TT8    , Bulverde Airpark, San Antonio, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 1TT8)      
+  - 1TT8    , Bulverde Airpark, San Antonio, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 1TT8)
   - 1WI8    , Jorgensen - Stoller Airport, Algoma, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: 1WI8)
   - 1WI9    , Blackhawk Island Airport, Fort Atkinson, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID:
     1WI9)
@@ -1126,151 +1134,151 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - 20NC    , Mountain View Airport, Sherrills Ford, North Carolina, US is no longer listed in the FAA A/FD (old FAA
     LID: 20NC)
   - 20WA    , Skyraider Skyranch Airport, Yelm, Washington, US is no longer listed in the FAA A/FD (old FAA LID: 20WA)
-  - 21FA    , Rockledge Airport, Rockledge, Florida, US is no longer listed in the FAA A/FD (old FAA LID: 21FA)     
-  - 21GE    , Deer Crossing Airport, Cleveland, Georgia, US is no longer listed in the FAA A/FD (old FAA LID: 21GE) 
+  - 21FA    , Rockledge Airport, Rockledge, Florida, US is no longer listed in the FAA A/FD (old FAA LID: 21FA)
+  - 21GE    , Deer Crossing Airport, Cleveland, Georgia, US is no longer listed in the FAA A/FD (old FAA LID: 21GE)
   - 23IS    , Clark Airport, Plymouth, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 23IS)
   - 23VG    , Murdock's Holly Bu Airport, Boydton, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 23VG)
-  - 24AK    , Toad Lake Strip, Meadow Lakes, Alaska, US is no longer listed in the FAA A/FD (old FAA LID: 24AK)     
+  - 24AK    , Toad Lake Strip, Meadow Lakes, Alaska, US is no longer listed in the FAA A/FD (old FAA LID: 24AK)
   - 26AL    , Richardson Field, Mobile, Alabama, US is no longer listed in the FAA A/FD (old FAA LID: 26AL)
   - 29AZ    , Paloma Ranch Airport, Paloma, Arizona, US is not an AIRPORT or SEAPLANE BASE per FAA A/FD: ABRAZO BUCKEYE
     HOSPITAL, HELIPORT (old FAA LID: 29AZ)
-  - 29NH    , Cleary Airport, Auburn, New Hampshire, US is no longer listed in the FAA A/FD (old FAA LID: 29NH)     
+  - 29NH    , Cleary Airport, Auburn, New Hampshire, US is no longer listed in the FAA A/FD (old FAA LID: 29NH)
   - 29WI    , Whittlesey Cranberry Company Airport, Babcock, Wisconsin, US is no longer listed in the FAA A/FD (old FAA
     LID: 29WI)
   - 2AR2    , Davidson Field, Sage, Arkansas, US is no longer listed in the FAA A/FD (old FAA LID: 2AR2)
-  - 2AR5    , Ashmore Field, Centerton, Arkansas, US is no longer listed in the FAA A/FD (old FAA LID: 2AR5)        
-  - 2CO1    , Cherokee Trail Ranch Airport, Peyton, Colorado, US is not an AIRPORT or SEAPLANE BASE per FAA A/FD:   
+  - 2AR5    , Ashmore Field, Centerton, Arkansas, US is no longer listed in the FAA A/FD (old FAA LID: 2AR5)
+  - 2CO1    , Cherokee Trail Ranch Airport, Peyton, Colorado, US is not an AIRPORT or SEAPLANE BASE per FAA A/FD:
     UCHEALTH LONGS PEAK, HELIPORT (old FAA LID: 2CO1)
-  - 2FL8    , Tiger Lake Airport, River Ranch, Florida, US is no longer listed in the FAA A/FD (old FAA LID: 2FL8)  
-  - 2IS4    , Ritter Field, Illinois City, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 2IS4)     
-  - 2KS5    , Plains Municipal Airport, Plains, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 2KS5)  
+  - 2FL8    , Tiger Lake Airport, River Ranch, Florida, US is no longer listed in the FAA A/FD (old FAA LID: 2FL8)
+  - 2IS4    , Ritter Field, Illinois City, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 2IS4)
+  - 2KS5    , Plains Municipal Airport, Plains, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 2KS5)
   - 2KY3    , Plane-O-Field Airport, Bowling Green, Kentucky, US is no longer listed in the FAA A/FD (old FAA LID: 2KY3)
   - 2LL1    , Cwian Field, Sheridan, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 2LL1)
-  - 2LL9    , George Airport, Somonauk, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 2LL9)        
-  - 2MD0    , Anderson Farm Airport, Marion, Maryland, US is no longer listed in the FAA A/FD (old FAA LID: 2MD0)   
+  - 2LL9    , George Airport, Somonauk, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 2LL9)
+  - 2MD0    , Anderson Farm Airport, Marion, Maryland, US is no longer listed in the FAA A/FD (old FAA LID: 2MD0)
   - 2MI0    , Cherry Field, Nunica, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 2MI0)
   - 2MN1    , Winter Strip, Gluek, Minnesota, US is no longer listed in the FAA A/FD (old FAA LID: 2MN1)
-  - 2MY4    , Miller Airport, Clear Lake, Minnesota, US is no longer listed in the FAA A/FD (old FAA LID: 2MY4)     
-  - 2PA7    , Egolf Airport, Landisburg, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 2PA7)   
+  - 2MY4    , Miller Airport, Clear Lake, Minnesota, US is no longer listed in the FAA A/FD (old FAA LID: 2MY4)
+  - 2PA7    , Egolf Airport, Landisburg, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 2PA7)
   - 2TX3    , La Fonda Ranch Airport, Brackettville, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 2TX3)
   - 2VA8    , Brandywyne Farms Airport, Holland, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 2VA8)
-  - 31KS    , Mills Field, South Hutchinson, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 31KS)     
+  - 31KS    , Mills Field, South Hutchinson, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 31KS)
   - 31TS    , Flyers Field, Greenville, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 31TS)
   - 32PA    , Perkiomen Valley Airport, Collegeville, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID:
     32PA)
-  - 32VA    , Old South Aerodrome, Abingdon, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 32VA)   
+  - 32VA    , Old South Aerodrome, Abingdon, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 32VA)
   - 33OI    , Soaring Horse Airport, Chatham Township, Ohio, US is no longer listed in the FAA A/FD (old FAA LID: 33OI)
-  - 35WI    , Barker Strip, East Troy, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: 35WI)        
-  - 36CO    , Fat Chance Airport, Peyton, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 36CO)      
-  - 37PA    , Roadcap Airport, Middleburg, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 37PA) 
+  - 35WI    , Barker Strip, East Troy, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: 35WI)
+  - 36CO    , Fat Chance Airport, Peyton, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 36CO)
+  - 37PA    , Roadcap Airport, Middleburg, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 37PA)
   - 38FA    , Blue Springs Airport, Madison, Florida, US is not an AIRPORT or SEAPLANE BASE per FAA A/FD: DYER CHEVROLET
     LAKE WALES, HELIPORT (old FAA LID: 38FA)
   - 38KS    , Hiebert  Airfield, Goessel, Kansas, US is not an AIRPORT or SEAPLANE BASE per FAA A/FD: FLYING M RANCH,
     ULTRALIGHT (old FAA LID: 38KS)
   - 3CO0    , Sky Island Ranch Airport, Delta, Colorado, US: Closed Indefinitely (old FAA LID: 3CO0)
   - 3FL8    , Hart Airport, Malone, Florida, US is no longer listed in the FAA A/FD (old FAA LID: 3FL8)
-  - 3IL2    , Sweedler Airport, Elwood, Illinois, US is not an AIRPORT or SEAPLANE BASE per FAA A/FD: IDOC-MENARD,  
+  - 3IL2    , Sweedler Airport, Elwood, Illinois, US is not an AIRPORT or SEAPLANE BASE per FAA A/FD: IDOC-MENARD,
     HELIPORT (old FAA LID: 3IL2)
   - 3IN8    , Ddt Field, Culver, Indiana, US is no longer listed in the FAA A/FD (old FAA LID: 3IN8)
   - 3IS7    , Foote Airport, Wenona, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 3IS7)
   - 3KY1    , Goode Airpark, Utica, Kentucky, US is no longer listed in the FAA A/FD (old FAA LID: 3KY1)
-  - 3LL3    , Kibler Airport, Marshall, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 3LL3)        
-  - 3MN9    , Schumacher Airport, Oster, Minnesota, US is no longer listed in the FAA A/FD (old FAA LID: 3MN9)      
-  - 3NY6    , Six Ponds Airport, Duanesburg, New York, US is no longer listed in the FAA A/FD (old FAA LID: 3NY6)   
-  - 3TE6    , Skellytown Airport, Skellytown, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 3TE6)     
-  - 3TX2    , Flying S Farm Airport, Justin, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 3TX2)      
-  - 3VA1    , The Meadows Airport, Warrenton, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 3VA1)  
+  - 3LL3    , Kibler Airport, Marshall, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 3LL3)
+  - 3MN9    , Schumacher Airport, Oster, Minnesota, US is no longer listed in the FAA A/FD (old FAA LID: 3MN9)
+  - 3NY6    , Six Ponds Airport, Duanesburg, New York, US is no longer listed in the FAA A/FD (old FAA LID: 3NY6)
+  - 3TE6    , Skellytown Airport, Skellytown, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 3TE6)
+  - 3TX2    , Flying S Farm Airport, Justin, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 3TX2)
+  - 3VA1    , The Meadows Airport, Warrenton, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 3VA1)
   - 3VG4    , Murdocks Flying V Airport, Boydton, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 3VG4)
   - 43OK    , Biggs Skypatch Airport, Wellston, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: 43OK)
-  - 46CO    , Huerfano Ag Airport, Pueblo, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 46CO)     
+  - 46CO    , Huerfano Ag Airport, Pueblo, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 46CO)
   - 46MI    , Rotors & Wings Airport, Webberville, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 46MI)
   - 47TA    , Pleasure Field, Prosper, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 47TA)
-  - 48CO    , Shaull Farm Airstrip, Nunn, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 48CO)      
-  - 48MD    , Le Champ Airport, Princess Anne, Maryland, US is no longer listed in the FAA A/FD (old FAA LID: 48MD) 
-  - 4CO8    , Kelgun Airport, Castle Rock, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 4CO8)     
+  - 48CO    , Shaull Farm Airstrip, Nunn, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 48CO)
+  - 48MD    , Le Champ Airport, Princess Anne, Maryland, US is no longer listed in the FAA A/FD (old FAA LID: 48MD)
+  - 4CO8    , Kelgun Airport, Castle Rock, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 4CO8)
   - 4IA7    , Witcombe Field, Cedar Falls, Iowa, US is no longer listed in the FAA A/FD (old FAA LID: 4IA7)
-  - 4IS1    , Plain Crazy Airport, Carthage, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 4IS1)   
+  - 4IS1    , Plain Crazy Airport, Carthage, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 4IS1)
   - 4KS7    , Butler Airpark, Rose Hill, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 4KS7)
-  - 4LL9    , Alan B Janssen Airport, Morrisonville, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 
+  - 4LL9    , Alan B Janssen Airport, Morrisonville, Illinois, US is no longer listed in the FAA A/FD (old FAA LID:
     4LL9)
   - 4MN5    , Kapaun-Wilson Field, Graceville, Minnesota, US is no longer listed in the FAA A/FD (old FAA LID: 4MN5)
   - 4PS5    , Muddy Creek Airport, Carmicheal, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 4PS5)
   - 4TA8    , Perry Ranch Airport, Ozona, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 4TA8)
-  - 4VA3    , Flying W Airport, Richmond, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 4VA3)      
-  - 50AZ    , Rocky Ridge Airport, Rocky Ridge, Arizona, US is no longer listed in the FAA A/FD (old FAA LID: 50AZ) 
+  - 4VA3    , Flying W Airport, Richmond, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 4VA3)
+  - 50AZ    , Rocky Ridge Airport, Rocky Ridge, Arizona, US is no longer listed in the FAA A/FD (old FAA LID: 50AZ)
   - 51OH    , Agner Airport, Ottawa, Ohio, US is no longer listed in the FAA A/FD (old FAA LID: 51OH)
-  - 52AR    , Ira's Airstrip, Greenbrier, Arkansas, US is no longer listed in the FAA A/FD (old FAA LID: 52AR)      
+  - 52AR    , Ira's Airstrip, Greenbrier, Arkansas, US is no longer listed in the FAA A/FD (old FAA LID: 52AR)
   - 54AL    , Belforest Field, Daphne, Alabama, US is no longer listed in the FAA A/FD (old FAA LID: 54AL)
   - 55FD    , Dotson Airport, Baker, Florida, US: Closed Indefinitely (old FAA LID: 55FD)
   - 56OG    , Horn Airport, Stayton, Oregon, US is no longer listed in the FAA A/FD (old FAA LID: 56OG)
   - 57KY    , Belcher Regional Airport, Belcher, Kentucky, US is no longer listed in the FAA A/FD (old FAA LID: 57KY)
-  - 58IL    , Spangler Airport, Manteno, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 58IL)       
-  - 5KS1    , Threshing Bee Airport, Mc Louth, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 5KS1)   
+  - 58IL    , Spangler Airport, Manteno, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 58IL)
+  - 5KS1    , Threshing Bee Airport, Mc Louth, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 5KS1)
   - 5ND3    , Craig Private Airport, Bathgate, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: 5ND3)
-  - 5OK3    , Stearmans Roost Airport, Vinita, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: 5OK3) 
-  - 5TE6    , Keystone Ranch Airport, San Angelo, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 5TE6) 
-  - 5TE8    , Willis N Clark Airport, Miami, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 5TE8)      
-  - 5TN5    , Thomas Field, Jonesborough, Tennessee, US is no longer listed in the FAA A/FD (old FAA LID: 5TN5)     
+  - 5OK3    , Stearmans Roost Airport, Vinita, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: 5OK3)
+  - 5TE6    , Keystone Ranch Airport, San Angelo, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 5TE6)
+  - 5TE8    , Willis N Clark Airport, Miami, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 5TE8)
+  - 5TN5    , Thomas Field, Jonesborough, Tennessee, US is no longer listed in the FAA A/FD (old FAA LID: 5TN5)
   - 5VG2    , Foster Field, Mathews, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 5VG2)
   - 5WA9    , Brush Prairie Aerodrome, Brush Prairie, Washington, US is no longer listed in the FAA A/FD (old FAA LID:
     5WA9)
-  - 5XS3    , Wilber Farms Airport, Winnie, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 5XS3)       
+  - 5XS3    , Wilber Farms Airport, Winnie, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 5XS3)
   - 65KS    , Griffith Field, Downs, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 65KS)
   - 68KY    , Lee's Airpark, Somerset, Kentucky, US is no longer listed in the FAA A/FD (old FAA LID: 68KY)
   - 68LA    , Pilkinton Airstrip, Bossier City, Louisiana, US is no longer listed in the FAA A/FD (old FAA LID: 68LA)
   - 68TS    , Bishop Field, Royse City, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 68TS)
-  - 6FD7    , Thomson Airfield, Ellenton, Florida, US is no longer listed in the FAA A/FD (old FAA LID: 6FD7)       
-  - 6IL0    , Hoerr Rla Airport, Peoria, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 6IL0)       
+  - 6FD7    , Thomson Airfield, Ellenton, Florida, US is no longer listed in the FAA A/FD (old FAA LID: 6FD7)
+  - 6IL0    , Hoerr Rla Airport, Peoria, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 6IL0)
   - 6LA2    , Capozzoli Airport, Prairieville, Louisiana, US is no longer listed in the FAA A/FD (old FAA LID: 6LA2)
-  - 6LL0    , Williamson Airport, Neoga, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 6LL0)       
+  - 6LL0    , Williamson Airport, Neoga, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 6LL0)
   - 6LL2    , Young Airport, Viola, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 6LL2)
-  - 6MN8    , Underland Airstrip, Medford, Minnesota, US is no longer listed in the FAA A/FD (old FAA LID: 6MN8)    
-  - 6NJ9    , Bridgeport-Cahill Field, Bridgeport, New Jersey, US is no longer listed in the FAA A/FD (old FAA LID: 
+  - 6MN8    , Underland Airstrip, Medford, Minnesota, US is no longer listed in the FAA A/FD (old FAA LID: 6MN8)
+  - 6NJ9    , Bridgeport-Cahill Field, Bridgeport, New Jersey, US is no longer listed in the FAA A/FD (old FAA LID:
     6NJ9)
-  - 6OK0    , White Airport, Kingfisher, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: 6OK0)       
-  - 6PA6    , Air Haven Airport, Moscow, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 6PA6)   
+  - 6OK0    , White Airport, Kingfisher, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: 6OK0)
+  - 6PA6    , Air Haven Airport, Moscow, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 6PA6)
   - 70IL    , Murphy Farms Airport, Farmersville, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 70IL)
   - 70VA    , Burnt Chimney Airport, Burnt Chimney, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: 70VA)
-  - 74CA    , Flying Gluepie Ranch Airport, Fiddletown, California, US: Closed Indefinitely (old FAA LID: 74CA)     
+  - 74CA    , Flying Gluepie Ranch Airport, Fiddletown, California, US: Closed Indefinitely (old FAA LID: 74CA)
   - 74NC    , Benton Farm Airport, Whartonville, North Carolina, US is no longer listed in the FAA A/FD (old FAA LID:
     74NC)
   - 75OA    , Darby Dan Airport, Columbus, Ohio, US is no longer listed in the FAA A/FD (old FAA LID: 75OA)
-  - 76WN    , Hacklander Airport, Janesville, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: 76WN) 
+  - 76WN    , Hacklander Airport, Janesville, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: 76WN)
   - 77MO    , Springhill Airport, Mount Vernon, Missouri, US: Closed Indefinitely (old FAA LID: 77MO)
   - 78KY    , Mountain View Airfield, Winchester, Kentucky, US is no longer listed in the FAA A/FD (old FAA LID: 78KY)
   - 78NE    , Stava Airport, Brainard, Nebraska, US is no longer listed in the FAA A/FD (old FAA LID: 78NE)
   - 7FD1    , Lykes Fort Basinger Airport, Lorida, Florida, US is no longer listed in the FAA A/FD (old FAA LID: 7FD1)
-  - 7GE5    , Sunset Strip, Centralhatchee, Georgia, US is no longer listed in the FAA A/FD (old FAA LID: 7GE5)     
+  - 7GE5    , Sunset Strip, Centralhatchee, Georgia, US is no longer listed in the FAA A/FD (old FAA LID: 7GE5)
   - 7II3    , Schroeder Private Airport, Mount Vernon, Indiana, US is no longer listed in the FAA A/FD (old FAA LID:
     7II3)
-  - 7IL8    , Cody Port Airport, Harding, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 7IL8)      
-  - 7NA2    , Undlin Airstrip, Lansford, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: 7NA2)   
-  - 7ND5    , Buchmiller Airport, Bowdon, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: 7ND5)  
-  - 7TS3    , Sunny V Ranch Airport, Sisterdale, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 7TS3)  
-  - 80ME    , Bayley's Field, Scarborough, Maine, US is no longer listed in the FAA A/FD (old FAA LID: 80ME)        
-  - 82NY    , Silvernails Field, Gallatin, New York, US is no longer listed in the FAA A/FD (old FAA LID: 82NY)     
-  - 84ND    , Kyllo Airport, Mc Canna, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: 84ND)     
-  - 84PN    , Draco Airport, Stewartstown, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 84PN) 
-  - 85MN    , Christison Airport, Plainview, Minnesota, US is no longer listed in the FAA A/FD (old FAA LID: 85MN)  
+  - 7IL8    , Cody Port Airport, Harding, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 7IL8)
+  - 7NA2    , Undlin Airstrip, Lansford, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: 7NA2)
+  - 7ND5    , Buchmiller Airport, Bowdon, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: 7ND5)
+  - 7TS3    , Sunny V Ranch Airport, Sisterdale, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 7TS3)
+  - 80ME    , Bayley's Field, Scarborough, Maine, US is no longer listed in the FAA A/FD (old FAA LID: 80ME)
+  - 82NY    , Silvernails Field, Gallatin, New York, US is no longer listed in the FAA A/FD (old FAA LID: 82NY)
+  - 84ND    , Kyllo Airport, Mc Canna, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: 84ND)
+  - 84PN    , Draco Airport, Stewartstown, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: 84PN)
+  - 85MN    , Christison Airport, Plainview, Minnesota, US is no longer listed in the FAA A/FD (old FAA LID: 85MN)
   - 87CO    , Young's Strip, Bennett, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 87CO)
-  - 89IL    , Dean Schwenk Airport, Pesotum, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 89IL)   
-  - 89TS    , Carter Ranch Airport, Oakwood, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 89TS)      
+  - 89IL    , Dean Schwenk Airport, Pesotum, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 89IL)
+  - 89TS    , Carter Ranch Airport, Oakwood, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 89TS)
   - 8CL2    , Lucchetti Ranch Airport, Elk Grove, California, US is no longer listed in the FAA A/FD (old FAA LID: 8CL2)
   - 8CO0    , Kent Airport, Wiggins, Colorado, US is no longer listed in the FAA A/FD (old FAA LID: 8CO0)
   - 8CO2    , William Leon Schawo Airport, Briggsdale, Colorado, US is no longer listed in the FAA A/FD (old FAA LID:
     8CO2)
   - 8NA5    , Liechty Farm Airport, Montpelier, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: 8NA5)
-  - 94GA    , Snow Hill Airstrip, Unadilla, Georgia, US is no longer listed in the FAA A/FD (old FAA LID: 94GA)     
+  - 94GA    , Snow Hill Airstrip, Unadilla, Georgia, US is no longer listed in the FAA A/FD (old FAA LID: 94GA)
   - 94NH    , Tucker Farm Airport, Andover, New Hampshire, US is no longer listed in the FAA A/FD (old FAA LID: 94NH)
   - 96FD    , Citrus Hedging Ranch Airport, Okeechobee, Florida, US is no longer listed in the FAA A/FD (old FAA LID:
     96FD)
-  - 99AZ    , Eagletail Ranch Airport, Tonopah, Arizona, US is no longer listed in the FAA A/FD (old FAA LID: 99AZ) 
-  - 99KS    , Elm Creek Farms Airport, Medicine Lodge, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 
+  - 99AZ    , Eagletail Ranch Airport, Tonopah, Arizona, US is no longer listed in the FAA A/FD (old FAA LID: 99AZ)
+  - 99KS    , Elm Creek Farms Airport, Medicine Lodge, Kansas, US is no longer listed in the FAA A/FD (old FAA LID:
     99KS)
-  - 9FA5    , Marshall Swamp Airport, Ocala, Florida, US is no longer listed in the FAA A/FD (old FAA LID: 9FA5)    
+  - 9FA5    , Marshall Swamp Airport, Ocala, Florida, US is no longer listed in the FAA A/FD (old FAA LID: 9FA5)
   - 9FD7    , Fort Atkinson Plantation Airpark, Day, Florida, US: Closed Indefinitely (old FAA LID: 9FD7)
-  - 9IS9    , Johnston Airport, Heyworth, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 9IS9)      
-  - 9KS1    , Hartland Airport, Wellsville, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 9KS1)      
+  - 9IS9    , Johnston Airport, Heyworth, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: 9IS9)
+  - 9KS1    , Hartland Airport, Wellsville, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: 9KS1)
   - 9OK7    , Prairie Ridge Airport, Stratford, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: 9OK7)
   - AR55    , R V Stewart Field, North Little Rock, Arkansas, US is no longer listed in the FAA A/FD (old FAA LID: AR55)
   - CA13    , Reedley College Airport, Reedley, California, US is no longer listed in the FAA A/FD (old FAA LID: CA13)
@@ -1283,7 +1291,7 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - CO58    , Wings N Things Airpark & Museum Airport, Firestone, Colorado, US is no longer listed in the FAA A/FD (old
     FAA LID: CO58)
   - CT36    , Gager Field, Bozrah, Connecticut, US is no longer listed in the FAA A/FD (old FAA LID: CT36)
-  - CT66    , Cambrown Airport, Washington, Connecticut, US is no longer listed in the FAA A/FD (old FAA LID: CT66) 
+  - CT66    , Cambrown Airport, Washington, Connecticut, US is no longer listed in the FAA A/FD (old FAA LID: CT66)
   - FD84    , Delta Airport, Lake City, Florida, US is no longer listed in the FAA A/FD (old FAA LID: FD84)
   - FL57    , Carter Airport, Apopka, Florida, US is no longer listed in the FAA A/FD (old FAA LID: FL57)
   - FL61    , Mc Ginley Airport, Ocala, Florida, US is no longer listed in the FAA A/FD (old FAA LID: FL61)
@@ -1291,22 +1299,22 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - GA82    , Rust Airstrip, Woolsey, Georgia, US is no longer listed in the FAA A/FD (old FAA LID: GA82)
   - IA54    , Anderson Airport, Dubuque, Iowa, US is no longer listed in the FAA A/FD (old FAA LID: IA54)
   - IA56    , Farrar Airport, Farrar, Iowa, US is no longer listed in the FAA A/FD (old FAA LID: IA56)
-  - ID41    , Stibnite Airport, Yellow Pine, Idaho, US is no longer listed in the FAA A/FD (old FAA LID: ID41)      
-  - IN11    , Arrowhead Farm Airport, Bourbon, Indiana, US is no longer listed in the FAA A/FD (old FAA LID: IN11)  
+  - ID41    , Stibnite Airport, Yellow Pine, Idaho, US is no longer listed in the FAA A/FD (old FAA LID: ID41)
+  - IN11    , Arrowhead Farm Airport, Bourbon, Indiana, US is no longer listed in the FAA A/FD (old FAA LID: IN11)
   - IN18    , Hook Field, Harlan, Indiana, US is no longer listed in the FAA A/FD (old FAA LID: IN18)
-  - IN80    , Roberson Airport, English, Indiana, US is no longer listed in the FAA A/FD (old FAA LID: IN80)        
-  - IN90    , Wietbrock Airport, Lowell, Indiana, US is no longer listed in the FAA A/FD (old FAA LID: IN90)        
-  - IS02    , Dietchweiler Airport, Watseka, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: IS02)   
+  - IN80    , Roberson Airport, English, Indiana, US is no longer listed in the FAA A/FD (old FAA LID: IN80)
+  - IN90    , Wietbrock Airport, Lowell, Indiana, US is no longer listed in the FAA A/FD (old FAA LID: IN90)
+  - IS02    , Dietchweiler Airport, Watseka, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: IS02)
   - IS24    , Harris Airport, Ramsey, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: IS24)
-  - IS80    , Uncle Chuck's Airport, De Kalb, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: IS80)  
+  - IS80    , Uncle Chuck's Airport, De Kalb, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: IS80)
   - K01T    , Rocking L Airport, Sonora, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 01T)
-  - K0N6    , Albanna Aviation Airport, Felton, Delaware, US is no longer listed in the FAA A/FD (old FAA LID: 0N6) 
-  - K15W    , Dennis Farms Airport, Laingsburg, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 15W) 
+  - K0N6    , Albanna Aviation Airport, Felton, Delaware, US is no longer listed in the FAA A/FD (old FAA LID: 0N6)
+  - K15W    , Dennis Farms Airport, Laingsburg, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 15W)
   - K1M3    , Ardmore Airport, Ardmore, Alabama, US is no longer listed in the FAA A/FD (old FAA LID: 1M3)
   - K2N4    , Owasco Airfield, Moravia, New York, US is no longer listed in the FAA A/FD (old FAA LID: 2N4)
   - K3B4    , Seacoast Airfield, Eliot, Maine, US: Closed Indefinitely (old FAA LID: 3B4)
   - K3B5    , Twitchell Airport, Turner, Maine, US is no longer listed in the FAA A/FD (old FAA LID: 3B5)
-  - K3D8    , Bordner Airport, Bowling Green, Ohio, US is no longer listed in the FAA A/FD (old FAA LID: 3D8)       
+  - K3D8    , Bordner Airport, Bowling Green, Ohio, US is no longer listed in the FAA A/FD (old FAA LID: 3D8)
   - K3V0    , Custer State Park Airport, Fairburn, South Dakota, US is no longer listed in the FAA A/FD (old FAA LID:
     3V0)
   - K42V    , Jones Airport, Benkelman, Nebraska, US is no longer listed in the FAA A/FD (old FAA LID: 42V)
@@ -1315,36 +1323,36 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
     48Y)
   - K49N    , Lufker Airport, East Moriches, New York, US is not an AIRPORT or SEAPLANE BASE per FAA A/FD: None,  (old
     FAA LID: 49N)
-  - K4D1    , Three Castles Airpark, Wonewoc, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: 4D1)  
+  - K4D1    , Three Castles Airpark, Wonewoc, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: 4D1)
   - K4Y1    , Raether Airport, Howell, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 4Y1)
-  - K54M    , Wolf River Airport, Rossville, Tennessee, US is no longer listed in the FAA A/FD (old FAA LID: 54M)   
-  - K5S9    , Valley View Airport, Estacada, Oregon, US is no longer listed in the FAA A/FD (old FAA LID: 5S9)      
-  - K5Y0    , Harrisville Airport, Harrisville, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 5Y0) 
-  - K5Y4    , Lost Creek Airport, Luzerne, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 5Y4)      
+  - K54M    , Wolf River Airport, Rossville, Tennessee, US is no longer listed in the FAA A/FD (old FAA LID: 54M)
+  - K5S9    , Valley View Airport, Estacada, Oregon, US is no longer listed in the FAA A/FD (old FAA LID: 5S9)
+  - K5Y0    , Harrisville Airport, Harrisville, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 5Y0)
+  - K5Y4    , Lost Creek Airport, Luzerne, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 5Y4)
   - K7C5    , Sig Field, Montezuma, Iowa, US is no longer listed in the FAA A/FD (old FAA LID: 7C5)
-  - K7F5    , Canton-Hackney Airport, Canton, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 7F5)      
-  - K7K8    , Martin Field, So Sioux City, Nebraska, US is no longer listed in the FAA A/FD (old FAA LID: 7K8)      
+  - K7F5    , Canton-Hackney Airport, Canton, Texas, US is no longer listed in the FAA A/FD (old FAA LID: 7F5)
+  - K7K8    , Martin Field, So Sioux City, Nebraska, US is no longer listed in the FAA A/FD (old FAA LID: 7K8)
   - K7N7    , Oldmans Township Airport, Pedricktown, New Jersey, US is no longer listed in the FAA A/FD (old FAA LID:
     7N7)
-  - K89Y    , Maidens Airport, Williamston, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 89Y)     
+  - K89Y    , Maidens Airport, Williamston, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 89Y)
   - K8A0    , Albertville Regional/Thomas J Brumlik Field, Albertville, Alabama, US is no longer listed in the FAA A/FD
     (old FAA LID: 8A0)
   - K8B5    , Tanner-Hiller Airport, Barre/Barre Plains, Massachusetts, US is no longer listed in the FAA A/FD (old FAA
     LID: 8B5)
-  - K8M8    , Eagle Ii Airport, Lewiston, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 8M8)       
+  - K8M8    , Eagle Ii Airport, Lewiston, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: 8M8)
   - K9G1    , Pittsburgh Northeast Airport, Pittsburgh, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA
     LID: 9G1)
-  - KA09    , Eagle Airpark, Bullhead City, Arizona, US is no longer listed in the FAA A/FD (old FAA LID: A09)      
-  - KC02/XES, Grand Geneva Resort Airport, Lake Geneva, Wisconsin, US: Closed Indefinitely (old FAA LID: C02)       
-  - KC72    , Cross Winds Airport, Clayton, Washington, US is no longer listed in the FAA A/FD (old FAA LID: C72)   
+  - KA09    , Eagle Airpark, Bullhead City, Arizona, US is no longer listed in the FAA A/FD (old FAA LID: A09)
+  - KC02/XES, Grand Geneva Resort Airport, Lake Geneva, Wisconsin, US: Closed Indefinitely (old FAA LID: C02)
+  - KC72    , Cross Winds Airport, Clayton, Washington, US is no longer listed in the FAA A/FD (old FAA LID: C72)
   - KF31    , Lake Texoma State Park Airport, Kingston, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID:
     F31)
   - KL54    , Agua Caliente Springs Airport, Agua Caliente Springs, California, US is no longer listed in the FAA A/FD
     (old FAA LID: L54)
   - KM31    , Arnold Field, Halls, Tennessee, US is no longer listed in the FAA A/FD (old FAA LID: M31)
-  - KO14    , Skyroads Airport, Ninnekah, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: O14)       
+  - KO14    , Skyroads Airport, Ninnekah, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: O14)
   - KP15    , Brokenstraw Airport, Pittsfield, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: P15)
-  - KS48    , Country Squire Airpark, Sandy, Oregon, US is no longer listed in the FAA A/FD (old FAA LID: S48)      
+  - KS48    , Country Squire Airpark, Sandy, Oregon, US is no longer listed in the FAA A/FD (old FAA LID: S48)
   - KS79    , Green Sea Airport, Green Sea, South Carolina, US is no longer listed in the FAA A/FD (old FAA LID: S79)
   - KU42    , South Valley Regional Airport, Salt Lake City, Utah, US is no longer listed in the FAA A/FD (old FAA LID:
     U42)
@@ -1354,75 +1362,75 @@ Rico, U.S. Virgin Islands, and the Pacific Territories.
   - KZ92    , Harsens Island Airport, Harsens Island, Michigan, US is no longer listed in the FAA A/FD (old FAA LID:
     Z92)
   - LL09    , Air Estates Inc Airport, Mundelein, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: LL09)
-  - LL24    , Sunset Acres Airport, Manteno, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: LL24)   
+  - LL24    , Sunset Acres Airport, Manteno, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: LL24)
   - LL27    , Blythe Field, Macomb, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: LL27)
-  - LL32    , C D Maulding Airport, Paxton, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: LL32)    
-  - LL53    , Olson Airport, Plato Center, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: LL53)     
-  - LL64    , Ralph E Daniels Airport, Putnam, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: LL64) 
+  - LL32    , C D Maulding Airport, Paxton, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: LL32)
+  - LL53    , Olson Airport, Plato Center, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: LL53)
+  - LL64    , Ralph E Daniels Airport, Putnam, Illinois, US is no longer listed in the FAA A/FD (old FAA LID: LL64)
   - ME00    , Fort Fairfield Airport, Fort Fairfield, Maine, US is no longer listed in the FAA A/FD (old FAA LID: ME00)
-  - ME14    , Bald Mountain Airport, Camden, Maine, US is no longer listed in the FAA A/FD (old FAA LID: ME14)      
-  - MI56    , Dune Bird Airport, Leland, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: MI56)       
-  - MO25    , Shatto Farm Airport, Osborn, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: MO25)     
-  - MT74    , Sikorski Ranch Airport, Ekalaka, Montana, US is no longer listed in the FAA A/FD (old FAA LID: MT74)  
-  - MT88    , Campbell Ranch Airport, Marion, Montana, US is no longer listed in the FAA A/FD (old FAA LID: MT88)   
-  - MU03    , Stockwell Field, Brookfield, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: MU03)     
-  - MU46    , Arrowhead Airpark, Belton, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: MU46)       
-  - NA99    , Bakko Airstrip, Walcott, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: NA99)     
+  - ME14    , Bald Mountain Airport, Camden, Maine, US is no longer listed in the FAA A/FD (old FAA LID: ME14)
+  - MI56    , Dune Bird Airport, Leland, Michigan, US is no longer listed in the FAA A/FD (old FAA LID: MI56)
+  - MO25    , Shatto Farm Airport, Osborn, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: MO25)
+  - MT74    , Sikorski Ranch Airport, Ekalaka, Montana, US is no longer listed in the FAA A/FD (old FAA LID: MT74)
+  - MT88    , Campbell Ranch Airport, Marion, Montana, US is no longer listed in the FAA A/FD (old FAA LID: MT88)
+  - MU03    , Stockwell Field, Brookfield, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: MU03)
+  - MU46    , Arrowhead Airpark, Belton, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: MU46)
+  - NA99    , Bakko Airstrip, Walcott, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: NA99)
   - NC20    , Canaan Air Base Airport, New Bern, North Carolina, US is no longer listed in the FAA A/FD (old FAA LID:
     NC20)
   - NC45    , Enfield-Shearin Airport, Enfield, North Carolina, US is no longer listed in the FAA A/FD (old FAA LID:
     NC45)
-  - ND01    , Nelson Airport, Amenia, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: ND01)      
-  - ND20    , Gensrich Airport, Hatton, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: ND20)    
-  - ND24    , Inkster Airport, Inkster, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: ND24)    
+  - ND01    , Nelson Airport, Amenia, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: ND01)
+  - ND20    , Gensrich Airport, Hatton, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: ND20)
+  - ND24    , Inkster Airport, Inkster, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: ND24)
   - ND49    , Krause Private Airport, Wyndmere, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: ND49)
-  - ND78    , Wilcox Farm Airport, Ayr, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: ND78)    
+  - ND78    , Wilcox Farm Airport, Ayr, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: ND78)
   - ND89    , Mutschler Field, Clementsville, North Dakota, US is no longer listed in the FAA A/FD (old FAA LID: ND89)
-  - NH20    , Ward Field, Sanbornton, New Hampshire, US is no longer listed in the FAA A/FD (old FAA LID: NH20)     
+  - NH20    , Ward Field, Sanbornton, New Hampshire, US is no longer listed in the FAA A/FD (old FAA LID: NH20)
   - NH43    , Murphy-Sherwood Park Airport, Nottingham, New Hampshire, US is no longer listed in the FAA A/FD (old FAA
     LID: NH43)
-  - NK04    , Shepard Airport, Constantia, New York, US is no longer listed in the FAA A/FD (old FAA LID: NK04)     
+  - NK04    , Shepard Airport, Constantia, New York, US is no longer listed in the FAA A/FD (old FAA LID: NK04)
   - NR10    , Pink Hill Airport, Pink Hill, North Carolina, US is no longer listed in the FAA A/FD (old FAA LID: NR10)
   - NV35    , Hudson Airport, Austin, Nevada, US is no longer listed in the FAA A/FD (old FAA LID: NV35)
   - NY13    , D'Amico Airport, Lyons, New York, US is no longer listed in the FAA A/FD (old FAA LID: NY13)
   - OA11    , Heitman Field, Anna, Ohio, US is no longer listed in the FAA A/FD (old FAA LID: OA11)
-  - OA40    , Autumn Orchard Airport, Louisville, Ohio, US is no longer listed in the FAA A/FD (old FAA LID: OA40)  
+  - OA40    , Autumn Orchard Airport, Louisville, Ohio, US is no longer listed in the FAA A/FD (old FAA LID: OA40)
   - OA85    , Riverview Airport, Dresden, Ohio, US is no longer listed in the FAA A/FD (old FAA LID: OA85)
-  - OK13    , Erroport Airport, Mounds, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: OK13)        
-  - OK74    , Flying H Airport, Ashland, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: OK74)       
-  - OMU9    , Kollmeyer Airport, Pilot Grove, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: OMU9)  
-  - PS69    , Barnhart Airport, Flinton, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: PS69)   
+  - OK13    , Erroport Airport, Mounds, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: OK13)
+  - OK74    , Flying H Airport, Ashland, Oklahoma, US is no longer listed in the FAA A/FD (old FAA LID: OK74)
+  - OMU9    , Kollmeyer Airport, Pilot Grove, Missouri, US is no longer listed in the FAA A/FD (old FAA LID: OMU9)
+  - PS69    , Barnhart Airport, Flinton, Pennsylvania, US is no longer listed in the FAA A/FD (old FAA LID: PS69)
   - SC51    , Too Goo Doo Farms Airport, Meggett, South Carolina, US is no longer listed in the FAA A/FD (old FAA LID:
     SC51)
-  - SC75    , Oolenoy Valley Airport, Pickens, South Carolina, US is no longer listed in the FAA A/FD (old FAA LID: 
+  - SC75    , Oolenoy Valley Airport, Pickens, South Carolina, US is no longer listed in the FAA A/FD (old FAA LID:
     SC75)
-  - SD13    , Hofer Airport, Doland, South Dakota, US is no longer listed in the FAA A/FD (old FAA LID: SD13)       
+  - SD13    , Hofer Airport, Doland, South Dakota, US is no longer listed in the FAA A/FD (old FAA LID: SD13)
   - SN12    , Jenkinson Airport, Meade, Kansas, US is no longer listed in the FAA A/FD (old FAA LID: SN12)
   - TA49    , Keno Field, Andice, Texas, US is not an AIRPORT or SEAPLANE BASE per FAA A/FD: CHRISTUS MOTHER FRANCES
     ATHENS, HELIPORT (old FAA LID: TA49)
-  - TS05    , La Buena Vida Airport, Woodsboro, Texas, US is no longer listed in the FAA A/FD (old FAA LID: TS05)   
+  - TS05    , La Buena Vida Airport, Woodsboro, Texas, US is no longer listed in the FAA A/FD (old FAA LID: TS05)
   - TX11    , Ross Planes Airport, Cross Plains, Texas, US is not an AIRPORT or SEAPLANE BASE per FAA A/FD: DHS LAREDO,
     HELIPORT (old FAA LID: TX11)
-  - TX78    , Block Ranch Airport, Alvarado, Texas, US is no longer listed in the FAA A/FD (old FAA LID: TX78)      
-  - TX81    , Robotek Airport, Gainesville, Texas, US is no longer listed in the FAA A/FD (old FAA LID: TX81)       
+  - TX78    , Block Ranch Airport, Alvarado, Texas, US is no longer listed in the FAA A/FD (old FAA LID: TX78)
+  - TX81    , Robotek Airport, Gainesville, Texas, US is no longer listed in the FAA A/FD (old FAA LID: TX81)
   - TX91    , Madeira Airpark, Garland, Texas, US is no longer listed in the FAA A/FD (old FAA LID: TX91)
   - VA32    , Longs Airport, Edinburg, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: VA32)
   - VA56    , Wells Airport, Ivor, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: VA56)
-  - VA66    , Breeden Airport, Catlett, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: VA66)        
-  - VA94    , Plainview Airport, Powhatan, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: VA94)     
-  - VG01    , Eureka Airport, Keysville, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: VG01)       
-  - VG33    , Bull Farm Airport, Cape Charles, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: VG33) 
-  - WI19    , Cacic Airport, Montello, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: WI19)        
+  - VA66    , Breeden Airport, Catlett, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: VA66)
+  - VA94    , Plainview Airport, Powhatan, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: VA94)
+  - VG01    , Eureka Airport, Keysville, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: VG01)
+  - VG33    , Bull Farm Airport, Cape Charles, Virginia, US is no longer listed in the FAA A/FD (old FAA LID: VG33)
+  - WI19    , Cacic Airport, Montello, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: WI19)
   - WI28    , Walters Agri-Center Airport, Rio Creek, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID:
     WI28)
-  - WN05    , Harris Airport, Toledo, Washington, US is no longer listed in the FAA A/FD (old FAA LID: WN05)        
+  - WN05    , Harris Airport, Toledo, Washington, US is no longer listed in the FAA A/FD (old FAA LID: WN05)
   - WN10    , Mount St Helen's Aero Ranch Airport, Cougar, Washington, US is no longer listed in the FAA A/FD (old FAA
     LID: WN10)
-  - WN20    , Van De Plasch Airport, Monroe, Washington, US is no longer listed in the FAA A/FD (old FAA LID: WN20) 
-  - WN99    , Hayes Road Airport, Durand, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: WN99)     
-  - WS23    , R & S Landing Strip, Merrill, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: WS23)   
+  - WN20    , Van De Plasch Airport, Monroe, Washington, US is no longer listed in the FAA A/FD (old FAA LID: WN20)
+  - WN99    , Hayes Road Airport, Durand, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: WN99)
+  - WS23    , R & S Landing Strip, Merrill, Wisconsin, US is no longer listed in the FAA A/FD (old FAA LID: WS23)
   - WY00    , Red Reflet Ranch Airport, Ten Sleep, Wyoming, US is no longer listed in the FAA A/FD (old FAA LID: WY00)
-  - XS28    , Green Acres Airfield, Pampa, Texas, US is no longer listed in the FAA A/FD (old FAA LID: XS28)        
+  - XS28    , Green Acres Airfield, Pampa, Texas, US is no longer listed in the FAA A/FD (old FAA LID: XS28)
 
 
 Version 20260205
@@ -1716,7 +1724,7 @@ Version 20251008
 * Updated other data for the following 2 airports:
 
   - EHOW    , Oostwold Airport, Oostwold, Groningen, NL: city added.
-  - VIND/DXN, Noida International Airport, Jewar, Uttar Pradesh, IN: Elevation changed from from 642 to 652.54, city 
+  - VIND/DXN, Noida International Airport, Jewar, Uttar Pradesh, IN: Elevation changed from from 642 to 652.54, city
     changed from "Noida", latitude changed from 28.17 to 28.175556, longitude changed from 77.61 to 77.606111.
 
 * Supports Python 3.14 and 3.14t.
@@ -2041,7 +2049,7 @@ Version 20250706
 ================
 * Updated IATA for the following 1 airports:
 
-  - EPSY/SZY, Olsztyn-Mazury Airport, Szymany, Warmia-Mazury, PL: iata added. Reported by `cosypanther 
+  - EPSY/SZY, Olsztyn-Mazury Airport, Szymany, Warmia-Mazury, PL: iata added. Reported by `cosypanther
     <https://github.com/cosypanther >`__ in issue `#45 <https://github.com/mborsetti/airportsdata/issues/45>`.
 
 
@@ -2082,12 +2090,12 @@ Version 20250622
 
 Version 20250523
 ================
-* Removed LPCV/COV, Covilha Airport, , Castelo Branco, PT, closed and destroyed. Reported by `Andrii 
+* Removed LPCV/COV, Covilha Airport, , Castelo Branco, PT, closed and destroyed. Reported by `Andrii
   <https://github.com/AndriyKy>`__ in issue `#159 <https://github.com/mwgg/Airports/issues/159>`__ upstream.
-* Changed ICAO of Nairobi's Enfidha airport from DTNZ (incorrect) to DTNH. Reported by `daman2k 
+* Changed ICAO of Nairobi's Enfidha airport from DTNZ (incorrect) to DTNH. Reported by `daman2k
   <https://github.com/daman2k>`__ in issue `#161 <https://github.com/mwgg/Airports/issues/161>`__ upstream.
-* Mega-contribution by `Maxine Fonua <https://github.com/maxinefonua>`__ in issue `#44 
-  <https://github.com/mborsetti/airportsdata/issues/44>`, removing the following 35 airports confirmed as closed (via 
+* Mega-contribution by `Maxine Fonua <https://github.com/maxinefonua>`__ in issue `#44
+  <https://github.com/mborsetti/airportsdata/issues/44>`, removing the following 35 airports confirmed as closed (via
   Google maps):
 
   - AGKW/KWS, Kwailabesi Airport, Kwailabesi, , SB.
@@ -2203,7 +2211,7 @@ Summary of changes
 
   - 2TE0/BZT, Eagle Air Park, Brazoria, Texas, US: iata added.
   - FIMA/AHG, Agalega Island Airstrip, Vingt Cinq, Agalega-Islands, MU: iata added.
-  - FLND    , Ndola Airport, Ndola, Copperbelt, ZM: iata changed from "NLA" (NLA is now at Simon Mwansa Kapwepwe 
+  - FLND    , Ndola Airport, Ndola, Copperbelt, ZM: iata changed from "NLA" (NLA is now at Simon Mwansa Kapwepwe
     International Airport, just added)
   - KEDC/EDC, Austin Executive Airport, Austin, Texas, US: iata added.
   - KGYY/GYY, Gary/Chicago International Airport, Gary, Indiana, US: iata added.
@@ -2219,8 +2227,8 @@ Summary of changes
   - HCMH/HGA, Egal International Airport, Hargeisa, Woqooyi Galbeed, SO: subd changed from "Woqooyi-Galbeed".
   - HCMI/BBO, Berbera Airport, Berbera, Woqooyi Galbeed, SO: subd changed from "Woqooyi-Galbeed".
   - HCMK/KMU, Kisimayu Airport, , Lower Juba, SO: subd changed from "Lower-Juba".
-  - HDAS/AII, Ali-Sabieh Airport, Ali-Sabieh, Ali Sabieh, DJ: subd changed from "Ali-Sabieh".  
-  - HDCH    , Chabelley Airport, Chabelley, Ali Sabieh, DJ: subd changed from "Ali-Sabieh".    
+  - HDAS/AII, Ali-Sabieh Airport, Ali-Sabieh, Ali Sabieh, DJ: subd changed from "Ali-Sabieh".
+  - HDCH    , Chabelley Airport, Chabelley, Ali Sabieh, DJ: subd changed from "Ali-Sabieh".
   - HE26    , Wadi Abu Shihat, , Red Sea, EG: subd changed from "Red-Sea".
   - HEDK/DAK, Dakhla Airport, , New Valley, EG: subd changed from "New-Valley".
   - HEGN/HRG, Hurghada International Airport, Hurghada, Red Sea, EG: subd changed from "Red-Sea".
@@ -2229,7 +2237,7 @@ Summary of changes
   - HEMA/RMF, Marsa Alam International Airport, Marsa Alam, Red Sea, EG: subd changed from "Red-Sea".
   - HEMK/HMB, Sohag International Airport, Sohag, New Valley, EG: subd changed from "New-Valley".
   - HEOW/GSQ, Shark El Oweinat International Airport, , New Valley, EG: subd changed from "New-Valley".
-  - HEPS/PSD, Port Said Airport, Port Said, Port Said, EG: subd changed from "Port-Said".      
+  - HEPS/PSD, Port Said Airport, Port Said, Port Said, EG: subd changed from "Port-Said".
   - HHSB/ASA, Assab International Airport, Assab, Southern Red Sea, ER: city changed from "Asab", subd added.
   - HHTS/TES, Teseney Airport, Teseney, Gash-Barka, ER: name changed from "Tessenei Airport", city changed from
     "Tessenei", subd added.
@@ -2238,14 +2246,14 @@ Summary of changes
   - LP77    , Santa Margarida Airport, , Santarém, PT: subd changed from "Santarem".
   - LPAR    , Alverca Airport, Alverca do Ribatejo, Lisboa, PT: city added, subd changed from "Lisbon".
   - LPAV    , Aveiro Airport, Aveiro, Aveiro, PT: city added.
-  - LPAZ/SMA, Santa Maria Airport, Vila do Porto, Açores, PT: subd changed from "Azores".      
+  - LPAZ/SMA, Santa Maria Airport, Vila do Porto, Açores, PT: subd changed from "Azores".
   - LPBG/BGC, Braganca Airport, Bragança, Bragança, PT: city added, subd changed from "Braganca".
   - LPCH/CHV, Chaves Airport, Chaves, Vila Real, PT: subd changed from "Vila-Real".
   - LPCO/CBP, Coimbra Airport, Antanhol, Coimbra, PT: city added.
   - LPCR/CVU, Corvo Airport, Corvo, Açores, PT: subd changed from "Azores", elevation changed from 0 to 61.
   - LPCS/CAT, Cascais Airport, Cascais, Lisboa, PT: city added, subd changed from "Lisbon", elevation changed from 325
     to 326.
-  - LPCV/COV, Covilha Airport, , Castelo Branco, PT: subd changed from "Castelo-Branco".       
+  - LPCV/COV, Covilha Airport, , Castelo Branco, PT: subd changed from "Castelo-Branco".
   - LPEV    , Évora Airport, Évora, Alentejo, PT: name changed from "Evora Airport", city added, subd changed from
     "Evora".
   - LPFL/FLW, Flores Airport, Santa Cruz das Flores, Açores, PT: subd changed from "Azores", elevation changed from
@@ -2255,12 +2263,12 @@ Summary of changes
   - LPIN    , Espinho Airport, Espinho, Porto, PT: city added.
   - LPJO    , Alijo Airport, Alijo, Vila Real, PT: subd changed from "Vila-Real".
   - LPLA/TER, Lajes Field, Lajes, Açores, PT: subd changed from "Azores", elevation changed from 180 to 193.
-  - LPMA/FNC, Madeira Airport, Funchal, Madeira, PT: elevation changed from 192 to 191.    
+  - LPMA/FNC, Madeira Airport, Funchal, Madeira, PT: elevation changed from 192 to 191.
   - LPMF    , Monfortinho Airport, Monfortinho, Castelo Branco, PT: subd changed from "Castelo-Branco".
-  - LPMI    , Mirandela Airport, Mirandela, Bragança, PT: subd changed from "Braganca".        
+  - LPMI    , Mirandela Airport, Mirandela, Bragança, PT: subd changed from "Braganca".
   - LPMO    , Montargil Airport, Montargil, Évora, PT: subd changed from "Evora".
   - LPMT    , Montijo Airport, Montijo, Setúbal, PT: subd changed from "Setubal".
-  - LPMU    , Mogadouro Airport, Mogadouro, Bragança, PT: subd changed from "Braganca".        
+  - LPMU    , Mogadouro Airport, Mogadouro, Bragança, PT: subd changed from "Braganca".
   - LPOV    , Ovar Airport, Ovar, Aveiro, PT: city added.
   - LPPD/PDL, João Paulo II Airport, Ponta Delgada, Açores, PT: name changed from "Joao Paulo II Airport", subd changed
     from "Azores".
@@ -2272,14 +2280,14 @@ Summary of changes
     341 to 340.
   - LPPT/LIS, Lisbon Portela Airport, Lisbon, Lisbon, PT: elevation changed from 374 to 355.
   - LPPV    , Praia Verde 23M Airport, Castro Marim, Faro, PT: city added.
-  - LPSI/SIE, Sines Airport, Sines, Setúbal, PT: city added, subd changed from "Setubal".      
+  - LPSI/SIE, Sines Airport, Sines, Setúbal, PT: city added, subd changed from "Setubal".
   - LPSJ/SJZ, Sao Jorge Airport, Velas, Açores, PT: subd changed from "Azores".
   - LPSR    , Santarem Airport, Santarem, Santarém, PT: subd changed from "Santarem".
   - LPTN    , Tancos Airport, , Santarém, PT: subd changed from "Santarem".
   - LPVR/VRL, Vila Real Airport, Vila Real, Vila Real, PT: city added, subd changed from "Vila-Real", elevation changed
     from 1805 to 1832.
   - LPVZ/VSE, Viseu Airport, Viseu, Viseu, PT: city added.
-  - LSZM    , Mollis Airport, Mollis, Glarus, CH: changed ICAO from LSZM; LSZM was used for the French side of 
+  - LSZM    , Mollis Airport, Mollis, Glarus, CH: changed ICAO from LSZM; LSZM was used for the French side of
     EuroAirport Basel-Mulhouse-Freiburg Airport, airport that now has a single identifier.
   - MMSM/NLU, Felipe Angeles International Airport, Reyes Acozac, Mexico, MX: name changed from "Santa Lucia Air Force
     Base".
@@ -3061,7 +3069,7 @@ Version 20220107
   October 2021) and retirement of MHSC.
 * Fixed typo in name of LHBP/BUD Budapest Liszt Ferenc International Airport, Budapest, Budapest, Hungary (contributed
   upstream by `benelori <https://github.com/benelori>`__ in `#56 <https://github.com/mwgg/Airports/pull/56>`__).
-  
+
 Version 20211228.2
 ==================
 * Upstream contributions by `rysiekpl <https://github.com/rysiekpl>`__ in `#54
@@ -3079,12 +3087,12 @@ Version 20211228.2
 
 Version 20211228.1
 ==================
-* Added KL52 Oceano County Airport, Oceano, California, United States of America (contributed by 
+* Added KL52 Oceano County Airport, Oceano, California, United States of America (contributed by
   `Michel Vidal-Naquet <https://github.com/micvn>`__ in `#8 <https://github.com/mborsetti/airportsdata/pull/8>`__)
 
 Version 20211228
 ================
-* Added KO69 Petaluma Municipal Airport, Petaluma, California, United States of America (contributed upstream by 
+* Added KO69 Petaluma Municipal Airport, Petaluma, California, United States of America (contributed upstream by
   `Michel Vidal-Naquet <https://github.com/micvn>`__ in `#55 <https://github.com/mwgg/Airports/pull/55>`__)
 
 Version 20211030.1
