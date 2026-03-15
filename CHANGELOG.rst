@@ -8,8 +8,10 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
-Version 20260315
-================
+Version 2026.03.15
+==================
+
+Version numbering contains periods for ease of reading.
 
 Contribution by `Priyansh Kumar Singh <https://github.com/Nik-code>`__ in `#60 <https://github.com/mborsetti/airportsdata/pull/60>`__
 -------------------------------------------------------------------------------------------------------------------------------------
