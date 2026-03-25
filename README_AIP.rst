@@ -29,11 +29,20 @@ contained here.
    * - CN
      - https://www.eaipchina.cn/
      - Registration required
+   * - DK
+     - https://aim.naviair.dk/en/
+     -
    * - FM
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
      - Airport/Facility Directory
+   * - FO
+     - https://aim.naviair.dk/en/
+     -
    * - GB
      - https://nats-uk.ead-it.com/cms-nats/opencms/en/Publications/AIP/
+     -
+   * - GL
+     - https://aim.naviair.dk/en/
      -
    * - GU
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
@@ -79,7 +88,7 @@ contained here.
      -
    * - SA
      - https://www.sans.com.sa/services/services-aim
-     - 
+     -
    * - SG
      - https://aim-sg.caas.gov.sg/
      - Registration required

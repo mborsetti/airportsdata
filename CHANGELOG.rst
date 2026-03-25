@@ -8,6 +8,13 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
+Version 2026.03.25
+==================
+* Added the following 2 airports:
+
+  - BGQO/   , Qaqortoq Airport (scheduled to open on 16-Apr-2026), Qaqortoq, Kujalleq, GL.
+  - YSWS/WSI, Western Sydney Airport (under construction), Badgerys Creek, New South Wales, AU.
+
 Version 2026.03.15
 ==================
 

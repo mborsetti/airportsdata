@@ -127,7 +127,7 @@ repos:
         args: ['--ignore-languages', 'bash']  # for windows
 
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.30.0
+    rev: v8.30.1
     hooks:
       - id: gitleaks
         name: detect hardcoded secrets (gitleaks)
@@ -149,7 +149,7 @@ repos:
         types_or: [python, pyi, jupyter]
         require_serial: true
         additional_dependencies: [ruff]
-      - id: ty 
+      - id: ty
         name: check Python static typing (ty)
         entry: ty
         args: ['check']

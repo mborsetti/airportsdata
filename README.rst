@@ -2,9 +2,9 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,426
+.. |ICAO| replace:: 28,428
 
-.. |IATA| replace:: 7,883
+.. |IATA| replace:: 7,884
 
 .. |LID| replace:: 12,746
 
@@ -69,7 +69,7 @@ Each entry consists of the following data:
    how the Pseudo-ICAO Identifier is generated for airports and seaplane bases without an ICAO 4-letter Location
    Indicator.
 
-.. [#] IATA Multi Airport Cities (MAC) are not not airports and therfore not included, but we provide a database and a 
+.. [#] IATA Multi Airport Cities (MAC) are not not airports and therfore not included, but we provide a database and a
    Python function that returns the above data for all the airports of a IATA MAC. Please see documentation `here
    <https://github.com/mborsetti/airportsdata/blob/main/README_IATA.rst>`__.
 
@@ -81,16 +81,17 @@ Important notes:
 * Timezone was originally sourced from `TimeZoneDB <https://timezonedb.com>`__;
 * No historical data (closed airports are removed);
 * No seaplane bases or heliports unless they have a IATA code;
-* No surface transportation stations, even if they have an official IATA code.
+* No surface transportation stations, even if they have an official IATA code;
+* Airports under construction may be included if they have ICAO and IATA codes and scheduled airline service.
 
 Please report any issues you may find `here
 <https://github.com/mborsetti/airportsdata/blob/main/CONTRIBUTING.rst>`__.
 
-This project is a fork of https://github.com/mwgg/Airports. All new data submitted in this fork have been validated
-against national `Aeronautical Information Publications (AIP) or equivalent
-<https://github.com/mborsetti/airportsdata/blob/main/README_AIP.rst>`__ (or
-ARINC database) and `IATA <https://www.iata.org/en/publications/directories/code-search/>`__ or
-`<https://www.ch-aviation.com/airports/{IATA}>`_  before publishing.
+This project is a fork of `mwgg/Airports <https://github.com/mwgg/Airports>`__. All new data submitted in this fork have
+been validated against national `Aeronautical Information Publications (AIP)
+<https://github.com/mborsetti/airportsdata/blob/main/README_AIP.rst>`__ or equivalent, ARINC database,
+`IATA <https://www.iata.org/en/publications/directories/code-search/>`__ or
+`ch-aviation.com <https://about.ch-aviation.com/airports/>`_  before publishing.
 
 Raw data
 ========
