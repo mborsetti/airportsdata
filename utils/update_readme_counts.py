@@ -2,6 +2,7 @@
 
 import csv
 from pathlib import Path
+from typing import cast
 
 from airportsdata import IATAMAC, Airport, CodeType
 
@@ -41,7 +42,7 @@ def load_airportsdata(
         for row in reader:
             if row['elevation'] == (elevation_int := int(row['elevation'])):
                 row['elevation'] = elevation_int
-            airports[row[key]] = row
+            airports[row[key]] = cast('Airport', row)
     airports.pop('', None)
     return airports
 

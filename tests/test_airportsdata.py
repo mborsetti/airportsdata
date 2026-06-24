@@ -699,7 +699,7 @@ def test_iata_macs() -> None:
 def test_wrong_key() -> None:
     """Test that you receive an error when using the wrong key."""
     with pytest.raises(ValueError, match='code_type must be one of ICAO, IATA or LID; received wrong_key'):
-        airportsdata.load('wrong_key')  # type: ignore[arg-type]
+        airportsdata.load('wrong_key')  # type: ignore[arg-type]  # ty: ignore[invalid-argument-type]
 
 
 @pylatest_only

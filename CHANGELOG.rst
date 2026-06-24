@@ -8,6 +8,17 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
+Version 2026.06.24
+==================
+
+* Updated the following 2 airports:
+
+  - BGQO    , Qaqortoq Airport, Qaqortoq, Kujalleq, GL: name changed from "Qaqortoq Airport (scheduled to open on
+    16-Apr-2026)", elevation changed from 489 to 505, latitude changed from 60.765833 to 60.766111, longitude changed
+    from -46.065 to -46.074722.
+  - LLER/ETM, Ilan and Asaf Ramon Airport, Eilat, Southern District, IL: country changed from "IS".
+
+
 Version 2026.03.25
 ==================
 * Added the following 2 airports:

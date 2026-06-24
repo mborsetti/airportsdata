@@ -8,11 +8,11 @@ from __future__ import annotations
 
 import csv
 from pathlib import Path
-from typing import Dict, Literal, TypedDict
+from typing import Dict, Literal, TypedDict, cast
 
 __project_name__ = __package__
 __min_python_version__ = (3, 10)  # minimum version of Python required to run; supported until October 2025
-__version__ = '2026.03.25'  # numbering follows the release date (UTC)
+__version__ = '2026.06.24'  # numbering follows the release date (UTC)
 __author__ = 'Mike Borsetti <mike@borsetti.com>'
 __copyright__ = 'Copyright 2020- Mike Borsetti'
 __license__ = 'MIT'
@@ -68,7 +68,7 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airport']:
         for row in reader:
             # if row[key] and row[key] in airports:
             #     raise ValueError(f"Duplicate key in csv: '{row[key]}'")
-            airports[row[key]] = row
+            airports[row[key]] = cast('Airport', row)
     airports.pop('', None)
     return airports
 
@@ -112,12 +112,3 @@ def load_iata_macs() -> dict[str, IATAMAC]:
             else:
                 iata_macs[multi_airport_city_code]['airports'][airport] = airports[airport]
     return iata_macs
-
-
-# Python 3.9 code used to save the dict to CSV:
-# with open('airports.csv', 'w', newline='') as f:
-#     fieldnames = airports[list(airports.keys())[0]].keys()
-#     writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_NONNUMERIC)
-#     writer.writeheader()
-#     for data in airports.values():
-#         writer.writerow(data)

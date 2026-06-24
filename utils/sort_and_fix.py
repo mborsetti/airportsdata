@@ -4,6 +4,7 @@ import csv
 import shutil
 from datetime import datetime
 from pathlib import Path
+from typing import cast
 
 import airportsdata
 
@@ -43,7 +44,7 @@ def load_airportsdata(
         for row in reader:
             if row['elevation'] == (elevation_int := int(row['elevation'])):
                 row['elevation'] = elevation_int
-            airports[row[key]] = row
+            airports[row[key]] = cast('airportsdata.Airport', row)
     airports.pop('', None)
     return airports
 
