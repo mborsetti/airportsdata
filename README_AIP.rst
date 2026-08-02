@@ -97,7 +97,7 @@ contained here.
      - Airport/Facility Directory
    * - US
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
-     - Airport/Facility Directory
+     - Airport/Facility Directory; we do not include airports with a "ARPT CLSD INDEFLY" remark
    * - VI
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
      - Airport/Facility Directory

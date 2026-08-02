@@ -21,7 +21,7 @@ description = """\
     Extensive database of location and timezone data for nearly every airport and landing strip in the world.\
     """
 readme = { file = 'README.rst', content-type = 'text/x-rst' }
-requires-python = '>=3.10'
+requires-python = '>=3.11'
 license = 'MIT'
 license-files = ['LICENSE']
 authors = [{ name = 'Mike Borsetti', email = 'mike+airportsdata@borsetti.com' }]
@@ -37,10 +37,10 @@ classifiers = [
     'Programming Language :: Python',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3 :: Only',
-    'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python :: 3.12',
     'Programming Language :: Python :: 3.13',
+    'Programming Language :: Python :: 3.14',
     'Programming Language :: Python :: Implementation :: CPython',
     'Typing :: Typed',
 ]
@@ -179,9 +179,9 @@ select = [
     'TC',  # flake8-type-checking
     # 'ARG',  # flake8-unused-arguments
     'PTH', # flake8-use-pathlib
-    # 'FLY',  # flynt 
+    # 'FLY',  # flynt
     'I',    # isort
-    'C90',  # mccabe 
+    'C90',  # mccabe
     'N',    # pep8-naming
     'PERF', # Perflint
     'E',    # pycodestyle errors
@@ -190,7 +190,7 @@ select = [
     # 'D',    # pydocstyle
     'F', # Pyflakes
     # 'PL',   # Pylint
-    'FURB', # refurb 
+    'FURB', # refurb
     'RUF',  # Ruff-specific rules
     # 'TRY',  # tryceratops
 ]

@@ -2,11 +2,11 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,428
+.. |ICAO| replace:: 28,291
 
 .. |IATA| replace:: 7,884
 
-.. |LID| replace:: 12,746
+.. |LID| replace:: 12,609
 
 .. |pyversion| image:: https://img.shields.io/pypi/v/airportsdata.svg
     :target: https://pypi.org/project/airportsdata/
@@ -42,8 +42,8 @@ airportsdata |downloads|
     :target: https://github.com/PyCQA/bandit
     :alt: Security Status
 
-Extensive database of location and timezone data for nearly every operational airport and landing strip in the world,
-with |ICAO| entries.
+Extensive database of location and timezone data for nearly every operational airport, landing strip, and some seaplane
+bases in the world (no heliports unless IATA coded), with |ICAO| entries.
 
 Each entry consists of the following data:
 
@@ -52,7 +52,7 @@ Each entry consists of the following data:
 * ``iata``: IATA 3-letter Location Code (|IATA| entries) or an empty string [#]_;
 * ``name``: Official name (diacritized latin script);
 * ``city``: City (diacritized latin script), ideally using the local language or English;
-* ``subd``: Subdivision (e.g. state, province, region, etc.), ideally using the local-language or English names of
+* ``subd``: Subdivision (e.g. state, province, region, etc.; diacritized latin script), ideally in local language or the English names of
   `ISO 3166-2 <https://en.wikipedia.org/wiki/ISO_3166-2#Current_codes>`__;
 * ``country``: `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes>`__ alpha-2 country code
   (plus ``XK`` for Kosovo);

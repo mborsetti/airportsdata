@@ -13,4 +13,4 @@ __pycache__/
 /pip/
 /build/
 /airportsdata/airports_*.csv
-CLAUDE.md
+CLAUDE*.md
