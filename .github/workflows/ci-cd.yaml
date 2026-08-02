@@ -63,7 +63,7 @@ jobs:
       # and https://docs.astral.sh/uv/guides/integration/github
       # Caching is enabled on on GitHub-hosted runners
       - name: Set up uv
-        uses: astral-sh/setup-uv@11f9893b081a58869d3b5fccaea48c9e9e46f990 # v8.3.2
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -149,7 +149,7 @@ jobs:
       # and https://docs.astral.sh/uv/guides/integration/github
       # Caching is enabled on GitHub-hosted runners
       - name: Set up uv
-        uses: astral-sh/setup-uv@11f9893b081a58869d3b5fccaea48c9e9e46f990 # v8.3.2
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
 
       # Build using uv https://docs.astral.sh/uv/concepts/projects/build/
       - name: Build dist
