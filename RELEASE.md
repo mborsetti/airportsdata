@@ -1,30 +1,8 @@
-- Updated ICAO designators for the following 5 airports:
+- Version numbering reverted to the historical 8-digit `YYYYMMDD` UTC-date form. The dotted `YYYY.MM.DD`
+  form introduced in version 2026.03.15 sorts *below* the pre-existing 8-digit versions under PEP 440
+  (e.g. `20260315` > `2026.8.3`), so PyPI and unpinned installs kept resolving version 20260315 as the
+  latest. The dotted releases (2026.03.25 through 2026.08.03) remain installable from PyPI when pinned exactly.
 
-  - SBJH/JHF, São Paulo Catarina Executive Airport, São Roque, São Paulo, BR (was SBHJ).
-  - SNZB    , Rancho Sumidor Airport, Rio Do Oeste, Santa Catarina, BR (was SSRS).
-  - SSRS/BRB Barreirinhas Airport, , Maranhão, BR (was SBRR).
-  - UZTC    , Chirchik Airport, Chirchik, Toshkent, UZ (was UA66).
-  - ZSJX/JNH, Jiaxing Nanhu Airport, Jiaxing, Zhejiang, CN (was _JNH).
+- Updated other data for the following airport:
 
-- Added the following airport:
-
-  - ZSYA/YTY, Yangzhou Taizhou Airport, Yangzhou, Jiangsu, CN.
-
-- Updated IATA locator (and potentially other data) for the following 2 airports:
-
-  - KDJT/PBI, President Donald J Trump International Airport, West Palm Beach, Florida, US: iata PBI added (moved from KPBI, a duplicate in error).
-  - SBMT    , Campo de Marte Airport, Sao Paulo, São Paulo, BR: iata "SAO" deleted.
-
-- Updated other data for the following 4 airports:
-
-  - LTFM/IST, Istanbul Airport, Arnavutköy, Istanbul, Istanbul, TR: city changed from "Istanbul".
-  - SBNT    , Campo Augusto Severo Airport (Base Aérea de Natal), Parnamirim, Rio Grande do Norte, BR: name changed from
-    "Augusto Severo Airport (Base Aérea de Natal)".
-  - WIMM/KNO, Polonia International Airport, Medan, Sumatra Island, North Sumatra, ID: latitude changed from 3.55806 to
-    3.637847, longitude changed from 98.6717 to 98.870566.
-  - YSWS/WSI, Western Sydney International (Nancy-Bird Walton) Airport, Badgerys Creek, New South Wales, AU: name
-    changed from "Western Sydney Airport (under construction)".
-
-- Removed the following airport:
-
-  - KPBI/PBI Palm Beach International Airport, West Palm Beach, Florida, US (duplicate in error of KDJT).
+  - SSRS/BRB, Barreirinhas Airport, Barreirinhas, Maranhão, BR: city added.
