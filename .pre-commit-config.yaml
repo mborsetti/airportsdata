@@ -120,7 +120,7 @@ repos:
         description: Forbid files which have a UTF-8 Unicode replacement character
 
   - repo: https://github.com/rstcheck/rstcheck
-    rev: v6.2.5
+    rev: v6.3.0
     hooks:
       - id: rstcheck
         description: Check syntax of reStructuredText and code blocks nested within it
@@ -168,6 +168,12 @@ repos:
         entry: python utils/update_readme_counts.py
         language: system
         pass_filenames: false
+      - id: rst-release-to-md
+        name: regenerate RELEASE.md from RELEASE.rst (used by GitHub Release notes)
+        entry: python utils/rst_release_to_md.py
+        language: system
+        files: ^RELEASE\.rst$
+        pass_filenames: true
 
 # Not using the below as it removes remarks
 #      - id: tox-ini-fmt  # https://github.com/tox-dev/tox-ini-fmt

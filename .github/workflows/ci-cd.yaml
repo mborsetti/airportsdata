@@ -9,7 +9,6 @@
 # This file is automatically "updated" with PRs by the "pre-commit ci" app in GitHub https://pre-commit.ci; it is
 # currently scheduled weekly at approximately 16:00 UTC Monday.
 
-
 name: Test and deploy release
 on: [push, pull_request, workflow_dispatch]
 
@@ -22,7 +21,7 @@ jobs:
   # Set the job key. The key is displayed as the job name when a job name is not provided.
   test:
     # matrix.* values are defined below in strategy.
-    name: "Test (${{ matrix.python-version }}, ${{ matrix.os }})"
+    name: 'Test (${{ matrix.python-version }}, ${{ matrix.os }})'
     runs-on: ${{ matrix.os }}
 
     # Identifies any jobs that must complete successfully before this job will run.
@@ -38,8 +37,8 @@ jobs:
         disable-gil: [true]
 
     env:
-      commitmsg: ${{ github.event.head_commit.message }}  # only available at check-out; becomes env.commitmsg
-      UV_SYSTEM_PYTHON: 1  # for uv, turns on --system by default
+      commitmsg: ${{ github.event.head_commit.message }} # only available at check-out; becomes env.commitmsg
+      UV_SYSTEM_PYTHON: 1 # for uv, turns on --system by default
 
     steps:
       - name: Harden the runner (Audit all outbound calls)
@@ -63,7 +62,7 @@ jobs:
       # and https://docs.astral.sh/uv/guides/integration/github
       # Caching is enabled on on GitHub-hosted runners
       - name: Set up uv
-        uses: astral-sh/setup-uv@11f9893b081a58869d3b5fccaea48c9e9e46f990 # v8.3.2
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -122,8 +121,8 @@ jobs:
   deploy:
     name: Deploy release
     permissions:
-      contents: write  # IMPORTANT: this permission is mandatory for trusted publishing
-      id-token: write  # IMPORTANT: this permission is mandatory for trusted publishing
+      contents: write # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write # IMPORTANT: this permission is mandatory for trusted publishing
     needs: [test]
     # ref https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
@@ -149,7 +148,7 @@ jobs:
       # and https://docs.astral.sh/uv/guides/integration/github
       # Caching is enabled on GitHub-hosted runners
       - name: Set up uv
-        uses: astral-sh/setup-uv@11f9893b081a58869d3b5fccaea48c9e9e46f990 # v8.3.2
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
 
       # Build using uv https://docs.astral.sh/uv/concepts/projects/build/
       - name: Build dist
@@ -162,7 +161,7 @@ jobs:
       - name: Create GitHub release
         uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b # V3.0.1
         with:
-          body_path: RELEASE.rst
+          body_path: RELEASE.md
           draft: false
           prerelease: false
           preserve_order: false

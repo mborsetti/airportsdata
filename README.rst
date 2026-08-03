@@ -6,7 +6,7 @@ airportsdata |downloads|
 
 .. |IATA| replace:: 7,884
 
-.. |LID| replace:: 12,609
+.. |LID| replace:: 12,608
 
 .. |pyversion| image:: https://img.shields.io/pypi/v/airportsdata.svg
     :target: https://pypi.org/project/airportsdata/
