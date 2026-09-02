@@ -20,6 +20,27 @@ _UNDERLINE_CHARS = frozenset('`=-~^\'":+*#<>')
 # Non-greedy double-backtick literal (``foo``) -> single-backtick code span.
 _INLINE_LITERAL = re.compile(r'``([^`]+)``')
 
+# External hyperlink -- `text <url>`__ (anonymous) or `text <url>`_ (named). Matched against the whole
+# document rather than line by line because RELEASE.rst wraps at 120 columns, so a link routinely
+# straddles a line break; DOTALL lets that break fall anywhere inside the construct. The lookarounds
+# keep it off double-backtick inline literals, which _INLINE_LITERAL owns.
+_EXTERNAL_LINK = re.compile(r'(?<!`)`(?!`)\s*(?P<text>[^`]+?)\s*<(?P<url>[^`<>]+?)>\s*`__?', re.DOTALL)
+
+
+def _link_to_md(match: re.Match[str]) -> str:
+    """Render one matched RST external hyperlink as a Markdown inline link.
+
+    Args:
+        match: A :data:`_EXTERNAL_LINK` match, exposing ``text`` and ``url`` groups.
+
+    Returns:
+        ``[text](url)``, with line breaks inside the link text collapsed to single spaces and any
+        whitespace inside the URL removed.
+    """
+    text = ' '.join(match['text'].split())
+    url = ''.join(match['url'].split())
+    return f'[{text}]({url})'
+
 
 def convert(rst: str) -> str:
     """Convert a small subset of reStructuredText to GitHub-flavoured Markdown.
@@ -30,6 +51,9 @@ def convert(rst: str) -> str:
         * Inline literal -- ````foo```` becomes ``\\`foo\\```.
         * Top-level bullet -- ``* item`` becomes ``- item`` (``*`` can be misread as emphasis
           by stricter Markdown parsers).
+        * External hyperlink -- ```text <url>`__`` (or the named ```text <url>`_``) becomes
+          ``[text](url)``. The construct may straddle a line break; the two lines are joined and
+          whitespace inside the link text is collapsed.
         * Bold (``**foo**``), nested bullets, blank lines and bullet continuation lines pass
           through unchanged.
 
@@ -63,7 +87,9 @@ def convert(rst: str) -> str:
         line = _INLINE_LITERAL.sub(r'`\1`', line)
         out.append(line)
         i += 1
-    text = '\n'.join(out)
+    # Links are resolved last, against the joined text, so one wrapped across two source lines is
+    # still seen as a single construct.
+    text = _EXTERNAL_LINK.sub(_link_to_md, '\n'.join(out))
     if rst.endswith('\n'):
         text += '\n'
     return text
