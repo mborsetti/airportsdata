@@ -13,7 +13,7 @@ sys.path.insert(1, str(Path(__file__).parent.parent))
 import airportsdata
 
 pylatest_only = pytest.mark.skipif(
-    sys.version_info < (3, 14),
+    sys.version_info < (3, 15),
     reason='Data quality and integrity is only checked once, with latest Python version',
 )
 

@@ -11,6 +11,8 @@ on the UTC date of the release.
 Unreleased
 ==========
 
+* Dropped support for Python 3.11; added Python 3.15 (supported: 3.12–3.15). A reminder that older Python versions are
+  supported for 3 years after being obsoleted by a new major release (i.e. about 4 years since their original release)
 * Updated ICAO designators for the following 22 airports (ARP and/or elevation also updated where the AIP differed):
 
   - EDBN/FNB, Neubrandenburg Airport, Neubrandenburg, Mecklenburg-Vorpommern, DE (was ETNU). Source: AIP Germany AD 2
@@ -92,7 +94,7 @@ Unreleased
   - BGQO/JJU, Qaqortoq Airport, Qaqortoq, Kujalleq, GL: iata JJU added (inherited from the closed Qaqortoq Heliport).
     Source: AIP Greenland AD 2 BGQO, AIRAC AMDT 03/26.
   - KDJT/DJT, President Donald J Trump International Airport, West Palm Beach, Florida, US: iata changed from PBI
-    (effective 18-Aug-26; PBI is now the West Palm Beach city code). Source: Sabre.
+    (effective 18-Aug-26; PBI is now the West Palm Beach city code).
   - LTBE    , Bursa Airport, Bursa, Bursa, TR: iata BTZ deleted (now Betong Airport, VTSY).
 
 * Updated other data for the following 15 airports:

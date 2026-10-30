@@ -33,7 +33,7 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
         # Python versions at https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json
         # RCs need to be specified fully, e.g. '3.13.0-rc.3', or use allow-preleleases: true in setop-python
-        python-version: ['3.14', '3.13', '3.12', '3.11']
+        python-version: ['3.15', '3.14', '3.13', '3.12']
         disable-gil: [true]
 
     env:
@@ -142,7 +142,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version: '3.14'
+          python-version: '3.15'
 
       # Install uv per https://github.com/astral-sh/setup-uv/blob/main/README.md
       # and https://docs.astral.sh/uv/guides/integration/github
