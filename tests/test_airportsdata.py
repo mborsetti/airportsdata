@@ -1,10 +1,9 @@
 """Tests."""
 
-__lazy_modules__ = ['warnings']
+__lazy_modules__ = ['importlib.resources']
 
 import sys
-import warnings
-import zoneinfo
+from importlib.resources import files
 from pathlib import Path
 
 import pytest
@@ -274,179 +273,6 @@ iso_3166_1 = {
 # There is no ISO 3166-1 country code for the Republic of Kosovo, however 'XK' is a self assigned code that is used by
 # many international organisations per https://en.wikipedia.org/wiki/ISO_3166-2:RS#Note
 iso_3166_1.add('XK')
-tz_available = zoneinfo.available_timezones()
-tz_deprecated = {
-    'Africa/Asmera',
-    'Africa/Timbuktu',
-    'America/Argentina/ComodRivadavia',
-    'America/Atka',
-    'America/Buenos_Aires',
-    'America/Catamarca',
-    'America/Coral_Harbour',
-    'America/Cordoba',
-    'America/Ensenada',
-    'America/Fort_Wayne',
-    'America/Godthab',
-    'America/Indianapolis',
-    'America/Jujuy',
-    'America/Knox_IN',
-    'America/Louisville',
-    'America/Mendoza',
-    'America/Montreal',
-    'America/Porto_Acre',
-    'America/Rosario',
-    'America/Santa_Isabel',
-    'America/Shiprock',
-    'America/Virgin',
-    'Antarctica/South_Pole',
-    'Asia/Ashkhabad',
-    'Asia/Calcutta',
-    'Asia/Chongqing',
-    'Asia/Chungking',
-    'Asia/Dacca',
-    'Asia/Harbin',
-    'Asia/Istanbul',
-    'Asia/Kashgar',
-    'Asia/Katmandu',
-    'Asia/Macao',
-    'Asia/Rangoon',
-    'Asia/Saigon',
-    'Asia/Tel_Aviv',
-    'Asia/Thimbu',
-    'Asia/Ujung_Pandang',
-    'Asia/Ulan_Bator',
-    'Atlantic/Faeroe',
-    'Atlantic/Jan_Mayen',
-    'Australia/ACT',
-    'Australia/Canberra',
-    'Australia/LHI',
-    'Australia/North',
-    'Australia/NSW',
-    'Australia/Queensland',
-    'Australia/South',
-    'Australia/Tasmania',
-    'Australia/Victoria',
-    'Australia/West',
-    'Australia/Yancowinna',
-    'Brazil/Acre',
-    'Brazil/DeNoronha',
-    'Brazil/East',
-    'Brazil/West',
-    'Canada/Atlantic',
-    'Canada/Central',
-    'Canada/Eastern',
-    'Canada/Mountain',
-    'Canada/Newfoundland',
-    'Canada/Pacific',
-    'Canada/Saskatchewan',
-    'Canada/Yukon',
-    'CET',
-    'Chile/Continental',
-    'Chile/EasterIsland',
-    'CST6CDT',
-    'Cuba',
-    'EET',
-    'Egypt',
-    'Eire',
-    'EST',
-    'EST5EDT',
-    'Etc/GMT',
-    'Etc/GMT+0',
-    'Etc/GMT+1',
-    'Etc/GMT+10',
-    'Etc/GMT+11',
-    'Etc/GMT+12',
-    'Etc/GMT+2',
-    'Etc/GMT+3',
-    'Etc/GMT+4',
-    'Etc/GMT+5',
-    'Etc/GMT+6',
-    'Etc/GMT+7',
-    'Etc/GMT+8',
-    'Etc/GMT+9',
-    'Etc/GMT-0',
-    'Etc/GMT-1',
-    'Etc/GMT-10',
-    'Etc/GMT-11',
-    'Etc/GMT-12',
-    'Etc/GMT-13',
-    'Etc/GMT-14',
-    'Etc/GMT-2',
-    'Etc/GMT-3',
-    'Etc/GMT-4',
-    'Etc/GMT-5',
-    'Etc/GMT-6',
-    'Etc/GMT-7',
-    'Etc/GMT-8',
-    'Etc/GMT-9',
-    'Etc/GMT0',
-    'Etc/Greenwich',
-    'Etc/UCT',
-    'Etc/Universal',
-    'Etc/UTC',
-    'Etc/Zulu',
-    'Europe/Belfast',
-    'Europe/Kiev',  # added by author on 2023-09-01
-    'Europe/Nicosia',
-    'Europe/Tiraspol',
-    'Factory',
-    'GB',
-    'GB-Eire',
-    'GMT',
-    'GMT+0',
-    'GMT-0',
-    'GMT0',
-    'Greenwich',
-    'Hongkong',
-    'HST',
-    'Iceland',
-    'Iran',
-    'Israel',
-    'Jamaica',
-    'Japan',
-    'Kwajalein',
-    'Libya',
-    'MET',
-    'Mexico/BajaNorte',
-    'Mexico/BajaSur',
-    'Mexico/General',
-    'MST',
-    'MST7MDT',
-    'Navajo',
-    'NZ',
-    'NZ-CHAT',
-    'Pacific/Johnston',
-    'Pacific/Ponape',
-    'Pacific/Samoa',
-    'Pacific/Truk',
-    'Pacific/Yap',
-    'Poland',
-    'Portugal',
-    'PRC',
-    'PST8PDT',
-    'ROC',
-    'ROK',
-    'Singapore',
-    'Turkey',
-    'UCT',
-    'Universal',
-    'US/Alaska',
-    'US/Aleutian',
-    'US/Arizona',
-    'US/Central',
-    'US/East-Indiana',
-    'US/Eastern',
-    'US/Hawaii',
-    'US/Indiana-Starke',
-    'US/Michigan',
-    'US/Mountain',
-    'US/Pacific',
-    'US/Samoa',
-    'UTC',
-    'W-SU',
-    'WET',
-    'Zulu',
-}  # from https://www.php.net/timezones.others 2020-11-08; UTC kept in the list as it's non-geographical
 subdiv = {  # ISO 3166-2 subdivisions for certain countries https://en.wikipedia.org/wiki/ISO_3166-2
     'CA': {
         'Ontario',
@@ -611,15 +437,6 @@ def test_data_quality() -> None:
         assert -90 <= airport['lat'] <= 90
         assert isinstance(airport['lon'], float)
         assert -180 <= airport['lon'] <= 180
-        if airport['tz'] in tz_deprecated:
-            warnings.warn(
-                DeprecationWarning(
-                    f'"{icao}": tz "{airport["tz"]}" is deprecated; replace with correct one\n'
-                    f'(see https://github.com/eggert/tz/blob/master/backward)',
-                ),
-                stacklevel=1,
-            )
-        assert airport['tz'] in tz_available
         if airport['lid']:
             assert len(airport['lid']) in {3, 4, 7}  # 7 is ICAO
             if len(airport['lid']) == 7:
@@ -633,6 +450,21 @@ def test_data_quality() -> None:
             else:
                 assert airport['lid'].isupper()
                 assert airport['lid'].isalnum()
+
+
+@pylatest_only
+def test_tz_current() -> None:
+    """Test that every tz is a current IANA name, i.e. one listed in zone.tab of the tzdata package.
+
+    zone.tab keeps per-country names that are now links (e.g. Europe/Oslo) but drops retired ones (e.g.
+    Pacific/Enderbury), which OS time zone databases may no longer ship. Skipped where tzdata is not installed (it is
+    only a test requirement on Windows): checking once is enough.
+    """
+    pytest.importorskip('tzdata')
+    zone_tab = files('tzdata').joinpath('zoneinfo', 'zone.tab').read_text(encoding='utf-8')
+    current = {line.split('\t')[2] for line in zone_tab.splitlines() if line and not line.startswith('#')}
+    not_current = {icao: airport['tz'] for icao, airport in airports_icao.items() if airport['tz'] not in current}
+    assert not not_current, f'tz not in IANA zone.tab (retired or invalid): {not_current}'
 
 
 @pylatest_only
