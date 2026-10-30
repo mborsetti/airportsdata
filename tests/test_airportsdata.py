@@ -21,7 +21,7 @@ pylatest_only = pytest.mark.skipif(
 airports_icao = airportsdata.load('ICAO')
 iso_3166_1 = {
     'AF',
-    'AX',
+    'AX',  # Åland Islands, also part of FI
     'AL',
     'DZ',
     'AS',
@@ -199,7 +199,7 @@ iso_3166_1 = {
     'PN',
     'PL',
     'PT',
-    'PR',
+    'PR',  # Puerto Rico, also part of US
     'QA',
     'RE',
     'RO',
@@ -233,7 +233,7 @@ iso_3166_1 = {
     'LK',
     'SD',
     'SR',
-    'SJ',
+    'SJ',  # Svalbard and Jan Mayen, also part of NO
     'SE',
     'CH',
     'SY',
@@ -263,7 +263,7 @@ iso_3166_1 = {
     'VE',
     'VN',
     'VG',
-    'VI',
+    'VI',  # The United States Virgin Islands, also part of US
     'WF',
     'EH',
     'YE',
@@ -272,7 +272,7 @@ iso_3166_1 = {
 }  # As of 2020-11-06
 # There is no ISO 3166-1 country code for the Republic of Kosovo, however 'XK' is a self assigned code that is used by
 # many international organisations per https://en.wikipedia.org/wiki/ISO_3166-2:RS#Note
-iso_3166_1.add('XK')
+iso_3166_1.add('XK')  # disputed by RS
 subdiv = {  # ISO 3166-2 subdivisions for certain countries https://en.wikipedia.org/wiki/ISO_3166-2
     'CA': {
         'Ontario',
@@ -460,11 +460,40 @@ def test_tz_current() -> None:
     Pacific/Enderbury), which OS time zone databases may no longer ship. Skipped where tzdata is not installed (it is
     only a test requirement on Windows): checking once is enough.
     """
+    zone_country = _zone_tab_countries()
+    not_current = {icao: airport['tz'] for icao, airport in airports_icao.items() if airport['tz'] not in zone_country}
+    assert not not_current, f'tz not in IANA zone.tab (retired or invalid): {not_current}'
+
+
+@pylatest_only
+def test_tz_country() -> None:
+    """Test that every tz is one of the airport's own country per IANA zone.tab (not a neighbour's at the same time).
+
+    Exceptions are our country conventions: US territories PR and VI coded US, Svalbard/Jan Mayen (SJ) coded NO, Åland
+    (AX) coded FI, and Kosovo (XK, which has no zone of its own) on Europe/Belgrade.
+    """
+    zone_country = _zone_tab_countries()
+    exceptions = {('US', 'PR'), ('US', 'VI'), ('NO', 'SJ'), ('FI', 'AX'), ('XK', 'RS')}
+    wrong_country = {
+        icao: (airport['country'], airport['tz'])
+        for icao, airport in airports_icao.items()
+        if (tz_country := zone_country.get(airport['tz'])) is not None
+        and tz_country != airport['country']
+        and (airport['country'], tz_country) not in exceptions
+    }
+    assert not wrong_country, f'tz of another country per IANA zone.tab: {wrong_country}'
+
+
+def _zone_tab_countries() -> dict[str, str]:
+    """Return {tz: ISO 3166-1 country code} from zone.tab of the tzdata package, skipping the test if not installed."""
     pytest.importorskip('tzdata')
     zone_tab = files('tzdata').joinpath('zoneinfo', 'zone.tab').read_text(encoding='utf-8')
-    current = {line.split('\t')[2] for line in zone_tab.splitlines() if line and not line.startswith('#')}
-    not_current = {icao: airport['tz'] for icao, airport in airports_icao.items() if airport['tz'] not in current}
-    assert not not_current, f'tz not in IANA zone.tab (retired or invalid): {not_current}'
+    zone_country = {}
+    for line in zone_tab.splitlines():
+        if line and not line.startswith('#'):
+            country, _, tz = line.split('\t')[:3]
+            zone_country[tz] = country
+    return zone_country
 
 
 @pylatest_only
