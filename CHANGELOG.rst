@@ -8,6 +8,110 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
+Unreleased
+==========
+
+* Updated ICAO designators for the following 18 airports (ARP and/or elevation also updated where the AIP differed):
+
+  - EDBN/FNB, Neubrandenburg Airport, Neubrandenburg, Mecklenburg-Vorpommern, DE (was ETNU). Source: AIP Germany AD 2
+    EDBN, 29-Oct-26.
+  - EDQG/GHF, Giebelstadt Airport, Giebelstadt, Bayern, DE: duplicate ETEU (Giebelstadt Army Air Field) removed and its
+    IATA GHF moved to EDQG. Source: AIP Germany AD 2 EDQG, 29-Oct-26.
+  - GAKD/KYS, Kayes Dag Dag Airport, Kayes, Kayes, ML (was GAKY). Source: ASECNA eAIP Mali AD 2 GAKD.
+  - SVPH    , Punta Gorda Airport, Punta Gorda, Monagas, VE (was SVDG, not in the AIP); city added. Source: AIP Venezuela AD 4.1, AMDT AIRAC 7.
+  - SVPX/PPH, Perai Tepuy Airport, Perai-Tepui, Bolivar, VE (was SVPH, which is Punta Gorda in the AIP). Source: AIP
+    Venezuela AD 4.1, AMDT AIRAC 7.
+  - SVWS    , El Piñal Airport, , Apure, VE (was SVPX, El Pinal Airport). Source: AIP Venezuela AD 4.1, AMDT AIRAC 7.
+  - UBLC/LHL, Lachin International Airport, Laçın, Laçın, AZ (was _LHL; opened 28-May-25); ARP and city corrected,
+    elevation approximate (about 1,750 m).
+  - VAGD/GDB, Gondia Airport, Gondia, Maharashtra, IN (was VA2C); iata GDB and city added.
+  - VAJL/JLG, Jalgaon Airport, Jalgaon, Maharashtra, IN (was VA47); iata JLG and city added.
+  - VEBU/PAB, Bilaspur Airport, Bilaspur, Chhattisgarh, IN (was VABI).
+  - VEKO/HJR, Khajuraho Airport, Khajuraho, Madhya Pradesh, IN (was VAKJ).
+  - VERP/RPR, Swami Vivekananda Airport, Raipur, Chhattisgarh, IN (was VARP, Raipur Airport, in Madhya Pradesh).
+  - VEST/TNI, Satna Airport, Satna, Madhya Pradesh, IN (was VIST).
+  - VIPG    , Naini Saini Airport, Pithoragarh, Uttarakhand, IN (was VIDF, Pithorgarh Airport).
+  - VOBM/IXG, Belagavi Airport, Belagavi, Karnataka, IN (was VABM, Belgaum Airport).
+  - VOHB/HBX, Hubballi Airport, Hubballi, Karnataka, IN (was VAHB, Hubli Airport).
+  - VOND/NDC, Shri Guru Gobind Singh Ji Airport, Nanded, Maharashtra, IN (was VAND, Nanded Airport).
+  - ZSBA/BFY, Bengbu Tenghu Airport, Bengbu, Anhui, CN (was _BFY). Source: Wikipedia.
+
+  Indian airports: source AIP India AD 2, AMDT 10/2026.
+
+* Added the following 39 airports (source: national AIP, AD 2 or, where there is none, AD 1.3, except CYEP and YGLG):
+
+  - CYEP    , Edmonton / Parkland Airport, Edmonton, Alberta, CA. Source: ARINC via SkyVector (not in AIP Canada AD 2).
+  - DITM/TOZ, Mahana Airport, Touba, Woroba, CI.
+  - EFPR    , Redstone Aero Airport, Pyhtää, Kymenlaakso, FI.
+  - ENRE    , Rena Airport, Rena, Hedmark, NO.
+  - FCOD/OLL, Denis Sassou N'Guesso Airport, Ollombo, Plateaux, CG.
+  - FGAN/NBN, Annobon Airport, San Antonio de Pale, Annobon, GQ.
+  - FGMM    , Mongomo Airport, Mongomo, Wele-Nzas, GQ.
+  - FGMY/GEM, General Obiang Airport, Mongomeyen, Wele-Nzas, GQ.
+  - FMGB    , Amborodia Airport, Bekopaka, , MG.
+  - FMMB    , Ambatomainty Airport, Ambatomainty, , MG.
+  - FMNB    , Ankaizina Airport, Bealanana, , MG.
+  - FOGL    , Lebamba Airport, Lebamba, Ngouni, GA.
+  - FTAA    , Amdjarass Airport, Amdjarass, Ennedi-Est, TD.
+  - GAMN    , Bengassi Airport, Manantali, Kayes, ML.
+  - NTAM/RMT, Rimatara Airport, Rimatara, Iles-Australes, PF.
+  - NTKU/NKP, Nukutepipi Airport, Nukutepipi, Iles-Tuamotu-Gambier, PF.
+  - OMEF    , Emirates Falcons Aeroclub, Al Ain, Abu Dhabi, AE.
+  - OMRJ    , Jazirah Aviation Club, Ras Al Khaimah, Raʼs-al-Khaymah, AE.
+  - RKTL/UJN, Uljin Airport, Uljin, Gyeongsangbuk-do, KR.
+  - VAAM/AVR, Amravati Airport, Amravati, Maharashtra, IN.
+  - VAMA    , Mundra Airport, Mundra, Gujarat, IN.
+  - VASD/SAG, Shirdi Airport, Shirdi, Maharashtra, IN.
+  - VEDG/RDP, Durgapur Airport, Durgapur, West Bengal, IN.
+  - VEJR/JGB, Jagdalpur Airport, Jagdalpur, Chhattisgarh, IN.
+  - VERW/REW, Rewa Airport, Rewa, Madhya Pradesh, IN.
+  - VIDT/DPP, Datia Airport, Datia, Madhya Pradesh, IN.
+  - VIMB/MZS, Moradabad Airport, Moradabad, Uttar Pradesh, IN.
+  - VOPN/PUT, Sri Sathya Sai Airport, Puttaparthi, Andhra Pradesh, IN.
+  - VOSR/SDW, Sindhudurg Airport, Kudal, Maharashtra, IN.
+  - VOVI    , Bhogapuram International Airport, Vizianagaram, Andhra Pradesh, IN.
+  - VTSY/BTZ, Betong Airport, Betong, Yala, TH (iata BTZ moved from LTBE, Bursa Airport, TR).
+  - YGLG/GEX, Geelong Airport, Geelong, Victoria, AU (not AIP-verified).
+  - ZMDN/ULZ, Otgontenger Airport, Uliastai, Zavkhan, MN.
+  - ZMHG    , Khatgal Airport, Khatgal, Hovsgol, MN.
+  - ZMKB    , Khanbumbat Airport, Khanbogd, Oemnogovi, MN.
+  - ZMMG    , Mandalgobi Airport, Saintsagaan, Dundgovi, MN.
+  - ZMSF    , Sky Friend Airport, Nalaikh, Ulaanbaatar, MN.
+  - ZMTT    , Tavan Tolgoi Airport, Tsogttsetsii, Oemnogovi, MN.
+  - ZMUH/UNR, Undurkhaan Airport, Kherlen, Hentiy, MN.
+
+* Updated IATA locator (and potentially other data) for the following 3 airports:
+
+  - BGQO/JJU, Qaqortoq Airport, Qaqortoq, Kujalleq, GL: iata JJU added (inherited from the closed Qaqortoq Heliport).
+    Source: AIP Greenland AD 2 BGQO, AIRAC AMDT 03/26.
+  - KDJT/DJT, President Donald J Trump International Airport, West Palm Beach, Florida, US: iata changed from PBI
+    (effective 18-Aug-26; PBI is now the West Palm Beach city code). Source: Sabre.
+  - LTBE    , Bursa Airport, Bursa, Bursa, TR: iata BTZ deleted (now Betong Airport, VTSY).
+
+* Updated other data for the following 2 airports:
+
+  - OIBH/IAQ, Bahregan Airport, Bandar Deylam, Bushehr, IR: city changed from "Bushehr", latitude changed from
+    29.839667 to 29.839722, longitude changed from 50.272167 to 50.272222. Source: AIP Iran AD 2 OIBH, AIRAC AMDT 4/23.
+  - VIND/DXN, Noida International Airport, Jewar, Uttar Pradesh, IN: elevation changed from 652.54 to 653. Source:
+    AIP India AD 2 VIND.
+
+* Removed the following airport:
+
+  - OI20    , Bahregan Airport, , Bushehr, IR: duplicate of OIBH (same aerodrome, ARP within 100 m). Source: AIP Iran
+    AD 2 OIBH.
+
+* Added the missing ``city`` (city served) to 665 airports in 65 countries. Where the national AIP was reachable (219
+  airports), the city and its spelling are those of AD 2.2 (direction and distance from city) or, failing that, of the
+  AIP's aerodrome listing; see `README_AIP.rst <README_AIP.rst>`__ for the AIPs used.
+* Restored diacritics in ``city`` for CYQB (Québec City), ENRM (Rørvik) and ENRO (Røros).
+* Restored diacritics in ``name`` for DTTG (Gabès), ESSD (Borlänge), LPBG (Bragança), LTCK (Muş), SVCU (Cumaná), SVSA
+  (San Antonio del Táchira), SVSE (Santa Elena de Uairén), SWPN (Paraná) and VVVD (Vân Đồn).
+* Also updated the latitude and/or longitude of 1 airport where no change exceeded 0.1 degrees (not itemized).
+* Fixed ``iata_macs.csv``: added JNB (O. R. Tambo International Airport) to the Johannesburg (JNB) Multi Airport City,
+  where it was missing since the file was introduced (IATA Resolution 011c lists both HLA and JNB);
+  ``load_iata_macs()['JNB']`` now returns both airports.
+
+
 Version 20260905
 ================
 
@@ -3045,7 +3149,7 @@ Version 20250706
 * Updated IATA for the following 1 airports:
 
   - EPSY/SZY, Olsztyn-Mazury Airport, Szymany, Warmia-Mazury, PL: iata added. Reported by `cosypanther
-    <https://github.com/cosypanther >`__ in issue `#45 <https://github.com/mborsetti/airportsdata/issues/45>`.
+    <https://github.com/cosypanther>`__ in issue `#45 <https://github.com/mborsetti/airportsdata/issues/45>`__.
 
 
 Version 20250622

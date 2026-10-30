@@ -1,6 +1,6 @@
 .. |IATA_MACs| replace:: 41
 
-.. |IATA_MACs_apts| replace:: 89
+.. |IATA_MACs_apts| replace:: 90
 
 IATA resolution 011c adopted at the 3rd IATA Passenger Standards Conference October 2021 in PTC123(186), for intended
 implementation date of 3 October 2022, defines |IATA_MACs| Multi Airport Cities (comprising of a total of
