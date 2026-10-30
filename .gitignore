@@ -10,6 +10,7 @@
 /coverage.xml
 /uv.lock
 .*
+!.github/
 __pycache__/
 /pip/
 /build/

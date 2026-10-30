@@ -1,4 +1,4 @@
-"""Updates counts in readme.rst file.  Requires Python >= 3.10."""
+"""Updates counts in readme.rst file."""
 
 __lazy_modules__ = ['airportsdata', 'csv', 'typing']
 
