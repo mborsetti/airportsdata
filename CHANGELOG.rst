@@ -11,13 +11,19 @@ on the UTC date of the release.
 Unreleased
 ==========
 
-* Updated ICAO designators for the following 18 airports (ARP and/or elevation also updated where the AIP differed):
+* Updated ICAO designators for the following 22 airports (ARP and/or elevation also updated where the AIP differed):
 
   - EDBN/FNB, Neubrandenburg Airport, Neubrandenburg, Mecklenburg-Vorpommern, DE (was ETNU). Source: AIP Germany AD 2
     EDBN, 29-Oct-26.
   - EDQG/GHF, Giebelstadt Airport, Giebelstadt, Bayern, DE: duplicate ETEU (Giebelstadt Army Air Field) removed and its
     IATA GHF moved to EDQG. Source: AIP Germany AD 2 EDQG, 29-Oct-26.
   - GAKD/KYS, Kayes Dag Dag Airport, Kayes, Kayes, ML (was GAKY). Source: ASECNA eAIP Mali AD 2 GAKD.
+  - SJZL    , Fazenda Vaca Mocha Airport, Caracol, Mato Grosso do Sul, BR (was SDXR); subdivision corrected from
+    "Concepcion" and tz from "America/Asuncion" to "America/Campo_Grande".
+  - SSZK    , Fazenda Água Santa Airport, Perdizes, Minas Gerais, BR (was SNHR, now Aero Roça, Luziânia).
+  - SWHN    , Fazenda Colibri Airport, Selvíria, Mato Grosso do Sul, BR (was SWJQ).
+  - SWJQ    , Fazenda São João Airport, Paranhos, Mato Grosso do Sul, BR (was SIXQ); subdivision corrected from
+    "Canindeyu" and tz from "America/Asuncion" to "America/Campo_Grande".
   - SVPH    , Punta Gorda Airport, Punta Gorda, Monagas, VE (was SVDG, not in the AIP); city added. Source: AIP Venezuela AD 4.1, AMDT AIRAC 7.
   - SVPX/PPH, Perai Tepuy Airport, Perai-Tepui, Bolivar, VE (was SVPH, which is Punta Gorda in the AIP). Source: AIP
     Venezuela AD 4.1, AMDT AIRAC 7.
@@ -36,7 +42,8 @@ Unreleased
   - VOND/NDC, Shri Guru Gobind Singh Ji Airport, Nanded, Maharashtra, IN (was VAND, Nanded Airport).
   - ZSBA/BFY, Bengbu Tenghu Airport, Bengbu, Anhui, CN (was _BFY). Source: Wikipedia.
 
-  Indian airports: source AIP India AD 2, AMDT 10/2026.
+  Indian airports: source AIP India AD 2, AMDT 10/2026. Brazilian airports: source ROTAER (DECEA AISWEB), D-AMDT
+  44/26, and the ANAC aerodrome registers of 29-Oct-26.
 
 * Added the following 39 airports (source: national AIP, AD 2 or, where there is none, AD 1.3, except CYEP and YGLG):
 
@@ -88,17 +95,49 @@ Unreleased
     (effective 18-Aug-26; PBI is now the West Palm Beach city code). Source: Sabre.
   - LTBE    , Bursa Airport, Bursa, Bursa, TR: iata BTZ deleted (now Betong Airport, VTSY).
 
-* Updated other data for the following 2 airports:
+* Updated other data for the following 15 airports:
 
+  - 70TT    , Big Bend Valley Airport, Terlingua, Texas, US: tz changed from "America/Chihuahua" to "America/Chicago".
+  - K1S1    , Eckhart International Airport, Porthill, Idaho, US: tz changed from "America/Creston" to
+    "America/Los_Angeles".
+  - K3T9    , Big Bend Ranch State Park Airport, Presidio, Texas, US: tz changed from "America/Chihuahua" to
+    "America/Chicago".
+  - K4Z5    , Horsfeld Airport, Horsfeld, Alaska, US: tz changed from "America/Whitehorse" to "America/Anchorage".
+  - KD49    , Columbus Municipal Airport, Columbus, North Dakota, US: tz changed from "America/Regina" to
+    "America/Chicago".
+  - KP16    , Palmyra (Cooper) Airport, Palmyra Island Atoll, , UM: tz changed from "Pacific/Kiritimati" (UTC+14) to
+    "Pacific/Midway" (UTC−11).
+  - KT89    , Lajitas International Airport, Lajitas, Texas, US: tz changed from "America/Chihuahua" to
+    "America/Chicago".
+  - LLFK    , Fiq Airfield, Katzrin, Quneitra, IL: tz changed from "Asia/Damascus" to "Asia/Jerusalem".
   - OIBH/IAQ, Bahregan Airport, Bandar Deylam, Bushehr, IR: city changed from "Bushehr", latitude changed from
     29.839667 to 29.839722, longitude changed from 50.272167 to 50.272222. Source: AIP Iran AD 2 OIBH, AIRAC AMDT 4/23.
+  - SNVY    , Fazenda Ouro Verde Airport, Paranhos, Mato Grosso do Sul, BR: subdivision changed from "Canindeyu", tz
+    from "America/Asuncion" to "America/Campo_Grande", elevation from 1299 to 1417. Source: ROTAER.
+  - SSBV    , Bela Vista Airport, Bela Vista, Mato Grosso do Sul, BR: subdivision added, tz changed from
+    "America/Asuncion" to "America/Campo_Grande".
+  - SSFE    , Estância Hércules Airport, Foz do Iguaçu, Paraná, BR: name changed from "Estancia Hercules Airport", city
+    from "Foz Do Iguacu", subdivision from "Alto-Parana", tz from "America/Asuncion" to "America/Sao_Paulo", elevation
+    from 558 to 584. Source: ROTAER.
+  - SSHX    , Fazenda Jatobá Airport, Paranhos, Mato Grosso do Sul, BR: name changed from "Fazenda Jatoba Airport",
+    subdivision from "Canindeyu", tz from "America/Asuncion" to "America/Campo_Grande". Source: ROTAER.
+  - SWBV    , Auaris Airport, Amajari, Roraima, BR: city changed from "Boa Vista", elevation from 2336 to 2492,
+    latitude from 4.01639 to 4.002778, longitude from -64.51861 to -64.495556. Source: ROTAER.
   - VIND/DXN, Noida International Airport, Jewar, Uttar Pradesh, IN: elevation changed from 652.54 to 653. Source:
     AIP India AD 2 VIND.
 
-* Removed the following airport:
+  US airports: tz per the county's legal time zone (county from FAA NASR).
+
+* Removed the following 4 airports:
 
   - OI20    , Bahregan Airport, , Bushehr, IR: duplicate of OIBH (same aerodrome, ARP within 100 m). Source: AIP Iran
     AD 2 OIBH.
+  - SJOI    , Fazenda Jaguatirica Airport, Porto Murtinho, Alto-Paraguay, BR: not in ROTAER or the ANAC registers
+    (SJOI is now a heliport in Indaiatuba).
+  - SSZK    , Sao Carlos Airport, Caracol, Concepcion, BR: not in ROTAER or the ANAC registers (SSZK reassigned, see
+    above).
+  - SWHN    , Fazenda Nossa Senhora de Fatima Airport, Nova Monte Verde, Mato Grosso do Sul, BR: not in the ANAC
+    registers (SWHN reassigned, see above).
 
 * Added the missing ``city`` (city served) to 665 airports in 65 countries. Where the national AIP was reachable (219
   airports), the city and its spelling are those of AD 2.2 (direction and distance from city) or, failing that, of the
@@ -110,6 +149,20 @@ Unreleased
 * Fixed ``iata_macs.csv``: added JNB (O. R. Tambo International Airport) to the Johannesburg (JNB) Multi Airport City,
   where it was missing since the file was introduced (IATA Resolution 011c lists both HLA and JNB);
   ``load_iata_macs()['JNB']`` now returns both airports.
+* Replaced ``tz`` names retired by IANA (no longer in ``zone.tab``, and missing from some operating systems' time zone
+  databases) with their current equivalents in 39 airports: America/Yellowknife → America/Edmonton (26),
+  Europe/Zaporozhye → Europe/Kyiv (7), Europe/Uzhgorod → Europe/Kyiv (2), America/Thunder_Bay → America/Toronto,
+  Pacific/Enderbury → Pacific/Kanton, Australia/Currie → Australia/Hobart, Asia/Choibalsan → Asia/Ulaanbaatar.
+  Local times are unchanged.
+* Replaced ``tz`` names belonging to a neighbouring country (per IANA ``zone.tab``) with the airport's own country's
+  zone at the same local time in 51 airports, e.g. Brazilian border airports on America/La_Paz, America/Guyana or
+  America/Caracas now on America/Cuiaba, America/Boa_Vista etc., US border airports on America/Toronto or
+  America/Vancouver now on America/New_York or America/Los_Angeles, CYIB/CYPL/CYZS on America/Atikokan (was
+  America/Panama), GMMA/GMMH/GMML on Africa/El_Aaiun, LXGB on Europe/Gibraltar, MBAC on America/Grand_Turk, ORUQ on
+  Asia/Baghdad and OYBQ on Asia/Aden. Where the subdivision was also the neighbouring country's (e.g. "Santa Cruz",
+  "Bolivar", "Potaro-Siparuni" for Brazilian airports), it was corrected too, and Brazilian city names diacritized.
+* Tests: ``tz`` is now validated against IANA's ``zone.tab`` (from the ``tzdata`` package) rather than the operating
+  system's time zone database, and must be a zone of the airport's own country.
 
 
 Version 20260905
