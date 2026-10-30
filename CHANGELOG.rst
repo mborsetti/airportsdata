@@ -126,8 +126,6 @@ Unreleased
   - SWBV    , Auaris Airport, Amajari, Roraima, BR: city changed from "Boa Vista", elevation from 2336 to 2492,
     latitude from 4.01639 to 4.002778, longitude from -64.51861 to -64.495556. Source: ROTAER.
 
-  US airports: tz per the county's legal time zone (county from FAA NASR).
-
 * Removed the following 4 airports:
 
   - OI20    , Bahregan Airport, , Bushehr, IR: duplicate of OIBH (same aerodrome, ARP within 100 m). Source: AIP Iran
@@ -142,26 +140,14 @@ Unreleased
 * Added the missing ``city`` (city served) to 665 airports in 65 countries. Where the national AIP was reachable (219
   airports), the city and its spelling are those of AD 2.2 (direction and distance from city) or, failing that, of the
   AIP's aerodrome listing; see `README_AIP.rst <README_AIP.rst>`__ for the AIPs used.
-* Restored diacritics in ``city`` for CYQB (Québec City), ENRM (Rørvik) and ENRO (Røros).
-* Restored diacritics in ``name`` for DTTG (Gabès), ESSD (Borlänge), LPBG (Bragança), LTCK (Muş), SVCU (Cumaná), SVSA
-  (San Antonio del Táchira), SVSE (Santa Elena de Uairén), SWPN (Paraná) and VVVD (Vân Đồn).
-* Also updated the latitude, longitude and/or elevation of 2 airports where no change exceeded 0.1 degrees or 30 feet
+* Updated the latitude, longitude and/or elevation of 2 airports where no change exceeded 0.1 degrees or 30 feet
   (not itemized).
-* Fixed ``iata_macs.csv``: added JNB (O. R. Tambo International Airport) to the Johannesburg (JNB) Multi Airport City,
-  where it was missing since the file was introduced (IATA Resolution 011c lists both HLA and JNB);
-  ``load_iata_macs()['JNB']`` now returns both airports.
+* Fixed ``iata_macs.csv``: added JNB (O. R. Tambo International Airport) to the Johannesburg (JNB) Multi Airport City
+  (IATA Resolution 011c lists both HLA and JNB).
 * Replaced ``tz`` names retired by IANA, therefore missing from some operating systems' time zone
-  databases, with their current equivalents in 39 airports: America/Yellowknife → America/Edmonton (26),
-  Europe/Zaporozhye → Europe/Kyiv (7), Europe/Uzhgorod → Europe/Kyiv (2), America/Thunder_Bay → America/Toronto,
-  Pacific/Enderbury → Pacific/Kanton, Australia/Currie → Australia/Hobart, Asia/Choibalsan → Asia/Ulaanbaatar.
-  Local times are unchanged.
+  databases, with their current equivalents in 39 airports.
 * Replaced ``tz`` names belonging to a neighbouring country per IANA with the airport's own country's
-  zone at the same local time in 51 airports, e.g. Brazilian border airports on America/La_Paz, America/Guyana or
-  America/Caracas now on America/Cuiaba, America/Boa_Vista etc., US border airports on America/Toronto or
-  America/Vancouver now on America/New_York or America/Los_Angeles, CYIB/CYPL/CYZS on America/Atikokan (was
-  America/Panama), GMMA/GMMH/GMML on Africa/El_Aaiun, LXGB on Europe/Gibraltar, MBAC on America/Grand_Turk, ORUQ on
-  Asia/Baghdad and OYBQ on Asia/Aden. Where the subdivision was also the neighbouring country's (e.g. "Santa Cruz",
-  "Bolivar", "Potaro-Siparuni" for Brazilian airports), it was corrected too, and Brazilian city names diacritized.
+  zone at the same local time in 51 airports.
 
 Updated FAA data:
 
