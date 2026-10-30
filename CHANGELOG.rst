@@ -8,11 +8,13 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
-Unreleased
-==========
+Version 20261030
+================
+
+Incorporated latest FAA data and corrected ICAO designators, cities and time zones worldwide.
 
 * Dropped support for Python 3.11; added Python 3.15 (supported: 3.12–3.15). A reminder that older Python versions are
-  supported for 3 years after being obsoleted by a new major release (i.e. about 4 years since their original release)
+  supported for 3 years after being obsoleted by a new major release (i.e. about 4 years since their original release).
 * Updated ICAO designators for the following 22 airports (ARP and/or elevation also updated where the AIP differed):
 
   - EDBN/FNB, Neubrandenburg Airport, Neubrandenburg, Mecklenburg-Vorpommern, DE (was ETNU). Source: AIP Germany AD 2
@@ -26,7 +28,8 @@ Unreleased
   - SWHN    , Fazenda Colibri Airport, Selvíria, Mato Grosso do Sul, BR (was SWJQ).
   - SWJQ    , Fazenda São João Airport, Paranhos, Mato Grosso do Sul, BR (was SIXQ); subdivision corrected from
     "Canindeyu" and tz from "America/Asuncion" to "America/Campo_Grande".
-  - SVPH    , Punta Gorda Airport, Punta Gorda, Monagas, VE (was SVDG, not in the AIP); city added. Source: AIP Venezuela AD 4.1, AMDT AIRAC 7.
+  - SVPH    , Punta Gorda Airport, Punta Gorda, Monagas, VE (was SVDG, not in the AIP); city added. Source: AIP
+    Venezuela AD 4.1, AMDT AIRAC 7.
   - SVPX/PPH, Perai Tepuy Airport, Perai-Tepui, Bolivar, VE (was SVPH, which is Punta Gorda in the AIP). Source: AIP
     Venezuela AD 4.1, AMDT AIRAC 7.
   - SVWS    , El Piñal Airport, , Apure, VE (was SVPX, El Pinal Airport). Source: AIP Venezuela AD 4.1, AMDT AIRAC 7.
