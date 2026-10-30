@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+__lazy_modules__ = ['utils.rst_release_to_md']
+
 import sys
 from pathlib import Path
 

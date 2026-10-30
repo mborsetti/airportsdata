@@ -8,6 +8,8 @@ ever needed.
 
 from __future__ import annotations
 
+__lazy_modules__ = ['pathlib']
+
 import re
 import sys
 from pathlib import Path

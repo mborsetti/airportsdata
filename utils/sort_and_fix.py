@@ -1,5 +1,7 @@
 """Sort the database and save with integers as integers and with lat/lon precision of 5 digits"""
 
+__lazy_modules__ = ['airportsdata', 'csv', 'datetime', 'shutil', 'typing']
+
 import csv
 import shutil
 from datetime import datetime

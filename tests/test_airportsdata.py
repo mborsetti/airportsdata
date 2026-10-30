@@ -1,5 +1,7 @@
 """Tests."""
 
+__lazy_modules__ = ['warnings']
+
 import sys
 import warnings
 import zoneinfo

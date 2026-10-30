@@ -1,5 +1,7 @@
 """Updates counts in readme.rst file.  Requires Python >= 3.10."""
 
+__lazy_modules__ = ['airportsdata', 'csv', 'typing']
+
 import csv
 from pathlib import Path
 from typing import cast

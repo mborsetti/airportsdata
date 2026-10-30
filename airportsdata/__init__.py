@@ -6,6 +6,8 @@ Extensive database of location and timezone data for nearly every airport and la
 
 from __future__ import annotations
 
+__lazy_modules__ = ['csv', 'pathlib']
+
 import csv
 from pathlib import Path
 from typing import Dict, Literal, TypedDict, cast
