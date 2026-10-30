@@ -15,5 +15,6 @@ __pycache__/
 /pip/
 /build/
 /airportsdata/airports_*.csv
+/airportsdata/airports copy.csv
 CLAUDE*.md
 RELEASE.rst
