@@ -32,6 +32,9 @@ is contained here.
    * - BJ
      - https://aim.asecna.aero/html/index-fr-FR.html
      - ASECNA eAIP (French)
+   * - BO
+     - https://ais.naabol.gob.bo/
+     - Registration required
    * - BR
      - https://aisweb.decea.mil.br/
      -
@@ -72,6 +75,9 @@ is contained here.
    * - FI
      - https://www.ais.fi/eaip/
      -
+   * - FJ
+     - https://airportsfiji.com/ais-fiji/
+     - Registration required; certified aerodromes listed at https://www.caaf.org.fj/aerodrome-certificates-validity
    * - FM
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
      - Airport/Facility Directory
@@ -96,6 +102,9 @@ is contained here.
    * - GW
      - https://aim.asecna.aero/html/index-fr-FR.html
      - ASECNA eAIP (French)
+   * - ID
+     - https://aimindonesia.dephub.go.id/
+     - Registration required; DGCA aerodrome register (ICAO, IATA, ARP) at https://hubud.kemenhub.go.id/bandara
    * - IN
      - https://aim-india.aai.aero/
      -
@@ -147,6 +156,9 @@ is contained here.
    * - MX
      - https://www.gob.mx/seneam/acciones-y-programas/aip-suscription
      - Paid subscription
+   * - MY
+     - https://aip.caam.gov.my/aip/eAIP/history-en-MS.html
+     -
    * - NA
      - https://www.ncaa.com.na/publications/aeronautical-information/aeronautical-information-publication/aips/Aerodrome.pdf
      - AD part (PDF)
@@ -156,9 +168,15 @@ is contained here.
    * - NO
      - https://aim-prod.avinor.no/no/AIP/View/Index/155/history-no-NO.html
      -
+   * - NP
+     - https://e-aip.caanepal.gov.np/welcome/listall/1
+     - One PDF per section; AD 2 per aerodrome
    * - NZ
      - https://www.aip.net.nz/
      - Disclaimer must be accepted first
+   * - PA
+     - https://www.aeronautica.gob.pa/ais-aip/
+     - National aerodromes in AD 4
    * - PF
      - https://www.sia.aviation-civile.gouv.fr/
      - SIA France eAIP PAC-P (Pacifique)
@@ -185,7 +203,7 @@ is contained here.
      - Full AIP download requires authorization
    * - SA
      - https://aimss.sans.com.sa/eaip
-     - JavaScript application
+     - JavaScript application; each AIRAC edition is also published as static HTML
    * - SE
      - https://aro.lfv.se/content/eaip/default_offline.html
      -
@@ -198,6 +216,9 @@ is contained here.
    * - SN
      - https://aim.asecna.aero/html/index-fr-FR.html
      - ASECNA eAIP (French)
+   * - SO
+     - https://aip.scaa.gov.so/eAIP/
+     - Blocked by Cloudflare; readable through the Wayback Machine
    * - TD
      - https://aim.asecna.aero/html/index-fr-FR.html
      - ASECNA eAIP (French)
@@ -222,3 +243,6 @@ is contained here.
    * - VI
      - https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/
      - Airport/Facility Directory
+   * - VN
+     - https://aim.vatm.vn/images/stories/vnaic.vn/SanPhamDichVu/AIPVietNam/AIP/history-en-GB.html
+     -
