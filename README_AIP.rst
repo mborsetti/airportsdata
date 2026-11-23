@@ -246,3 +246,6 @@ is contained here.
    * - VN
      - https://aim.vatm.vn/images/stories/vnaic.vn/SanPhamDichVu/AIPVietNam/AIP/history-en-GB.html
      -
+   * - ZW
+     - https://www.caaz.co.zw/aip/
+     - One PDF download per aerodrome (AD 2)
