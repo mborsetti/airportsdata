@@ -8,8 +8,11 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
-Unreleased
-==========
+Version 20261123
+================
+
+Corrected the time zones of airports along Mexico's northern border and the coordinates of Luxembourg and Milan
+Malpensa airports.
 
 * Corrected the time zones of airports in Mexico's northern border states, which follow US daylight saving time or
   Chihuahua's year-round UTC−6 since the 2022 reform. CUU and CJS reported by `Francescatai

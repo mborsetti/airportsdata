@@ -120,7 +120,7 @@ repos:
         description: Forbid files which have a UTF-8 Unicode replacement character
 
   - repo: https://github.com/rstcheck/rstcheck
-    rev: v6.3.0
+    rev: v6.3.1
     hooks:
       - id: rstcheck
         description: Check syntax of reStructuredText and code blocks nested within it
