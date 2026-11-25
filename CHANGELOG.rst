@@ -8,12 +8,14 @@ on the UTC date of the release.
 `Contributions <https://github.com/mborsetti/airportdata/blob/master/CHANGELOG.rst>`__ always welcomed!
 
 
-Unreleased
-==========
+Version 20261126
+================
 
 Checked every airport's time zone against the IANA zone boundaries and corrected 695 of them, plus the subdivision of
 680 airports (mostly in Brazil). Also realigned the airports of Nigeria with ARINC data, adding 14 of them.
 
+* ZHSY/WDS, Shiyan Wudangshan Airport, Shiyan, Hubei, CN: elevation changed from 0 to 1125 (not AIP-verified; the
+  airport is not in the AIP of China). Contributed by `Jianing Wang <https://github.com/jianingfcm>`__.
 * Corrected the time zone of the following 193 airports, whose local time was wrong. Source: IANA tz database zone
   boundaries (timezone-boundary-builder, via timezonefinder):
 
@@ -94,7 +96,8 @@ Checked every airport's time zone against the IANA zone boundaries and corrected
   - DNFD, Forcados Terminal Airport, Forcados, Delta, NG.
   - DNKT/DKA, Katsina Airport, Katsina, Katsina, NG.
   - DNOG/GWI, Gateway International Airport, Iperu, Ogun, NG (elevation unknown).
-  - DNSU/QRW, Osubi Airport, Warri, Delta, NG.
+  - DNSU/QRW, Osubi Airport, Warri, Delta, NG. Contributed by `Jianing Wang <https://github.com/jianingfcm>`__, who
+    also reported EKK (already listed as DNET, Ekiti Agro-Allied International Cargo Airport).
   - _PHG/PHG, Port Harcourt City Airport, Port Harcourt, Rivers, NG (no ICAO location indicator found; elevation
     unknown).
 
@@ -103,7 +106,7 @@ Checked every airport's time zone against the IANA zone boundaries and corrected
   - DNAK/AKR, Akure Airport, Akure, Ondo, NG: iata AKR added, elevation changed from 1100 to 1108, latitude changed from
     7.24674 to 7.246667, longitude changed from 5.30101 to 5.301.
 
-* Updated other data for the following 7 airports (Nigerian ARP and elevation source: ARINC; subdivisions to
+* Updated other data for the following 6 Nigerian airports (ARP and elevation source: ARINC; subdivisions to
   ISO 3166-2:NG names):
 
   - DNAA/ABV, Nnamdi Azikiwe International Airport, Abuja, Abuja Federal Capital Territory, NG: subdivision changed from
@@ -120,8 +123,6 @@ Checked every airport's time zone against the IANA zone boundaries and corrected
     changed from 1590 to 1589, latitude changed from 10.29833 to 10.298, longitude changed from 10.89639 to 10.899167.
   - DNMN/MXJ, Minna Airport, Minna, Niger, NG: elevation changed from 834 to 898, latitude changed from 9.65217 to
     9.652167, longitude changed from 6.46226 to 6.462167.
-  - ZHSY/WDS, Shiyan Wudangshan Airport, Shiyan, Hubei, CN: elevation changed from 0 to 1125 (not AIP-verified; the
-    airport is not in the AIP of China).
 
 * Also updated the latitude, longitude and/or elevation of 15 Nigerian airports where no change exceeded 0.1 degrees or
   30 feet (not itemized). Source: ARINC.
