@@ -558,6 +558,43 @@ def test_tz_country() -> None:
     assert not wrong_country, f'tz of another country per IANA zone.tab: {wrong_country}'
 
 
+TZ_LOCATION_EXCEPTIONS = {  # ICAO: tz verified against local sources where timezonefinder's polygon differs
+    'CCE4': 'America/Goose_Bay',  # Black Tickle keeps Atlantic time (CFS UTC-4(3)); Newfoundland time is south of it
+    'CYES': 'America/Moncton',  # Edmundston is in New Brunswick (Atlantic time); polygon follows the Quebec border
+    'CYNA': 'America/Toronto',  # Minganie, incl. Natashquan, is on Eastern time (quebec.ca, changement d'heure)
+    'UHSB': 'Asia/Sakhalin',  # Iturup, Sakhalin oblast (polygon: Asia/Magadan, same offsets)
+    'UHSM': 'Asia/Sakhalin',  # Kunashir, Sakhalin oblast (polygon: Asia/Magadan, same offsets)
+}
+
+
+@pylatest_only
+def test_tz_location() -> None:
+    """Test that every tz is the IANA zone that timezonefinder (IANA zone boundaries) gives for the ARP.
+
+    Not compared: points where timezonefinder returns another country's zone or a nautical Etc/ zone (border and
+    coastal ARPs; test_tz_country covers the country), and Xinjiang, whose airports keep official Beijing time
+    (Asia/Shanghai) rather than the local Asia/Urumqi. TZ_LOCATION_EXCEPTIONS lists airports whose observed time was
+    verified against local sources and differs from the zone polygon.
+    """
+    timezonefinder = pytest.importorskip('timezonefinder')
+    zone_country = _zone_tab_countries()
+    tf = timezonefinder.TimezoneFinder()
+    wrong_zone = {}
+    for icao, airport in airports_icao.items():
+        found = tf.timezone_at(lng=airport['lon'], lat=airport['lat'])
+        if (
+            found is None
+            or found == airport['tz']
+            or found.startswith('Etc/')
+            or zone_country.get(found) != airport['country']
+            or (found == 'Asia/Urumqi' and airport['tz'] == 'Asia/Shanghai')
+            or TZ_LOCATION_EXCEPTIONS.get(icao) == airport['tz']
+        ):
+            continue
+        wrong_zone[icao] = (airport['tz'], found)
+    assert not wrong_zone, f'tz differs from timezonefinder (ours, theirs): {wrong_zone}'
+
+
 def _zone_tab_countries() -> dict[str, str]:
     """Return {tz: ISO 3166-1 country code} from zone.tab of the tzdata package, skipping the test if not installed."""
     pytest.importorskip('tzdata')

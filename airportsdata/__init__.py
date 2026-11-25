@@ -57,7 +57,7 @@ def load(code_type: CodeType = 'ICAO') -> Dict[str, 'Airport']:
         'lat': Latitude (decimal)
         'lon': Longitude (decimal)
         'tz': Timezone expressed as a tz database name (IANA-compliant) or empty string for country 'AQ' (Antarctica).
-            Originally sourced from [TimeZoneDB](https://timezonedb.com)
+            Checked against IANA zone boundaries using the Python library timezonefinder
         'lid': The FAA Location Identifier (for US country only; others is blank)
     """
     key = code_type.lower()

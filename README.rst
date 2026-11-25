@@ -2,9 +2,9 @@
 airportsdata |downloads|
 ========================
 
-.. |ICAO| replace:: 28,403
+.. |ICAO| replace:: 28,417
 
-.. |IATA| replace:: 7,950
+.. |IATA| replace:: 7,958
 
 .. |LID| replace:: 12,625
 
@@ -78,7 +78,8 @@ expected by users.
 
 Important notes:
 
-* Timezone was originally sourced from `TimeZoneDB <https://timezonedb.com>`__;
+* Timezone is checked against IANA zone boundaries using the Python library `timezonefinder
+  <https://pypi.org/project/timezonefinder/>`__;
 * No historical data (closed airports are removed);
 * No seaplane bases or heliports unless they have a IATA code;
 * No surface transportation stations, even if they have an official IATA code;

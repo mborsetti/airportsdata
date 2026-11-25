@@ -1,4 +1,5 @@
 # pip requirements for pytest (testing) (in addition to ./requirements.txt)
 pytest
 pytest-cov
+timezonefinder
 tzdata; sys_platform == 'win32'
